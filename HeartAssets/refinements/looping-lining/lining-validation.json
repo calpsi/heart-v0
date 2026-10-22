@@ -1,0 +1,74 @@
+{
+  "asset": "Heart_04_CardiacLooping",
+  "status": "draft_not_installed",
+  "newLiningParts": [
+    {
+      "id": "Endocardium_ArterialBranch_R_Collar",
+      "coveredSourceFaces": {
+        "ArterialBranch_L": 120,
+        "Endocardium_TruncusArteriosus_Posterior": 1,
+        "Myocardium_TruncusArteriosus_Posterior": 8
+      },
+      "coveredAreaSquareMetres": 8.894825898486669e-05,
+      "watertight": true,
+      "volumeCubicMetres": 7.114255001533748e-09
+    },
+    {
+      "id": "Endocardium_VenousInflow_R_Collar",
+      "coveredSourceFaces": {
+        "CardiacJelly_SinusVenosus_Anterior": 21,
+        "CardiacJelly_SinusVenosus_Posterior": 45,
+        "Endocardium_SinusVenosus_Anterior": 20,
+        "Endocardium_SinusVenosus_Posterior": 38,
+        "Myocardium_SinusVenosus_Anterior": 16,
+        "Myocardium_SinusVenosus_Posterior": 146,
+        "VenousInflow_L": 81
+      },
+      "coveredAreaSquareMetres": 0.0003289937888809047,
+      "watertight": true,
+      "volumeCubicMetres": 2.6313552054429738e-08
+    },
+    {
+      "id": "Endocardium_ArterialBranch_L_Collar",
+      "coveredSourceFaces": {
+        "ArterialBranch_R": 120
+      },
+      "coveredAreaSquareMetres": 8.893868762009649e-05,
+      "watertight": true,
+      "volumeCubicMetres": 7.115609289330831e-09
+    },
+    {
+      "id": "Endocardium_VenousInflow_L_Collar",
+      "coveredSourceFaces": {
+        "CardiacJelly_SinusVenosus_Anterior": 13,
+        "CardiacJelly_SinusVenosus_Posterior": 41,
+        "Endocardium_SinusVenosus_Anterior": 19,
+        "Endocardium_SinusVenosus_Posterior": 37,
+        "Myocardium_SinusVenosus_Anterior": 9,
+        "Myocardium_SinusVenosus_Posterior": 46,
+        "VenousInflow_R": 80
+      },
+      "coveredAreaSquareMetres": 0.00018180169607630303,
+      "watertight": true,
+      "volumeCubicMetres": 1.4538875842771463e-08
+    }
+  ],
+  "liningThicknessMetres": 8e-05,
+  "source": "../looping-junctions/Heart_04_CardiacLooping.blend",
+  "newLiningClearance": {
+    "probes": 3400,
+    "blocked": 0
+  },
+  "remainingBlockers": [
+    "Patches cover detected bore-wall faces only; junction-to-chamber lining seam continuity still requires review.",
+    "Vessel walls away from collars are not yet resolved into separate endothelial and supporting layers.",
+    "Whole-heart geometry is not matched to a validated Carnegie-stage reconstruction.",
+    "Visual CS11 comparison identifies global outflow and chamber-layout mismatch; local patches do not resolve this."
+  ],
+  "exportChecks": {
+    "meshes": 44,
+    "passed": true
+  },
+  "usdzSHA256": "35f41f4d4bc2d21ea6c604154491e0a4513a0ba2923d81eec5fdb9db4079a92d",
+  "referenceComparison": "../../anatomy-review/cs11-reference-comparison.md"
+}

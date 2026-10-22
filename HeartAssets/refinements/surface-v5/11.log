@@ -1,0 +1,11 @@
+00:00.698  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_11_VentricularSeptalDefect/before/Heart_11_VentricularSeptalDefect.blend"
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/tools/update_installed_surfaces.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:
+00:07.895  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_11_VentricularSeptalDefect/Heart_11_VentricularSeptalDefect_assembled.png'
+00:14.403  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_11_VentricularSeptalDefect/Heart_11_VentricularSeptalDefect_layers.png'
+Info: Saved as "Heart_11_VentricularSeptalDefect.blend"
+SURFACE UPDATE INSTALLED Heart_11_VentricularSeptalDefect
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_11_VentricularSeptalDefect/Heart_11_VentricularSeptalDefect.usdz' took 159.93 ms
+
+Blender quit

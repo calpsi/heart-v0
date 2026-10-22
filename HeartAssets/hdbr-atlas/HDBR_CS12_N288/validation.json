@@ -1,0 +1,44 @@
+{
+  "asset": "HDBR_CS12_N288",
+  "passed": true,
+  "sourceFile": "CS12-N288-heart.glb",
+  "sourceSHA256": "5593a21cbcae1cb2d9f98b31ad24049b3f7b19307736c8bf37b99a573965e5ca",
+  "parts": [
+    {
+      "id": "CS12_N288_arches",
+      "source": "N288_arches",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 39550
+    },
+    {
+      "id": "CS12_N288_atrium",
+      "source": "N288_atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 39544
+    },
+    {
+      "id": "CS12_N288_left_ventricle",
+      "source": "N288_left_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 33942
+    },
+    {
+      "id": "CS12_N288_OFT",
+      "source": "N288_OFT",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 26924
+    },
+    {
+      "id": "CS12_N288_right_ventricle",
+      "source": "N288_right_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 21330
+    }
+  ],
+  "exportedMeshes": 5,
+  "uniformDisplayScale": 0.0002123156694963976,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "c4b6b95593c66463105959207f43f85a7241609107cacbadfb7dfbaeb3607efd"
+}

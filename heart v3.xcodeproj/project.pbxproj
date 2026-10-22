@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+        BEE100000000000000000001 = {isa = PBXFileSystemSynchronizedRootGroup; path = HeartV3UITests; sourceTree = "<group>"; };
+        BEE100000000000000000002 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HeartV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        BEE100000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        BEE100000000000000000004 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        BEE100000000000000000005 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        BEE100000000000000000006 = {isa = PBXContainerItemProxy; containerPortal = 2A78F4D1305276D900CDA6AB; proxyType = 1; remoteGlobalIDString = 2A78F4D8305276D900CDA6AB; remoteInfo = "heart v3"; };
+        BEE100000000000000000007 = {isa = PBXTargetDependency; target = 2A78F4D8305276D900CDA6AB; targetProxy = BEE100000000000000000006; };
+        BEE100000000000000000008 = {isa = PBXNativeTarget; buildConfigurationList = BEE100000000000000000009; buildPhases = (BEE100000000000000000003, BEE100000000000000000004, BEE100000000000000000005); buildRules = (); dependencies = (BEE100000000000000000007); fileSystemSynchronizedGroups = (BEE100000000000000000001); name = HeartV3UITests; productName = HeartV3UITests; productReference = BEE100000000000000000002; productType = "com.apple.product-type.bundle.ui-testing"; };
+        BEE100000000000000000009 = {isa = XCConfigurationList; buildConfigurations = (BEE10000000000000000000A, BEE10000000000000000000B); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        BEE10000000000000000000A = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = phil.heart-v3.ui-tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = xros; SUPPORTED_PLATFORMS = "xros xrsimulator"; TARGETED_DEVICE_FAMILY = 7; TEST_TARGET_NAME = "heart v3"; SWIFT_VERSION = 5.0; XROS_DEPLOYMENT_TARGET = 26.5; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = 5BZMWHTZSA; }; name = Debug; };
+        BEE10000000000000000000B = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = phil.heart-v3.ui-tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = xros; SUPPORTED_PLATFORMS = "xros xrsimulator"; TARGETED_DEVICE_FAMILY = 7; TEST_TARGET_NAME = "heart v3"; SWIFT_VERSION = 5.0; XROS_DEPLOYMENT_TARGET = 26.5; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = 5BZMWHTZSA; }; name = Release; };
+
+
 /* Begin PBXBuildFile section */
 		2A78F4DF305276D900CDA6AB /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2A78F4DE305276D900CDA6AB /* RealityKitContent */; };
 /* End PBXBuildFile section */
@@ -51,6 +64,7 @@
 		2A78F4D0305276D900CDA6AB = {
 			isa = PBXGroup;
 			children = (
+				BEE100000000000000000001 /* HeartV3UITests */,
 				2A78F4DB305276D900CDA6AB /* heart v3 */,
 				2A78F4DC305276D900CDA6AB /* Packages */,
 				2A78F4DA305276D900CDA6AB /* Products */,
@@ -61,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				2A78F4D9305276D900CDA6AB /* heart v3.app */,
+                BEE100000000000000000002 /* HeartV3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,11 +138,15 @@
 			);
 			mainGroup = 2A78F4D0305276D900CDA6AB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F618B95AEDD14C6BA083F201 /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2A78F4DA305276D900CDA6AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+                BEE100000000000000000008 /* HeartV3UITests */,
 				2A78F4D8305276D900CDA6AB /* heart v3 */,
 			);
 		};
@@ -356,9 +375,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F618B95AEDD14C6BA083F201 /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		2A78F4DE305276D900CDA6AB /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = F618B95AEDD14C6BA083F201 /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */;
 			productName = RealityKitContent;
 		};
 /* End XCSwiftPackageProductDependency section */

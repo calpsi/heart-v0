@@ -1,0 +1,691 @@
+[
+  {
+    "id": "HDBR_CS11_N662",
+    "lesson": "Carnegie stage 11 \u00b7 N662",
+    "stageIndex": 3,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS11_N662_aorta",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS11_N662_atria",
+        "label": "Common atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0275,
+          0.04763,
+          0.025
+        ]
+      },
+      {
+        "id": "CS11_N662_left_ventricle",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          0.04763,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS11_N662_outflow_tract",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.055,
+          0.0,
+          0.025
+        ]
+      },
+      {
+        "id": "CS11_N662_right_ventricle",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          -0.04763,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS11_N662_veins",
+        "label": "Venous channels",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0275,
+          -0.04763,
+          0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS11",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS11 \u00b7 HDBR specimen N662 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "No separately segmented AV canal wall; do not teach its thickness from this model. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS12_N288",
+    "lesson": "Carnegie stage 12 \u00b7 N288",
+    "stageIndex": 3,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS12_N288_arches",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS12_N288_atrium",
+        "label": "Common atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.017,
+          0.05231,
+          0.025
+        ]
+      },
+      {
+        "id": "CS12_N288_left_ventricle",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          0.03233,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS12_N288_OFT",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          -0.03233,
+          0.025
+        ]
+      },
+      {
+        "id": "CS12_N288_right_ventricle",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.017,
+          -0.05231,
+          -0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS12",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS12 \u00b7 HDBR specimen N288 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "Venous channels are not a separate region in this dataset; their omission is not biological absence. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS14_N925",
+    "lesson": "Carnegie stage 14 \u00b7 N925",
+    "stageIndex": 4,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS14_N925_vena_cava_sm_dec",
+        "label": "Venous channels",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_aorta_sm_dec",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.04213,
+          0.03535,
+          0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_left_atrium_sm_dec",
+        "label": "Left atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.00955,
+          0.05416,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_left_ventricle_sm_dec",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          0.04763,
+          0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_oft_sm_dec",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.05168,
+          0.01881,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_outside_tissue_sm_dec",
+        "label": "Surrounding tissue (source region)",
+        "category": "context",
+        "separationOffset": [
+          -0.05168,
+          -0.01881,
+          0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_right_ventricle_sm_dec",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          -0.04763,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_right_atrium_sm_dec",
+        "label": "Right atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.00955,
+          -0.05416,
+          0.025
+        ]
+      },
+      {
+        "id": "CS14_N925_sinus_venosus_sm_dec",
+        "label": "Systemic venous sinus",
+        "category": "anatomy",
+        "separationOffset": [
+          0.04213,
+          -0.03535,
+          -0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS14",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS14 \u00b7 HDBR specimen N925 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "Surrounding tissue may hide cardiac regions. Atrial labels do not establish complete septal wall anatomy. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS16_N1815",
+    "lesson": "Carnegie stage 16 \u00b7 N1815",
+    "stageIndex": 5,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS16_aorta",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS16_epicardium",
+        "label": "Epicardium (source region)",
+        "category": "context",
+        "separationOffset": [
+          0.03889,
+          0.03889,
+          0.025
+        ]
+      },
+      {
+        "id": "CS16_left_atrium",
+        "label": "Left atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0,
+          0.055,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS16_left_vent",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.03889,
+          0.03889,
+          0.025
+        ]
+      },
+      {
+        "id": "CS16_oft",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS16_right_atrium2",
+        "label": "Right atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.03889,
+          -0.03889,
+          0.025
+        ]
+      },
+      {
+        "id": "CS16_right_vent",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0,
+          -0.055,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS16_sinus_venosus_vena_cava2",
+        "label": "Systemic venous sinus and vena cava",
+        "category": "anatomy",
+        "separationOffset": [
+          0.03889,
+          -0.03889,
+          0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS16",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS16 \u00b7 HDBR specimen N1815 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "An epicardial source region is present, but complete myocardial/endocardial wall layers are not. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS17_N1699",
+    "lesson": "Carnegie stage 17 \u00b7 N1699",
+    "stageIndex": 6,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS17_cs17_N1699_aorta_version2",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_ductus_arteriosus",
+        "label": "Ductus arteriosus",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0445,
+          0.03233,
+          0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_epicardium",
+        "label": "Epicardium (source region)",
+        "category": "context",
+        "separationOffset": [
+          0.017,
+          0.05231,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_left_atrium",
+        "label": "Left atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.017,
+          0.05231,
+          0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_left_ventricle",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          0.03233,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_oft",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.055,
+          0.0,
+          0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_pulmonary_version2",
+        "label": "Pulmonary trunk",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          -0.03233,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_right_atrium",
+        "label": "Right atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.017,
+          -0.05231,
+          0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_right_ventricle",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.017,
+          -0.05231,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS17_cs17_N1699_veins",
+        "label": "Venous channels",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0445,
+          -0.03233,
+          0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS17",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS17 \u00b7 HDBR specimen N1699 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "Separate ductal and pulmonary regions are present; valve leaflets and fine septal interfaces remain unsegmented. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS18_N1645",
+    "lesson": "Carnegie stage 18 \u00b7 N1645",
+    "stageIndex": 6,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS18_cs18_N1645_aorta",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_ductus_arteriosus",
+        "label": "Ductus arteriosus",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0445,
+          0.03233,
+          0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_epicardium",
+        "label": "Epicardium (source region)",
+        "category": "context",
+        "separationOffset": [
+          0.017,
+          0.05231,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_left_atrium",
+        "label": "Left atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.017,
+          0.05231,
+          0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_left_ventricle",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          0.03233,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_outflow_tract",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.055,
+          0.0,
+          0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_pulmonary",
+        "label": "Pulmonary trunk",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0445,
+          -0.03233,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_right_atrium",
+        "label": "Right atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.017,
+          -0.05231,
+          0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_right_ventricle",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.017,
+          -0.05231,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS18_cs18_N1645_veins",
+        "label": "Venous channels",
+        "category": "anatomy",
+        "separationOffset": [
+          0.0445,
+          -0.03233,
+          0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS18",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS18 \u00b7 HDBR specimen N1645 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "Useful for outflow/arterial relationships; it does not separately demonstrate all conal cushions or valve primordia. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  },
+  {
+    "id": "HDBR_CS20_N913",
+    "lesson": "Carnegie stage 20 \u00b7 N913",
+    "stageIndex": 6,
+    "category": "reference",
+    "parts": [
+      {
+        "id": "CS20_CS20_913_left_ventricle",
+        "label": "Left ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.055,
+          0.0,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_aorta",
+        "label": "Aorta and pharyngeal arch arteries",
+        "category": "anatomy",
+        "separationOffset": [
+          0.04213,
+          0.03535,
+          0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_ductus_arteriosus",
+        "label": "Ductus arteriosus",
+        "category": "anatomy",
+        "separationOffset": [
+          0.00955,
+          0.05416,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_left_atrium",
+        "label": "Left atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          0.04763,
+          0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_outflow",
+        "label": "Outflow tract",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.05168,
+          0.01881,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_pulmonary",
+        "label": "Pulmonary trunk",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.05168,
+          -0.01881,
+          0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_right_atrium",
+        "label": "Right atrial region",
+        "category": "anatomy",
+        "separationOffset": [
+          -0.0275,
+          -0.04763,
+          -0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_right_ventricle_surf",
+        "label": "Right ventricular region",
+        "category": "anatomy",
+        "separationOffset": [
+          0.00955,
+          -0.05416,
+          0.025
+        ]
+      },
+      {
+        "id": "CS20_CS20_N913_veins",
+        "label": "Venous channels",
+        "category": "anatomy",
+        "separationOffset": [
+          0.04213,
+          -0.03535,
+          -0.025
+        ]
+      }
+    ],
+    "previewImage": "ReferenceCS20",
+    "defaultYaw": 0.35,
+    "defaultPitch": 0.12,
+    "presentationNote": "CS20 \u00b7 HDBR specimen N913 \u00b7 chamber regions and vessel lumens",
+    "anatomyReview": {
+      "scope": "Source-stage regional reconstruction",
+      "supports": "Preserves the labelled specimen regions and their spatial relationships.",
+      "limitations": "Later-stage geometry is not an adult-sized heart. Missing fine structures and source segmentation limits still apply. Region colours are identifiers, not histological tissue layers. Physical display scale is enlarged; source axes are not independently registered."
+    }
+  }
+]

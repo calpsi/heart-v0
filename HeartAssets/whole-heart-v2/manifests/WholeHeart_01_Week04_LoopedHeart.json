@@ -1,0 +1,64 @@
+{
+  "asset": "WholeHeart_01_Week04_LoopedHeart",
+  "stage": 1,
+  "age_basis": "approximate post-fertilization age",
+  "parts": [
+    {
+      "id": "VentricularMyocardium",
+      "label": "Ventricular myocardium with leftward apex"
+    },
+    {
+      "id": "CommonAtrium",
+      "label": "Common atrium / early right and left expansions"
+    },
+    {
+      "id": "CommonOutflow",
+      "label": "Bulbus / common outflow and aortic sac branches"
+    },
+    {
+      "id": "SinusVenosusAndHorns",
+      "label": "Sinus venosus and paired venous inflow stumps"
+    }
+  ],
+  "checks": [
+    {
+      "part": "VentricularMyocardium",
+      "vertices": 54916,
+      "triangles": 109828,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00047418075016190665
+    },
+    {
+      "part": "CommonAtrium",
+      "vertices": 23780,
+      "triangles": 47556,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00016175000833581118
+    },
+    {
+      "part": "CommonOutflow",
+      "vertices": 69706,
+      "triangles": 139416,
+      "nonmanifold_edges": 0,
+      "signed_volume": 3.341478945740704e-05
+    },
+    {
+      "part": "SinusVenosusAndHorns",
+      "vertices": 49361,
+      "triangles": 98834,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.825136042739347e-05
+    }
+  ],
+  "scope": "Whole exterior teaching model. Vessel lumens are hollow; chamber wall volumes are exterior sculptures, not a reconstructed internal septal anatomy. Use the complementary partitioning-v1 cutaways for interior teaching.",
+  "style": "Original PBR surface maps and studio lighting; Tripo references inspected, not re-used as anatomy",
+  "units": "metres",
+  "usd_axes": "Y-up, +X anatomical left, +Z anterior",
+  "limitations": [
+    "Illustrative reconstruction; not specimen segmented or clinically validated",
+    "Truncated vessels; body circulation is not modeled",
+    "Identification colors are not literal fetal oxygen saturation",
+    "Independent vessel assemblies overlap at anatomical attachments",
+    "No animation or growth rig"
+  ]
+}

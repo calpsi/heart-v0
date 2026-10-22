@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_11_VentricularSeptalDefect",
+  "passed": true,
+  "parts": 22,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "24f7f1a15fa0795b48d223ff0e0324e5b87c88fca11528426e0fb64c600a1dce",
+  "anatomicallyValidated": false
+}

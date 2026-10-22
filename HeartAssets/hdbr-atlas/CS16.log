@@ -1,0 +1,18 @@
+16:55:28 | INFO: Data are loaded, start creating Blender stuff
+16:55:28 | INFO: Blender create Mesh node Cube
+16:55:28 | INFO: Blender create Mesh node aorta
+16:55:28 | INFO: Blender create Mesh node epicardium
+16:55:28 | INFO: Blender create Mesh node left-atrium
+16:55:28 | INFO: Blender create Mesh node left-vent
+16:55:28 | INFO: Blender create Mesh node oft
+16:55:28 | INFO: Blender create Mesh node right-atrium2.
+16:55:28 | INFO: Blender create Mesh node right-vent
+16:55:28 | INFO: Blender create Mesh node sinus-venosus-vena-cava2
+16:55:28 | INFO: glTF import finished in 0.19s
+00:04.580  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS16_N1815/preview.png'
+Info: Saved as "HDBR_CS16_N1815.blend"
+HDBR STAGED MODEL COMPLETE HDBR_CS16_N1815 8
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS16_N1815/HDBR_CS16_N1815.usdz' took 83.14 ms
+
+Blender quit

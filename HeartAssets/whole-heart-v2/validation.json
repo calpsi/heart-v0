@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "scope": "Manifold positive-volume tissue meshes; GLB hierarchy and embedded PBR maps; USDZ archive; FBX presence; front/rear preview transparency. Not expert anatomical or physiological validation.",
+  "assets": [
+    {
+      "asset": "WholeHeart_01_Week04_LoopedHeart",
+      "parts": 4,
+      "triangles": 395634,
+      "glb_MB": 18.5,
+      "status": "passed"
+    },
+    {
+      "asset": "WholeHeart_02_Weeks05-06_Remodeling",
+      "parts": 6,
+      "triangles": 498144,
+      "glb_MB": 20.9,
+      "status": "passed"
+    },
+    {
+      "asset": "WholeHeart_03_Week07_SeparatedOutflows",
+      "parts": 12,
+      "triangles": 735590,
+      "glb_MB": 26.9,
+      "status": "passed"
+    },
+    {
+      "asset": "WholeHeart_04_Week08_FourChamberExterior",
+      "parts": 12,
+      "triangles": 739006,
+      "glb_MB": 26.9,
+      "status": "passed"
+    }
+  ]
+}

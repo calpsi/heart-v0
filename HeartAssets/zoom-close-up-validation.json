@@ -1,0 +1,203 @@
+{
+  "assets": [
+    {
+      "asset": "Heart_01_CardiogenicRegion",
+      "closeUpZoomsTested": 3,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 5,
+      "passed": true,
+      "separationFramesTested": 5,
+      "statesTested": 1,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_02_PairedHeartTubes",
+      "closeUpZoomsTested": 3,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 13,
+      "passed": true,
+      "separationFramesTested": 5,
+      "statesTested": 1,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_03_PrimitiveHeartTube",
+      "closeUpZoomsTested": 3,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 36,
+      "passed": true,
+      "separationFramesTested": 5,
+      "statesTested": 1,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_04_CardiacLooping",
+      "closeUpZoomsTested": 3,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 40,
+      "passed": true,
+      "separationFramesTested": 5,
+      "statesTested": 1,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_05_AtrialSeptation",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 9,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_06_EndocardialCushions",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 8,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_07_VentricularSeptation",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 19,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_08_OutflowSeptation",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 20,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_09_ValvularRefinement",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 51,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_10_CirculatoryTransition",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 23,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_11_VentricularSeptalDefect",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 22,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_12_AtrialSeptalDefect",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 19,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    },
+    {
+      "asset": "Heart_13_TetralogyOfFallot",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 4,
+      "labelTargetsTested": 4,
+      "lessonActionsTested": 4,
+      "parts": 28,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 4
+    },
+    {
+      "asset": "Heart_14_TranspositionGreatArteries",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 4,
+      "labelTargetsTested": 4,
+      "lessonActionsTested": 4,
+      "parts": 24,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 4
+    },
+    {
+      "asset": "Heart_15_AorticCoarctation",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 4,
+      "labelTargetsTested": 4,
+      "lessonActionsTested": 4,
+      "parts": 17,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 4
+    },
+    {
+      "asset": "Heart_16_PatentDuctusArteriosus",
+      "closeUpZoomsTested": 6,
+      "guidedStepsTested": 3,
+      "labelTargetsTested": 3,
+      "lessonActionsTested": 3,
+      "parts": 21,
+      "passed": true,
+      "separationFramesTested": 10,
+      "statesTested": 2,
+      "volumetricContextsTested": 3
+    }
+  ],
+  "passed": true,
+  "separationTransition": {
+    "interruptionAndReversal": true,
+    "passed": true,
+    "reducedMotion": true
+  },
+  "validationScene": "live RealityView"
+}

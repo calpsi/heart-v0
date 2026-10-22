@@ -1,0 +1,52 @@
+{
+  "id": "HDBR_CS16_N1815",
+  "lesson": "Carnegie stage 16 \u00b7 N1815",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS16_aorta",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_epicardium",
+      "label": "Epicardium (source region)",
+      "category": "context"
+    },
+    {
+      "id": "CS16_left_atrium",
+      "label": "Left atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_left_vent",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_oft",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_right_atrium2",
+      "label": "Right atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_right_vent",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS16_sinus_venosus_vena_cava2",
+      "label": "Systemic venous sinus and vena cava",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS16",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS16 \u00b7 HDBR specimen N1815 \u00b7 chamber regions and vessel lumens"
+}

@@ -1,0 +1,62 @@
+{
+  "asset": "Heart_01_CardiogenicRegion",
+  "status": "original_educational_refinement",
+  "batch": 1,
+  "units": "metres",
+  "display_scale": "enlarged teaching model; not embryo life size",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +Z cranial, -Y viewing side; USD +Y cranial, +Z viewing side. L/R IDs denote anatomical sides in dorsal-style schematic view.",
+  "parts": [
+    {
+      "id": "Endoderm_Context",
+      "label": "Endoderm (schematic context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "NeuralPlate_Context",
+      "label": "Developing neural plate (orientation context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "CardiogenicCrescent",
+      "label": "Cardiogenic crescent / primary heart field",
+      "category": "anatomy",
+      "parent": "Tissues"
+    },
+    {
+      "id": "AngioblasticCord_L",
+      "label": "Left angioblastic cord (enlarged)",
+      "category": "anatomy",
+      "parent": "VascularPrecursors"
+    },
+    {
+      "id": "AngioblasticCord_R",
+      "label": "Right angioblastic cord (enlarged)",
+      "category": "anatomy",
+      "parent": "VascularPrecursors"
+    }
+  ],
+  "triangles": 49828,
+  "revision": "tissue-v4",
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and subtle fibers",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Rebuilt early tissue volumes and folded context"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Curved cardiogenic tissue field with continuous saddle depth across neighbouring tissues",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ],
+  "surfaceRevision": "surface-v5",
+  "surfaceChanges": {
+    "normalReliefMultiplier": 0.45,
+    "roughnessOffset": 0.06,
+    "geometryUnchanged": true,
+    "anatomicalValidation": "incomplete"
+  }
+}

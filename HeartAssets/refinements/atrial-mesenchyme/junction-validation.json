@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "contacts": [
+    {
+      "a": "MesenchymalCap_Early",
+      "b": "SeptumPrimum_Early",
+      "intersectingFaces": 369
+    },
+    {
+      "a": "DorsalMesenchymalProtrusion_Early",
+      "b": "MesenchymalCap_Early",
+      "intersectingFaces": 180
+    },
+    {
+      "a": "DorsalMesenchymalProtrusion_Early",
+      "b": "CushionAnchor_Dorsal",
+      "intersectingFaces": 314
+    },
+    {
+      "a": "DorsalMesenchymalProtrusion_Early",
+      "b": "AtrialWall_Posterior",
+      "intersectingFaces": 397
+    },
+    {
+      "a": "MesenchymalComplex_Later",
+      "b": "DorsalContribution_Later",
+      "intersectingFaces": 256
+    }
+  ],
+  "earlyOpeningCrossingProbes": 9,
+  "scope": "Local contact and opening checks only; enlarged schematic proportions not validated against histology"
+}

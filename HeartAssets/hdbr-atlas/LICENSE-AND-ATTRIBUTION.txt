@@ -1,0 +1,19 @@
+HDBR Atlas embryonic heart reconstructions
+
+Source: HDBR Atlas (https://hdbratlas.org)
+Models: https://hdbratlas.org/interactive/heart.html
+Terms: https://hdbratlas.org/terms.html
+Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The seven HDBR_CS* USDZ assets and their derived previews are adapted from HDBR Atlas and distributed under CC BY-NC-SA 4.0. This notice does not license the application's code or unrelated assets. Non-commercial educational use only.
+
+Changes: converted GLB to USDZ in Blender, uniformly enlarged and centered for display, assigned readable region names and selection IDs, simplified an equivalent constant-colour shader for RealityKit compatibility, removed non-anatomical Cube helper objects, and generated preview images. Source mesh vertex coordinates and region colours retained. Original physical scale is not represented. No endorsement by HDBR is implied.
+
+These models represent segmented anatomical regions, including chamber regions and vessel lumens. They do not provide complete tissue layers or every embryonic structure. Missing structures must not be interpreted as absent in the embryo. Carnegie stage and specimen IDs are retained; stage groups in the app are navigation aids, not exact calendar-age equivalences.
+
+Requested references:
+Kerwin et al. (2010). The HUDSEN Atlas: a three-dimensional (3D) spatial framework for studying gene expression in the developing human brain. Journal of Anatomy 217(4):289–299. https://doi.org/10.1111/j.1469-7580.2010.01290.x
+Gerrelli et al. (2015). Enabling research with human embryonic and fetal tissue resources. Development 142:3073–3076. https://doi.org/10.1242/dev.122820
+
+Source files and SHA-256 provenance are recorded in HDBR-Sources.json.

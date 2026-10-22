@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_09_ValvularRefinement",
+  "passed": true,
+  "parts": 51,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "3c46d98764d4dd98878aaa57524e5dc283b5f275f1be7a1a77d5cc8c3c60a436",
+  "anatomicallyValidated": false
+}

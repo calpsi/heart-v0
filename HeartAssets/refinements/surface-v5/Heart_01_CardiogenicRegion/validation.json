@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_01_CardiogenicRegion",
+  "passed": true,
+  "parts": 5,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "9d68d63db3e46d676e8ca16242310d92217822008387eb177f1fd154035cd380",
+  "anatomicallyValidated": false
+}

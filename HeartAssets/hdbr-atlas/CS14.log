@@ -1,0 +1,19 @@
+16:55:23 | INFO: Data are loaded, start creating Blender stuff
+16:55:23 | INFO: Blender create Mesh node Cube
+16:55:23 | INFO: Blender create Mesh node N925-vena_cava_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_aorta_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_left-atrium_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_left_ventricle_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_oft_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_outside_tissue_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_right-ventricle_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_right_atrium_sm_dec
+16:55:23 | INFO: Blender create Mesh node N925_sinus_venosus_sm_dec
+16:55:23 | INFO: glTF import finished in 0.22s
+00:04.964  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS14_N925/preview.png'
+Info: Saved as "HDBR_CS14_N925.blend"
+HDBR STAGED MODEL COMPLETE HDBR_CS14_N925 9
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS14_N925/HDBR_CS14_N925.usdz' took 93.58 ms
+
+Blender quit

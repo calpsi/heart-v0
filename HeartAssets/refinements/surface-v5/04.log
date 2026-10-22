@@ -1,0 +1,11 @@
+00:00.777  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_04_CardiacLooping/before/Heart_04_CardiacLooping.blend"
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/tools/update_installed_surfaces.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:
+00:07.329  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_04_CardiacLooping/Heart_04_CardiacLooping_assembled.png'
+00:13.418  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_04_CardiacLooping/Heart_04_CardiacLooping_layers.png'
+Info: Saved as "Heart_04_CardiacLooping.blend"
+SURFACE UPDATE INSTALLED Heart_04_CardiacLooping
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_04_CardiacLooping/Heart_04_CardiacLooping.usdz' took 390.50 ms
+
+Blender quit

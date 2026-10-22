@@ -1,0 +1,98 @@
+[
+  {
+    "asset": "Heart_01_CardiogenicRegion",
+    "sha256": "d0cf90f9b7fd0c99d4839b090c3e6a91b19fbdbd4965e1b8a455d25fca42e391",
+    "bytes": 8462049,
+    "parts": 5
+  },
+  {
+    "asset": "Heart_02_PairedHeartTubes",
+    "sha256": "93d2a19d59964b0e67397833832592f9bfbfc04f280ab26e8875e59279ff3d43",
+    "bytes": 20148982,
+    "parts": 13
+  },
+  {
+    "asset": "Heart_03_PrimitiveHeartTube",
+    "sha256": "dc0fa4c7ffb3c1ed8dd6ec559d2ebba2e5f49fe7a1cef0b13ca049fae165d743",
+    "bytes": 16587394,
+    "parts": 36
+  },
+  {
+    "asset": "Heart_04_CardiacLooping",
+    "sha256": "cc1704f35aa6d196c446e3e2e69b47bdb5d8513b4a731c07828688da87d3b430",
+    "bytes": 24369075,
+    "parts": 40
+  },
+  {
+    "asset": "Heart_05_AtrialSeptation",
+    "sha256": "5486d7dba0a6b56c9c05ac14f2e925ef894c1e83825927582249820367fef10b",
+    "bytes": 8565463,
+    "parts": 9
+  },
+  {
+    "asset": "Heart_06_EndocardialCushions",
+    "sha256": "4be32c945213d3833d74161885383cdea423669c6c61b102706dc6c4eeb5ef11",
+    "bytes": 7684946,
+    "parts": 8
+  },
+  {
+    "asset": "Heart_07_VentricularSeptation",
+    "sha256": "cac6ce169cec524beb9daeeeb7ffb5e4007f9de6c0dcff9db3ee8aa9ce29e6fd",
+    "bytes": 12541506,
+    "parts": 19
+  },
+  {
+    "asset": "Heart_08_OutflowSeptation",
+    "sha256": "37c6bb61fbb49fe3d574029eb80658fbe1bff34fe5bddd859b97d57e31853c62",
+    "bytes": 10228446,
+    "parts": 20
+  },
+  {
+    "asset": "Heart_09_ValvularRefinement",
+    "sha256": "e7ad26d6c32d6daacf3ac46012c8c42250530c1d10eec742481264c4fd81de06",
+    "bytes": 10141359,
+    "parts": 51
+  },
+  {
+    "asset": "Heart_10_CirculatoryTransition",
+    "sha256": "569af15fb9ccc257c08c7dbd81288f93d2977e490986f0f4e0f21b56d56c4f49",
+    "bytes": 10857802,
+    "parts": 23
+  },
+  {
+    "asset": "Heart_11_VentricularSeptalDefect",
+    "sha256": "afee56c7f19936d221fc7f03d42ba16b858f58ca1ca52279884dea5d8af6c502",
+    "bytes": 12880419,
+    "parts": 22
+  },
+  {
+    "asset": "Heart_12_AtrialSeptalDefect",
+    "sha256": "78ee57bf8e3fbfbf2f57e42da536a0b7f3ed25116554aff40e6a045528ddfab1",
+    "bytes": 8852250,
+    "parts": 19
+  },
+  {
+    "asset": "Heart_13_TetralogyOfFallot",
+    "sha256": "56f8c4aefb1f1fc63c96f71611ce1c4b85062832b9742d91aecb3fe36dad025a",
+    "bytes": 10362155,
+    "parts": 28
+  },
+  {
+    "asset": "Heart_14_TranspositionGreatArteries",
+    "sha256": "e36bde99680b44e01fac7e48f558eb3303ecc7e9c6d6526dbfa0e4dbc21a1faa",
+    "bytes": 12038335,
+    "parts": 24
+  },
+  {
+    "asset": "Heart_15_AorticCoarctation",
+    "sha256": "670435f0c2a62ea6593feb92b580ef438dcea0c6914287064a40e87b843e7105",
+    "bytes": 9153621,
+    "parts": 17
+  },
+  {
+    "asset": "Heart_16_PatentDuctusArteriosus",
+    "sha256": "d50671a53599aa793cbc6a91ac7b5e4df9569dd67d9a525b677dfce5fe2b8c50",
+    "bytes": 9778592,
+    "parts": 21
+  }
+]

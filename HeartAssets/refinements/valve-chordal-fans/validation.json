@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "asset": "Heart_09_ValvularRefinement",
+  "changedParts": [
+    {
+      "id": "MitralChord_1_1",
+      "muscle": "MitralPapillary_1",
+      "leaflet": "Mitral_Anterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MitralChord_1_2",
+      "muscle": "MitralPapillary_2",
+      "leaflet": "Mitral_Anterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MitralChord_2_1",
+      "muscle": "MitralPapillary_2",
+      "leaflet": "Mitral_Posterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MitralChord_2_2",
+      "muscle": "MitralPapillary_1",
+      "leaflet": "Mitral_Posterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_1_1",
+      "muscle": "TricuspidPapillary_1",
+      "leaflet": "Tricuspid_Anterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_1_2",
+      "muscle": "TricuspidPapillary_2",
+      "leaflet": "Tricuspid_Anterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_2_1",
+      "muscle": "TricuspidPapillary_2",
+      "leaflet": "Tricuspid_Posterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_2_2",
+      "muscle": "TricuspidPapillary_3",
+      "leaflet": "Tricuspid_Posterior_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_3_1",
+      "muscle": "TricuspidPapillary_3",
+      "leaflet": "Tricuspid_Septal_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_3_2",
+      "muscle": "TricuspidPapillary_1",
+      "leaflet": "Tricuspid_Septal_Refined",
+      "branches": 3,
+      "muscleContact": true,
+      "leafletContact": true,
+      "closedPositiveVolume": true
+    }
+  ],
+  "parts": 51,
+  "usdzSHA256": "0295908aefb92d87cc53b106dc25d978f2caa5c87d1e479ee838bb343a63413a",
+  "source": "https://www.ahajournals.org/doi/pdf/10.1161/01.cir.46.1.138",
+  "limitations": [
+    "Illustrative branch count and thickness, not specimen measurements",
+    "Isolated valve stations, not an intact stage-specific heart",
+    "Ventricular and leaflet shape remain simplified"
+  ]
+}

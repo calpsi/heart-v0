@@ -1,0 +1,1268 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath /private/tmp/heart-v3-asset-build -parallel-testing-enabled NO -collect-test-diagnostics never test "-only-testing:HeartV3UITests/HeartV3InteractionTests/testTransitionClarityAndLearningProgress" -resultBundlePath /private/tmp/heart-clarity-current.xcresult
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+Writing result bundle at path:
+	/private/tmp/heart-clarity-current.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'HeartV3UITests' in project 'heart v3'
+        ➜ Explicit dependency on target 'heart v3' in project 'heart v3'
+    Target 'heart v3' in project 'heart v3'
+        ➜ Explicit dependency on target 'RealityKitContent-product' in project 'RealityKitContent'
+    Target 'RealityKitContent-product' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 8f4f1fb80788d9ab2d6b9bf3182b996b
+Build description path: /tmp/heart-v3-asset-build/Build/Intermediates.noindex/XCBuildData/8f4f1fb80788d9ab2d6b9bf3182b996b.xcbuilddata
+CreateBuildDirectory /tmp/heart-v3-asset-build/ModuleCache.noindex
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/ModuleCache.noindex
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/CompilationCache.noindex
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/CompilationCache.noindex
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -o /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Intermediates.noindex
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Products
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Products
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-create-build-directory /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/ProductTypeInfoPlistAdditions.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyStaticMetadataFileList (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyMetadataFileList (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-target-headers.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibPath-normal-arm64.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibInstallName-normal-arm64.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftConstValuesFileList (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.LinkFileList (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.LinkFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/Entitlements-Simulated.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/RealityKitContent_RealityKitContent.DependencyStaticMetadataFileList (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/RealityKitContent_RealityKitContent.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/RealityKitContent_RealityKitContent.DependencyMetadataFileList (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/RealityKitContent_RealityKitContent.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/03ef2bf2057ff4b979a8789a3836cc4a.sb (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/03ef2bf2057ff4b979a8789a3836cc4a.sb
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.modulemap (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.modulemap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyStaticMetadataFileList (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyMetadataFileList (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_const_extract_protocols.json (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftConstValuesFileList (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.LinkFileList (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.LinkFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-OutputFileMap.json (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/resource_bundle_accessor.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/resource_bundle_accessor.swift
+
+Copy /tmp/heart-v3-asset-build/Build/Intermediates.noindex/GeneratedModuleMaps-xrsimulator/RealityKitContent.modulemap /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.modulemap (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.modulemap /tmp/heart-v3-asset-build/Build/Intermediates.noindex/GeneratedModuleMaps-xrsimulator
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftConstValuesFileList (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.LinkFileList (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.LinkFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyStaticMetadataFileList (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyMetadataFileList (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-target-headers.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap
+
+MkDir /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle
+
+MkDir /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+WriteAuxiliaryFile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/Entitlements-Simulated.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    write-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/Entitlements-Simulated.plist
+
+MkDir /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest
+
+RealityAssetsSchemaGen /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json -D SCRIPT_INPUT_FILE_1\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_7\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_OUTPUT_ANCESTOR_8\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_OUTPUT_ANCESTOR_9\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool create-schema --output-schema /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json
+
+RealityAssetsCompile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality -D SCRIPT_INPUT_FILE_0\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets -D SCRIPT_INPUT_FILE_1\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Products -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/03ef2bf2057ff4b979a8789a3836cc4a.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool compile --platform xrsimulator --deployment-target 26.0 -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets --schema-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform xrsimulator -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist
+
+SwiftDriver RealityKitContent normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RealityKitContent -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -enable-upcoming-feature MemberImportVisibility -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.0-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name realitykitcontent -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_const_extract_protocols.json -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stddef-1YYWCA5C57FOQ3CM77RAC89JP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-TJZ3A0VWTHFEM49H7XHVAPQL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/SwiftShims-2YJ60ZEEEVWNKX5DLG88W87N6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ptrauth-2T39I1WPLIRY9ADEZTK0KOLEQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdarg-7ZM1ES79DRHJV52BBINL9THM2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdbool-4YOLJ4O9YG6NJU9FM5MT13BYE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_AvailabilityInternal-3QSF89TENH0EBU8T5HEFGWX3T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_float-BOUMQ46OY2ZH3SP4R8XG4WW5M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ptrcheck-9P174EOURSHUSCQ115UU0NOWH.pcm
+
+RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation1-C1U62G1HRM7L7OAUSP1AK9KRA.pcm
+
+Touch /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/touch -c /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation2-O19RDMZ2DMCSL815Q14W4TB1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_limits-3L8P30Q7JQNESTNFFE0GIFORB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdint-EAPQ1RDE53I26EP36QOUUPVE0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/sys_types-8Q0E8ZSPKIEIAYD71UCM9EHDS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/string_h-AHNW9CCVS6OPD51RQ2J7MIVXP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation3-EKWGC3R33YHV9045ZQ93DLAG3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_inttypes-A341YBKY5STP3Z89Z5V02SYFS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Darwin-4W3QHUM24YY2HOEYBNE9EPJCV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ObjectiveC-EQM2XLS0UG1DFBOAGA4RGU40O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/os_object-C4ZAPUR1RVVN3PF5PPJM05HWB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/os_workgroup-6ZL1YY17YK0HOYJQZE0WTNGA6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Dispatch-7JXC3Z2E52L0E2PFXZP86X62D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/XPC-OECBFK9BKG10HN79G03TJDXG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreFoundation-CW53JDC2CTINRKA2DTPFERIQ0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CFNetwork-AMRTW3DG6YERIQN5JIAJYE2BW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Security-B8LW5RC2T2R4CKCFY4CC04CRH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Foundation-D0IW8YTCSFOREPIR3CUHVEEBO.pcm
+
+SwiftCompile normal arm64 Compiling\ resource_bundle_accessor.swift /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/resource_bundle_accessor.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftCompile normal arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/resource_bundle_accessor.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-SwiftPerFileCompile resource_bundle_accessor.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ RealityKitContent (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftCompile normal arm64 (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ RealityKitContent.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-SwiftPerFileCompile RealityKitContent.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for RealityKitContent (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftDriver\ Compilation\ Requirements RealityKitContent normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RealityKitContent -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -enable-upcoming-feature MemberImportVisibility -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.0-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name realitykitcontent -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_const_extract_protocols.json -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/heart-v3-asset-build/Build/Intermediates.noindex/GeneratedModuleMaps-xrsimulator/RealityKitContent-Swift.h /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-Swift.h (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-swiftHeaderTool -arch arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-Swift.h -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/GeneratedModuleMaps-xrsimulator/RealityKitContent-Swift.h
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.abi.json /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.abi.json (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.abi.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.swiftdoc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftdoc (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftdoc /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.swiftdoc
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.swiftmodule /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftsourceinfo (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+ProcessProductPackaging "" /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "5BZMWHTZSA.phil.heart-v3";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent
+
+ProcessProductPackagingDER /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent.der (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /usr/bin/derq query -f xml -i /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent.der --raw
+
+GenerateAssetSymbols /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets --compile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies --output-partial-info-plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device vision --minimum-deployment-target 26.5 --platform xros --bundle-identifier phil.heart-v3 --generate-swift-asset-symbols /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.document.warnings */
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/* com.apple.actool.compilation-results */
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+MkDir /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/unthinned (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/unthinned
+
+MkDir /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned
+
+CompileAssetCatalogVariant thinned /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets --compile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration RealityDevice14,1 --filter-for-device-os-version 27.0 --development-region en --target-device vision --minimum-deployment-target 26.5 --platform xros
+/* com.apple.actool.document.warnings */
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/* com.apple.actool.compilation-results */
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/assetcatalog_generated_info.plist_thinned
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ptrcheck-9I52XZSA87F1JXH3ST2W6OX15.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-D7XSDNFPLWIXLHO6GGO08D659.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ptrauth-AWW1HNDL53IGJ0ARA7D6SNCXA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdarg-2D9BI4RN4KPBIV2QPY213T652.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/GroupActivities-87RCEAHQNMKVE5V5R66RMWI6G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stddef-49KQ1UKFK12YAE672LYQ1RRDV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_AvailabilityInternal-BUWED51NYCUOVRWJA20VWFQZN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-110IMT4KDHRT9TQDEU31KUPTU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/RealityCoreTextureProcessing-7JI8C86PJHGW8KRNPRVMN5OHU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_float-L2T6B9PBPWR4ZUWKP76QE34X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/SwiftShims-272E1R6WEAKB725A97BN5W2RY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdbool-32VIB3MYKJBGYD8HW8YAQJK00.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ShaderGraph-CPV1K4OZXG8JIDN3PXTRV7TKU.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling RealityKitContent.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation1-EL537WE4WF3Y707OUM4CMYU5Z.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling resource_bundle_accessor.swift (in target 'RealityKitContent' from project 'RealityKitContent')
+
+SwiftDriver\ Compilation RealityKitContent normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name RealityKitContent -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -enable-upcoming-feature MemberImportVisibility -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.0-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name realitykitcontent -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_const_extract_protocols.json -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.o normal (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -filelist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.swiftmodule -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.o
+
+ExtractAppIntentsMetadata (in target 'RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name RealityKitContent --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.0 --bundle-identifier realitykitcontent.RealityKitContent --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.appintents --target-triple arm64-apple-xros26.0-simulator --binary-file /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent.o --dependency-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent_dependency_info.dat --stringsdata-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftFileList --metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyMetadataFileList --static-metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/RealityKitContent.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent-t.build/Objects-normal/arm64/RealityKitContent.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-22 08:56:49.024 appintentsmetadataprocessor[2029:18608] Starting appintentsmetadataprocessor export
+2026-10-22 08:56:49.096 appintentsmetadataprocessor[2029:18608] Extracted no relevant App Intents symbols, skipping writing output
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_limits-CEG1TCR9UH3UCEMJM4FLS11SI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation2-64U8ZV0BFIIGR4BDRM7717GI8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_tgmath-E4JJ9O696ASOPCODILGZOH9ZI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/string_h-B57OCBGEUAGJEPNQJKX2RLM4L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdint-3NIHZGOWEECSMD2OPSG0KVCR7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/sys_types-4G2LRDR9WPC20XI2P0WQEUF0U.pcm
+
+CpResource /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HeartReferenceModels.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartReferenceModels.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartReferenceModels.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+CpResource /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HeartModels.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartModels.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartModels.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+CpResource /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HDBR-Sources.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HDBR-Sources.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HDBR-Sources.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -install_name @rpath/heart\ v3.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib
+
+CpResource /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HDBR-Attribution.txt /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HDBR-Attribution.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HDBR-Attribution.txt /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+CompileSkybox /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HeartTissueStudio.skybox /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartTissueStudio.skybox (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool compile --platform xrsimulator --deployment-target 26.5 -o\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartTissueStudio.skybox
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-2WGT0SYCWYO557IFHICPD6CBI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_DarwinFoundation3-HUKH3IR3SR4NRD6Z3FJR0QNQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-B3B2OWSKJ7OOA5Q6QXJL9FCT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_Builtin_inttypes-1L8M1OFKNFSOWS2EOV1AZG0ON.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Darwin-1Q75WP1TRUNEZ57GXLT5C9K43.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/simd-8FN71AT05WC6LLMN4KE8OXP0U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ObjectiveC-3TO2YHM0Q9RGOHX17SYVDEHUX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/MachO-CDA4909H9UR6T9R7LDIDRPC12.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/os_object-D5KZQY8GDVHQLCX0CA4M8TI2J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/os_workgroup-1NEJFGFYI40B7MJ4F9UU3TUYC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Spatial-2N0G9RBET092OZI9P5G8MEH76.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Dispatch-DVQ6AJBCG2BIWAFXZAA430T6Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreFoundation-BPOHBFX27XBE1Z74EE23BBSLA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/XPC-1018O2D0JQ88GQQD6QS1E6PU1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/dnssd-73EGUTB4AYVQQOZPH73XBF849.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/os-AMWH2SI92M728HX8EHQK3HBUF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CFNetwork-5RD0JB1Q9OJS7KOTWZMTSNL2J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Security-DQWC8PHNUGR5QMV69YOIG575K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreGraphics-1U3V3XLOHVB76GCB94XKZP6VF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreAudioTypes-1HXAJI6DIZT9920BDVH38B094.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreAudio-4OPQZ5KZHM4QLCHKDI5LMMQTC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Foundation-ETHVOMP9PH0U27UOYCM4RPN4Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ImageIO-689BQ30HTZPREQWJ70CRJTA2H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreText-55D711CQIR9N6DBKV9EYMCSLB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/DataDetection-90LRRISN90LPL2CYTI2KV5K7M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/LocalAuthentication-DH1ZA3GEEBDR29LPJJF1PQT92.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/OSLog-16A13BYUIK69ZH0LO7IFU0RA5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreData-9JCXWDKS728XOIXAD5D787HAS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Network-6ERKHPC0HKALY5QX6IVENVTKA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/UIUtilities-70ZID9R364JV7POELFUT206SV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Symbols-ENKIVK4PHHRLWBPX6TCXMY2UH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-8HPNNQZQ102XIHBXJKWRREGAC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreTransferable-682KIB7QTAO1T3T7020KE0UXM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/_LocationEssentials-6KKD9N9ZXRE9OXK9LMC5SAK8T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/FileProvider-6UYA9JKZC2S2QEKDJWU9SP5OO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/AVRouting-DPS7NJPR8VIPA38I8Y7XVXE99.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Accessibility-D8ST3XWQ5QEK0NXA46W9KC83I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/OpenGLES-7V3F2C4J8SR5E2IDY9OLEXEPE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreMIDI-FB0AR0H6QWV4BW7G09NE4BFV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/IOSurface-PU27GWKXMMZ952ITIY3VVQ6X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreLocation-ELJI9IAM2DS2EX19G80V4CBPC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/UserNotifications-45YI662OXW77OVN655HMFYLKG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/Metal-3VFWEGF592P91L0AYJMMMOAYX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/AudioToolbox-83MFQKY8U8AZTUP8TKCTZQEYQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreMotion-B892BFOJ6ZM0KCNTFD880YI4I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CloudKit-EOLO3JHFDA35VTAMPXVJ0BFLW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreVideo-ATD7MODSUH5Z530TTADR0WO8C.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/RealityCoreTextureProcessing-1VQFTP5HENAZM.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/RealityCoreDeformation-30GRPS1XM2E8C.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ShaderGraph-3E1X0G3JW2R11.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/ARKit-66EPHL59Y2WYCHYTDVX75OJNU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreMedia-2KL9I32037P968ECTMNB997RN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/CoreImage-DDDF47J7WTNBCU4XW0YTFAPCL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/QuartzCore-6O5GU4ZYJ29YS54N9F1OL40F0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/SwiftUICore-2C4WMNQTS6Q3C50C66UGQP8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/UIKit-HAI6C70X7U5RLVRGP8SPBNDJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/VideoToolbox-2I898Z77F1FOJNFY5CRF3GTFO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/MediaToolbox-DT62T27MFZH2L52QDTF39307M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/AVFAudio-1CY4OLPUZLFH994HB8HCQLKIV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/AVFoundation-C8Y6OGR7JE68HEJC2SV18QIFR.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/RealityCoreRenderer-3N0E8TL0B30VU.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/RealityFoundationCloth-BOBHEHNSFFJ0.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/GameController-9FW9KSJ2XC0A61GMQ8EF5VB0A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/SwiftUI-BOMDXXQL6SFIKFBQT4T0U2MRR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules/MultipeerConnectivity-2HHTXP2TEL2SSDCCCZDJ7U6H8.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftCompile normal arm64 Compiling\ HeartModelView.swift,\ HeartSeparationPresentation.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartModelView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartSeparationPresentation.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartModelView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartModelView.swift
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartSeparationPresentation.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartSeparationPresentation.swift
+
+SwiftCompile normal arm64 Compiling\ HeartCloseUpView.swift,\ HeartLocationView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartCloseUpView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartLocationView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartCloseUpView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartCloseUpView.swift
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartLocationView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartLocationView.swift
+
+SwiftCompile normal arm64 Compiling\ SpatialControls.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/SpatialControls.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/SpatialControls.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile SpatialControls.swift
+
+SwiftCompile normal arm64 Compiling\ ReferencesView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ReferencesView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ReferencesView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile ReferencesView.swift
+
+SwiftCompile normal arm64 Compiling\ heart_v3App.swift,\ HeartAssetValidation.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/heart_v3App.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/HeartAssetValidation.swift:130:37: warning: call to main actor-isolated instance method 'markChanged()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 10 |     private let lock = NSLock()
+ 11 |     private var changed = false
+ 12 |     func markChanged() { lock.lock(); changed = true; lock.unlock() }
+    |          `- note: calls to instance method 'markChanged()' from outside of its actor context are implicitly asynchronous
+ 13 |     var didChange: Bool { lock.lock(); defer { lock.unlock() }; return changed }
+ 14 | }
+    :
+128 |                                 context: true, separation: 0, state: asset.defaultState)
+129 |                     scene.fit(in: workspace, zoom: 1)
+130 |                 } onChange: { probe.markChanged() }
+    |                                     `- warning: call to main actor-isolated instance method 'markChanged()' in a synchronous nonisolated context [#ActorIsolatedCall]
+131 |                 scene.apply(asset: asset, selected: "", isolate: false, cutaway: false,
+132 |                             context: true, separation: 0, state: asset.defaultState)
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/heart_v3App.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile heart_v3App.swift
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartAssetValidation.swift
+
+SwiftCompile normal arm64 Compiling\ Components.swift,\ ContentView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Components.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ContentView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Components.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile Components.swift
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ContentView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile ContentView.swift
+
+SwiftCompile normal arm64 Compiling\ FreeExplorationView.swift,\ GuidedLearningView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/FreeExplorationView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/FreeExplorationView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile FreeExplorationView.swift
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile GuidedLearningView.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+LinkAssetCatalog /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-linkAssetCatalog --thinned /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned --thinned-dependencies /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_unthinned --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --plist-output /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist
+note: Emplaced /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app/Assets.car (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftMergeGeneratedHeaders /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/heart_v3-Swift.h /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftHeaderTool -arch arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/heart_v3-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling Components.swift, ContentView.swift (in target 'heart v3' from project 'heart v3')
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftdoc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftdoc (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftdoc /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftdoc
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PkgInfo -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist
+
+ProcessProductPackaging "" /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "5BZMWHTZSA.phil.heart-v3.ui-tests.xctrunner";
+    "keychain-access-groups" =     (
+        "5BZMWHTZSA.phil.heart-v3.ui-tests.xctrunner"
+    );
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent
+
+ProcessProductPackagingDER /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent.der (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /usr/bin/derq query -f xml -i /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent.der --raw
+
+SwiftDriver HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReferencesView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SpatialControls.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartCloseUpView.swift, HeartLocationView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling heart_v3App.swift, HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-CD72FQ73UDQ0VUJDEXIVDEB7H.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-2JYYE0WC77ZE9.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-16IAIF6MTGJCQMGDF02HKRJ09.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-197GNRKESGQUR.swiftmodule
+
+SwiftCompile normal arm64 Compiling\ HeartV3InteractionTests.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartV3InteractionTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/HeartV3UITests-Swift.h /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftHeaderTool -arch arm64 /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -o /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/HeartV3UITests-Swift.h
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftmodule /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftdoc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftdoc (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftdoc /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftdoc
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartModelView.swift, HeartSeparationPresentation.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling FreeExplorationView.swift, GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -filelist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.LinkFileList -install_name @rpath/heart\ v3.debug.dylib -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+
+ConstructStubExecutorLinkFileList /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    construct-stub-executor-link-file-list /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'heart v3' from project 'heart v3')
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent.der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name heart_v3 --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3 --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --target-triple arm64-apple-xros26.5-simulator --binary-file /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 --dependency-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat --stringsdata-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList --metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyMetadataFileList --static-metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-22 08:56:58.318 appintentsmetadataprocessor[2135:19114] Starting appintentsmetadataprocessor export
+2026-10-22 08:56:58.319 appintentsmetadataprocessor[2135:19114] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+Validate /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-validationUtility /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /usr/bin/touch -c /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests normal (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -filelist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name HeartV3UITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3.ui-tests --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest --target-triple arm64-apple-xros26.5-simulator --binary-file /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --dependency-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat --stringsdata-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList --metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyMetadataFileList --static-metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-22 08:56:59.983 appintentsmetadataprocessor[2142:19152] Starting appintentsmetadataprocessor export
+2026-10-22 08:56:59.984 appintentsmetadataprocessor[2142:19152] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app
+
+CopyPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME HeartV3UITests-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER phil.heart-v3.ui-tests.xctrunner --macro-expansion TESTPRODUCTNAME HeartV3UITests --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER phil.heart-v3.ui-tests --copy-value UIDeviceFamily /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist --outdir /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+MkDir /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /bin/mkdir -p /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app
+
+CopyAndPreserveArchs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/HeartV3UITests-Runner (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/HeartV3UITests-Runner -extract arm64
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app: replacing existing signature
+
+RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-RegisterExecutionPolicyException /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest
+
+Touch /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /usr/bin/touch -c /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+2026-10-22 08:57:56.458825+0800 HeartV3UITests-Runner[2334:22100] [assertions] failed to observe with mask <BLSXPCBacklightProxyObserverMask: 0x102ebc960; didUpdateToState: YES; eventsArray: YES> error:<XPC error received on message reply handler (3:BSServiceConnectionErrorDomain) "The operation couldn’t be completed. XPC error received on message reply handler">
+2026-10-22 08:57:56.476183+0800 HeartV3UITests-Runner[2334:21673] [Default] Running tests...
+2026-10-22 08:57:56.487065+0800 HeartV3UITests-Runner[2334:21673] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-22 08:57:56.609319+0800 HeartV3UITests-Runner[2334:22105] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-22 08:57:56.609410+0800 HeartV3UITests-Runner[2334:22105] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-22 08:57:56.615024+0800 HeartV3UITests-Runner[2334:22100] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x102e21ea0> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+objc[2334]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.oDB5pZ/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.oDB5pZ/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x101cb0118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-22 08:57:58.114885+0800 HeartV3UITests-Runner[2334:21673] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.oDB5pZ/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+    t =      nans Interface orientation changed to Unknown
+Test Suite 'Selected tests' started at 2026-10-22 08:58:00.991.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-22 08:58:00.991.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-22 08:58:00.991.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testTransitionClarityAndLearningProgress]' started.
+    t =     0.00s Start Test at 2026-10-22 08:58:00.994
+    t =     0.32s Set Up
+    t =     0.33s Open phil.heart-v3
+    t =     0.33s     Launch phil.heart-v3
+2026-10-22 08:58:01.792 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-22 08:58:01.792 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     4.39s         Setting up automation session
+    t =     8.91s         Wait for phil.heart-v3 to idle
+    t =    12.20s Waiting 15.0s for "Before birth: two connections let blood bypass the lungs" StaticText to exist
+    t =    13.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Before birth: two connections let blood bypass the lungs" StaticText`
+    t =    13.20s         Checking existence of `"Before birth: two connections let blood bypass the lungs" StaticText`
+    t =    13.56s Waiting 30.0s for "transition.ForamenFlap_Fetal" Button to exist
+    t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.ForamenFlap_Fetal" Button`
+    t =    14.63s         Checking existence of `"transition.ForamenFlap_Fetal" Button`
+    t =    15.68s Checking `Expect predicate `enabled == 1` for object "transition.ForamenFlap_Fetal" Button`
+    t =    15.68s     Find the "transition.ForamenFlap_Fetal" Button
+    t =    15.70s Tap "transition.ForamenFlap_Fetal" Button
+    t =    15.70s     Wait for phil.heart-v3 to idle
+    t =    15.71s     Find the "transition.ForamenFlap_Fetal" Button
+    t =    15.72s     Check for interrupting elements affecting "transition.ForamenFlap_Fetal" Button
+    t =    15.82s         Wait for com.apple.SurfBoard to idle
+    t =    15.90s     Synthesize event
+    t =    16.48s     Wait for phil.heart-v3 to idle
+    t =    16.48s Waiting 30.0s for "transition.Ductus_Fetal" Button to exist
+    t =    17.52s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.Ductus_Fetal" Button`
+    t =    17.52s         Checking existence of `"transition.Ductus_Fetal" Button`
+    t =    18.63s Checking `Expect predicate `enabled == 1` for object "transition.Ductus_Fetal" Button`
+    t =    18.63s     Find the "transition.Ductus_Fetal" Button
+    t =    18.66s Tap "transition.Ductus_Fetal" Button
+    t =    18.66s     Wait for phil.heart-v3 to idle
+    t =    18.67s     Find the "transition.Ductus_Fetal" Button
+    t =    18.70s     Check for interrupting elements affecting "transition.Ductus_Fetal" Button
+    t =    18.72s         Wait for com.apple.SurfBoard to idle
+    t =    18.85s     Synthesize event
+    t =    19.25s     Wait for phil.heart-v3 to idle
+    t =    19.25s Waiting 30.0s for "After birth · transitioning" Button to exist
+    t =    20.33s     Checking `Expect predicate `existsNoRetry == 1` for object "After birth · transitioning" Button`
+    t =    20.33s         Checking existence of `"After birth · transitioning" Button`
+    t =    21.43s Checking `Expect predicate `enabled == 1` for object "After birth · transitioning" Button`
+    t =    21.43s     Find the "After birth · transitioning" Button
+    t =    21.47s Tap "After birth · transitioning" Button
+    t =    21.47s     Wait for phil.heart-v3 to idle
+    t =    21.47s     Find the "After birth · transitioning" Button
+    t =    21.51s     Check for interrupting elements affecting "After birth · transitioning" Button
+    t =    21.52s         Wait for com.apple.SurfBoard to idle
+    t =    21.55s     Synthesize event
+    t =    21.96s     Wait for phil.heart-v3 to idle
+    t =    21.97s Waiting 15.0s for "After birth: lung flow increases; the two connections begin closing" StaticText to exist
+    t =    22.99s     Checking `Expect predicate `existsNoRetry == 1` for object "After birth: lung flow increases; the two connections begin closing" StaticText`
+    t =    22.99s         Checking existence of `"After birth: lung flow increases; the two connections begin closing" StaticText`
+    t =    23.05s Waiting 30.0s for "transition.Ductus_Transition" Button to exist
+    t =    24.11s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.Ductus_Transition" Button`
+    t =    24.11s         Checking existence of `"transition.Ductus_Transition" Button`
+    t =    25.13s Checking `Expect predicate `enabled == 1` for object "transition.Ductus_Transition" Button`
+    t =    25.13s     Find the "transition.Ductus_Transition" Button
+    t =    25.15s Tap "transition.Ductus_Transition" Button
+    t =    25.16s     Wait for phil.heart-v3 to idle
+    t =    25.17s     Find the "transition.Ductus_Transition" Button
+    t =    25.19s     Check for interrupting elements affecting "transition.Ductus_Transition" Button
+    t =    25.22s         Wait for com.apple.SurfBoard to idle
+    t =    25.23s     Synthesize event
+    t =    25.61s     Wait for phil.heart-v3 to idle
+    t =    25.62s Waiting 30.0s for "transition.ForamenFlap_Transition" Button to exist
+    t =    26.63s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.ForamenFlap_Transition" Button`
+    t =    26.63s         Checking existence of `"transition.ForamenFlap_Transition" Button`
+    t =    27.70s Checking `Expect predicate `enabled == 1` for object "transition.ForamenFlap_Transition" Button`
+    t =    27.70s     Find the "transition.ForamenFlap_Transition" Button
+    t =    27.72s Tap "transition.ForamenFlap_Transition" Button
+    t =    27.72s     Wait for phil.heart-v3 to idle
+    t =    27.73s     Find the "transition.ForamenFlap_Transition" Button
+    t =    27.75s     Check for interrupting elements affecting "transition.ForamenFlap_Transition" Button
+    t =    27.75s         Wait for com.apple.SurfBoard to idle
+    t =    27.76s     Synthesize event
+    t =    28.14s     Wait for phil.heart-v3 to idle
+    t =    28.15s Waiting 30.0s for "transition.Lung_R" Button to exist
+    t =    29.23s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.Lung_R" Button`
+    t =    29.23s         Checking existence of `"transition.Lung_R" Button`
+    t =    30.28s Checking `Expect predicate `enabled == 1` for object "transition.Lung_R" Button`
+    t =    30.28s     Find the "transition.Lung_R" Button
+    t =    30.33s Tap "transition.Lung_R" Button
+    t =    30.33s     Wait for phil.heart-v3 to idle
+    t =    30.34s     Find the "transition.Lung_R" Button
+    t =    30.38s     Check for interrupting elements affecting "transition.Lung_R" Button
+    t =    30.50s         Wait for com.apple.SurfBoard to idle
+    t =    30.51s     Synthesize event
+    t =    30.90s     Wait for phil.heart-v3 to idle
+    t =    30.92s Waiting 30.0s for "transition.Aorta" Button to exist
+    t =    31.93s     Checking `Expect predicate `existsNoRetry == 1` for object "transition.Aorta" Button`
+    t =    31.93s         Checking existence of `"transition.Aorta" Button`
+    t =    33.01s Checking `Expect predicate `enabled == 1` for object "transition.Aorta" Button`
+    t =    33.02s     Find the "transition.Aorta" Button
+    t =    33.07s Tap "transition.Aorta" Button
+    t =    33.07s     Wait for phil.heart-v3 to idle
+    t =    33.09s     Find the "transition.Aorta" Button
+    t =    33.14s     Check for interrupting elements affecting "transition.Aorta" Button
+    t =    33.20s         Wait for com.apple.SurfBoard to idle
+    t =    33.22s     Synthesize event
+    t =    33.71s     Wait for phil.heart-v3 to idle
+    t =    33.76s Find the Target Application 'phil.heart-v3'
+    t =    35.16s Added attachment named 'Circulatory transition reading key'
+    t =    35.16s Open phil.heart-v3
+    t =    35.16s     Launch phil.heart-v3
+    t =    35.16s         Terminate phil.heart-v3:2378
+2026-10-22 08:58:37.224 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-22 08:58:37.224 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    36.45s         Setting up automation session
+    t =    41.51s         Wait for phil.heart-v3 to idle
+    t =    44.42s Checking existence of `"learning.overallProgress" StaticText`
+    t =    44.90s Open phil.heart-v3
+    t =    44.90s     Launch phil.heart-v3
+    t =    44.90s         Terminate phil.heart-v3:2472
+2026-10-22 08:58:46.926 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-22 08:58:46.926 xcodebuild[1934:17843] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    46.14s         Setting up automation session
+    t =    51.39s         Wait for phil.heart-v3 to idle
+    t =    54.76s Waiting 20.0s for "learning.phaseProgress" StaticText to exist
+    t =    55.80s     Checking `Expect predicate `existsNoRetry == 1` for object "learning.phaseProgress" StaticText`
+    t =    55.80s         Checking existence of `"learning.phaseProgress" StaticText`
+    t =    56.05s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    57.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    57.08s         Checking existence of `"Hide lesson" Button`
+    t =    58.12s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    58.12s     Find the "Hide lesson" Button
+    t =    58.14s Tap "Hide lesson" Button
+    t =    58.14s     Wait for phil.heart-v3 to idle
+    t =    58.15s     Find the "Hide lesson" Button
+    t =    58.17s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    58.17s         Wait for com.apple.SurfBoard to idle
+    t =    58.18s     Synthesize event
+    t =    58.63s     Wait for phil.heart-v3 to idle
+    t =    58.63s Find the "learning.phaseProgress" StaticText
+    t =    58.68s Waiting 30.0s for "Next step" Button to exist
+    t =    59.68s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    59.69s         Checking existence of `"Next step" Button`
+    t =    60.73s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    60.73s     Find the "Next step" Button
+    t =    60.75s Tap "chevron.right" Button
+    t =    60.75s     Wait for phil.heart-v3 to idle
+    t =    60.76s     Find the "chevron.right" Button
+    t =    60.78s     Check for interrupting elements affecting "chevron.right" Button
+    t =    60.79s         Wait for com.apple.SurfBoard to idle
+    t =    60.81s     Synthesize event
+    t =    61.22s     Wait for phil.heart-v3 to idle
+    t =    61.23s Find the "learning.phaseProgress" StaticText
+    t =    61.27s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testTransitionClarityAndLearningProgress]' passed (62.600 seconds).
+Test Suite 'HeartV3InteractionTests' passed at 2026-10-22 08:59:03.595.
+	 Executed 1 test, with 0 failures (0 unexpected) in 62.600 (62.604) seconds
+Test Suite 'HeartV3UITests.xctest' passed at 2026-10-22 08:59:03.595.
+	 Executed 1 test, with 0 failures (0 unexpected) in 62.600 (62.604) seconds
+Test Suite 'Selected tests' passed at 2026-10-22 08:59:03.596.
+	 Executed 1 test, with 0 failures (0 unexpected) in 62.600 (62.605) seconds
+2026-10-22 08:59:03.986 xcodebuild[1934:17843] [MT] IDETestOperationsObserverDebug: 123.957 elapsed -- Testing started completed.
+2026-10-22 08:59:03.986 xcodebuild[1934:17843] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-22 08:59:03.986 xcodebuild[1934:17843] [MT] IDETestOperationsObserverDebug: 123.957 sec, +123.957 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/heart-clarity-current.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

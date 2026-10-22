@@ -1,0 +1,11 @@
+00:00.698  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_10_CirculatoryTransition/before/Heart_10_CirculatoryTransition.blend"
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/tools/update_installed_surfaces.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:
+00:07.792  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_10_CirculatoryTransition/Heart_10_CirculatoryTransition_assembled.png'
+00:13.591  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_10_CirculatoryTransition/Heart_10_CirculatoryTransition_layers.png'
+Info: Saved as "Heart_10_CirculatoryTransition.blend"
+SURFACE UPDATE INSTALLED Heart_10_CirculatoryTransition
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_10_CirculatoryTransition/Heart_10_CirculatoryTransition.usdz' took 126.67 ms
+
+Blender quit

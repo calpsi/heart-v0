@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_14_TranspositionGreatArteries",
+  "passed": true,
+  "parts": 24,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "7c35b7a0a626e5d9b168e5139c1f4c61cea7156a95cc1ffee3e2ce7136c9ca7a",
+  "anatomicallyValidated": false
+}

@@ -1,0 +1,66 @@
+{
+  "asset": "Heart_05_AtrialSeptation",
+  "parts": [
+    {
+      "id": "AtrialWall_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AtrialWall_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AVCanalWall_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AVCanalWall_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "CushionAnchor_Dorsal",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "CushionAnchor_Ventral",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalContribution_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesenchymalProtrusion_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MesenchymalCap_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MesenchymalComplex_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumPrimum_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumPrimum_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumSecundum_Later",
+      "closedPositiveVolume": true
+    }
+  ],
+  "passed": true,
+  "sourceSHA256": "7aa0673990684ea4d6f14615937b71bad220a5e86d4e1f6a6cfdccdc25b27d01",
+  "usdzSHA256": "8335ba25bd66d86a1548ff01e9a0f57e1f7190dfd86823e085719bf6d883c6f1",
+  "anatomicalStatus": "Added previously omitted contributors; regional schematic, not histologically registered",
+  "remaining": [
+    "Superior rim remains simplified rather than a fully reconstructed atrial-wall fold",
+    "Dimensions enlarged; interfaces overlap for teaching assembly",
+    "Early/later snapshots are not exact Carnegie stages"
+  ]
+}

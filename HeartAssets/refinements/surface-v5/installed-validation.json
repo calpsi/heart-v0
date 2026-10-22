@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "asset": "Heart_01_CardiogenicRegion",
+      "passed": true,
+      "parts": 5,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "9d68d63db3e46d676e8ca16242310d92217822008387eb177f1fd154035cd380",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_02_PairedHeartTubes",
+      "passed": true,
+      "parts": 13,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "582a4df9f4850b367aedce942e7090d6035a2015388deba9264538158d89a5a6",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_03_PrimitiveHeartTube",
+      "passed": true,
+      "parts": 36,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "9f914a41f0049cf7e0a53c53ffd7a80175375338eaed930fc4f544f37c26d2f5",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_04_CardiacLooping",
+      "passed": true,
+      "parts": 40,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "0a0f903102d111b4d8ec16e8fef28d6c6ca3bba1d21284c5ecb95ad0aeaa96a9",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_05_AtrialSeptation",
+      "passed": true,
+      "parts": 9,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "66bfc599f49c86cf8a75a05ea2b7dea698e19fc24a1c30431fed10cc17e41001",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_06_EndocardialCushions",
+      "passed": true,
+      "parts": 8,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "d7cc65c0fea686b7ebc5757b9606a2cb94a62ef95b6ee7b26c253801a43d758a",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_07_VentricularSeptation",
+      "passed": true,
+      "parts": 19,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "962c1fa853bf362398928647761b697fb8b62502ff5c1943f2540abb93feea59",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_08_OutflowSeptation",
+      "passed": true,
+      "parts": 20,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "f14eefeec41359d97ab5c6bc6cc64c9e0fb54183650eda047516a17d3326c0cd",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_09_ValvularRefinement",
+      "passed": true,
+      "parts": 51,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "3c46d98764d4dd98878aaa57524e5dc283b5f275f1be7a1a77d5cc8c3c60a436",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_10_CirculatoryTransition",
+      "passed": true,
+      "parts": 23,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "60110e752d46e8b18e5b5ce40d85e138217091233fcd5cbd26312d50e31d18e2",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_11_VentricularSeptalDefect",
+      "passed": true,
+      "parts": 22,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "24f7f1a15fa0795b48d223ff0e0324e5b87c88fca11528426e0fb64c600a1dce",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_12_AtrialSeptalDefect",
+      "passed": true,
+      "parts": 19,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "3a5447f41e1c2ef973a0dde8dd74613fb3423a14b87f9e643ba89aa33e5764de",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_13_TetralogyOfFallot",
+      "passed": true,
+      "parts": 28,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "04200254658bc4f173d6b48a17c95fb1d4be4ab7c6984f3067c672e1917c2302",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_14_TranspositionGreatArteries",
+      "passed": true,
+      "parts": 24,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "7c35b7a0a626e5d9b168e5139c1f4c61cea7156a95cc1ffee3e2ce7136c9ca7a",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_15_AorticCoarctation",
+      "passed": true,
+      "parts": 17,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "c2ec679bf1fa7692f30d5b14d4a5c0c4119ecdeaad1040f85f084cba9c5d87f2",
+      "anatomicallyValidated": false
+    },
+    {
+      "asset": "Heart_16_PatentDuctusArteriosus",
+      "passed": true,
+      "parts": 21,
+      "geometryUnchanged": true,
+      "mapCount": 3,
+      "mapSize": 2048,
+      "sha256": "d138b9e987dce9e65ca159c1bebd9d4240df4a8dc902d374ce3df853f41e2635",
+      "anatomicallyValidated": false
+    }
+  ],
+  "parts": 355,
+  "anatomicalValidation": "incomplete; material update only"
+}

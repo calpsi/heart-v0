@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_10_CirculatoryTransition",
+  "passed": true,
+  "parts": 23,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "60110e752d46e8b18e5b5ce40d85e138217091233fcd5cbd26312d50e31d18e2",
+  "anatomicallyValidated": false
+}

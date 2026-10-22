@@ -1,0 +1,98 @@
+[
+  {
+    "file": "/Users/phillicia/Desktop/School/Spatial/anatomical+blood+vessel+3d+model/tripo_convert_e32d0ad2-3136-49a9-94b7-775d348afab4.fbx",
+    "meshes": [
+      {
+        "name": "tripo_node_e32d0ad2",
+        "vertices": 950294,
+        "triangles": 1900592,
+        "uv_layers": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "tripo_mat_e32d0ad2",
+        "connections": [
+          "BSDF_PRINCIPLED.BSDF -> OUTPUT_MATERIAL.Surface",
+          "NORMAL_MAP.Normal -> BSDF_PRINCIPLED.Normal",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Base Color",
+          "TEX_IMAGE.Color -> NORMAL_MAP.Color",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Roughness",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Metallic"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/Users/phillicia/Desktop/School/Spatial/aorta+3d+model/tripo_convert_4099c023-f2e2-427c-a6e4-cba3f86d0fa0.fbx",
+    "meshes": [
+      {
+        "name": "tripo_node_4099c023",
+        "vertices": 964516,
+        "triangles": 1929044,
+        "uv_layers": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "tripo_mat_4099c023",
+        "connections": [
+          "BSDF_PRINCIPLED.BSDF -> OUTPUT_MATERIAL.Surface",
+          "NORMAL_MAP.Normal -> BSDF_PRINCIPLED.Normal",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Base Color",
+          "TEX_IMAGE.Color -> NORMAL_MAP.Color",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Roughness",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Metallic"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/Users/phillicia/Desktop/School/Spatial/penis+anatomy+model+3d/tripo_convert_49c0e040-e4ec-4d54-ab32-6669e66d8b8f.fbx",
+    "meshes": [
+      {
+        "name": "tripo_node_49c0e040",
+        "vertices": 491791,
+        "triangles": 983578,
+        "uv_layers": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "tripo_mat_49c0e040",
+        "connections": [
+          "BSDF_PRINCIPLED.BSDF -> OUTPUT_MATERIAL.Surface",
+          "NORMAL_MAP.Normal -> BSDF_PRINCIPLED.Normal",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Base Color",
+          "TEX_IMAGE.Color -> NORMAL_MAP.Color",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Roughness",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Metallic"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/Users/phillicia/Desktop/School/Spatial/vascular+anatomy+model+3d/tripo_convert_78bdc828-10b3-4365-b376-0f118b88d952.fbx",
+    "meshes": [
+      {
+        "name": "tripo_node_78bdc828",
+        "vertices": 891616,
+        "triangles": 1783254,
+        "uv_layers": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "tripo_mat_78bdc828",
+        "connections": [
+          "BSDF_PRINCIPLED.BSDF -> OUTPUT_MATERIAL.Surface",
+          "NORMAL_MAP.Normal -> BSDF_PRINCIPLED.Normal",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Base Color",
+          "TEX_IMAGE.Color -> NORMAL_MAP.Color",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Roughness",
+          "TEX_IMAGE.Color -> BSDF_PRINCIPLED.Metallic"
+        ]
+      }
+    ]
+  }
+]

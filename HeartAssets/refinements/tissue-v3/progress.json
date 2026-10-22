@@ -1,0 +1,104 @@
+{
+  "revision": "tissue-v3",
+  "stages": {
+    "1": {
+      "asset": "Heart_01_CardiogenicRegion",
+      "status": "exported; pending full integration validation",
+      "geometry": "early-stage rebuild",
+      "materials": 4
+    },
+    "2": {
+      "asset": "Heart_02_PairedHeartTubes",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "early-stage rebuild",
+      "materials": 4
+    },
+    "3": {
+      "asset": "Heart_03_PrimitiveHeartTube",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "existing refined form with subtle relief",
+      "materials": 3
+    },
+    "4": {
+      "asset": "Heart_04_CardiacLooping",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "existing refined form with subtle relief",
+      "materials": 3
+    },
+    "5": {
+      "asset": "Heart_05_AtrialSeptation",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "asymmetric atrial contour and membrane folds",
+      "materials": 3
+    },
+    "6": {
+      "asset": "Heart_06_EndocardialCushions",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "organic cushion and canal contours",
+      "materials": 2
+    },
+    "7": {
+      "asset": "Heart_07_VentricularSeptation",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 3
+    },
+    "8": {
+      "asset": "Heart_08_OutflowSeptation",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "gentle vessel contour refinement",
+      "materials": 4
+    },
+    "9": {
+      "asset": "Heart_09_ValvularRefinement",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 5
+    },
+    "10": {
+      "asset": "Heart_10_CirculatoryTransition",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 4
+    },
+    "11": {
+      "asset": "Heart_11_VentricularSeptalDefect",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 3
+    },
+    "12": {
+      "asset": "Heart_12_AtrialSeptalDefect",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "asymmetric atrial contour and membrane folds",
+      "materials": 2
+    },
+    "13": {
+      "asset": "Heart_13_TetralogyOfFallot",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 2
+    },
+    "14": {
+      "asset": "Heart_14_TranspositionGreatArteries",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "lower ventricular contour refinement",
+      "materials": 2
+    },
+    "15": {
+      "asset": "Heart_15_AorticCoarctation",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "gentle vessel contour refinement",
+      "materials": 3
+    },
+    "16": {
+      "asset": "Heart_16_PatentDuctusArteriosus",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "geometry": "gentle vessel contour refinement",
+      "materials": 4
+    }
+  },
+  "nextStage": null,
+  "nextContourStage": null,
+  "integrationStatus": "final app rebuild and runtime validation pending"
+}

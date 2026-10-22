@@ -1,0 +1,11 @@
+00:00.672  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_08_OutflowSeptation/before/Heart_08_OutflowSeptation.blend"
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/tools/update_installed_surfaces.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:
+00:06.091  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_08_OutflowSeptation/Heart_08_OutflowSeptation_assembled.png'
+00:10.889  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_08_OutflowSeptation/Heart_08_OutflowSeptation_layers.png'
+Info: Saved as "Heart_08_OutflowSeptation.blend"
+SURFACE UPDATE INSTALLED Heart_08_OutflowSeptation
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_08_OutflowSeptation/Heart_08_OutflowSeptation.usdz' took 111.07 ms
+
+Blender quit

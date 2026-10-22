@@ -1,0 +1,4130 @@
+[
+  {
+    "id": "Heart_01_CardiogenicRegion",
+    "lesson": "Cardiogenic region",
+    "stageIndex": 0,
+    "parts": [
+      {
+        "id": "Endoderm_Context",
+        "label": "Endoderm (schematic context)",
+        "category": "context",
+        "parent": "EmbryonicContext"
+      },
+      {
+        "id": "NeuralPlate_Context",
+        "label": "Developing neural plate (orientation context)",
+        "category": "context",
+        "parent": "EmbryonicContext"
+      },
+      {
+        "id": "CardiogenicCrescent",
+        "label": "Cardiogenic crescent / primary heart field",
+        "category": "anatomy",
+        "parent": "Tissues"
+      },
+      {
+        "id": "AngioblasticCord_L",
+        "label": "Left angioblastic cord (enlarged)",
+        "category": "anatomy",
+        "parent": "VascularPrecursors"
+      },
+      {
+        "id": "AngioblasticCord_R",
+        "label": "Right angioblastic cord (enlarged)",
+        "category": "anatomy",
+        "parent": "VascularPrecursors"
+      }
+    ],
+    "defaultYaw": -0.42,
+    "defaultPitch": 0.18,
+    "anatomyReview": {
+      "scope": "Cardiogenic field diagram",
+      "supports": "Shows bilateral cardiac precursors and a crescent relationship.",
+      "limitations": "The thick crescent and isolated cords omit the early vascular plexus and tissue folding. They are not measured fields or a complete embryo."
+    }
+  },
+  {
+    "id": "Heart_02_PairedHeartTubes",
+    "lesson": "Paired heart tubes",
+    "stageIndex": 1,
+    "parts": [
+      {
+        "id": "Endoderm_Context",
+        "label": "Endoderm (schematic context)",
+        "category": "context",
+        "parent": "EmbryonicContext"
+      },
+      {
+        "id": "Myocardium_L_Posterior",
+        "label": "Myocardial mantle \u2014 L, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "Myocardium_L_Anterior",
+        "label": "Myocardial mantle \u2014 L, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "CardiacJelly_L_Posterior",
+        "label": "Cardiac jelly \u2014 L, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "CardiacJelly_L_Anterior",
+        "label": "Cardiac jelly \u2014 L, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "Endocardium_L_Posterior",
+        "label": "Endocardial lining \u2014 L, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "Endocardium_L_Anterior",
+        "label": "Endocardial lining \u2014 L, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_L"
+      },
+      {
+        "id": "Myocardium_R_Posterior",
+        "label": "Myocardial mantle \u2014 R, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      },
+      {
+        "id": "Myocardium_R_Anterior",
+        "label": "Myocardial mantle \u2014 R, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      },
+      {
+        "id": "CardiacJelly_R_Posterior",
+        "label": "Cardiac jelly \u2014 R, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      },
+      {
+        "id": "CardiacJelly_R_Anterior",
+        "label": "Cardiac jelly \u2014 R, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      },
+      {
+        "id": "Endocardium_R_Posterior",
+        "label": "Endocardial lining \u2014 R, posterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      },
+      {
+        "id": "Endocardium_R_Anterior",
+        "label": "Endocardial lining \u2014 R, anterior panel",
+        "category": "anatomy",
+        "parent": "Tube_R"
+      }
+    ],
+    "defaultYaw": -0.42,
+    "defaultPitch": 0.18,
+    "presentationNote": "Simplified paired channels \u00b7 connecting vessels and embryo omitted",
+    "anatomyReview": {
+      "scope": "Paired-channel layer diagram",
+      "supports": "Distinguishes endocardial lining, cardiac jelly and myocardial tissue.",
+      "limitations": "Two smooth independent tubes exaggerate regularity. The early human primordium includes vascular networks and a shared developing myocardial environment; the embryo and connecting vessels are omitted."
+    }
+  },
+  {
+    "id": "Heart_03_PrimitiveHeartTube",
+    "lesson": "Primitive heart tube segments",
+    "stageIndex": 2,
+    "parts": [
+      {
+        "id": "Myocardium_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Myocardium_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Myocardium_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Myocardium_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Endocardium_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Endocardium_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 cardiac jelly, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 cardiac jelly, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      }
+    ],
+    "previewImage": "Stage03",
+    "defaultYaw": -0.42,
+    "defaultPitch": 0.18,
+    "presentationNote": "Unfolded region map \u00b7 tissue layers enlarged for learning",
+    "anatomyReview": {
+      "scope": "Unfolded regional map",
+      "supports": "Teaches the ordering of named inflow-to-outflow regions.",
+      "limitations": "The stacked regions are not one embryonic snapshot. The dorsal opening/attachments and paired vascular poles are missing; region labels span different developmental events."
+    }
+  },
+  {
+    "id": "Heart_04_CardiacLooping",
+    "lesson": "Cardiac looping (D-looping)",
+    "stageIndex": 3,
+    "parts": [
+      {
+        "id": "Myocardium_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Myocardium_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Posterior",
+        "label": "Sinus venosus \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Anterior",
+        "label": "Sinus venosus \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "SinusVenosus"
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Posterior",
+        "label": "Primitive atrium \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Anterior",
+        "label": "Primitive atrium \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveAtrium"
+      },
+      {
+        "id": "Myocardium_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Myocardium_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Endocardium_AVCanal_Posterior",
+        "label": "Atrioventricular canal \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Endocardium_AVCanal_Anterior",
+        "label": "Atrioventricular canal \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "AVCanal"
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Posterior",
+        "label": "Primitive ventricle \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Anterior",
+        "label": "Primitive ventricle \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "PrimitiveVentricle"
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Posterior",
+        "label": "Bulbus cordis \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Anterior",
+        "label": "Bulbus cordis \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "BulbusCordis"
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 myocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 myocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 cardiacjelly, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 cardiacjelly, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Posterior",
+        "label": "Truncus arteriosus \u2014 endocardium, posterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Anterior",
+        "label": "Truncus arteriosus \u2014 endocardium, anterior panel",
+        "category": "anatomy",
+        "parent": "TruncusArteriosus"
+      },
+      {
+        "id": "ArterialBranch_R",
+        "label": "Paired arterial outflow \u2014 R (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_04_CardiacLooping"
+      },
+      {
+        "id": "VenousInflow_R",
+        "label": "Venous inflow \u2014 R (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_04_CardiacLooping"
+      },
+      {
+        "id": "ArterialBranch_L",
+        "label": "Paired arterial outflow \u2014 L (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_04_CardiacLooping"
+      },
+      {
+        "id": "VenousInflow_L",
+        "label": "Venous inflow \u2014 L (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_04_CardiacLooping"
+      }
+    ],
+    "previewImage": "Stage04",
+    "presentationNote": "Looping overview \u00b7 does not depict each phase as a separate embryo",
+    "defaultYaw": -0.42,
+    "defaultPitch": 0.18,
+    "anatomyReview": {
+      "scope": "Looping schematic",
+      "supports": "Shows broad bending and relative chamber regions.",
+      "limitations": "Generic swellings and an elongated outflow differ from the source-stage reconstruction. This geometry cannot establish wall thickness or chamber topology."
+    }
+  },
+  {
+    "id": "Heart_05_AtrialSeptation",
+    "lesson": "Atrial septation",
+    "stageIndex": 4,
+    "parts": [
+      {
+        "id": "AtrialWall_Anterior",
+        "label": "Common atrial wall \u2014 anterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          0,
+          0.065
+        ],
+        "state": "early"
+      },
+      {
+        "id": "AtrialWall_Posterior",
+        "label": "Common atrial wall \u2014 posterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          0,
+          -0.065
+        ],
+        "state": "early"
+      },
+      {
+        "id": "AVCanalWall_Posterior",
+        "label": "Atrioventricular canal wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          -0.025,
+          -0.055
+        ]
+      },
+      {
+        "id": "AVCanalWall_Anterior",
+        "label": "Atrioventricular canal wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          -0.025,
+          0.055
+        ]
+      },
+      {
+        "id": "CushionAnchor_Ventral",
+        "label": "Endocardial cushion anchor \u2014 ventral",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          -0.035,
+          0.025
+        ]
+      },
+      {
+        "id": "CushionAnchor_Dorsal",
+        "label": "Endocardial cushion anchor \u2014 dorsal",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          -0.035,
+          -0.025
+        ]
+      },
+      {
+        "id": "SeptumPrimum_Early",
+        "label": "Septum primum \u2014 ostium primum below free edge",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0.045,
+          0.025,
+          0
+        ],
+        "state": "early"
+      },
+      {
+        "id": "SeptumPrimum_Later",
+        "label": "Septum primum \u2014 ostium secundum and open lower flap",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0.05,
+          0,
+          0
+        ],
+        "state": "later"
+      },
+      {
+        "id": "SeptumSecundum_Later",
+        "label": "Superior interatrial fold \u2014 two wall limbs and roof groove",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          -0.05,
+          0,
+          0
+        ],
+        "state": "later"
+      },
+      {
+        "id": "MesenchymalCap_Early",
+        "label": "Mesenchymal cap \u2014 primary septal free edge (enlarged)",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0.035,
+          0,
+          0.025
+        ],
+        "state": "early"
+      },
+      {
+        "id": "DorsalMesenchymalProtrusion_Early",
+        "label": "Dorsal mesenchymal protrusion \u2014 early contribution (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.03
+        ],
+        "state": "early"
+      },
+      {
+        "id": "MesenchymalComplex_Later",
+        "label": "Joined mesenchymal complex \u2014 later inferior rim (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0.035,
+          -0.02,
+          0
+        ],
+        "state": "later"
+      },
+      {
+        "id": "DorsalContribution_Later",
+        "label": "Dorsal contribution \u2014 later muscularized rim (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.03
+        ],
+        "state": "later"
+      },
+      {
+        "id": "AtrialWall_Later_Anterior",
+        "label": "Later atrial roof/wall \u2014 anterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          0,
+          0.065
+        ],
+        "state": "later"
+      },
+      {
+        "id": "AtrialWall_Later_Posterior",
+        "label": "Later atrial roof/wall \u2014 posterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_05_AtrialSeptation",
+        "separationOffset": [
+          0,
+          0,
+          -0.065
+        ],
+        "state": "later"
+      }
+    ],
+    "states": [
+      {
+        "id": "early",
+        "label": "Early \u00b7 ostium primum"
+      },
+      {
+        "id": "later",
+        "label": "Later fetal reference \u00b7 roof fold"
+      }
+    ],
+    "defaultState": "early",
+    "defaultCutaway": true,
+    "defaultYaw": 0.7,
+    "defaultPitch": -0.08,
+    "presentationNote": "Regional septation diagram: early mesenchymal contributors and a later roof-open interatrial fold. Enlarged original geometry; the later arrangement is not an early embryonic snapshot.",
+    "anatomyReview": {
+      "scope": "Regional atrial septation comparison",
+      "supports": "Shows the primary septum, mesenchymal cap, dorsal contribution and later atrial-wall fold.",
+      "limitations": "The recent additions correct missing contributors, but chamber shape and venous entrances remain generic. The later fold is a separate fetal reference, not the early-stage anatomy."
+    }
+  },
+  {
+    "id": "Heart_06_EndocardialCushions",
+    "lesson": "Endocardial cushion fusion",
+    "stageIndex": 5,
+    "parts": [
+      {
+        "id": "AVCanalWall_Posterior",
+        "label": "Atrioventricular canal wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          -0.025,
+          -0.055
+        ]
+      },
+      {
+        "id": "AVCanalWall_Anterior",
+        "label": "Atrioventricular canal wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          -0.025,
+          0.055
+        ]
+      },
+      {
+        "id": "LateralCushion_R",
+        "label": "Right lateral AV cushion",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          -0.04,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "LateralCushion_L",
+        "label": "Left lateral AV cushion",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0.04,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "CushionSuperior_Unfused",
+        "label": "Superior AV cushion \u2014 separate",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          0,
+          -0.05
+        ],
+        "state": "unfused"
+      },
+      {
+        "id": "CushionInferior_Unfused",
+        "label": "Inferior AV cushion \u2014 separate",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          0,
+          0.05
+        ],
+        "state": "unfused"
+      },
+      {
+        "id": "CushionSuperior_Fused",
+        "label": "Superior AV cushion \u2014 fused at midline",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          0,
+          -0.05
+        ],
+        "state": "fused"
+      },
+      {
+        "id": "CushionInferior_Fused",
+        "label": "Inferior AV cushion \u2014 fused at midline",
+        "category": "anatomy",
+        "parent": "Heart_06_EndocardialCushions",
+        "separationOffset": [
+          0,
+          0,
+          0.05
+        ],
+        "state": "fused"
+      }
+    ],
+    "states": [
+      {
+        "id": "unfused",
+        "label": "Before fusion"
+      },
+      {
+        "id": "fused",
+        "label": "After fusion"
+      }
+    ],
+    "defaultState": "unfused",
+    "defaultCutaway": false,
+    "defaultYaw": 0.2,
+    "defaultPitch": 0.85,
+    "anatomyReview": {
+      "scope": "AV canal division diagram",
+      "supports": "Shows opposing major cushions and division into two AV openings.",
+      "limitations": "Isolated rounded cushions lack the atrial/ventricular junction context. They must not be interpreted as the muscular ventricular septum or mature valve leaflets."
+    }
+  },
+  {
+    "id": "Heart_07_VentricularSeptation",
+    "lesson": "Ventricular septation",
+    "stageIndex": 5,
+    "parts": [
+      {
+        "id": "VentricularWall_R_Anterior",
+        "label": "Right ventricular wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.035,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_R_Posterior",
+        "label": "Right ventricular wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_L_Anterior",
+        "label": "Left ventricular wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.035,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_L_Posterior",
+        "label": "Left ventricular wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.035,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "MuscularSeptum_Open",
+        "label": "Muscular ventricular septum \u2014 open communication",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.05,
+          -0.025,
+          0
+        ],
+        "state": "open"
+      },
+      {
+        "id": "MuscularSeptum_Closed",
+        "label": "Muscular ventricular septum \u2014 closure state",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.05,
+          -0.025,
+          0
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "AVSeptalContribution",
+        "label": "AV cushion contribution",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0,
+          0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "OutletSeptalContribution",
+        "label": "Proximal outlet cushion contribution",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0,
+          0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "MembranousSeptum_Closed",
+        "label": "Membranous septal closure \u2014 enlarged teaching patch",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "SubaorticOutlet_Posterior",
+        "label": "Left ventricular subaortic outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.021500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "SubaorticOutlet_Anterior",
+        "label": "Left ventricular subaortic outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.021500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "SubpulmonaryOutlet_Posterior",
+        "label": "Right ventricular subpulmonary outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "SubpulmonaryOutlet_Anterior",
+        "label": "Right ventricular subpulmonary outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "Trabecula_R1",
+        "label": "Right ventricular trabecular ridge 1",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_R2",
+        "label": "Right ventricular trabecular ridge 2",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_R3",
+        "label": "Right ventricular trabecular ridge 3",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L1",
+        "label": "Left ventricular trabecular ridge 1",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L2",
+        "label": "Left ventricular trabecular ridge 2",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L3",
+        "label": "Left ventricular trabecular ridge 3",
+        "category": "anatomy",
+        "parent": "Heart_07_VentricularSeptation",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "open",
+        "label": "Open communication"
+      },
+      {
+        "id": "closed",
+        "label": "Septal closure"
+      }
+    ],
+    "defaultState": "open",
+    "defaultCutaway": true,
+    "defaultYaw": 0.65,
+    "defaultPitch": 0.1,
+    "previewImage": "Stage07",
+    "anatomyReview": {
+      "scope": "Ventricular septation diagram",
+      "supports": "Compares a superior communication with a closure contribution.",
+      "limitations": "Symmetric chamber shells and a large closure patch obscure ventricular asymmetry and inlet/outlet relationships. The patch is not a measured membranous septum."
+    }
+  },
+  {
+    "id": "Heart_08_OutflowSeptation",
+    "lesson": "Outflow tract septation",
+    "stageIndex": 6,
+    "parts": [
+      {
+        "id": "OutflowWall_Posterior",
+        "label": "Truncoconal wall \u2014 posterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0,
+          0,
+          -0.065
+        ]
+      },
+      {
+        "id": "OutflowWall_Anterior",
+        "label": "Truncoconal wall \u2014 anterior teaching panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0,
+          0,
+          0.065
+        ]
+      },
+      {
+        "id": "SeptalRidge_Ridges",
+        "label": "septal outflow cushion \u2014 opposing ridge",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.045,
+          0,
+          0
+        ],
+        "state": "ridges"
+      },
+      {
+        "id": "SeptalRidge_Divided",
+        "label": "septal outflow cushion \u2014 fused partition",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.045,
+          0,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "ParietalRidge_Ridges",
+        "label": "parietal outflow cushion \u2014 opposing ridge",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.045,
+          0,
+          0
+        ],
+        "state": "ridges"
+      },
+      {
+        "id": "ParietalRidge_Divided",
+        "label": "parietal outflow cushion \u2014 fused partition",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.045,
+          0,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "AorticTrunk_Posterior",
+        "label": "Aortic trunk outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.014000000059604646,
+          0.02,
+          -0.04
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "AorticTrunk_Anterior",
+        "label": "Aortic trunk outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.014000000059604646,
+          0.02,
+          0.04
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "AorticCuspPrimordium_1",
+        "label": "Aortic semilunar cusp primordium 1",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "AorticCuspPrimordium_2",
+        "label": "Aortic semilunar cusp primordium 2",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "AorticCuspPrimordium_3",
+        "label": "Aortic semilunar cusp primordium 3",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "PulmonaryTrunk_Posterior",
+        "label": "Pulmonary trunk outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.014000000059604646,
+          0.02,
+          -0.04
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "PulmonaryTrunk_Anterior",
+        "label": "Pulmonary trunk outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.014000000059604646,
+          0.02,
+          0.04
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_1",
+        "label": "Pulmonary semilunar cusp primordium 1",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_2",
+        "label": "Pulmonary semilunar cusp primordium 2",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_3",
+        "label": "Pulmonary semilunar cusp primordium 3",
+        "category": "anatomy",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          -0.03,
+          0.035,
+          0
+        ],
+        "state": "divided"
+      },
+      {
+        "id": "NeuralCrestMarker_1",
+        "label": "Neural-crest contribution marker 1 (schematic)",
+        "category": "context",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.025,
+          0,
+          0.035
+        ],
+        "state": "ridges"
+      },
+      {
+        "id": "NeuralCrestMarker_2",
+        "label": "Neural-crest contribution marker 2 (schematic)",
+        "category": "context",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.025,
+          0,
+          0.035
+        ],
+        "state": "ridges"
+      },
+      {
+        "id": "NeuralCrestMarker_3",
+        "label": "Neural-crest contribution marker 3 (schematic)",
+        "category": "context",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.025,
+          0,
+          0.035
+        ],
+        "state": "ridges"
+      },
+      {
+        "id": "NeuralCrestMarker_4",
+        "label": "Neural-crest contribution marker 4 (schematic)",
+        "category": "context",
+        "parent": "Heart_08_OutflowSeptation",
+        "separationOffset": [
+          0.025,
+          0,
+          0.035
+        ],
+        "state": "ridges"
+      }
+    ],
+    "states": [
+      {
+        "id": "ridges",
+        "label": "Opposing ridges"
+      },
+      {
+        "id": "divided",
+        "label": "Divided outflow"
+      }
+    ],
+    "defaultState": "ridges",
+    "defaultCutaway": true,
+    "defaultYaw": -0.25,
+    "defaultPitch": 0.1,
+    "previewImage": "Stage08",
+    "anatomyReview": {
+      "scope": "Outflow division schematic",
+      "supports": "Illustrates a shared outlet and separated arterial pathways.",
+      "limitations": "A fixed twisting partition does not reproduce conal/truncal remodeling. Rounded cusp primordia do not establish valve-root anatomy."
+    }
+  },
+  {
+    "id": "Heart_09_ValvularRefinement",
+    "lesson": "Valvular refinement",
+    "stageIndex": 6,
+    "parts": [
+      {
+        "id": "MitralAnnulus_Posterior",
+        "label": "Mitral annular support \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.036,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "MitralAnnulus_Anterior",
+        "label": "Mitral annular support \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.036,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "MitralWall_Anterior",
+        "label": "Mitral ventricular support \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.04,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "MitralWall_Posterior",
+        "label": "Mitral ventricular support \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "Mitral_Anterior_Cushions",
+        "label": "Mitral anterior \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Mitral_Anterior_Refined",
+        "label": "Mitral anterior \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Mitral_Posterior_Cushions",
+        "label": "Mitral posterior \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Mitral_Posterior_Refined",
+        "label": "Mitral posterior \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralPapillary_1",
+        "label": "Mitral papillary muscle 1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          -0.035,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralPapillary_2",
+        "label": "Mitral papillary muscle 2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          -0.035,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralChord_1_1",
+        "label": "Mitral branching chordal tree 1.1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralChord_1_2",
+        "label": "Mitral branching chordal tree 1.2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralChord_2_1",
+        "label": "Mitral branching chordal tree 2.1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "MitralChord_2_2",
+        "label": "Mitral branching chordal tree 2.2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidAnnulus_Posterior",
+        "label": "Tricuspid annular support \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.036,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "TricuspidAnnulus_Anterior",
+        "label": "Tricuspid annular support \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.036,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "TricuspidWall_Anterior",
+        "label": "Tricuspid ventricular support \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.04,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "TricuspidWall_Posterior",
+        "label": "Tricuspid ventricular support \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "Tricuspid_Anterior_Cushions",
+        "label": "Tricuspid anterior \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Tricuspid_Anterior_Refined",
+        "label": "Tricuspid anterior \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Tricuspid_Posterior_Cushions",
+        "label": "Tricuspid posterior \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Tricuspid_Posterior_Refined",
+        "label": "Tricuspid posterior \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Tricuspid_Septal_Cushions",
+        "label": "Tricuspid septal \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Tricuspid_Septal_Refined",
+        "label": "Tricuspid septal \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidPapillary_1",
+        "label": "Tricuspid papillary muscle 1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          -0.035,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidPapillary_2",
+        "label": "Tricuspid papillary muscle 2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          -0.035,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidPapillary_3",
+        "label": "Tricuspid papillary muscle 3",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          -0.035,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_1_1",
+        "label": "Tricuspid branching chordal tree 1.1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_1_2",
+        "label": "Tricuspid branching chordal tree 1.2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_2_1",
+        "label": "Tricuspid branching chordal tree 2.1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_2_2",
+        "label": "Tricuspid branching chordal tree 2.2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_3_1",
+        "label": "Tricuspid branching chordal tree 3.1",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "TricuspidChord_3_2",
+        "label": "Tricuspid branching chordal tree 3.2",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0,
+          0.025
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "AorticAnnulus_Posterior",
+        "label": "Aortic annular support \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.019000000000000003,
+          0.02,
+          -0.04
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "AorticAnnulus_Anterior",
+        "label": "Aortic annular support \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0.019000000000000003,
+          0.02,
+          0.04
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Aortic_Cusp1_Cushions",
+        "label": "Aortic cusp1 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Ventricularis_AorticCusp1_Refined",
+        "label": "Ventricularis \u2014 enlarged aortic cusp layer",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.0292,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Spongiosa_AorticCusp1_Refined",
+        "label": "Spongiosa \u2014 enlarged aortic cusp layer",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.0383,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Fibrosa_AorticCusp1_Refined",
+        "label": "Fibrosa \u2014 enlarged aortic cusp layer",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.048100000000000004,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Aortic_Cusp2_Cushions",
+        "label": "Aortic cusp2 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Aortic_Cusp2_Refined",
+        "label": "Aortic cusp2 \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Aortic_Cusp3_Cushions",
+        "label": "Aortic cusp3 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Aortic_Cusp3_Refined",
+        "label": "Aortic cusp3 \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "PulmonaryAnnulus_Posterior",
+        "label": "Pulmonary annular support \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.019000000000000003,
+          0.02,
+          -0.04
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "PulmonaryAnnulus_Anterior",
+        "label": "Pulmonary annular support \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          -0.019000000000000003,
+          0.02,
+          0.04
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Pulmonary_Cusp1_Cushions",
+        "label": "Pulmonary cusp1 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Pulmonary_Cusp1_Refined",
+        "label": "Pulmonary cusp1 \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Pulmonary_Cusp2_Cushions",
+        "label": "Pulmonary cusp2 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Pulmonary_Cusp2_Refined",
+        "label": "Pulmonary cusp2 \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "Pulmonary_Cusp3_Cushions",
+        "label": "Pulmonary cusp3 \u2014 cushions",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "cushions"
+      },
+      {
+        "id": "Pulmonary_Cusp3_Refined",
+        "label": "Pulmonary cusp3 \u2014 refined",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ],
+        "state": "refined"
+      },
+      {
+        "id": "AorticSinusWall_Posterior",
+        "label": "Aortic sinus wall \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "state": "refined",
+        "separationOffset": [
+          0,
+          0.035,
+          -0.045
+        ]
+      },
+      {
+        "id": "AorticSinusWall_Anterior",
+        "label": "Aortic sinus wall \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "state": "refined",
+        "separationOffset": [
+          0,
+          0.035,
+          0.045
+        ]
+      },
+      {
+        "id": "PulmonarySinusWall_Posterior",
+        "label": "Pulmonary sinus wall \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "state": "refined",
+        "separationOffset": [
+          0,
+          0.035,
+          -0.045
+        ]
+      },
+      {
+        "id": "PulmonarySinusWall_Anterior",
+        "label": "Pulmonary sinus wall \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_09_ValvularRefinement",
+        "state": "refined",
+        "separationOffset": [
+          0,
+          0.035,
+          0.045
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "cushions",
+        "label": "Early cushions"
+      },
+      {
+        "id": "refined",
+        "label": "Later anatomy reference"
+      }
+    ],
+    "defaultState": "cushions",
+    "defaultCutaway": true,
+    "defaultYaw": -0.2,
+    "defaultPitch": 0.5,
+    "previewImage": "Stage09",
+    "presentationNote": "Early cushions and a later-anatomy reference; mature tissue layers do not represent a week 5\u20138 snapshot.",
+    "anatomyReview": {
+      "scope": "Valve component comparison",
+      "supports": "Later-reference AV valves have branching chordae. Aortic and pulmonary reference cusps form arterial-facing pockets with curved attachment lines and surrounding sinus walls; one aortic cusp retains three removable tissue layers.",
+      "limitations": "Isolated teaching stations, not an intact stage-specific heart. Valve shapes, branch counts and thicknesses are illustrative. Semilunar cusps are shown partly open, without motion, coronary ostia or complete ventricular-root continuity. Early cushions and AV leaflet geometry remain simplified."
+    }
+  },
+  {
+    "id": "Heart_10_CirculatoryTransition",
+    "lesson": "Circulatory transition",
+    "stageIndex": 7,
+    "parts": [
+      {
+        "id": "AtriumWall_R_Anterior",
+        "label": "Right atrium wall \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.035,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "AtriumWall_R_Posterior",
+        "label": "Right atrium wall \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "AtriumWall_L_Anterior",
+        "label": "Left atrium wall \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.035,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "AtriumWall_L_Posterior",
+        "label": "Left atrium wall \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.035,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "VentricleWall_R_Anterior",
+        "label": "Right ventricle wall \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.035,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "VentricleWall_R_Posterior",
+        "label": "Right ventricle wall \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "VentricleWall_L_Anterior",
+        "label": "Left ventricle wall \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.035,
+          0,
+          0.05
+        ]
+      },
+      {
+        "id": "VentricleWall_L_Posterior",
+        "label": "Left ventricle wall \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.035,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "id": "VentricularSeptum",
+        "label": "Ventricular septum",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.045,
+          -0.015,
+          0
+        ]
+      },
+      {
+        "id": "AtrialSeptum",
+        "label": "Atrial septal rim around foramen ovale",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.04,
+          0.025,
+          0
+        ]
+      },
+      {
+        "id": "ForamenFlap_Fetal",
+        "label": "Foramen ovale flap \u2014 open toward left atrium",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.065,
+          0,
+          0
+        ],
+        "state": "fetal"
+      },
+      {
+        "id": "ForamenFlap_Transition",
+        "label": "Foramen ovale flap \u2014 apposed after birth",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.065,
+          0,
+          0
+        ],
+        "state": "transition"
+      },
+      {
+        "id": "RightAV_Posterior",
+        "label": "RightAV junction \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.024,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "RightAV_Anterior",
+        "label": "RightAV junction \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.024,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "LeftAV_Posterior",
+        "label": "LeftAV junction \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.024,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "LeftAV_Anterior",
+        "label": "LeftAV junction \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.024,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "Aorta",
+        "label": "Ascending aorta, arch and descending segment",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.05,
+          0.035,
+          -0.025
+        ]
+      },
+      {
+        "id": "PulmonaryArtery",
+        "label": "Pulmonary trunk and left pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.045,
+          0.025,
+          0.03
+        ]
+      },
+      {
+        "id": "RightPulmonaryArtery",
+        "label": "Right pulmonary artery",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.05,
+          0.01,
+          -0.03
+        ]
+      },
+      {
+        "id": "Ductus_Fetal",
+        "label": "Ductus arteriosus \u2014 patent fetal lumen",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.055,
+          0.05,
+          0.035
+        ],
+        "state": "fetal"
+      },
+      {
+        "id": "Ductus_Transition",
+        "label": "Ductus arteriosus \u2014 constricting, still patent",
+        "category": "anatomy",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.055,
+          0.05,
+          0.035
+        ],
+        "state": "transition"
+      },
+      {
+        "id": "Lung_R",
+        "label": "Right lung (orientation context)",
+        "category": "context",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          -0.05,
+          0,
+          -0.03
+        ]
+      },
+      {
+        "id": "Lung_L",
+        "label": "Left lung (orientation context)",
+        "category": "context",
+        "parent": "Heart_10_CirculatoryTransition",
+        "separationOffset": [
+          0.05,
+          0,
+          -0.03
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "fetal",
+        "label": "Before birth"
+      },
+      {
+        "id": "transition",
+        "label": "After birth \u00b7 transitioning"
+      }
+    ],
+    "defaultState": "fetal",
+    "defaultCutaway": true,
+    "defaultYaw": 0.5,
+    "defaultPitch": 0.15,
+    "previewImage": "Stage10",
+    "presentationNote": "Closure is gradual \u00b7 illustrative before/after snapshots",
+    "anatomyReview": {
+      "scope": "Birth-transition diagram",
+      "supports": "Shows flap apposition and a narrowing ductal lumen.",
+      "limitations": "No pressure or complete circulation is modeled. Functional closure is not immediate anatomical fusion; a PFO may persist."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "VentricularWall_R_Anterior",
+        "label": "Right ventricular wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.035,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_R_Posterior",
+        "label": "Right ventricular wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.035,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_L_Anterior",
+        "label": "Left ventricular wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.035,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "VentricularWall_L_Posterior",
+        "label": "Left ventricular wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.035,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "MuscularSeptum_Open",
+        "label": "Muscular ventricular septum \u2014 inferior defect border",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.05,
+          -0.025,
+          0
+        ]
+      },
+      {
+        "id": "AVSeptalContribution",
+        "label": "Superior septal rim beside tricuspid attachment",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0,
+          0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "OutletSeptalContribution",
+        "label": "Outlet septal rim below aortic root",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0,
+          0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "MembranousSeptum_Closed",
+        "label": "Membranous region \u2014 intact comparison tissue",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0
+        ],
+        "state": "intact"
+      },
+      {
+        "id": "SubaorticOutlet_Posterior",
+        "label": "Left ventricular subaortic outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.021500000000000002,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "SubaorticOutlet_Anterior",
+        "label": "Left ventricular subaortic outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.021500000000000002,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "SubpulmonaryOutlet_Posterior",
+        "label": "Right ventricular subpulmonary outlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "SubpulmonaryOutlet_Anterior",
+        "label": "Right ventricular subpulmonary outlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "Trabecula_R1",
+        "label": "Right ventricular trabecular ridge 1",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_R2",
+        "label": "Right ventricular trabecular ridge 2",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_R3",
+        "label": "Right ventricular trabecular ridge 3",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L1",
+        "label": "Left ventricular trabecular ridge 1",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L2",
+        "label": "Left ventricular trabecular ridge 2",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "Trabecula_L3",
+        "label": "Left ventricular trabecular ridge 3",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "AorticCusp_1",
+        "label": "Aortic cusp 1 (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ]
+      },
+      {
+        "id": "AorticCusp_2",
+        "label": "Aortic cusp 2 (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ]
+      },
+      {
+        "id": "AorticCusp_3",
+        "label": "Aortic cusp 3 (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          0,
+          0.039,
+          0
+        ]
+      },
+      {
+        "id": "TricuspidSeptalLeaflet",
+        "label": "Tricuspid septal leaflet (orientation landmark)",
+        "category": "anatomy",
+        "parent": "Heart_11_VentricularSeptalDefect",
+        "separationOffset": [
+          -0.045,
+          0.03,
+          0
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "defect",
+        "label": "Perimembranous VSD"
+      },
+      {
+        "id": "intact",
+        "label": "Intact septum"
+      }
+    ],
+    "defaultState": "defect",
+    "defaultCutaway": true,
+    "id": "Heart_11_VentricularSeptalDefect",
+    "lesson": "Ventricular Septal Defect (VSD)",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": 0.85,
+    "defaultPitch": 0.14,
+    "previewImage": "Anomaly01",
+    "presentationNote": "Perimembranous subtype \u00b7 regional comparison",
+    "shortName": "VSD",
+    "anatomyReview": {
+      "scope": "Intended perimembranous VSD example",
+      "supports": "Shows a superior septal opening with limited nearby valve landmarks.",
+      "limitations": "The simplified borders cannot establish the full perimembranous subtype or all valve relationships. It is not representative of every VSD."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "AtrialWall_R_Anterior",
+        "label": "Right atrial wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.045,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "AtrialWall_R_Posterior",
+        "label": "Right atrial wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.045,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "AtrialWall_L_Anterior",
+        "label": "Left atrial wall \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          0.045,
+          0,
+          0.055
+        ]
+      },
+      {
+        "id": "AtrialWall_L_Posterior",
+        "label": "Left atrial wall \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          0.045,
+          0,
+          -0.055
+        ]
+      },
+      {
+        "id": "AtrialSeptalRim",
+        "label": "Rim around oval fossa (enlarged)",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          0.045,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "FossaFloor_Defect",
+        "label": "Oval fossa floor \u2014 secundum tissue deficiency",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.045,
+          0,
+          0
+        ],
+        "state": "defect"
+      },
+      {
+        "id": "FossaFloor_Intact",
+        "label": "Oval fossa floor \u2014 intact comparison",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.045,
+          0,
+          0
+        ],
+        "state": "intact"
+      },
+      {
+        "id": "RightAV_Posterior",
+        "label": "Right AV junction \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.026000000000000002,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "RightAV_Anterior",
+        "label": "Right AV junction \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.026000000000000002,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "LeftAV_Posterior",
+        "label": "Left AV junction \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          0.026000000000000002,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "LeftAV_Anterior",
+        "label": "Left AV junction \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          0.026000000000000002,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "SuperiorCavalMouth_Posterior",
+        "label": "Superior caval opening \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.032,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "SuperiorCavalMouth_Anterior",
+        "label": "Superior caval opening \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.032,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "InferiorCavalMouth_Posterior",
+        "label": "Inferior caval opening \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.032,
+          0.02,
+          -0.04
+        ]
+      },
+      {
+        "id": "InferiorCavalMouth_Anterior",
+        "label": "Inferior caval opening \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.032,
+          0.02,
+          0.04
+        ]
+      },
+      {
+        "id": "RightPectinate_1",
+        "label": "Right atrial pectinate ridge 1 (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "RightPectinate_2",
+        "label": "Right atrial pectinate ridge 2 (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "RightPectinate_3",
+        "label": "Right atrial pectinate ridge 3 (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "RightPectinate_4",
+        "label": "Right atrial pectinate ridge 4 (schematic)",
+        "category": "anatomy",
+        "parent": "Heart_12_AtrialSeptalDefect",
+        "separationOffset": [
+          -0.04,
+          0,
+          -0.035
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "defect",
+        "label": "Secundum ASD"
+      },
+      {
+        "id": "intact",
+        "label": "Intact septum"
+      }
+    ],
+    "defaultState": "defect",
+    "defaultCutaway": true,
+    "id": "Heart_12_AtrialSeptalDefect",
+    "lesson": "Atrial Septal Defect (ASD)",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": 0.85,
+    "defaultPitch": 0.14,
+    "previewImage": "Anomaly02",
+    "presentationNote": "Secundum subtype \u00b7 tissue deficiency, not a PFO flap",
+    "shortName": "ASD",
+    "anatomyReview": {
+      "scope": "Secundum ASD concept example",
+      "supports": "Shows missing fossa-floor tissue rather than a persisting flap tunnel.",
+      "limitations": "A round hole and generic rims do not represent all ASD types or their relationships to venous entrances."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "Aorta_Fallot",
+        "label": "Overriding aorta \u2014 mouth spans ventricular septum",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.055,
+          0.03,
+          -0.025
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "PulmonaryTrunk_Fallot",
+        "label": "Pulmonary trunk beyond narrowed outflow",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0.03
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "RightPulmonaryBranch_Fallot",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.065,
+          0.02,
+          -0.03
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "VentricularWall_R_Fallot_Anterior",
+        "label": "Right ventricular wall \u2014 thickened \u2014 fallot anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0,
+          0.055
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "VentricularWall_R_Fallot_Posterior",
+        "label": "Right ventricular wall \u2014 thickened \u2014 fallot posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0,
+          -0.055
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "VentricularWall_L_Fallot_Anterior",
+        "label": "Left ventricular wall \u2014 fallot anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          0,
+          0.055
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "VentricularWall_L_Fallot_Posterior",
+        "label": "Left ventricular wall \u2014 fallot posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          0,
+          -0.055
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "VentricularSeptum_Fallot",
+        "label": "Ventricular septum \u2014 outlet opening",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          -0.025,
+          0
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "RightAV_Fallot_Posterior",
+        "label": "Right AV inlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.025500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "RightAV_Fallot_Anterior",
+        "label": "Right AV inlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.025500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "LeftAV_Fallot_Posterior",
+        "label": "Left AV inlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.025500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "LeftAV_Fallot_Anterior",
+        "label": "Left AV inlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.025500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "fallot"
+      },
+      {
+        "id": "RVOutflow_Fallot_Posterior",
+        "label": "Narrowed right ventricular outflow \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "state": "fallot",
+        "separationOffset": [
+          -0.045,
+          0.025,
+          -0.05
+        ]
+      },
+      {
+        "id": "RVOutflow_Fallot_Anterior",
+        "label": "Narrowed right ventricular outflow \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "state": "fallot",
+        "separationOffset": [
+          -0.045,
+          0.025,
+          0.05
+        ]
+      },
+      {
+        "id": "Aorta_Normal_Fallot",
+        "label": "Aorta from left ventricle",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.055,
+          0.03,
+          -0.025
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "PulmonaryTrunk_Normal_Fallot",
+        "label": "Pulmonary trunk from right ventricle",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0.03
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "RightPulmonaryBranch_Normal_Fallot",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.065,
+          0.02,
+          -0.03
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "VentricularWall_R_Normal_Fallot_Anterior",
+        "label": "Right ventricular wall \u2014 normal_fallot anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0,
+          0.055
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "VentricularWall_R_Normal_Fallot_Posterior",
+        "label": "Right ventricular wall \u2014 normal_fallot posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0,
+          -0.055
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "VentricularWall_L_Normal_Fallot_Anterior",
+        "label": "Left ventricular wall \u2014 normal_fallot anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          0,
+          0.055
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "VentricularWall_L_Normal_Fallot_Posterior",
+        "label": "Left ventricular wall \u2014 normal_fallot posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          0,
+          -0.055
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "VentricularSeptum_Normal_Fallot",
+        "label": "Ventricular septum \u2014 intact",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.045,
+          -0.025,
+          0
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "RightAV_Normal_Fallot_Posterior",
+        "label": "Right AV inlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.025500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "RightAV_Normal_Fallot_Anterior",
+        "label": "Right AV inlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.025500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "LeftAV_Normal_Fallot_Posterior",
+        "label": "Left AV inlet \u2014 posterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.025500000000000002,
+          0.02,
+          -0.04
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "LeftAV_Normal_Fallot_Anterior",
+        "label": "Left AV inlet \u2014 anterior panel",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          0.025500000000000002,
+          0.02,
+          0.04
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "RVOutflow_Normal_Fallot_Posterior",
+        "label": "Comparison right ventricular outflow \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "state": "normal_fallot",
+        "separationOffset": [
+          -0.045,
+          0.025,
+          -0.05
+        ]
+      },
+      {
+        "id": "RVOutflow_Normal_Fallot_Anterior",
+        "label": "Comparison right ventricular outflow \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "state": "normal_fallot",
+        "separationOffset": [
+          -0.045,
+          0.025,
+          0.05
+        ]
+      },
+      {
+        "id": "OutletSeptum_Normal_Fallot",
+        "label": "Outlet septum \u2014 aligned comparison",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0.045,
+          0.04
+        ],
+        "state": "normal_fallot"
+      },
+      {
+        "id": "OutletSeptum_Fallot",
+        "label": "Outlet septum \u2014 anterocephalad displacement",
+        "category": "anatomy",
+        "parent": "Heart_13_TetralogyOfFallot",
+        "separationOffset": [
+          -0.045,
+          0.045,
+          0.04
+        ],
+        "state": "fallot"
+      }
+    ],
+    "states": [
+      {
+        "id": "fallot",
+        "label": "Tetralogy of Fallot"
+      },
+      {
+        "id": "normal_fallot",
+        "label": "Normal comparison"
+      }
+    ],
+    "defaultState": "fallot",
+    "defaultCutaway": true,
+    "id": "Heart_13_TetralogyOfFallot",
+    "lesson": "Tetralogy of Fallot",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": 0.5,
+    "defaultPitch": 0.15,
+    "previewImage": "Anomaly03",
+    "shortName": "Tetralogy of Fallot",
+    "presentationNote": "Regional Fallot comparison with a separately inspectable outlet septum displaced anteriorly and cranially. Generic ventricular geometry; septoparietal trabeculations and valve-level anatomy remain incomplete. Thickness and displacement are illustrative.",
+    "anatomyReview": {
+      "scope": "Regional Fallot comparison",
+      "supports": "Shows the regional Fallot features, including an illustrative outlet-septal component displaced anteriorly and cranially. The VSD and subpulmonary lumen have clear sampled paths.",
+      "limitations": "Generic chambers, exaggerated dimensions and missing septoparietal trabeculations remain. This is a regional comparison, not a complete reconstruction of conal malalignment or a dated embryo. RV hypertrophy is pressure-related."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "Aorta_Tga",
+        "label": "Aorta from right ventricle",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.055,
+          0.03,
+          -0.025
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "PulmonaryTrunk_Tga",
+        "label": "Pulmonary trunk from left ventricle",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0.03
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "RightPulmonaryBranch_Tga",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.065,
+          0.02,
+          -0.03
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "VentricularWall_R_Tga_Anterior",
+        "label": "Right ventricular wall \u2014 tga anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.045,
+          0,
+          0.055
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "VentricularWall_R_Tga_Posterior",
+        "label": "Right ventricular wall \u2014 tga posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.045,
+          0,
+          -0.055
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "VentricularWall_L_Tga_Anterior",
+        "label": "Left ventricular wall \u2014 tga anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          0,
+          0.055
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "VentricularWall_L_Tga_Posterior",
+        "label": "Left ventricular wall \u2014 tga posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          0,
+          -0.055
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "VentricularSeptum_Tga",
+        "label": "Ventricular septum \u2014 intact",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          -0.025,
+          0
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "Aorta_Normal",
+        "label": "Aorta from left ventricle",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.055,
+          0.03,
+          -0.025
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "PulmonaryTrunk_Normal",
+        "label": "Pulmonary trunk from right ventricle",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.05,
+          0.025,
+          0.03
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "RightPulmonaryBranch_Normal",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.065,
+          0.02,
+          -0.03
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "VentricularWall_R_Normal_Anterior",
+        "label": "Right ventricular wall \u2014 normal anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.045,
+          0,
+          0.055
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "VentricularWall_R_Normal_Posterior",
+        "label": "Right ventricular wall \u2014 normal posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.045,
+          0,
+          -0.055
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "VentricularWall_L_Normal_Anterior",
+        "label": "Left ventricular wall \u2014 normal anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          0,
+          0.055
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "VentricularWall_L_Normal_Posterior",
+        "label": "Left ventricular wall \u2014 normal posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          0,
+          -0.055
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "VentricularSeptum_Normal",
+        "label": "Ventricular septum \u2014 intact",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.045,
+          -0.025,
+          0
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "AtrialWall_R_Anterior",
+        "label": "Right atrial wall \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.035,
+          0.025,
+          0.045
+        ]
+      },
+      {
+        "id": "AtrialWall_R_Posterior",
+        "label": "Right atrial wall \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.035,
+          0.025,
+          -0.045
+        ]
+      },
+      {
+        "id": "AtrialWall_L_Anterior",
+        "label": "Left atrial wall \u2014 anterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.035,
+          0.025,
+          0.045
+        ]
+      },
+      {
+        "id": "AtrialWall_L_Posterior",
+        "label": "Left atrial wall \u2014 posterior",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.035,
+          0.025,
+          -0.045
+        ]
+      },
+      {
+        "id": "AtrialSeptum_Tga",
+        "label": "Atrial septum \u2014 illustrative mixing opening",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.05,
+          0.025,
+          0
+        ],
+        "state": "tga"
+      },
+      {
+        "id": "AtrialSeptum_Normal",
+        "label": "Atrial septum \u2014 intact comparison",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.05,
+          0.025,
+          0
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "RightAV",
+        "label": "Right AV connection",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          -0.0306,
+          0,
+          -0.035
+        ]
+      },
+      {
+        "id": "LeftAV",
+        "label": "Left AV connection",
+        "category": "anatomy",
+        "parent": "Heart_14_TranspositionGreatArteries",
+        "separationOffset": [
+          0.0306,
+          0,
+          -0.035
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "tga",
+        "label": "d-TGA"
+      },
+      {
+        "id": "normal",
+        "label": "Normal connections"
+      }
+    ],
+    "defaultState": "tga",
+    "defaultCutaway": true,
+    "id": "Heart_14_TranspositionGreatArteries",
+    "lesson": "Transposition of the Great Arteries (TGA)",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": 0.5,
+    "defaultPitch": 0.15,
+    "previewImage": "Anomaly04",
+    "shortName": "d-TGA",
+    "presentationNote": "Regional connections \u00b7 atrial opening shown in d-TGA",
+    "anatomyReview": {
+      "scope": "Ventriculoarterial connection diagram",
+      "supports": "Shows aorta connected to the intended RV and pulmonary trunk to the intended LV.",
+      "limitations": "Two ellipsoid half-chambers lack enough morphology to identify RV versus LV independently. Vessel parallelism alone does not diagnose TGA."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "Brachiocephalic_Posterior",
+        "label": "Brachiocephalic trunk \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "Brachiocephalic_Anterior",
+        "label": "Brachiocephalic trunk \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "LeftCarotid_Posterior",
+        "label": "Left common carotid artery \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.00315,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "LeftCarotid_Anterior",
+        "label": "Left common carotid artery \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.00315,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "LeftSubclavian_Posterior",
+        "label": "Left subclavian artery \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.0295,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "LeftSubclavian_Anterior",
+        "label": "Left subclavian artery \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.0295,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "AorticArch_Posterior",
+        "label": "Ascending aorta and arch \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.04,
+          0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "AorticArch_Anterior",
+        "label": "Ascending aorta and arch \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.04,
+          0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "DescendingAorta_Posterior",
+        "label": "Descending thoracic aorta \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          -0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "DescendingAorta_Anterior",
+        "label": "Descending thoracic aorta \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          -0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "PulmonaryTrunk",
+        "label": "Pulmonary trunk and left pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.04,
+          0.015,
+          0.04
+        ]
+      },
+      {
+        "id": "RightPulmonaryBranch",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          -0.05,
+          0.015,
+          -0.03
+        ]
+      },
+      {
+        "id": "AorticIsthmus_Coarctation_Posterior",
+        "label": "Aortic isthmus \u2014 localized narrowing \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          0,
+          -0.035
+        ],
+        "state": "coarctation"
+      },
+      {
+        "id": "AorticIsthmus_Coarctation_Anterior",
+        "label": "Aortic isthmus \u2014 localized narrowing \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          0,
+          0.035
+        ],
+        "state": "coarctation"
+      },
+      {
+        "id": "AorticIsthmus_Normal_Posterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          0,
+          -0.035
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "AorticIsthmus_Normal_Anterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.055,
+          0,
+          0.035
+        ],
+        "state": "normal"
+      },
+      {
+        "id": "Ligamentum",
+        "label": "Ligamentum arteriosum \u2014 ductal attachment landmark",
+        "category": "anatomy",
+        "parent": "Heart_15_AorticCoarctation",
+        "separationOffset": [
+          0.035,
+          0.025,
+          0.035
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "coarctation",
+        "label": "Coarctation"
+      },
+      {
+        "id": "normal",
+        "label": "Open comparison"
+      }
+    ],
+    "defaultState": "coarctation",
+    "defaultCutaway": true,
+    "id": "Heart_15_AorticCoarctation",
+    "lesson": "Coarctation of the Aorta",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": -0.12,
+    "defaultPitch": 0.34,
+    "previewImage": "Anomaly05",
+    "shortName": "Coarctation",
+    "presentationNote": "Localized narrowing \u00b7 dimensions are illustrative",
+    "anatomyReview": {
+      "scope": "Regional coarctation example",
+      "supports": "Shows actual lumen narrowing near the isthmus and ductal attachment.",
+      "limitations": "Arch geometry, narrowing severity and wall thickness are illustrative. Diffuse arch hypoplasia and collateral networks are omitted."
+    }
+  },
+  {
+    "parts": [
+      {
+        "id": "Brachiocephalic_Posterior",
+        "label": "Brachiocephalic trunk \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "Brachiocephalic_Anterior",
+        "label": "Brachiocephalic trunk \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.021500000000000002,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "LeftCarotid_Posterior",
+        "label": "Left common carotid artery \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.00315,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "LeftCarotid_Anterior",
+        "label": "Left common carotid artery \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.00315,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "LeftSubclavian_Posterior",
+        "label": "Left subclavian artery \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.0295,
+          0.04,
+          -0.035
+        ]
+      },
+      {
+        "id": "LeftSubclavian_Anterior",
+        "label": "Left subclavian artery \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.0295,
+          0.04,
+          0.035
+        ]
+      },
+      {
+        "id": "AorticArch_Posterior",
+        "label": "Ascending aorta and arch \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.04,
+          0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "AorticArch_Anterior",
+        "label": "Ascending aorta and arch \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.04,
+          0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "DescendingAorta_Posterior",
+        "label": "Descending thoracic aorta \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          -0.025,
+          -0.035
+        ]
+      },
+      {
+        "id": "DescendingAorta_Anterior",
+        "label": "Descending thoracic aorta \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          -0.025,
+          0.035
+        ]
+      },
+      {
+        "id": "AorticIsthmus_Patent_Posterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          0,
+          -0.035
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "AorticIsthmus_Patent_Anterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          0,
+          0.035
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "PulmonaryTrunk_Patent",
+        "label": "Pulmonary trunk and left pulmonary branch \u2014 patent ductal mouth",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.04,
+          0.015,
+          0.04
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "RightPulmonaryBranch_Patent",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.05,
+          0.015,
+          -0.03
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "AorticIsthmus_Closed_Posterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          0,
+          -0.035
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "AorticIsthmus_Closed_Anterior",
+        "label": "Aortic isthmus \u2014 open aortic lumen \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.055,
+          0,
+          0.035
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "PulmonaryTrunk_Closed",
+        "label": "Pulmonary trunk and left pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.04,
+          0.015,
+          0.04
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "RightPulmonaryBranch_Closed",
+        "label": "Right pulmonary branch",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          -0.05,
+          0.015,
+          -0.03
+        ],
+        "state": "closed"
+      },
+      {
+        "id": "Ductus_Patent_Posterior",
+        "label": "Patent ductus lumen \u2014 posterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.04,
+          0.025,
+          -0.035
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "Ductus_Patent_Anterior",
+        "label": "Patent ductus lumen \u2014 anterior cut",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.04,
+          0.025,
+          0.035
+        ],
+        "state": "patent"
+      },
+      {
+        "id": "Ligamentum_Closed",
+        "label": "Ligamentum arteriosum \u2014 closed remnant",
+        "category": "anatomy",
+        "parent": "Heart_16_PatentDuctusArteriosus",
+        "separationOffset": [
+          0.035,
+          0.025,
+          0.035
+        ],
+        "state": "closed"
+      }
+    ],
+    "states": [
+      {
+        "id": "patent",
+        "label": "Patent ductus"
+      },
+      {
+        "id": "closed",
+        "label": "Closed remnant"
+      }
+    ],
+    "defaultState": "patent",
+    "defaultCutaway": true,
+    "id": "Heart_16_PatentDuctusArteriosus",
+    "lesson": "Patent Ductus Arteriosus (PDA)",
+    "stageIndex": -1,
+    "category": "anomaly",
+    "defaultYaw": -0.12,
+    "defaultPitch": 0.34,
+    "previewImage": "Anomaly06",
+    "shortName": "PDA",
+    "presentationNote": "Patent / closed anatomy \u00b7 closure is gradual",
+    "anatomyReview": {
+      "scope": "Ductal patency comparison",
+      "supports": "Shows an open ductal connection versus a solid remnant.",
+      "limitations": "A patent fetal duct is normal; PDA concerns persistence after birth. The comparison is not a real-time closure process."
+    }
+  }
+]

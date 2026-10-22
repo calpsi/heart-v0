@@ -1,0 +1,5 @@
+00:00.814  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/blender/Heart_10_CirculatoryTransition.blend"
+VALIDATION PASSED [{"asset": "Heart_10_CirculatoryTransition", "mesh_count": 23, "triangles": 90282, "embedded_textures": 3, "usdz_bytes": 10857802, "metres_per_unit": 1, "up_axis": "Y"}]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

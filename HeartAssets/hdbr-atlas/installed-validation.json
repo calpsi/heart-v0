@@ -1,0 +1,446 @@
+{
+  "assets": [
+    {
+      "asset": "HDBR_CS11_N662",
+      "passed": true,
+      "sourceFile": "cs11-662.glb",
+      "sourceSHA256": "b1f26cd34f7bf73513124ef4fff0dc73c8f1e930c9cea11694f8fca0ba032737",
+      "parts": [
+        {
+          "id": "CS11_N662_aorta",
+          "source": "N662_aorta",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 44642
+        },
+        {
+          "id": "CS11_N662_atria",
+          "source": "N662_atria",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 35162
+        },
+        {
+          "id": "CS11_N662_left_ventricle",
+          "source": "N662_left_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 30390
+        },
+        {
+          "id": "CS11_N662_outflow_tract",
+          "source": "N662_outflow_tract",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 29246
+        },
+        {
+          "id": "CS11_N662_right_ventricle",
+          "source": "N662_right_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 21642
+        },
+        {
+          "id": "CS11_N662_veins",
+          "source": "N662_veins",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 9826
+        }
+      ],
+      "exportedMeshes": 6,
+      "uniformDisplayScale": 0.0002001268870912539,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "cda4830323c63190edce1b8c6c2caeda5c6ee16ff9798419f8411f81dae0012d"
+    },
+    {
+      "asset": "HDBR_CS12_N288",
+      "passed": true,
+      "sourceFile": "CS12-N288-heart.glb",
+      "sourceSHA256": "5593a21cbcae1cb2d9f98b31ad24049b3f7b19307736c8bf37b99a573965e5ca",
+      "parts": [
+        {
+          "id": "CS12_N288_arches",
+          "source": "N288_arches",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 39550
+        },
+        {
+          "id": "CS12_N288_atrium",
+          "source": "N288_atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 39544
+        },
+        {
+          "id": "CS12_N288_left_ventricle",
+          "source": "N288_left_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 33942
+        },
+        {
+          "id": "CS12_N288_OFT",
+          "source": "N288_OFT",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 26924
+        },
+        {
+          "id": "CS12_N288_right_ventricle",
+          "source": "N288_right_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 21330
+        }
+      ],
+      "exportedMeshes": 5,
+      "uniformDisplayScale": 0.0002123156694963976,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "c4b6b95593c66463105959207f43f85a7241609107cacbadfb7dfbaeb3607efd"
+    },
+    {
+      "asset": "HDBR_CS14_N925",
+      "passed": true,
+      "sourceFile": "CS14-N925-heart.glb",
+      "sourceSHA256": "af4122943bf97f82c7022171568f7af52667a079b5363a8c592f116b9c8646ff",
+      "parts": [
+        {
+          "id": "CS14_N925_vena_cava_sm_dec",
+          "source": "N925-vena_cava_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 8070
+        },
+        {
+          "id": "CS14_N925_aorta_sm_dec",
+          "source": "N925_aorta_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 31622
+        },
+        {
+          "id": "CS14_N925_left_atrium_sm_dec",
+          "source": "N925_left-atrium_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 24652
+        },
+        {
+          "id": "CS14_N925_left_ventricle_sm_dec",
+          "source": "N925_left_ventricle_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 56027
+        },
+        {
+          "id": "CS14_N925_oft_sm_dec",
+          "source": "N925_oft_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 18922
+        },
+        {
+          "id": "CS14_N925_outside_tissue_sm_dec",
+          "source": "N925_outside_tissue_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 14696
+        },
+        {
+          "id": "CS14_N925_right_ventricle_sm_dec",
+          "source": "N925_right-ventricle_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 16481
+        },
+        {
+          "id": "CS14_N925_right_atrium_sm_dec",
+          "source": "N925_right_atrium_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 19498
+        },
+        {
+          "id": "CS14_N925_sinus_venosus_sm_dec",
+          "source": "N925_sinus_venosus_sm_dec",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 6326
+        }
+      ],
+      "exportedMeshes": 9,
+      "uniformDisplayScale": 0.0004357807254802193,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "2a5917b74344cc2503e5e3a7474c9c43b35ae60ccdcfa0b81a3fbf7831a32383"
+    },
+    {
+      "asset": "HDBR_CS16_N1815",
+      "passed": true,
+      "sourceFile": "CS16-1815-heart2.glb",
+      "sourceSHA256": "0325285c3702bd08835e2f52073f9f9346e9cd4c9a295eef67cd5d190cdbdad9",
+      "parts": [
+        {
+          "id": "CS16_aorta",
+          "source": "aorta",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 10274
+        },
+        {
+          "id": "CS16_epicardium",
+          "source": "epicardium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 13354
+        },
+        {
+          "id": "CS16_left_atrium",
+          "source": "left-atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 22646
+        },
+        {
+          "id": "CS16_left_vent",
+          "source": "left-vent",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 16968
+        },
+        {
+          "id": "CS16_oft",
+          "source": "oft",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 16496
+        },
+        {
+          "id": "CS16_right_atrium2",
+          "source": "right-atrium2.",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 22523
+        },
+        {
+          "id": "CS16_right_vent",
+          "source": "right-vent",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 20090
+        },
+        {
+          "id": "CS16_sinus_venosus_vena_cava2",
+          "source": "sinus-venosus-vena-cava2",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 11010
+        }
+      ],
+      "exportedMeshes": 8,
+      "uniformDisplayScale": 0.0005150413999418756,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "62c90be46f2641dfab93633f63386282c60560ebcb7a7e479f8fe898654f6f4b"
+    },
+    {
+      "asset": "HDBR_CS17_N1699",
+      "passed": true,
+      "sourceFile": "cs17_v2.glb",
+      "sourceSHA256": "46b337120cca8251eac3fd154be2899d29af687fc8665e48949e58eb811632c4",
+      "parts": [
+        {
+          "id": "CS17_cs17_N1699_aorta_version2",
+          "source": "cs17_N1699_aorta_version2",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 44897
+        },
+        {
+          "id": "CS17_cs17_N1699_ductus_arteriosus",
+          "source": "cs17_N1699_ductus_arteriosus",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 1002
+        },
+        {
+          "id": "CS17_cs17_N1699_epicardium",
+          "source": "cs17_N1699_epicardium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 5092
+        },
+        {
+          "id": "CS17_cs17_N1699_left_atrium",
+          "source": "cs17_N1699_left_atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 31202
+        },
+        {
+          "id": "CS17_cs17_N1699_left_ventricle",
+          "source": "cs17_N1699_left_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 42454
+        },
+        {
+          "id": "CS17_cs17_N1699_oft",
+          "source": "cs17_N1699_oft",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 32556
+        },
+        {
+          "id": "CS17_cs17_N1699_pulmonary_version2",
+          "source": "cs17_N1699_pulmonary_version2",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 7098
+        },
+        {
+          "id": "CS17_cs17_N1699_right_atrium",
+          "source": "cs17_N1699_right_atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 32044
+        },
+        {
+          "id": "CS17_cs17_N1699_right_ventricle",
+          "source": "cs17_N1699_right_ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 28510
+        },
+        {
+          "id": "CS17_cs17_N1699_veins",
+          "source": "cs17_N1699_veins",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 12713
+        }
+      ],
+      "exportedMeshes": 10,
+      "uniformDisplayScale": 0.0002256750243836189,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "cd6c62887e7a8118bd5ee520558f0bd6b2b56ef102a99a31aa21d525fa1eaa31"
+    },
+    {
+      "asset": "HDBR_CS18_N1645",
+      "passed": true,
+      "sourceFile": "cs18.glb",
+      "sourceSHA256": "e44f40f2f18962be8b60c70715a564cff5f9d2f5c07f0ebce8aaaa7673f7ee58",
+      "parts": [
+        {
+          "id": "CS18_cs18_N1645_aorta",
+          "source": "cs18_N1645_aorta",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 9824
+        },
+        {
+          "id": "CS18_cs18_N1645_ductus_arteriosus",
+          "source": "cs18_N1645_ductus-arteriosus",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 714
+        },
+        {
+          "id": "CS18_cs18_N1645_epicardium",
+          "source": "cs18_N1645_epicardium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 1096
+        },
+        {
+          "id": "CS18_cs18_N1645_left_atrium",
+          "source": "cs18_N1645_left-atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 16096
+        },
+        {
+          "id": "CS18_cs18_N1645_left_ventricle",
+          "source": "cs18_N1645_left-ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 21980
+        },
+        {
+          "id": "CS18_cs18_N1645_outflow_tract",
+          "source": "cs18_N1645_outflow-tract",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 8400
+        },
+        {
+          "id": "CS18_cs18_N1645_pulmonary",
+          "source": "cs18_N1645_pulmonary",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 2102
+        },
+        {
+          "id": "CS18_cs18_N1645_right_atrium",
+          "source": "cs18_N1645_right-atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 130434
+        },
+        {
+          "id": "CS18_cs18_N1645_right_ventricle",
+          "source": "cs18_N1645_right-ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 16834
+        },
+        {
+          "id": "CS18_cs18_N1645_veins",
+          "source": "cs18_N1645_veins",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 6436
+        }
+      ],
+      "exportedMeshes": 10,
+      "uniformDisplayScale": 0.0002713841078135649,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "960e7daaae9a17566a8b1ffbb67ba9a3ecbc294e079c9e2d732c38b86904ca1b"
+    },
+    {
+      "asset": "HDBR_CS20_N913",
+      "passed": true,
+      "sourceFile": "CS20-heart.glb",
+      "sourceSHA256": "891da43b694cc1232a2b4c232dfaa179d3512329f00bc5ce24937712339ef1e7",
+      "parts": [
+        {
+          "id": "CS20_CS20_913_left_ventricle",
+          "source": "CS20-913-left-ventricle",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 50401
+        },
+        {
+          "id": "CS20_CS20_N913_aorta",
+          "source": "CS20_N913_aorta",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 25143
+        },
+        {
+          "id": "CS20_CS20_N913_ductus_arteriosus",
+          "source": "CS20_N913_ductus-arteriosus",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 2396
+        },
+        {
+          "id": "CS20_CS20_N913_left_atrium",
+          "source": "CS20_N913_left-atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 40790
+        },
+        {
+          "id": "CS20_CS20_N913_outflow",
+          "source": "CS20_N913_outflow",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 11672
+        },
+        {
+          "id": "CS20_CS20_N913_pulmonary",
+          "source": "CS20_N913_pulmonary",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 12050
+        },
+        {
+          "id": "CS20_CS20_N913_right_atrium",
+          "source": "CS20_N913_right-atrium",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 35269
+        },
+        {
+          "id": "CS20_CS20_N913_right_ventricle_surf",
+          "source": "CS20_N913_right-ventricle.surf",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 43570
+        },
+        {
+          "id": "CS20_CS20_N913_veins",
+          "source": "CS20_N913_veins",
+          "vertexCoordinatesUnchanged": true,
+          "triangles": 15060
+        }
+      ],
+      "exportedMeshes": 9,
+      "uniformDisplayScale": 0.00048807160329764103,
+      "specimenScalePreserved": false,
+      "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+      "license": "CC BY-NC-SA 4.0",
+      "usdzSHA256": "5a50ae2ad8e23a1371e52dfba1f9697ae18cfc0d51e00146575213c3132fc231"
+    }
+  ],
+  "parts": 57,
+  "passed": true
+}

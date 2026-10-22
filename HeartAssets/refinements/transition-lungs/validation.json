@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "asset": "Heart_10_CirculatoryTransition",
+  "parts": 23,
+  "checks": [
+    {
+      "part": "Lung_R",
+      "manifold": true,
+      "volume": 0.00020437361452921096,
+      "vertices": 2498
+    },
+    {
+      "part": "Lung_L",
+      "manifold": true,
+      "volume": 0.00018041689955458374,
+      "vertices": 2498
+    }
+  ],
+  "otherMeshCoordinatesUnchanged": true,
+  "usdzSHA256": "8237402733a9710e1697037dfe5d328be5ba669d86d19d5f13970017c422d08a",
+  "limitations": [
+    "Illustrative perinatal lung contours, not a fetal scan reconstruction",
+    "Fissures are surface grooves, not independently separable lobes",
+    "Lungs remain displaced laterally for teaching; no inflation or perfusion simulation"
+  ]
+}

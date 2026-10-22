@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-21",
+  "buildPassed": true,
+  "runtimePassed": true,
+  "assetsTested": 23,
+  "isolatedPartPivotsTested": 429,
+  "visualChecks": [
+    "Guided valvular lesson, later anatomy state",
+    "Free exploration, cardiogenic region"
+  ],
+  "change": "Stable flexible RealityView layout with responsive upward composition offset; hit targets move with the view.",
+  "pointerInteractionTested": false
+}

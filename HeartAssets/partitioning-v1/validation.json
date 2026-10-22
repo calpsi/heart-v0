@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "assets": [
+    {
+      "asset": "HeartPartition_01_Week04_EarlyPartitioning",
+      "parts": 33,
+      "checks": [
+        "All original tissue meshes nonempty, manifold and positive volume",
+        "Cutaway: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed",
+        "Full: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed"
+      ],
+      "Cutaway_glb": {
+        "bytes": 16539880,
+        "mesh_nodes": 28,
+        "triangles": 162782,
+        "embedded_images": 15
+      },
+      "Cutaway_usdz": {
+        "bytes": 20867461,
+        "embedded_textures": 15
+      },
+      "Full_glb": {
+        "bytes": 18734328,
+        "mesh_nodes": 33,
+        "triangles": 257286,
+        "embedded_images": 15
+      },
+      "Full_usdz": {
+        "bytes": 25542273,
+        "embedded_textures": 15
+      },
+      "preview": {
+        "size": [
+          1400,
+          1600
+        ],
+        "alpha": "transparent background, opaque anatomy"
+      }
+    },
+    {
+      "asset": "HeartPartition_02_Weeks05-06_CushionFusion",
+      "parts": 38,
+      "checks": [
+        "All original tissue meshes nonempty, manifold and positive volume",
+        "Cutaway: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed",
+        "Full: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed"
+      ],
+      "Cutaway_glb": {
+        "bytes": 21178900,
+        "mesh_nodes": 33,
+        "triangles": 246608,
+        "embedded_images": 18
+      },
+      "Cutaway_usdz": {
+        "bytes": 27657236,
+        "embedded_textures": 18
+      },
+      "Full_glb": {
+        "bytes": 23349560,
+        "mesh_nodes": 38,
+        "triangles": 339874,
+        "embedded_images": 18
+      },
+      "Full_usdz": {
+        "bytes": 32276628,
+        "embedded_textures": 18
+      },
+      "preview": {
+        "size": [
+          1400,
+          1600
+        ],
+        "alpha": "transparent background, opaque anatomy"
+      }
+    },
+    {
+      "asset": "HeartPartition_03_Week07_VentricularClosure",
+      "parts": 42,
+      "checks": [
+        "All original tissue meshes nonempty, manifold and positive volume",
+        "Cutaway: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed",
+        "Full: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed"
+      ],
+      "Cutaway_glb": {
+        "bytes": 21307692,
+        "mesh_nodes": 35,
+        "triangles": 251650,
+        "embedded_images": 18
+      },
+      "Cutaway_usdz": {
+        "bytes": 27919899,
+        "embedded_textures": 18
+      },
+      "Full_glb": {
+        "bytes": 23542900,
+        "mesh_nodes": 42,
+        "triangles": 347244,
+        "embedded_images": 18
+      },
+      "Full_usdz": {
+        "bytes": 32664228,
+        "embedded_textures": 18
+      },
+      "preview": {
+        "size": [
+          1400,
+          1600
+        ],
+        "alpha": "transparent background, opaque anatomy"
+      }
+    },
+    {
+      "asset": "HeartPartition_04_Week08_FourChambers",
+      "parts": 52,
+      "checks": [
+        "All original tissue meshes nonempty, manifold and positive volume",
+        "Cutaway: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed",
+        "Full: GLB hierarchy, PBR images and container passed; USDZ archive and embedded texture checks passed"
+      ],
+      "Cutaway_glb": {
+        "bytes": 21565896,
+        "mesh_nodes": 45,
+        "triangles": 262790,
+        "embedded_images": 18
+      },
+      "Cutaway_usdz": {
+        "bytes": 28392905,
+        "embedded_textures": 18
+      },
+      "Full_glb": {
+        "bytes": 23801100,
+        "mesh_nodes": 52,
+        "triangles": 358384,
+        "embedded_images": 18
+      },
+      "Full_usdz": {
+        "bytes": 33137304,
+        "embedded_textures": 18
+      },
+      "preview": {
+        "size": [
+          1400,
+          1600
+        ],
+        "alpha": "transparent background, opaque anatomy"
+      }
+    }
+  ],
+  "scope": "Mesh structure and export containers; not expert anatomical validation or an in-headset test"
+}

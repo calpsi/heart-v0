@@ -1,0 +1,81 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme "heart v3" -sdk xrsimulator -destination "generic/platform=visionOS Simulator" -derivedDataPath /private/tmp/heart-v3-asset-build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = xrsimulator27.0
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+2026-10-18 22:12:09.094 xcodebuild[9477:169431] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'heart v3' in project 'heart v3'
+        ➜ Explicit dependency on target 'RealityKitContent-product' in project 'RealityKitContent'
+    Target 'RealityKitContent-product' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 47d04580dfeaebe508c194f14aa47e72
+Build description path: /tmp/heart-v3-asset-build/Build/Intermediates.noindex/XCBuildData/47d04580dfeaebe508c194f14aa47e72.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -o /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+
+RealityAssetsSchemaGen /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json -D SCRIPT_INPUT_FILE_1\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_7\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_OUTPUT_ANCESTOR_8\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_OUTPUT_ANCESTOR_9\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool create-schema --output-schema /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform xrsimulator -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PkgInfo -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

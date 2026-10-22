@@ -1,0 +1,385 @@
+{
+  "parts": [
+    {
+      "id": "Aorta_Fallot",
+      "label": "Overriding aorta \u2014 mouth spans ventricular septum",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.055,
+        0.03,
+        -0.025
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "PulmonaryTrunk_Fallot",
+      "label": "Pulmonary trunk beyond narrowed outflow",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0.03
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightPulmonaryBranch_Fallot",
+      "label": "Right pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.065,
+        0.02,
+        -0.03
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Anterior",
+      "label": "Right ventricular wall \u2014 thickened \u2014 fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Posterior",
+      "label": "Right ventricular wall \u2014 thickened \u2014 fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        -0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Anterior",
+      "label": "Left ventricular wall \u2014 fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Posterior",
+      "label": "Left ventricular wall \u2014 fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        -0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularSeptum_Fallot",
+      "label": "Ventricular septum \u2014 outlet opening",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        -0.025,
+        0
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightAV_Fallot_Posterior",
+      "label": "Right AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightAV_Fallot_Anterior",
+      "label": "Right AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "LeftAV_Fallot_Posterior",
+      "label": "Left AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "LeftAV_Fallot_Anterior",
+      "label": "Left AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RVOutflow_Fallot_Posterior",
+      "label": "Narrowed right ventricular outflow \u2014 posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        -0.05
+      ]
+    },
+    {
+      "id": "RVOutflow_Fallot_Anterior",
+      "label": "Narrowed right ventricular outflow \u2014 anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        0.05
+      ]
+    },
+    {
+      "id": "Aorta_Normal_Fallot",
+      "label": "Aorta from left ventricle",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.055,
+        0.03,
+        -0.025
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "PulmonaryTrunk_Normal_Fallot",
+      "label": "Pulmonary trunk from right ventricle",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0.03
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightPulmonaryBranch_Normal_Fallot",
+      "label": "Right pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.065,
+        0.02,
+        -0.03
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Anterior",
+      "label": "Right ventricular wall \u2014 normal_fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Posterior",
+      "label": "Right ventricular wall \u2014 normal_fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        -0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Anterior",
+      "label": "Left ventricular wall \u2014 normal_fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Posterior",
+      "label": "Left ventricular wall \u2014 normal_fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        -0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularSeptum_Normal_Fallot",
+      "label": "Ventricular septum \u2014 intact",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        -0.025,
+        0
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Posterior",
+      "label": "Right AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Anterior",
+      "label": "Right AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Posterior",
+      "label": "Left AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Anterior",
+      "label": "Left AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Posterior",
+      "label": "Comparison right ventricular outflow \u2014 posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "normal_fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        -0.05
+      ]
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Anterior",
+      "label": "Comparison right ventricular outflow \u2014 anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "normal_fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        0.05
+      ]
+    },
+    {
+      "id": "OutletSeptum_Normal_Fallot",
+      "label": "Outlet septum \u2014 aligned comparison",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0.045,
+        0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "OutletSeptum_Fallot",
+      "label": "Outlet septum \u2014 anterocephalad displacement",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0.045,
+        0.04
+      ],
+      "state": "fallot"
+    }
+  ],
+  "states": [
+    {
+      "id": "fallot",
+      "label": "Tetralogy of Fallot"
+    },
+    {
+      "id": "normal_fallot",
+      "label": "Normal comparison"
+    }
+  ],
+  "defaultState": "fallot",
+  "defaultCutaway": true,
+  "id": "Heart_13_TetralogyOfFallot",
+  "lesson": "Tetralogy of Fallot",
+  "stageIndex": -1,
+  "category": "anomaly",
+  "defaultYaw": 0.5,
+  "defaultPitch": 0.15,
+  "previewImage": "Anomaly03",
+  "shortName": "Tetralogy of Fallot",
+  "presentationNote": "Regional Fallot comparison with a separately inspectable outlet septum displaced anteriorly and cranially. Generic ventricular geometry; septoparietal trabeculations and valve-level anatomy remain incomplete. Thickness and displacement are illustrative."
+}

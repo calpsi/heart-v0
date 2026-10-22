@@ -1,0 +1,127 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath /private/tmp/heart-v3-asset-build test-without-building "-only-testing:HeartV3UITests/HeartV3InteractionTests/testHomeNavigationAndReferences" -resultBundlePath /private/tmp/heart-ui-home-1.xcresult
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+Writing result bundle at path:
+	/private/tmp/heart-ui-home-1.xcresult
+
+2026-10-21 18:47:17.956690+0800 HeartV3UITests-Runner[18235:411156] [Default] Running tests...
+2026-10-21 18:47:17.987173+0800 HeartV3UITests-Runner[18235:411156] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-21 18:47:18.444848+0800 HeartV3UITests-Runner[18235:411730] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x10787ea20> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-21 18:47:18.492144+0800 HeartV3UITests-Runner[18235:411729] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-21 18:47:18.492290+0800 HeartV3UITests-Runner[18235:411729] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+objc[18235]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x107694118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-21 18:47:21.132550+0800 HeartV3UITests-Runner[18235:411156] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+    t =      nans Interface orientation changed to Unknown
+Test Suite 'Selected tests' started at 2026-10-21 18:47:29.005.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-21 18:47:29.022.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-21 18:47:29.022.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testHomeNavigationAndReferences]' started.
+    t =     0.01s Start Test at 2026-10-21 18:47:29.032
+    t =     1.33s Set Up
+    t =     1.37s Open phil.heart-v3
+    t =     1.37s     Launch phil.heart-v3
+    t =     1.37s         Terminate phil.heart-v3:11515
+2026-10-21 18:47:32.101 xcodebuild[18140:409350] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 18:47:32.101 xcodebuild[18140:409350] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     9.42s         Setting up automation session
+    t =    16.55s         Wait for phil.heart-v3 to idle
+    t =    19.62s Waiting 30.0s for "References" Button to exist
+    t =    20.63s     Checking `Expect predicate `existsNoRetry == 1` for object "References" Button`
+    t =    20.64s         Checking existence of `"References" Button`
+    t =    20.95s Find the "References" Button
+    t =    20.99s Tap "References" Button
+    t =    20.99s     Wait for phil.heart-v3 to idle
+    t =    20.99s     Find the "References" Button
+    t =    21.01s     Check for interrupting elements affecting "References" Button
+    t =    21.05s         Wait for com.apple.SurfBoard to idle
+    t =    21.33s     Synthesize event
+    t =    23.04s     Wait for phil.heart-v3 to idle
+    t =    23.07s Waiting 15.0s for "Explore the science" StaticText to exist
+    t =    24.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Explore the science" StaticText`
+    t =    24.07s         Checking existence of `"Explore the science" StaticText`
+    t =    24.23s Waiting 30.0s for "Done" Button to exist
+    t =    25.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    25.25s         Checking existence of `"Done" Button`
+    t =    25.29s Find the "Done" Button
+    t =    25.31s Tap "Done" Button
+    t =    25.31s     Wait for phil.heart-v3 to idle
+    t =    25.32s     Find the "Done" Button
+    t =    25.34s     Check for interrupting elements affecting "Done" Button
+    t =    25.36s         Wait for com.apple.SurfBoard to idle
+    t =    25.37s     Synthesize event
+    t =    26.09s     Wait for phil.heart-v3 to idle
+    t =    26.42s Waiting 30.0s for "Free Exploration" Button to exist
+    t =    27.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Free Exploration" Button`
+    t =    27.44s         Checking existence of `"Free Exploration" Button`
+    t =    27.45s Find the "Free Exploration" Button
+    t =    27.47s Tap "Free Exploration" Button
+    t =    27.47s     Wait for phil.heart-v3 to idle
+    t =    27.47s     Find the "Free Exploration" Button
+    t =    27.48s     Check for interrupting elements affecting "Free Exploration" Button
+    t =    27.49s         Wait for com.apple.SurfBoard to idle
+    t =    27.50s     Synthesize event
+    t =    29.11s     Wait for phil.heart-v3 to idle
+    t =    29.11s Waiting 15.0s for "FREE EXPLORATION" StaticText to exist
+    t =    30.14s     Checking `Expect predicate `existsNoRetry == 1` for object "FREE EXPLORATION" StaticText`
+    t =    30.14s         Checking existence of `"FREE EXPLORATION" StaticText`
+    t =    30.16s Waiting 30.0s for "Home" Button to exist
+    t =    31.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    31.20s         Checking existence of `"Home" Button`
+    t =    31.21s Find the "Home" Button
+    t =    31.23s Tap "Home" Button
+    t =    31.23s     Wait for phil.heart-v3 to idle
+    t =    31.23s     Find the "Home" Button
+    t =    31.24s     Check for interrupting elements affecting "Home" Button
+    t =    31.25s         Wait for com.apple.SurfBoard to idle
+    t =    31.26s     Synthesize event
+    t =    31.69s     Wait for phil.heart-v3 to idle
+    t =    31.70s Waiting 30.0s for "Guided Learning" Button to exist
+    t =    32.74s     Checking `Expect predicate `existsNoRetry == 1` for object "Guided Learning" Button`
+    t =    32.74s         Checking existence of `"Guided Learning" Button`
+    t =    32.75s Find the "Guided Learning" Button
+    t =    32.76s Tap "Guided Learning" Button
+    t =    32.77s     Wait for phil.heart-v3 to idle
+    t =    32.77s     Find the "Guided Learning" Button
+    t =    32.78s     Check for interrupting elements affecting "Guided Learning" Button
+    t =    32.79s         Wait for com.apple.SurfBoard to idle
+    t =    32.80s     Synthesize event
+    t =    33.25s     Wait for phil.heart-v3 to idle
+    t =    33.25s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    34.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    34.30s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    34.32s Waiting 30.0s for "Home" Button to exist
+    t =    35.33s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    35.33s         Checking existence of `"Home" Button`
+    t =    35.36s Find the "Home" Button
+    t =    35.37s Tap "Home" Button
+    t =    35.37s     Wait for phil.heart-v3 to idle
+    t =    35.37s     Find the "Home" Button
+    t =    35.38s     Check for interrupting elements affecting "Home" Button
+    t =    35.39s         Wait for com.apple.SurfBoard to idle
+    t =    35.39s     Synthesize event
+    t =    35.77s     Wait for phil.heart-v3 to idle
+    t =    35.77s Checking existence of `"Free Exploration" Button`
+    t =    35.79s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testHomeNavigationAndReferences]' passed (36.794 seconds).
+Test Suite 'HeartV3InteractionTests' passed at 2026-10-21 18:48:05.825.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.794 (36.803) seconds
+Test Suite 'HeartV3UITests.xctest' passed at 2026-10-21 18:48:05.827.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.794 (36.805) seconds
+Test Suite 'Selected tests' passed at 2026-10-21 18:48:05.828.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.794 (36.823) seconds
+2026-10-21 18:48:06.299 xcodebuild[18140:409350] [MT] IDETestOperationsObserverDebug: 84.016 elapsed -- Testing started completed.
+2026-10-21 18:48:06.299 xcodebuild[18140:409350] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-21 18:48:06.299 xcodebuild[18140:409350] [MT] IDETestOperationsObserverDebug: 84.016 sec, +84.016 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/heart-ui-home-1.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

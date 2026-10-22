@@ -1,0 +1,62 @@
+{
+  "asset": "HDBR_CS16_N1815",
+  "passed": true,
+  "sourceFile": "CS16-1815-heart2.glb",
+  "sourceSHA256": "0325285c3702bd08835e2f52073f9f9346e9cd4c9a295eef67cd5d190cdbdad9",
+  "parts": [
+    {
+      "id": "CS16_aorta",
+      "source": "aorta",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 10274
+    },
+    {
+      "id": "CS16_epicardium",
+      "source": "epicardium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 13354
+    },
+    {
+      "id": "CS16_left_atrium",
+      "source": "left-atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 22646
+    },
+    {
+      "id": "CS16_left_vent",
+      "source": "left-vent",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 16968
+    },
+    {
+      "id": "CS16_oft",
+      "source": "oft",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 16496
+    },
+    {
+      "id": "CS16_right_atrium2",
+      "source": "right-atrium2.",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 22523
+    },
+    {
+      "id": "CS16_right_vent",
+      "source": "right-vent",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 20090
+    },
+    {
+      "id": "CS16_sinus_venosus_vena_cava2",
+      "source": "sinus-venosus-vena-cava2",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 11010
+    }
+  ],
+  "exportedMeshes": 8,
+  "uniformDisplayScale": 0.0005150413999418756,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "62c90be46f2641dfab93633f63386282c60560ebcb7a7e479f8fe898654f6f4b"
+}

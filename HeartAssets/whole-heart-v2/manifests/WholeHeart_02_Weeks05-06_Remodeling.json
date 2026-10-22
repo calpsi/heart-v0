@@ -1,0 +1,86 @@
+{
+  "asset": "WholeHeart_02_Weeks05-06_Remodeling",
+  "stage": 2,
+  "age_basis": "approximate post-fertilization age",
+  "parts": [
+    {
+      "id": "VentricularMyocardium",
+      "label": "Ventricular myocardium with leftward apex"
+    },
+    {
+      "id": "RightAtriumAndAuricle",
+      "label": "Right atrial wall and appendage"
+    },
+    {
+      "id": "LeftAtriumAndAuricle",
+      "label": "Left atrial wall and appendage"
+    },
+    {
+      "id": "RemodelingOutflow",
+      "label": "Remodeling common outlet / emerging arterial pathways"
+    },
+    {
+      "id": "RightVenousInflow",
+      "label": "Developing right caval inflow"
+    },
+    {
+      "id": "CommonPulmonaryVein",
+      "label": "Common pulmonary venous entry"
+    }
+  ],
+  "checks": [
+    {
+      "part": "VentricularMyocardium",
+      "vertices": 56088,
+      "triangles": 112172,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0005339738972832223
+    },
+    {
+      "part": "RightAtriumAndAuricle",
+      "vertices": 27650,
+      "triangles": 55296,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0001253808664634832
+    },
+    {
+      "part": "LeftAtriumAndAuricle",
+      "vertices": 22034,
+      "triangles": 44064,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.662542568578864e-05
+    },
+    {
+      "part": "RemodelingOutflow",
+      "vertices": 90499,
+      "triangles": 181002,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.337493594278246e-05
+    },
+    {
+      "part": "RightVenousInflow",
+      "vertices": 40477,
+      "triangles": 80954,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.5508937756329177e-05
+    },
+    {
+      "part": "CommonPulmonaryVein",
+      "vertices": 12328,
+      "triangles": 24656,
+      "nonmanifold_edges": 0,
+      "signed_volume": 3.082014684128606e-06
+    }
+  ],
+  "scope": "Whole exterior teaching model. Vessel lumens are hollow; chamber wall volumes are exterior sculptures, not a reconstructed internal septal anatomy. Use the complementary partitioning-v1 cutaways for interior teaching.",
+  "style": "Original PBR surface maps and studio lighting; Tripo references inspected, not re-used as anatomy",
+  "units": "metres",
+  "usd_axes": "Y-up, +X anatomical left, +Z anterior",
+  "limitations": [
+    "Illustrative reconstruction; not specimen segmented or clinically validated",
+    "Truncated vessels; body circulation is not modeled",
+    "Identification colors are not literal fetal oxygen saturation",
+    "Independent vessel assemblies overlap at anatomical attachments",
+    "No animation or growth rig"
+  ]
+}

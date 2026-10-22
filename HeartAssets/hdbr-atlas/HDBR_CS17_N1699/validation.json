@@ -1,0 +1,74 @@
+{
+  "asset": "HDBR_CS17_N1699",
+  "passed": true,
+  "sourceFile": "cs17_v2.glb",
+  "sourceSHA256": "46b337120cca8251eac3fd154be2899d29af687fc8665e48949e58eb811632c4",
+  "parts": [
+    {
+      "id": "CS17_cs17_N1699_aorta_version2",
+      "source": "cs17_N1699_aorta_version2",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 44897
+    },
+    {
+      "id": "CS17_cs17_N1699_ductus_arteriosus",
+      "source": "cs17_N1699_ductus_arteriosus",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 1002
+    },
+    {
+      "id": "CS17_cs17_N1699_epicardium",
+      "source": "cs17_N1699_epicardium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 5092
+    },
+    {
+      "id": "CS17_cs17_N1699_left_atrium",
+      "source": "cs17_N1699_left_atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 31202
+    },
+    {
+      "id": "CS17_cs17_N1699_left_ventricle",
+      "source": "cs17_N1699_left_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 42454
+    },
+    {
+      "id": "CS17_cs17_N1699_oft",
+      "source": "cs17_N1699_oft",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 32556
+    },
+    {
+      "id": "CS17_cs17_N1699_pulmonary_version2",
+      "source": "cs17_N1699_pulmonary_version2",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 7098
+    },
+    {
+      "id": "CS17_cs17_N1699_right_atrium",
+      "source": "cs17_N1699_right_atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 32044
+    },
+    {
+      "id": "CS17_cs17_N1699_right_ventricle",
+      "source": "cs17_N1699_right_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 28510
+    },
+    {
+      "id": "CS17_cs17_N1699_veins",
+      "source": "cs17_N1699_veins",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 12713
+    }
+  ],
+  "exportedMeshes": 10,
+  "uniformDisplayScale": 0.0002256750243836189,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "cd6c62887e7a8118bd5ee520558f0bd6b2b56ef102a99a31aa21d525fa1eaa31"
+}

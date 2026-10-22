@@ -1,0 +1,42 @@
+{
+  "source": "HDBR Atlas (https://hdbratlas.org)",
+  "license": "CC BY-NC-SA 4.0",
+  "userUse": "Non-commercial school project, confirmed by user",
+  "files": [
+    {
+      "url": "https://hdbratlas.org/interactive/heart/cs11-662.glb",
+      "file": "cs11-662.glb",
+      "sha256": "b1f26cd34f7bf73513124ef4fff0dc73c8f1e930c9cea11694f8fca0ba032737"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/CS12-N288-heart.glb",
+      "file": "CS12-N288-heart.glb",
+      "sha256": "5593a21cbcae1cb2d9f98b31ad24049b3f7b19307736c8bf37b99a573965e5ca"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/CS14-N925-heart.glb",
+      "file": "CS14-N925-heart.glb",
+      "sha256": "af4122943bf97f82c7022171568f7af52667a079b5363a8c592f116b9c8646ff"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/CS16-1815-heart2.glb",
+      "file": "CS16-1815-heart2.glb",
+      "sha256": "0325285c3702bd08835e2f52073f9f9346e9cd4c9a295eef67cd5d190cdbdad9"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/cs17_v2.glb",
+      "file": "cs17_v2.glb",
+      "sha256": "46b337120cca8251eac3fd154be2899d29af687fc8665e48949e58eb811632c4"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/cs18.glb",
+      "file": "cs18.glb",
+      "sha256": "e44f40f2f18962be8b60c70715a564cff5f9d2f5c07f0ebce8aaaa7673f7ee58"
+    },
+    {
+      "url": "https://hdbratlas.org/interactive/heart/CS20-heart.glb",
+      "file": "CS20-heart.glb",
+      "sha256": "891da43b694cc1232a2b4c232dfaa179d3512329f00bc5ce24937712339ef1e7"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "asset": "Heart_04_CardiacLooping",
+  "status": "draft_requires_stage_specific_anatomical_review",
+  "batch": 2,
+  "revision": "layered-tissue-2",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "parts": [
+    {
+      "id": "Myocardium_SinusVenosus_Posterior",
+      "label": "Sinus venosus \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "Myocardium_SinusVenosus_Anterior",
+      "label": "Sinus venosus \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "CardiacJelly_SinusVenosus_Posterior",
+      "label": "Sinus venosus \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "CardiacJelly_SinusVenosus_Anterior",
+      "label": "Sinus venosus \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "Endocardium_SinusVenosus_Posterior",
+      "label": "Sinus venosus \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "Endocardium_SinusVenosus_Anterior",
+      "label": "Sinus venosus \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "SinusVenosus"
+    },
+    {
+      "id": "Myocardium_PrimitiveAtrium_Posterior",
+      "label": "Primitive atrium \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "Myocardium_PrimitiveAtrium_Anterior",
+      "label": "Primitive atrium \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+      "label": "Primitive atrium \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+      "label": "Primitive atrium \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "Endocardium_PrimitiveAtrium_Posterior",
+      "label": "Primitive atrium \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "Endocardium_PrimitiveAtrium_Anterior",
+      "label": "Primitive atrium \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveAtrium"
+    },
+    {
+      "id": "Myocardium_AVCanal_Posterior",
+      "label": "Atrioventricular canal \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "Myocardium_AVCanal_Anterior",
+      "label": "Atrioventricular canal \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "CardiacJelly_AVCanal_Posterior",
+      "label": "Atrioventricular canal \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "CardiacJelly_AVCanal_Anterior",
+      "label": "Atrioventricular canal \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "Endocardium_AVCanal_Posterior",
+      "label": "Atrioventricular canal \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "Endocardium_AVCanal_Anterior",
+      "label": "Atrioventricular canal \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "AVCanal"
+    },
+    {
+      "id": "Myocardium_PrimitiveVentricle_Posterior",
+      "label": "Primitive ventricle \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "Myocardium_PrimitiveVentricle_Anterior",
+      "label": "Primitive ventricle \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+      "label": "Primitive ventricle \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+      "label": "Primitive ventricle \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "Endocardium_PrimitiveVentricle_Posterior",
+      "label": "Primitive ventricle \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "Endocardium_PrimitiveVentricle_Anterior",
+      "label": "Primitive ventricle \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "PrimitiveVentricle"
+    },
+    {
+      "id": "Myocardium_BulbusCordis_Posterior",
+      "label": "Bulbus cordis \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "Myocardium_BulbusCordis_Anterior",
+      "label": "Bulbus cordis \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "CardiacJelly_BulbusCordis_Posterior",
+      "label": "Bulbus cordis \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "CardiacJelly_BulbusCordis_Anterior",
+      "label": "Bulbus cordis \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "Endocardium_BulbusCordis_Posterior",
+      "label": "Bulbus cordis \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "Endocardium_BulbusCordis_Anterior",
+      "label": "Bulbus cordis \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "BulbusCordis"
+    },
+    {
+      "id": "Myocardium_TruncusArteriosus_Posterior",
+      "label": "Truncus arteriosus \u2014 myocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "Myocardium_TruncusArteriosus_Anterior",
+      "label": "Truncus arteriosus \u2014 myocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "CardiacJelly_TruncusArteriosus_Posterior",
+      "label": "Truncus arteriosus \u2014 cardiacjelly, posterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "CardiacJelly_TruncusArteriosus_Anterior",
+      "label": "Truncus arteriosus \u2014 cardiacjelly, anterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "Endocardium_TruncusArteriosus_Posterior",
+      "label": "Truncus arteriosus \u2014 endocardium, posterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "Endocardium_TruncusArteriosus_Anterior",
+      "label": "Truncus arteriosus \u2014 endocardium, anterior panel",
+      "category": "anatomy",
+      "parent": "TruncusArteriosus"
+    },
+    {
+      "id": "ArterialBranch_R",
+      "label": "Paired arterial outflow \u2014 R (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_04_CardiacLooping"
+    },
+    {
+      "id": "VenousInflow_R",
+      "label": "Venous inflow \u2014 R (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_04_CardiacLooping"
+    },
+    {
+      "id": "ArterialBranch_L",
+      "label": "Paired arterial outflow \u2014 L (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_04_CardiacLooping"
+    },
+    {
+      "id": "VenousInflow_L",
+      "label": "Venous inflow \u2014 L (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_04_CardiacLooping"
+    }
+  ],
+  "reference": "https://www.youtube.com/watch?v=a0qyagIgBPw",
+  "coordinate_note": "Blender +Z cranial, -Y anterior; anatomical right -X. USD Y-up.",
+  "limitations": [
+    "Illustrative established loop, not segmented specimen or clinically validated anatomy",
+    "Static model; no deformation or contraction",
+    "Layer thickness enlarged; branch junctions are orientation landmarks, not continuous vascular reconstruction"
+  ],
+  "changes": [
+    "Ballooned atrial/ventricular regions and narrower AV canal",
+    "Asymmetric atrial and ventricular chamber masses",
+    "Voxel-blended chamber masses, hollow layered walls and continuous surface normals",
+    "1024-pixel albedo, roughness and tangent normal maps",
+    "Four separate inflow/outflow landmarks; original 36 tissue IDs retained"
+  ],
+  "triangles": 237052,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained"
+  ],
+  "appearanceLimit": "Original illustrative reconstruction, not scan-derived or validated photorealism. No claim of continuous branch-to-chamber vascular lumens.",
+  "detailChanges": [
+    "Reconstructed variable-thickness muscle, cardiac jelly and thinner endocardial lining with matching interface offsets",
+    "Shallower anterior dissection retains more chamber wall and cavity depth",
+    "Distinct cut-tissue and intact surface materials with three embedded 2048px maps",
+    "All 40 selectable part identities retained; vascular branches remain orientation landmarks"
+  ],
+  "referenceVideo": {
+    "url": "https://www.facebook.com/share/r/1CzT4A9CPz/",
+    "viewed": true,
+    "note": "Local video sampled across 51.78 seconds; loop silhouette and surface appearance used as visual guidance"
+  },
+  "releaseBlockers": [
+    "Vascular branches are landmarks, not continuous lumens",
+    "Exact embryonic-stage target not verified",
+    "Layer geometry and chamber relationships require matched-stage evidence"
+  ]
+}

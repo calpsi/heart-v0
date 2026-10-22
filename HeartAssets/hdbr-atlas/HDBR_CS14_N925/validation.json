@@ -1,0 +1,68 @@
+{
+  "asset": "HDBR_CS14_N925",
+  "passed": true,
+  "sourceFile": "CS14-N925-heart.glb",
+  "sourceSHA256": "af4122943bf97f82c7022171568f7af52667a079b5363a8c592f116b9c8646ff",
+  "parts": [
+    {
+      "id": "CS14_N925_vena_cava_sm_dec",
+      "source": "N925-vena_cava_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 8070
+    },
+    {
+      "id": "CS14_N925_aorta_sm_dec",
+      "source": "N925_aorta_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 31622
+    },
+    {
+      "id": "CS14_N925_left_atrium_sm_dec",
+      "source": "N925_left-atrium_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 24652
+    },
+    {
+      "id": "CS14_N925_left_ventricle_sm_dec",
+      "source": "N925_left_ventricle_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 56027
+    },
+    {
+      "id": "CS14_N925_oft_sm_dec",
+      "source": "N925_oft_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 18922
+    },
+    {
+      "id": "CS14_N925_outside_tissue_sm_dec",
+      "source": "N925_outside_tissue_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 14696
+    },
+    {
+      "id": "CS14_N925_right_ventricle_sm_dec",
+      "source": "N925_right-ventricle_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 16481
+    },
+    {
+      "id": "CS14_N925_right_atrium_sm_dec",
+      "source": "N925_right_atrium_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 19498
+    },
+    {
+      "id": "CS14_N925_sinus_venosus_sm_dec",
+      "source": "N925_sinus_venosus_sm_dec",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 6326
+    }
+  ],
+  "exportedMeshes": 9,
+  "uniformDisplayScale": 0.0004357807254802193,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "2a5917b74344cc2503e5e3a7474c9c43b35ae60ccdcfa0b81a3fbf7831a32383"
+}

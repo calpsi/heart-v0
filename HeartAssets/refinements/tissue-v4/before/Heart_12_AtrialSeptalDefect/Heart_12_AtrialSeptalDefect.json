@@ -1,0 +1,252 @@
+{
+  "asset": "Heart_12_AtrialSeptalDefect",
+  "batch": 6,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior.",
+  "display_scale": "Enlarged regional illustration, not patient dimensions",
+  "states": [
+    {
+      "id": "defect",
+      "label": "Secundum ASD"
+    },
+    {
+      "id": "intact",
+      "label": "Intact septum"
+    }
+  ],
+  "defaultState": "defect",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "AtrialWall_R_Anterior",
+      "label": "Right atrial wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.045,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "AtrialWall_R_Posterior",
+      "label": "Right atrial wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.045,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "AtrialWall_L_Anterior",
+      "label": "Left atrial wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        0.045,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "AtrialWall_L_Posterior",
+      "label": "Left atrial wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        0.045,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "AtrialSeptalRim",
+      "label": "Rim around oval fossa (enlarged)",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        0.045,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "FossaFloor_Defect",
+      "label": "Oval fossa floor \u2014 secundum tissue deficiency",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.045,
+        0,
+        0
+      ],
+      "state": "defect"
+    },
+    {
+      "id": "FossaFloor_Intact",
+      "label": "Oval fossa floor \u2014 intact comparison",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.045,
+        0,
+        0
+      ],
+      "state": "intact"
+    },
+    {
+      "id": "RightAV_Posterior",
+      "label": "Right AV junction \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.026000000000000002,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "RightAV_Anterior",
+      "label": "Right AV junction \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.026000000000000002,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "LeftAV_Posterior",
+      "label": "Left AV junction \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        0.026000000000000002,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "LeftAV_Anterior",
+      "label": "Left AV junction \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        0.026000000000000002,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "SuperiorCavalMouth_Posterior",
+      "label": "Superior caval opening \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.032,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "SuperiorCavalMouth_Anterior",
+      "label": "Superior caval opening \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.032,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "InferiorCavalMouth_Posterior",
+      "label": "Inferior caval opening \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.032,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "InferiorCavalMouth_Anterior",
+      "label": "Inferior caval opening \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.032,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "RightPectinate_1",
+      "label": "Right atrial pectinate ridge 1 (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "RightPectinate_2",
+      "label": "Right atrial pectinate ridge 2 (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "RightPectinate_3",
+      "label": "Right atrial pectinate ridge 3 (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "RightPectinate_4",
+      "label": "Right atrial pectinate ridge 4 (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_12_AtrialSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    }
+  ],
+  "limitations": [
+    "Regional anatomy with exaggerated thickness; anatomical review required",
+    "Intact and defect states are structural comparisons, not repair or growth animations",
+    "Only perimembranous VSD or secundum ASD is represented; other subtypes are not modeled",
+    "No blood flow, pressure, chamber enlargement, conduction pathways or complete valve apparatus",
+    "Incomplete whole-heart and venous context; the ASD is a tissue deficiency, not a PFO flap"
+  ],
+  "triangles": 49058,
+  "revision": "tissue-v3",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism."
+}

@@ -1,0 +1,120 @@
+{
+  "asset": "Heart_02_PairedHeartTubes",
+  "status": "original_educational_refinement",
+  "batch": 1,
+  "units": "metres",
+  "display_scale": "enlarged teaching model; not embryo life size",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +Z cranial, -Y viewing side; USD +Y cranial, +Z viewing side. L/R IDs denote anatomical sides in dorsal-style schematic view.",
+  "parts": [
+    {
+      "id": "Endoderm_Context",
+      "label": "Endoderm (schematic context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "Myocardium_L_Posterior",
+      "label": "Myocardial mantle \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Myocardium_L_Anterior",
+      "label": "Myocardial mantle \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "CardiacJelly_L_Posterior",
+      "label": "Cardiac jelly \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "CardiacJelly_L_Anterior",
+      "label": "Cardiac jelly \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Endocardium_L_Posterior",
+      "label": "Endocardial lining \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Endocardium_L_Anterior",
+      "label": "Endocardial lining \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Myocardium_R_Posterior",
+      "label": "Myocardial mantle \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Myocardium_R_Anterior",
+      "label": "Myocardial mantle \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "CardiacJelly_R_Posterior",
+      "label": "Cardiac jelly \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "CardiacJelly_R_Anterior",
+      "label": "Cardiac jelly \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Endocardium_R_Posterior",
+      "label": "Endocardial lining \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Endocardium_R_Anterior",
+      "label": "Endocardial lining \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    }
+  ],
+  "triangles": 324320,
+  "revision": "layered-tissue-2",
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Rebuilt early tissue volumes and folded context"
+  ],
+  "appearanceLimit": "Original teaching reconstruction; not scan-derived or validated photorealism. Layer thickness and region cuts enlarged for learning.",
+  "detailChanges": [
+    "Rebuilt tapered, undulating paired tubes with independently contoured lining, cardiac jelly and myocardial mantle",
+    "Independent myocardial envelope and shared matching layer interfaces",
+    "Distinct cut-surface and intact-tissue colour, roughness and normal maps",
+    "13 existing selectable parts retained; tapered paired tubes follow the supplied video silhouette; 120-degree removable anterior windows"
+  ],
+  "referenceSources": [
+    "https://www.nature.com/articles/s42003-022-03153-x",
+    "https://hdbratlas.org/organ-systems/cardiovascular-system/heart/heart-HE.html"
+  ],
+  "referenceVideo": {
+    "url": "https://www.facebook.com/share/r/1CzT4A9CPz/",
+    "viewed": true,
+    "reason": "Sampled 12 frames across the supplied 51.78-second local video; paired tubes referenced at 0.15 seconds"
+  },
+  "geometryChecks": {
+    "watertightParts": 13,
+    "positiveVolumeParts": 13,
+    "nestedBoundarySamples": 19296,
+    "minimumLayerThicknessMetres": 0.0001815449446439743
+  }
+}

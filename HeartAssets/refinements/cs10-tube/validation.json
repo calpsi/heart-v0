@@ -1,0 +1,78 @@
+{
+  "geometryChecksPassed": true,
+  "installed": false,
+  "parts": [
+    {
+      "id": "CardiacJelly_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "CardiacJelly_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesocardium_Caudal_L",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesocardium_Caudal_R",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesocardium_Cranial_L",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesocardium_Cranial_R",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Endocardium_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Endocardium_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Inflow_L",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Inflow_R",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Myocardium_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Myocardium_Dorsal_L",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Myocardium_Dorsal_R",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Outflow_L",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Outflow_R",
+      "closedPositiveVolume": true
+    }
+  ],
+  "minimumLumenRadius": 0.004249885922242222,
+  "source": "https://hdbratlas.org/hikspoors-pdf/JH_CS10_new_description.html",
+  "limitations": [
+    "Original parametric regional geometry, not source vertices",
+    "Dorsal attachment dimensions and overall proportions require registration",
+    "Vessel junctions overlap and require lumen-union review before installation",
+    "Foregut, transverse septum and distal vascular plexuses absent",
+    "No histological wall-thickness measurement"
+  ],
+  "sha256": "d992eb95182c7b2dd71932e9cf8fbb248918bd061a530fb3940cc873b18d886b",
+  "anatomyReviewPassed": false,
+  "disposition": "Do not install: global shape and pole junctions differ from published CS10 views"
+}

@@ -1,0 +1,42 @@
+{
+  "asset": "Heart_01_CardiogenicRegion",
+  "status": "illustrative_prototype",
+  "batch": 1,
+  "units": "metres",
+  "display_scale": "enlarged teaching model; not embryo life size",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +Z cranial, -Y viewing side; USD +Y cranial, +Z viewing side. L/R IDs denote anatomical sides in dorsal-style schematic view.",
+  "parts": [
+    {
+      "id": "Endoderm_Context",
+      "label": "Endoderm (schematic context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "NeuralPlate_Context",
+      "label": "Developing neural plate (orientation context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "CardiogenicCrescent",
+      "label": "Cardiogenic crescent / primary heart field",
+      "category": "anatomy",
+      "parent": "Tissues"
+    },
+    {
+      "id": "AngioblasticCord_L",
+      "label": "Left angioblastic cord (enlarged)",
+      "category": "anatomy",
+      "parent": "VascularPrecursors"
+    },
+    {
+      "id": "AngioblasticCord_R",
+      "label": "Right angioblastic cord (enlarged)",
+      "category": "anatomy",
+      "parent": "VascularPrecursors"
+    }
+  ],
+  "triangles": 15332
+}

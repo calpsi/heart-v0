@@ -1,0 +1,42 @@
+{
+  "id": "HDBR_CS11_N662",
+  "lesson": "Carnegie stage 11 \u00b7 N662",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS11_N662_aorta",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS11_N662_atria",
+      "label": "Common atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS11_N662_left_ventricle",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS11_N662_outflow_tract",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS11_N662_right_ventricle",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS11_N662_veins",
+      "label": "Venous channels",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS11",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS11 \u00b7 HDBR specimen N662 \u00b7 chamber regions and vessel lumens"
+}

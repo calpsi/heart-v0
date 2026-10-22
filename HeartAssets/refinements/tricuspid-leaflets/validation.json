@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "asset": "Heart_09_ValvularRefinement",
+  "checks": [
+    {
+      "id": "Tricuspid_Anterior_Refined",
+      "annularContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Tricuspid_Posterior_Refined",
+      "annularContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Tricuspid_Septal_Refined",
+      "annularContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidChord_1_1",
+      "muscle": "TricuspidPapillary_1",
+      "leaflet": "Anterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "TricuspidChord_1_2",
+      "muscle": "TricuspidPapillary_2",
+      "leaflet": "Anterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "TricuspidChord_2_1",
+      "muscle": "TricuspidPapillary_2",
+      "leaflet": "Posterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "TricuspidChord_2_2",
+      "muscle": "TricuspidPapillary_3",
+      "leaflet": "Posterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "TricuspidChord_3_1",
+      "muscle": "TricuspidPapillary_3",
+      "leaflet": "Septal",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "TricuspidChord_3_2",
+      "muscle": "TricuspidPapillary_1",
+      "leaflet": "Septal",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    }
+  ],
+  "parts": 55,
+  "usdzSHA256": "30c07a9553d17f4d6ee7977be6f4a21eb289e6b8133f7986c27de5db05b96527",
+  "limitations": [
+    "Original partly open regional reference, not measured anatomy",
+    "Illustrative three-leaflet pattern; human variants exist",
+    "Direct septal chordal support and ventricular septal context remain absent",
+    "Planar annular support and early cushions remain simplified"
+  ],
+  "unchangedOtherMeshes": 46,
+  "changedMeshes": [
+    "TricuspidChord_1_1",
+    "TricuspidChord_1_2",
+    "TricuspidChord_2_1",
+    "TricuspidChord_2_2",
+    "TricuspidChord_3_1",
+    "TricuspidChord_3_2",
+    "Tricuspid_Anterior_Refined",
+    "Tricuspid_Posterior_Refined",
+    "Tricuspid_Septal_Refined"
+  ],
+  "leafletIntersection": false,
+  "clearLeafletOpeningPaths": 9,
+  "exportedParts": 55
+}

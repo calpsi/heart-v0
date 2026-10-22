@@ -1,0 +1,152 @@
+{
+  "asset": "WholeHeart_04_Week08_FourChamberExterior",
+  "stage": 4,
+  "age_basis": "approximate post-fertilization age",
+  "parts": [
+    {
+      "id": "VentricularMyocardium",
+      "label": "Ventricular myocardium with leftward apex"
+    },
+    {
+      "id": "RightAtriumAndAuricle",
+      "label": "Right atrial wall and appendage"
+    },
+    {
+      "id": "LeftAtriumAndAuricle",
+      "label": "Left atrial wall and appendage"
+    },
+    {
+      "id": "AortaAndArch",
+      "label": "Ascending aorta, arch, branches and descending stump"
+    },
+    {
+      "id": "PulmonaryTrunkAndArteries",
+      "label": "Pulmonary trunk with left and right branches"
+    },
+    {
+      "id": "DuctusArteriosus",
+      "label": "Fetal ductus arteriosus"
+    },
+    {
+      "id": "SuperiorVenaCava",
+      "label": "Superior caval inflow stump"
+    },
+    {
+      "id": "InferiorVenaCava",
+      "label": "Inferior caval inflow stump"
+    },
+    {
+      "id": "RightPulmonaryVein1",
+      "label": "Right pulmonary venous entry"
+    },
+    {
+      "id": "RightPulmonaryVein2",
+      "label": "Right pulmonary venous entry"
+    },
+    {
+      "id": "LeftPulmonaryVein1",
+      "label": "Left pulmonary venous entry"
+    },
+    {
+      "id": "LeftPulmonaryVein2",
+      "label": "Left pulmonary venous entry"
+    }
+  ],
+  "checks": [
+    {
+      "part": "VentricularMyocardium",
+      "vertices": 61402,
+      "triangles": 122800,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0006018465678733775
+    },
+    {
+      "part": "RightAtriumAndAuricle",
+      "vertices": 27650,
+      "triangles": 55296,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00012538086620021664
+    },
+    {
+      "part": "LeftAtriumAndAuricle",
+      "vertices": 22034,
+      "triangles": 44064,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.662542629088165e-05
+    },
+    {
+      "part": "AortaAndArch",
+      "vertices": 94606,
+      "triangles": 189224,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.440076642197054e-05
+    },
+    {
+      "part": "PulmonaryTrunkAndArteries",
+      "vertices": 77729,
+      "triangles": 155466,
+      "nonmanifold_edges": 0,
+      "signed_volume": 3.137502888758197e-05
+    },
+    {
+      "part": "DuctusArteriosus",
+      "vertices": 9566,
+      "triangles": 19132,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.976475993876525e-06
+    },
+    {
+      "part": "SuperiorVenaCava",
+      "vertices": 23787,
+      "triangles": 47574,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.446717111459167e-06
+    },
+    {
+      "part": "InferiorVenaCava",
+      "vertices": 19061,
+      "triangles": 38122,
+      "nonmanifold_edges": 0,
+      "signed_volume": 6.9885337114867815e-06
+    },
+    {
+      "part": "RightPulmonaryVein1",
+      "vertices": 8420,
+      "triangles": 16840,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.585386477779559e-06
+    },
+    {
+      "part": "RightPulmonaryVein2",
+      "vertices": 8420,
+      "triangles": 16840,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.5853877128083928e-06
+    },
+    {
+      "part": "LeftPulmonaryVein1",
+      "vertices": 8412,
+      "triangles": 16824,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.5856497375682151e-06
+    },
+    {
+      "part": "LeftPulmonaryVein2",
+      "vertices": 8412,
+      "triangles": 16824,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.585648456481902e-06
+    }
+  ],
+  "scope": "Whole exterior teaching model. Vessel lumens are hollow; chamber wall volumes are exterior sculptures, not a reconstructed internal septal anatomy. Use the complementary partitioning-v1 cutaways for interior teaching.",
+  "style": "Original PBR surface maps and studio lighting; Tripo references inspected, not re-used as anatomy",
+  "units": "metres",
+  "usd_axes": "Y-up, +X anatomical left, +Z anterior",
+  "limitations": [
+    "Illustrative reconstruction; not specimen segmented or clinically validated",
+    "Truncated vessels; body circulation is not modeled",
+    "Identification colors are not literal fetal oxygen saturation",
+    "Independent vessel assemblies overlap at anatomical attachments",
+    "No animation or growth rig"
+  ]
+}

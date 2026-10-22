@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "asset": "Heart_09_ValvularRefinement",
+  "checks": [
+    {
+      "id": "Ventricularis_AorticCusp1_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Spongiosa_AorticCusp1_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Fibrosa_AorticCusp1_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Aortic_Cusp2_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Aortic_Cusp3_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "valve": "Aortic",
+      "cusps": 3,
+      "hingeToFreeMarginRise": 0.015925,
+      "sinusPanels": 2
+    },
+    {
+      "id": "Pulmonary_Cusp1_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Pulmonary_Cusp2_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "id": "Pulmonary_Cusp3_Refined",
+      "closedPositiveVolume": true,
+      "rootContact": true
+    },
+    {
+      "valve": "Pulmonary",
+      "cusps": 3,
+      "hingeToFreeMarginRise": 0.015925,
+      "sinusPanels": 2
+    }
+  ],
+  "parts": 55,
+  "usdzSHA256": "a71d2641553bd7e27eec43a01591aabf254872387daa41f9897b7739a30398c3",
+  "limitations": [
+    "Static partly open regional reference, not a valve motion simulation",
+    "Illustrative dimensions and enlarged tissue thickness",
+    "No coronary ostia or complete ventricular-root continuity",
+    "Early cushion and AV leaflet geometry remain simplified"
+  ],
+  "exportedMeshes": 55,
+  "exportedIDsMatch": true,
+  "clearCentralPathsPerValve": 9
+}

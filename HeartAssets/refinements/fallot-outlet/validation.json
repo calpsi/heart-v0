@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "parts": [
+    {
+      "id": "Aorta_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "PulmonaryTrunk_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightPulmonaryBranch_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularSeptum_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightAV_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightAV_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "LeftAV_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "LeftAV_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RVOutflow_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RVOutflow_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Aorta_Normal_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "PulmonaryTrunk_Normal_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightPulmonaryBranch_Normal_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "VentricularSeptum_Normal_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "OutletSeptum_Normal_Fallot",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "OutletSeptum_Fallot",
+      "closedPositiveVolume": true
+    }
+  ],
+  "rvotRaysPerState": 9,
+  "vsdRays": 9,
+  "anteriorDisplacementMetres": 0.0078,
+  "cranialDisplacementMetres": 0.013000000000000001,
+  "usdzSHA256": "eccacea4a230b3960026838c9ca1a70f7ccd719a50f26f43b40be7b7692bccf0",
+  "limitations": [
+    "Regional concept correction, not full conal malalignment reconstruction",
+    "Septoparietal trabeculations omitted",
+    "Generic ventricular chambers and illustrative thickness",
+    "No measured patient anatomy or exact embryonic stage"
+  ]
+}

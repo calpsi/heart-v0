@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_16_PatentDuctusArteriosus",
+  "passed": true,
+  "parts": 21,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "d138b9e987dce9e65ca159c1bebd9d4240df4a8dc902d374ce3df853f41e2635",
+  "anatomicallyValidated": false
+}

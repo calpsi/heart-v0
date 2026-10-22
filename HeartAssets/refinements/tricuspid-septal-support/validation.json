@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "asset": "Heart_09_ValvularRefinement",
+  "checks": [
+    {
+      "id": "TricuspidDirectSeptalChord_1",
+      "septalWallContact": true,
+      "septalLeafletContact": true,
+      "otherLeafletsUnpierced": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "TricuspidDirectSeptalChord_2",
+      "septalWallContact": true,
+      "septalLeafletContact": true,
+      "otherLeafletsUnpierced": true,
+      "closedPositiveVolume": true
+    }
+  ],
+  "parts": 60,
+  "usdzSHA256": "d6e31970f26190702803b9e538f74bb42acbc9c7caa9478de489a7522f7a6d9f",
+  "limitations": [
+    "Original partly open regional reference, not measured anatomy",
+    "Illustrative three-leaflet pattern; human variants exist",
+    "Regional medial shell used for septal context; not a complete interventricular septum",
+    "Planar annular support and early cushions remain simplified"
+  ],
+  "originalMeshesUnchanged": 55,
+  "earlyStateUnchanged": true,
+  "wallVolumeRelativeDifference": 3.0035108396028498e-05,
+  "exportedParts": 60
+}

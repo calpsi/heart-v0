@@ -1,0 +1,388 @@
+{
+  "asset": "Heart_13_TetralogyOfFallot",
+  "batch": 7,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior.",
+  "states": [
+    {
+      "id": "fallot",
+      "label": "Tetralogy of Fallot"
+    },
+    {
+      "id": "normal_fallot",
+      "label": "Normal comparison"
+    }
+  ],
+  "defaultState": "fallot",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "Aorta_Fallot",
+      "label": "Overriding aorta \u2014 mouth spans ventricular septum",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.055,
+        0.03,
+        -0.025
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "PulmonaryTrunk_Fallot",
+      "label": "Pulmonary trunk beyond narrowed outflow",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0.03
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightPulmonaryBranch_Fallot",
+      "label": "Right pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.065,
+        0.02,
+        -0.03
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Anterior",
+      "label": "Right ventricular wall \u2014 thickened \u2014 fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_R_Fallot_Posterior",
+      "label": "Right ventricular wall \u2014 thickened \u2014 fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        -0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Anterior",
+      "label": "Left ventricular wall \u2014 fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularWall_L_Fallot_Posterior",
+      "label": "Left ventricular wall \u2014 fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        -0.055
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "VentricularSeptum_Fallot",
+      "label": "Ventricular septum \u2014 outlet opening",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        -0.025,
+        0
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightAV_Fallot_Posterior",
+      "label": "Right AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RightAV_Fallot_Anterior",
+      "label": "Right AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "LeftAV_Fallot_Posterior",
+      "label": "Left AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "LeftAV_Fallot_Anterior",
+      "label": "Left AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "fallot"
+    },
+    {
+      "id": "RVOutflow_Fallot_Posterior",
+      "label": "Narrowed right ventricular outflow \u2014 posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        -0.05
+      ]
+    },
+    {
+      "id": "RVOutflow_Fallot_Anterior",
+      "label": "Narrowed right ventricular outflow \u2014 anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        0.05
+      ]
+    },
+    {
+      "id": "Aorta_Normal_Fallot",
+      "label": "Aorta from left ventricle",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.055,
+        0.03,
+        -0.025
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "PulmonaryTrunk_Normal_Fallot",
+      "label": "Pulmonary trunk from right ventricle",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0.03
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightPulmonaryBranch_Normal_Fallot",
+      "label": "Right pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.065,
+        0.02,
+        -0.03
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Anterior",
+      "label": "Right ventricular wall \u2014 normal_fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_R_Normal_Fallot_Posterior",
+      "label": "Right ventricular wall \u2014 normal_fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.045,
+        0,
+        -0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Anterior",
+      "label": "Left ventricular wall \u2014 normal_fallot anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularWall_L_Normal_Fallot_Posterior",
+      "label": "Left ventricular wall \u2014 normal_fallot posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        0,
+        -0.055
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "VentricularSeptum_Normal_Fallot",
+      "label": "Ventricular septum \u2014 intact",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.045,
+        -0.025,
+        0
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Posterior",
+      "label": "Right AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RightAV_Normal_Fallot_Anterior",
+      "label": "Right AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        -0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Posterior",
+      "label": "Left AV inlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "LeftAV_Normal_Fallot_Anterior",
+      "label": "Left AV inlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "separationOffset": [
+        0.025500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "normal_fallot"
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Posterior",
+      "label": "Comparison right ventricular outflow \u2014 posterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "normal_fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        -0.05
+      ]
+    },
+    {
+      "id": "RVOutflow_Normal_Fallot_Anterior",
+      "label": "Comparison right ventricular outflow \u2014 anterior",
+      "category": "anatomy",
+      "parent": "Heart_13_TetralogyOfFallot",
+      "state": "normal_fallot",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        0.05
+      ]
+    }
+  ],
+  "limitations": [
+    "Original regional illustrations, not patient reconstructions; expert anatomy review required",
+    "Matched comparisons are alternatives, not repair, development or physiological simulations",
+    "Simplified ventricular shape and exaggerated wall thickness; valve leaflets and coronary/arch branches omitted",
+    "Fallot shows illustrative RV outflow narrowing; detailed conal malalignment and valve-level stenosis are not separately modeled",
+    "d-TGA includes an illustrative atrial communication; no complete systemic/pulmonary return, PDA or VSD",
+    "No animated flow, oxygen, pressure, contraction, severity grading or treatment simulation"
+  ],
+  "triangles": 83440,
+  "revision": "tissue-v4",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ],
+  "surfaceRevision": "surface-v5",
+  "surfaceChanges": {
+    "normalReliefMultiplier": 0.45,
+    "roughnessOffset": 0.06,
+    "geometryUnchanged": true,
+    "anatomicalValidation": "incomplete"
+  }
+}

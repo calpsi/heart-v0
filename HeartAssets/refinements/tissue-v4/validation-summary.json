@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-16T15:32:36.136326",
+  "build": "passed",
+  "assets": 16,
+  "parts": 355,
+  "guidedSteps": 51,
+  "sourceAndExports": "passed",
+  "runtime": "passed",
+  "manualGestureTesting": "not completed on a headset",
+  "visualReview": "Simulator overview, detached tissue preview and guided phase strip inspected; final spacing adjusted after review."
+}

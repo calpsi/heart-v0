@@ -1,0 +1,10 @@
+{
+  "buildPassed": true,
+  "installed": true,
+  "runtimePassed": true,
+  "assetsTested": 23,
+  "isolatedPivotsTested": 418,
+  "pointerClickThroughVerified": false,
+  "pointerBlocker": "Device Hub CUA coordinate input returns noWindowsAvailable",
+  "anatomyCandidateInstalled": false
+}

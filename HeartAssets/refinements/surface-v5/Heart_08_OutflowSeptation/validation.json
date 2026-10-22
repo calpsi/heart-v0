@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_08_OutflowSeptation",
+  "passed": true,
+  "parts": 20,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "f14eefeec41359d97ab5c6bc6cc64c9e0fb54183650eda047516a17d3326c0cd",
+  "anatomicallyValidated": false
+}

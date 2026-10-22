@@ -1,0 +1,47 @@
+{
+  "mesh_count": 12,
+  "images": [
+    "Whole_ArterialTissue_BaseColor",
+    "Whole_ArterialTissue_Normal",
+    "Whole_ArterialTissue_Roughness",
+    "Whole_AtrialTissue_BaseColor",
+    "Whole_AtrialTissue_Normal",
+    "Whole_AtrialTissue_Roughness",
+    "Whole_Myocardium_BaseColor",
+    "Whole_Myocardium_Normal",
+    "Whole_Myocardium_Roughness",
+    "Whole_VenousTissue_BaseColor",
+    "Whole_VenousTissue_Normal",
+    "Whole_VenousTissue_Roughness"
+  ],
+  "materials": {
+    "Whole_ArterialTissue": [
+      "Surface",
+      "Normal",
+      "Base Color",
+      "Color",
+      "Roughness"
+    ],
+    "Whole_AtrialTissue": [
+      "Surface",
+      "Normal",
+      "Base Color",
+      "Color",
+      "Roughness"
+    ],
+    "Whole_Myocardium": [
+      "Surface",
+      "Normal",
+      "Base Color",
+      "Color",
+      "Roughness"
+    ],
+    "Whole_VenousTissue": [
+      "Surface",
+      "Normal",
+      "Base Color",
+      "Color",
+      "Roughness"
+    ]
+  }
+}

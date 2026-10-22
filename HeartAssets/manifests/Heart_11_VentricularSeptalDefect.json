@@ -1,0 +1,296 @@
+{
+  "asset": "Heart_11_VentricularSeptalDefect",
+  "batch": 6,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior.",
+  "display_scale": "Enlarged regional illustration, not patient dimensions",
+  "states": [
+    {
+      "id": "defect",
+      "label": "Perimembranous VSD"
+    },
+    {
+      "id": "intact",
+      "label": "Intact septum"
+    }
+  ],
+  "defaultState": "defect",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "VentricularWall_R_Anterior",
+      "label": "Right ventricular wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.035,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_R_Posterior",
+      "label": "Right ventricular wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_L_Anterior",
+      "label": "Left ventricular wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.035,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_L_Posterior",
+      "label": "Left ventricular wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.035,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "MuscularSeptum_Open",
+      "label": "Muscular ventricular septum \u2014 inferior defect border",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.05,
+        -0.025,
+        0
+      ]
+    },
+    {
+      "id": "AVSeptalContribution",
+      "label": "Superior septal rim beside tricuspid attachment",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0,
+        0.025,
+        -0.035
+      ]
+    },
+    {
+      "id": "OutletSeptalContribution",
+      "label": "Outlet septal rim below aortic root",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0,
+        0.025,
+        0.035
+      ]
+    },
+    {
+      "id": "MembranousSeptum_Closed",
+      "label": "Membranous region \u2014 intact comparison tissue",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0
+      ],
+      "state": "intact"
+    },
+    {
+      "id": "SubaorticOutlet_Posterior",
+      "label": "Left ventricular subaortic outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.021500000000000002,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "SubaorticOutlet_Anterior",
+      "label": "Left ventricular subaortic outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.021500000000000002,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "SubpulmonaryOutlet_Posterior",
+      "label": "Right ventricular subpulmonary outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "SubpulmonaryOutlet_Anterior",
+      "label": "Right ventricular subpulmonary outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "Trabecula_R1",
+      "label": "Right ventricular trabecular ridge 1",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_R2",
+      "label": "Right ventricular trabecular ridge 2",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_R3",
+      "label": "Right ventricular trabecular ridge 3",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L1",
+      "label": "Left ventricular trabecular ridge 1",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L2",
+      "label": "Left ventricular trabecular ridge 2",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L3",
+      "label": "Left ventricular trabecular ridge 3",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "AorticCusp_1",
+      "label": "Aortic cusp 1 (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ]
+    },
+    {
+      "id": "AorticCusp_2",
+      "label": "Aortic cusp 2 (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ]
+    },
+    {
+      "id": "AorticCusp_3",
+      "label": "Aortic cusp 3 (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ]
+    },
+    {
+      "id": "TricuspidSeptalLeaflet",
+      "label": "Tricuspid septal leaflet (orientation landmark)",
+      "category": "anatomy",
+      "parent": "Heart_11_VentricularSeptalDefect",
+      "separationOffset": [
+        -0.045,
+        0.03,
+        0
+      ]
+    }
+  ],
+  "limitations": [
+    "Regional anatomy with exaggerated thickness; anatomical review required",
+    "Intact and defect states are structural comparisons, not repair or growth animations",
+    "Only perimembranous VSD or secundum ASD is represented; other subtypes are not modeled",
+    "No blood flow, pressure, chamber enlargement, conduction pathways or complete valve apparatus",
+    "Incomplete whole-heart and venous context; the ASD is a tissue deficiency, not a PFO flap"
+  ],
+  "triangles": 129786,
+  "revision": "tissue-v4",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Six curved branching trabecular ridges with embedded wall attachments instead of detached oval nodules",
+    "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ],
+  "surfaceRevision": "surface-v5",
+  "surfaceChanges": {
+    "normalReliefMultiplier": 0.45,
+    "roughnessOffset": 0.06,
+    "geometryUnchanged": true,
+    "anatomicalValidation": "incomplete"
+  }
+}

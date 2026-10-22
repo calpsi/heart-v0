@@ -1,0 +1,200 @@
+{
+  "asset": "Heart_03_PrimitiveHeartTube",
+  "mesh_count": 36,
+  "triangles": 242112,
+  "embedded_textures": 3,
+  "usdz_bytes": 17170185,
+  "metres_per_unit": 1,
+  "up_axis": "Y",
+  "parts": [
+    {
+      "id": "Myocardium_SinusVenosus_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_SinusVenosus_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_SinusVenosus_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_SinusVenosus_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_SinusVenosus_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_SinusVenosus_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_PrimitiveAtrium_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_PrimitiveAtrium_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_PrimitiveAtrium_Posterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_PrimitiveAtrium_Anterior",
+      "triangles": 6072,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_AVCanal_Posterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_AVCanal_Anterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_AVCanal_Posterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_AVCanal_Anterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_AVCanal_Posterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_AVCanal_Anterior",
+      "triangles": 3328,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_PrimitiveVentricle_Posterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_PrimitiveVentricle_Anterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_PrimitiveVentricle_Posterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_PrimitiveVentricle_Anterior",
+      "triangles": 9600,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_BulbusCordis_Posterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_BulbusCordis_Anterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_BulbusCordis_Posterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_BulbusCordis_Anterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_BulbusCordis_Posterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_BulbusCordis_Anterior",
+      "triangles": 8816,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_TruncusArteriosus_Posterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Myocardium_TruncusArteriosus_Anterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_TruncusArteriosus_Posterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "CardiacJelly_TruncusArteriosus_Anterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_TruncusArteriosus_Posterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    },
+    {
+      "id": "Endocardium_TruncusArteriosus_Anterior",
+      "triangles": 6464,
+      "nonmanifold_edges": 0
+    }
+  ],
+  "build": "passed",
+  "sha256": "149dfdbe8a22a36813a3762bbc2a425dd3cb05983099bedfe23fad0098cd69d2",
+  "textures": [
+    "textures/Heart_03_PrimitiveHeartTube_Normal.png",
+    "textures/Heart_03_PrimitiveHeartTube_Roughness.png",
+    "textures/Heart_03_PrimitiveHeartTube_Color.png"
+  ],
+  "runtime": "Passed all 16 assets, including both updated tube models; report runtime-validation-tubes.json",
+  "referenceVideoViewed": false
+}

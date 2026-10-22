@@ -1,0 +1,11 @@
+00:00.685  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_09_ValvularRefinement/before/Heart_09_ValvularRefinement.blend"
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/tools/update_installed_surfaces.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:
+00:06.967  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_09_ValvularRefinement/Heart_09_ValvularRefinement_assembled.png'
+00:12.940  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_09_ValvularRefinement/Heart_09_ValvularRefinement_layers.png'
+Info: Saved as "Heart_09_ValvularRefinement.blend"
+SURFACE UPDATE INSTALLED Heart_09_ValvularRefinement
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/refinements/surface-v5/Heart_09_ValvularRefinement/Heart_09_ValvularRefinement.usdz' took 123.13 ms
+
+Blender quit

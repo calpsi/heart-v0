@@ -1,0 +1,57 @@
+{
+  "id": "HDBR_CS20_N913",
+  "lesson": "Carnegie stage 20 \u00b7 N913",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS20_CS20_913_left_ventricle",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_aorta",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_ductus_arteriosus",
+      "label": "Ductus arteriosus",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_left_atrium",
+      "label": "Left atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_outflow",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_pulmonary",
+      "label": "Pulmonary trunk",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_right_atrium",
+      "label": "Right atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_right_ventricle_surf",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS20_CS20_N913_veins",
+      "label": "Venous channels",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS20",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS20 \u00b7 HDBR specimen N913 \u00b7 chamber regions and vessel lumens"
+}

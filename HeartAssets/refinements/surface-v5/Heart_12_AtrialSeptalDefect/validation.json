@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_12_AtrialSeptalDefect",
+  "passed": true,
+  "parts": 19,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "3a5447f41e1c2ef973a0dde8dd74613fb3423a14b87f9e643ba89aa33e5764de",
+  "anatomicallyValidated": false
+}

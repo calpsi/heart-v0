@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_05_AtrialSeptation",
+  "passed": true,
+  "parts": 9,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "66bfc599f49c86cf8a75a05ea2b7dea698e19fc24a1c30431fed10cc17e41001",
+  "anatomicallyValidated": false
+}

@@ -1,0 +1,279 @@
+{
+  "asset": "Heart_08_OutflowSeptation",
+  "batch": 4,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior. Outflow is a regional schematic, not a registered whole-heart coordinate system.",
+  "display_scale": "enlarged regional illustration, not embryo life size",
+  "states": [
+    {
+      "id": "ridges",
+      "label": "Opposing ridges"
+    },
+    {
+      "id": "divided",
+      "label": "Divided outflow"
+    }
+  ],
+  "defaultState": "ridges",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "OutflowWall_Posterior",
+      "label": "Truncoconal wall \u2014 posterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0,
+        0,
+        -0.065
+      ]
+    },
+    {
+      "id": "OutflowWall_Anterior",
+      "label": "Truncoconal wall \u2014 anterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0,
+        0,
+        0.065
+      ]
+    },
+    {
+      "id": "SeptalRidge_Ridges",
+      "label": "septal outflow cushion \u2014 opposing ridge",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.045,
+        0,
+        0
+      ],
+      "state": "ridges"
+    },
+    {
+      "id": "SeptalRidge_Divided",
+      "label": "septal outflow cushion \u2014 fused partition",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.045,
+        0,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "ParietalRidge_Ridges",
+      "label": "parietal outflow cushion \u2014 opposing ridge",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.045,
+        0,
+        0
+      ],
+      "state": "ridges"
+    },
+    {
+      "id": "ParietalRidge_Divided",
+      "label": "parietal outflow cushion \u2014 fused partition",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.045,
+        0,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "AorticTrunk_Posterior",
+      "label": "Aortic trunk outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.014000000059604646,
+        0.02,
+        -0.04
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "AorticTrunk_Anterior",
+      "label": "Aortic trunk outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.014000000059604646,
+        0.02,
+        0.04
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "AorticCuspPrimordium_1",
+      "label": "Aortic semilunar cusp primordium 1",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "AorticCuspPrimordium_2",
+      "label": "Aortic semilunar cusp primordium 2",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "AorticCuspPrimordium_3",
+      "label": "Aortic semilunar cusp primordium 3",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "PulmonaryTrunk_Posterior",
+      "label": "Pulmonary trunk outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.014000000059604646,
+        0.02,
+        -0.04
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "PulmonaryTrunk_Anterior",
+      "label": "Pulmonary trunk outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.014000000059604646,
+        0.02,
+        0.04
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "PulmonaryCuspPrimordium_1",
+      "label": "Pulmonary semilunar cusp primordium 1",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "PulmonaryCuspPrimordium_2",
+      "label": "Pulmonary semilunar cusp primordium 2",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "PulmonaryCuspPrimordium_3",
+      "label": "Pulmonary semilunar cusp primordium 3",
+      "category": "anatomy",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        -0.03,
+        0.035,
+        0
+      ],
+      "state": "divided"
+    },
+    {
+      "id": "NeuralCrestMarker_1",
+      "label": "Neural-crest contribution marker 1 (schematic)",
+      "category": "context",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.025,
+        0,
+        0.035
+      ],
+      "state": "ridges"
+    },
+    {
+      "id": "NeuralCrestMarker_2",
+      "label": "Neural-crest contribution marker 2 (schematic)",
+      "category": "context",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.025,
+        0,
+        0.035
+      ],
+      "state": "ridges"
+    },
+    {
+      "id": "NeuralCrestMarker_3",
+      "label": "Neural-crest contribution marker 3 (schematic)",
+      "category": "context",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.025,
+        0,
+        0.035
+      ],
+      "state": "ridges"
+    },
+    {
+      "id": "NeuralCrestMarker_4",
+      "label": "Neural-crest contribution marker 4 (schematic)",
+      "category": "context",
+      "parent": "Heart_08_OutflowSeptation",
+      "separationOffset": [
+        0.025,
+        0,
+        0.035
+      ],
+      "state": "ridges"
+    }
+  ],
+  "limitations": [
+    "Discrete structural snapshots; no tissue-growth, blood-flow or flap animation",
+    "Simplified regional anatomy with exaggerated thickness; requires expert teaching review",
+    "No atria, coronary arteries, arch branches or complete venous connections",
+    "Ventricular outlet alignment and outflow twist are illustrative, not exact human staging",
+    "Semilunar structures are rounded primordia, not functional mature valve leaflets"
+  ],
+  "triangles": 75632,
+  "revision": "tissue-v3",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism."
+}

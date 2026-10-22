@@ -1,0 +1,653 @@
+{
+  "asset": "Heart_09_ValvularRefinement",
+  "batch": 5,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior. USD +Y cranial, +Z anterior. Valve assemblies are spaced apart for teaching.",
+  "display_scale": "enlarged educational illustration, not patient or embryo dimensions",
+  "states": [
+    {
+      "id": "cushions",
+      "label": "Early cushions"
+    },
+    {
+      "id": "refined",
+      "label": "Later anatomy reference"
+    }
+  ],
+  "defaultState": "cushions",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "MitralAnnulus_Posterior",
+      "label": "Mitral annular support \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.036,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "MitralAnnulus_Anterior",
+      "label": "Mitral annular support \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.036,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "MitralWall_Anterior",
+      "label": "Mitral ventricular support \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.04,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "MitralWall_Posterior",
+      "label": "Mitral ventricular support \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "Mitral_Anterior_Cushions",
+      "label": "Mitral anterior \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Mitral_Anterior_Refined",
+      "label": "Mitral anterior \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Mitral_Posterior_Cushions",
+      "label": "Mitral posterior \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Mitral_Posterior_Refined",
+      "label": "Mitral posterior \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralPapillary_1",
+      "label": "Mitral papillary muscle 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        -0.035,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralPapillary_2",
+      "label": "Mitral papillary muscle 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        -0.035,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralChord_1_1",
+      "label": "MitralChord 1 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralChord_1_2",
+      "label": "MitralChord 1 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralChord_2_1",
+      "label": "MitralChord 2 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "MitralChord_2_2",
+      "label": "MitralChord 2 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidAnnulus_Posterior",
+      "label": "Tricuspid annular support \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.036,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "TricuspidAnnulus_Anterior",
+      "label": "Tricuspid annular support \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.036,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "TricuspidWall_Anterior",
+      "label": "Tricuspid ventricular support \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.04,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "TricuspidWall_Posterior",
+      "label": "Tricuspid ventricular support \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "Tricuspid_Anterior_Cushions",
+      "label": "Tricuspid anterior \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Tricuspid_Anterior_Refined",
+      "label": "Tricuspid anterior \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Tricuspid_Posterior_Cushions",
+      "label": "Tricuspid posterior \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Tricuspid_Posterior_Refined",
+      "label": "Tricuspid posterior \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Tricuspid_Septal_Cushions",
+      "label": "Tricuspid septal \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Tricuspid_Septal_Refined",
+      "label": "Tricuspid septal \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidPapillary_1",
+      "label": "Tricuspid papillary muscle 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        -0.035,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidPapillary_2",
+      "label": "Tricuspid papillary muscle 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        -0.035,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidPapillary_3",
+      "label": "Tricuspid papillary muscle 3",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        -0.035,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_1_1",
+      "label": "TricuspidChord 1 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_1_2",
+      "label": "TricuspidChord 1 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_2_1",
+      "label": "TricuspidChord 2 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_2_2",
+      "label": "TricuspidChord 2 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_3_1",
+      "label": "TricuspidChord 3 1",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "TricuspidChord_3_2",
+      "label": "TricuspidChord 3 2",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0,
+        0.025
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "AorticAnnulus_Posterior",
+      "label": "Aortic annular support \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.019000000000000003,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "AorticAnnulus_Anterior",
+      "label": "Aortic annular support \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0.019000000000000003,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "Aortic_Cusp1_Cushions",
+      "label": "Aortic cusp1 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Ventricularis_AorticCusp1_Refined",
+      "label": "Ventricularis \u2014 enlarged aortic cusp layer",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.0292,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Spongiosa_AorticCusp1_Refined",
+      "label": "Spongiosa \u2014 enlarged aortic cusp layer",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.0383,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Fibrosa_AorticCusp1_Refined",
+      "label": "Fibrosa \u2014 enlarged aortic cusp layer",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.048100000000000004,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Aortic_Cusp2_Cushions",
+      "label": "Aortic cusp2 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Aortic_Cusp2_Refined",
+      "label": "Aortic cusp2 \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Aortic_Cusp3_Cushions",
+      "label": "Aortic cusp3 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Aortic_Cusp3_Refined",
+      "label": "Aortic cusp3 \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "PulmonaryAnnulus_Posterior",
+      "label": "Pulmonary annular support \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.019000000000000003,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "PulmonaryAnnulus_Anterior",
+      "label": "Pulmonary annular support \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        -0.019000000000000003,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "Pulmonary_Cusp1_Cushions",
+      "label": "Pulmonary cusp1 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Pulmonary_Cusp1_Refined",
+      "label": "Pulmonary cusp1 \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Pulmonary_Cusp2_Cushions",
+      "label": "Pulmonary cusp2 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Pulmonary_Cusp2_Refined",
+      "label": "Pulmonary cusp2 \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    },
+    {
+      "id": "Pulmonary_Cusp3_Cushions",
+      "label": "Pulmonary cusp3 \u2014 cushions",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "cushions"
+    },
+    {
+      "id": "Pulmonary_Cusp3_Refined",
+      "label": "Pulmonary cusp3 \u2014 refined",
+      "category": "anatomy",
+      "parent": "Heart_09_ValvularRefinement",
+      "separationOffset": [
+        0,
+        0.039,
+        0
+      ],
+      "state": "refined"
+    }
+  ],
+  "limitations": [
+    "Discrete illustrative states; no flow, pressure, contraction or inflation simulation",
+    "Exaggerated wall/leaflet thickness and simplified spatial relationships; anatomical review required",
+    "Birth model omits complete pulmonary venous/systemic returns, coronary vessels and arch branches",
+    "Ductus narrowing and flap apposition depict different aspects of a gradual transition, not simultaneous complete anatomical closure",
+    "Three-layer cusp segmentation is a simplified teaching section, not histology"
+  ],
+  "triangles": 75768,
+  "revision": "tissue-v4",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ],
+  "presentationNote": "Early cushions and a later-anatomy reference; mature tissue layers do not represent a week 5\u20138 snapshot.",
+  "surfaceRevision": "surface-v5",
+  "surfaceChanges": {
+    "normalReliefMultiplier": 0.45,
+    "roughnessOffset": 0.06,
+    "geometryUnchanged": true,
+    "anatomicalValidation": "incomplete"
+  }
+}

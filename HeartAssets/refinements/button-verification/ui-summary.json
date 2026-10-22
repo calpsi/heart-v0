@@ -1,0 +1,48 @@
+{
+  "testScenarios": {
+    "testDevelopmentAndAnomalyNavigation": {
+      "passed": true,
+      "durationSeconds": 93.019,
+      "evidence": "expanded-ui-test.log"
+    },
+    "testExplorationPanelsAndIsolation": {
+      "passed": true,
+      "durationSeconds": 100.868,
+      "evidence": "recheck-ui-test.log"
+    },
+    "testGuidedPhasesAndRecovery": {
+      "passed": true,
+      "durationSeconds": 75.019,
+      "evidence": "recheck-ui-test.log"
+    },
+    "testHomeNavigationAndReferences": {
+      "passed": true,
+      "durationSeconds": 27.845,
+      "evidence": "expanded-ui-test.log"
+    },
+    "testLessonCatalogueAndAtlas": {
+      "passed": true,
+      "durationSeconds": 56.338,
+      "evidence": "expanded-ui-test.log"
+    },
+    "testEveryLessonCanAdvanceAndFinish": {
+      "passed": true,
+      "durationSeconds": 303.727,
+      "evidence": "recheck-ui-test.log"
+    },
+    "testCutawaySearchAndSliders": {
+      "passed": true,
+      "durationSeconds": 68.316,
+      "evidence": "final-ui-test.log"
+    },
+    "testLayerCompareAndDetachedPartRecovery": {
+      "passed": true,
+      "durationSeconds": 62.966,
+      "evidence": "final-ui-test.log"
+    }
+  },
+  "passedScenarios": 8,
+  "lessonCompletions": 16,
+  "forwardPhaseActions": 36,
+  "physicalHeadsetTested": false
+}

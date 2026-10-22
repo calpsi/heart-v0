@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "build": "passed",
+  "runtimeSoftwareChecks": "passed",
+  "assetsTested": 16,
+  "anatomicalValidation": "incomplete",
+  "loopingCandidateInstalled": false,
+  "referenceReview": "early-heart-comparison.md",
+  "latestContentBuild": "passed",
+  "latestContentBuildLog": "/private/tmp/heart-reference-review-build.log",
+  "geometryReplacedInReferenceReview": false
+}

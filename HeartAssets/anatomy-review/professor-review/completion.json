@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-20",
+  "buildPassed": true,
+  "runtimePassed": true,
+  "assets": 23,
+  "isolatedPartPivots": 420,
+  "pointerClickThroughVerified": false,
+  "completeAnatomicalValidation": false,
+  "geometryRevision": "fallot-outlet-v1"
+}

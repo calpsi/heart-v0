@@ -1,0 +1,37 @@
+{
+  "id": "HDBR_CS12_N288",
+  "lesson": "Carnegie stage 12 \u00b7 N288",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS12_N288_arches",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS12_N288_atrium",
+      "label": "Common atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS12_N288_left_ventricle",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS12_N288_OFT",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS12_N288_right_ventricle",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS12",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS12 \u00b7 HDBR specimen N288 \u00b7 chamber regions and vessel lumens"
+}

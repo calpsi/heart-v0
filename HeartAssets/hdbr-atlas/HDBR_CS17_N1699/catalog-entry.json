@@ -1,0 +1,62 @@
+{
+  "id": "HDBR_CS17_N1699",
+  "lesson": "Carnegie stage 17 \u00b7 N1699",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS17_cs17_N1699_aorta_version2",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_ductus_arteriosus",
+      "label": "Ductus arteriosus",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_epicardium",
+      "label": "Epicardium (source region)",
+      "category": "context"
+    },
+    {
+      "id": "CS17_cs17_N1699_left_atrium",
+      "label": "Left atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_left_ventricle",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_oft",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_pulmonary_version2",
+      "label": "Pulmonary trunk",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_right_atrium",
+      "label": "Right atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_right_ventricle",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS17_cs17_N1699_veins",
+      "label": "Venous channels",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS17",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS17 \u00b7 HDBR specimen N1699 \u00b7 chamber regions and vessel lumens"
+}

@@ -1,0 +1,135 @@
+{
+  "revision": "tissue-v4",
+  "stages": {
+    "1": {
+      "asset": "Heart_01_CardiogenicRegion",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Curved cardiogenic tissue field with continuous saddle depth across neighbouring tissues",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "2": {
+      "asset": "Heart_02_PairedHeartTubes",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Rounded exposed cut margins with preserved hollow lumens and removable tissue layers",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "3": {
+      "asset": "Heart_03_PrimitiveHeartTube",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Rounded exposed cut margins with preserved hollow lumens and removable tissue layers",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "4": {
+      "asset": "Heart_04_CardiacLooping",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Rounded exposed cut margins with preserved hollow lumens and removable tissue layers",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "5": {
+      "asset": "Heart_05_AtrialSeptation",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "6": {
+      "asset": "Heart_06_EndocardialCushions",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "7": {
+      "asset": "Heart_07_VentricularSeptation",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Six curved branching trabecular ridges with embedded wall attachments instead of detached oval nodules",
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "8": {
+      "asset": "Heart_08_OutflowSeptation",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "9": {
+      "asset": "Heart_09_ValvularRefinement",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "10": {
+      "asset": "Heart_10_CirculatoryTransition",
+      "status": "source topology and USDZ validated; runtime check pending",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "11": {
+      "asset": "Heart_11_VentricularSeptalDefect",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Six curved branching trabecular ridges with embedded wall attachments instead of detached oval nodules",
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "12": {
+      "asset": "Heart_12_AtrialSeptalDefect",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "13": {
+      "asset": "Heart_13_TetralogyOfFallot",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "14": {
+      "asset": "Heart_14_TranspositionGreatArteries",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "15": {
+      "asset": "Heart_15_AorticCoarctation",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    },
+    "16": {
+      "asset": "Heart_16_PatentDuctusArteriosus",
+      "status": "source, USDZ and compiled simulator validation passed",
+      "changes": [
+        "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+      ]
+    }
+  },
+  "integrationStatus": "build and all runtime checks passed",
+  "remainingWork": "Further anatomical realism remains; headset gesture ergonomics have not been manually tested."
+}

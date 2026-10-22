@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "asset": "Heart_09_ValvularRefinement",
+  "checks": [
+    {
+      "id": "Mitral_Anterior_Refined",
+      "annularContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "Mitral_Posterior_Refined",
+      "annularContact": true,
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MitralChord_1_1",
+      "muscle": "MitralPapillary_1",
+      "leaflet": "Anterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "MitralChord_1_2",
+      "muscle": "MitralPapillary_2",
+      "leaflet": "Anterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "MitralChord_2_1",
+      "muscle": "MitralPapillary_2",
+      "leaflet": "Posterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    },
+    {
+      "id": "MitralChord_2_2",
+      "muscle": "MitralPapillary_1",
+      "leaflet": "Posterior",
+      "muscleContact": true,
+      "leafletContact": true,
+      "branches": 3
+    }
+  ],
+  "parts": 55,
+  "usdzSHA256": "7acd6a6bad2bd82108af2f7c5d3376296b7b65b6794feea6dd1055e39faadeed",
+  "limitations": [
+    "Original partly open regional reference, not measured anatomy",
+    "Illustrative three-scallop posterior pattern; human variants exist",
+    "Planar annular support and incomplete aortomitral continuity",
+    "Early cushions and tricuspid leaflet shape remain simplified"
+  ],
+  "unchangedOtherMeshes": 49,
+  "changedMeshes": [
+    "MitralChord_1_1",
+    "MitralChord_1_2",
+    "MitralChord_2_1",
+    "MitralChord_2_2",
+    "Mitral_Anterior_Refined",
+    "Mitral_Posterior_Refined"
+  ],
+  "leafletIntersection": false,
+  "clearLeafletOpeningPaths": 9,
+  "exportedParts": 55
+}

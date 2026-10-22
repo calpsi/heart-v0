@@ -1,0 +1,232 @@
+{
+  "asset": "Heart_15_AorticCoarctation",
+  "batch": 8,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior.",
+  "states": [
+    {
+      "id": "coarctation",
+      "label": "Coarctation"
+    },
+    {
+      "id": "normal",
+      "label": "Open comparison"
+    }
+  ],
+  "defaultState": "coarctation",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "Brachiocephalic_Posterior",
+      "label": "Brachiocephalic trunk \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.04,
+        -0.035
+      ]
+    },
+    {
+      "id": "Brachiocephalic_Anterior",
+      "label": "Brachiocephalic trunk \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.04,
+        0.035
+      ]
+    },
+    {
+      "id": "LeftCarotid_Posterior",
+      "label": "Left common carotid artery \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.00315,
+        0.04,
+        -0.035
+      ]
+    },
+    {
+      "id": "LeftCarotid_Anterior",
+      "label": "Left common carotid artery \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.00315,
+        0.04,
+        0.035
+      ]
+    },
+    {
+      "id": "LeftSubclavian_Posterior",
+      "label": "Left subclavian artery \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.0295,
+        0.04,
+        -0.035
+      ]
+    },
+    {
+      "id": "LeftSubclavian_Anterior",
+      "label": "Left subclavian artery \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.0295,
+        0.04,
+        0.035
+      ]
+    },
+    {
+      "id": "AorticArch_Posterior",
+      "label": "Ascending aorta and arch \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.04,
+        0.025,
+        -0.035
+      ]
+    },
+    {
+      "id": "AorticArch_Anterior",
+      "label": "Ascending aorta and arch \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.04,
+        0.025,
+        0.035
+      ]
+    },
+    {
+      "id": "DescendingAorta_Posterior",
+      "label": "Descending thoracic aorta \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        -0.025,
+        -0.035
+      ]
+    },
+    {
+      "id": "DescendingAorta_Anterior",
+      "label": "Descending thoracic aorta \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        -0.025,
+        0.035
+      ]
+    },
+    {
+      "id": "PulmonaryTrunk",
+      "label": "Pulmonary trunk and left pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.04,
+        0.015,
+        0.04
+      ]
+    },
+    {
+      "id": "RightPulmonaryBranch",
+      "label": "Right pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        -0.05,
+        0.015,
+        -0.03
+      ]
+    },
+    {
+      "id": "AorticIsthmus_Coarctation_Posterior",
+      "label": "Aortic isthmus \u2014 localized narrowing \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        0,
+        -0.035
+      ],
+      "state": "coarctation"
+    },
+    {
+      "id": "AorticIsthmus_Coarctation_Anterior",
+      "label": "Aortic isthmus \u2014 localized narrowing \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        0,
+        0.035
+      ],
+      "state": "coarctation"
+    },
+    {
+      "id": "AorticIsthmus_Normal_Posterior",
+      "label": "Aortic isthmus \u2014 open aortic lumen \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        0,
+        -0.035
+      ],
+      "state": "normal"
+    },
+    {
+      "id": "AorticIsthmus_Normal_Anterior",
+      "label": "Aortic isthmus \u2014 open aortic lumen \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.055,
+        0,
+        0.035
+      ],
+      "state": "normal"
+    },
+    {
+      "id": "Ligamentum",
+      "label": "Ligamentum arteriosum \u2014 ductal attachment landmark",
+      "category": "anatomy",
+      "parent": "Heart_15_AorticCoarctation",
+      "separationOffset": [
+        0.035,
+        0.025,
+        0.035
+      ]
+    }
+  ],
+  "limitations": [
+    "Enlarged regional vessel illustrations; not patient anatomy or severity grading",
+    "Coarctation depicts one localized eccentric narrowing; diffuse arch hypoplasia and collaterals are omitted",
+    "PDA compares patent and anatomically closed states, not immediate birth closure or a treatment sequence",
+    "Closed parent-vessel walls are restored; the ligament has no lumen",
+    "No chambers, coronary anatomy, complete distal branches, flow, pressure, oxygen or closure animation",
+    "Expert anatomical review required before assessed teaching use"
+  ],
+  "triangles": 63208,
+  "revision": "tissue-v3",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism."
+}

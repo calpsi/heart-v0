@@ -1,0 +1,211 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme "heart v3" -configuration Debug -sdk xrsimulator -destination "generic/platform=visionOS Simulator" -derivedDataPath /private/tmp/heart-v3-asset-build build
+
+Build settings from command line:
+    SDKROOT = xrsimulator27.0
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+2026-10-20 00:55:44.545 xcodebuild[32915:962431] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'heart v3' in project 'heart v3'
+        ➜ Explicit dependency on target 'RealityKitContent-product' in project 'RealityKitContent'
+    Target 'RealityKitContent-product' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 44fc29013bdbdabb28fe458571103d91
+Build description path: /tmp/heart-v3-asset-build/Build/Intermediates.noindex/XCBuildData/44fc29013bdbdabb28fe458571103d91.xcbuilddata
+RealityAssetsSchemaGen /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json -D SCRIPT_INPUT_FILE_1\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_7\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_OUTPUT_ANCESTOR_8\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_OUTPUT_ANCESTOR_9\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool create-schema --output-schema /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json
+
+RealityAssetsCompile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality -D SCRIPT_INPUT_FILE_0\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets -D SCRIPT_INPUT_FILE_1\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Products -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/03ef2bf2057ff4b979a8789a3836cc4a.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool compile --platform xrsimulator --deployment-target 26.0 -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/RealityKitContent.reality /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets --schema-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform xrsimulator -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -o /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle: replacing existing signature
+
+GenerateAssetSymbols /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets --compile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies --output-partial-info-plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device vision --minimum-deployment-target 26.5 --platform xros --bundle-identifier phil.heart-v3 --generate-swift-asset-symbols /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.document.warnings */
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/* com.apple.actool.compilation-results */
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets --compile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device vision --minimum-deployment-target 26.5 --platform xros
+/* com.apple.actool.document.warnings */
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly03.imageset/(null)[2d][Anomaly03.png]: warning: The image set "Anomaly03" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage08.imageset/(null)[2d][Stage08.png]: warning: The image set "Stage08" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly01.imageset/(null)[2d][Anomaly01.png]: warning: The image set "Anomaly01" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage07.imageset/(null)[2d][Stage07.png]: warning: The image set "Stage07" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly02.imageset/(null)[2d][Anomaly02.png]: warning: The image set "Anomaly02" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage10.imageset/(null)[2d][Stage10.png]: warning: The image set "Stage10" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly04.imageset/(null)[2d][Anomaly04.png]: warning: The image set "Anomaly04" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage05.imageset/(null)[2d][Stage05.png]: warning: The image set "Stage05" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly06.imageset/(null)[2d][Anomaly06.png]: warning: The image set "Anomaly06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage09.imageset/(null)[2d][Stage09.png]: warning: The image set "Stage09" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Stage06.imageset/(null)[2d][Stage06.png]: warning: The image set "Stage06" has an unassigned child.
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets:./Anomaly05.imageset/(null)[2d][Anomaly05.png]: warning: The image set "Anomaly05" has an unassigned child.
+/* com.apple.actool.compilation-results */
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/assetcatalog_generated_info.plist_thinned
+/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart v3.build/Debug-xrsimulator/heart v3.build/assetcatalog_output/thinned/Assets.car
+
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+LinkAssetCatalog /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Assets.xcassets (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-linkAssetCatalog --thinned /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/thinned --thinned-dependencies /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist_unthinned --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --plist-output /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist
+note: Emplaced /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app/Assets.car (in target 'heart v3' from project 'heart v3')
+
+CpResource /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/HeartModels.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartModels.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Resources/HeartModels.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PkgInfo -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app/heart v3.debug.dylib: replacing existing signature
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app/__preview.dylib: replacing existing signature
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app: replacing existing signature
+
+Validate /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-validationUtility /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app -shallow-bundle -infoplist-subpath Info.plist
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

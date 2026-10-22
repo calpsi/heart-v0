@@ -1,0 +1,143 @@
+{
+  "asset": "Heart_06_EndocardialCushions",
+  "batch": 3,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior. USD +Y cranial and +Z anterior.",
+  "display_scale": "enlarged regional teaching model; not embryo life size",
+  "states": [
+    {
+      "id": "unfused",
+      "label": "Before fusion"
+    },
+    {
+      "id": "fused",
+      "label": "After fusion"
+    }
+  ],
+  "defaultState": "unfused",
+  "defaultCutaway": false,
+  "parts": [
+    {
+      "id": "AVCanalWall_Posterior",
+      "label": "Atrioventricular canal wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        -0.025,
+        -0.055
+      ]
+    },
+    {
+      "id": "AVCanalWall_Anterior",
+      "label": "Atrioventricular canal wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        -0.025,
+        0.055
+      ]
+    },
+    {
+      "id": "LateralCushion_R",
+      "label": "Right lateral AV cushion",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        -0.04,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "LateralCushion_L",
+      "label": "Left lateral AV cushion",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0.04,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "CushionSuperior_Unfused",
+      "label": "Superior AV cushion \u2014 separate",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        0,
+        -0.05
+      ],
+      "state": "unfused"
+    },
+    {
+      "id": "CushionInferior_Unfused",
+      "label": "Inferior AV cushion \u2014 separate",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        0,
+        0.05
+      ],
+      "state": "unfused"
+    },
+    {
+      "id": "CushionSuperior_Fused",
+      "label": "Superior AV cushion \u2014 fused at midline",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        0,
+        -0.05
+      ],
+      "state": "fused"
+    },
+    {
+      "id": "CushionInferior_Fused",
+      "label": "Inferior AV cushion \u2014 fused at midline",
+      "category": "anatomy",
+      "parent": "Heart_06_EndocardialCushions",
+      "separationOffset": [
+        0,
+        0,
+        0.05
+      ],
+      "state": "fused"
+    }
+  ],
+  "limitations": [
+    "Focused regional anatomy, not a whole-heart reconstruction",
+    "Discrete structural snapshots; no continuous tissue growth or fluid simulation",
+    "Exaggerated tissue thickness and openings for inspection",
+    "Requires anatomical teaching review before assessed use"
+  ],
+  "triangles": 26552,
+  "revision": "tissue-v4",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Softly irregular cushion and canal contours, preserving fused/unfused openings"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Subtle rounded dissection margins on chamber walls, septa and valve tissue",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ],
+  "surfaceRevision": "surface-v5",
+  "surfaceChanges": {
+    "normalReliefMultiplier": 0.45,
+    "roughnessOffset": 0.06,
+    "geometryUnchanged": true,
+    "anatomicalValidation": "incomplete"
+  }
+}

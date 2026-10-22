@@ -1,0 +1,198 @@
+{
+  "id": "Heart_05_AtrialSeptation",
+  "lesson": "Atrial septation",
+  "stageIndex": 4,
+  "parts": [
+    {
+      "id": "AtrialWall_Anterior",
+      "label": "Common atrial wall \u2014 anterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        0.065
+      ],
+      "state": "early"
+    },
+    {
+      "id": "AtrialWall_Posterior",
+      "label": "Common atrial wall \u2014 posterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        -0.065
+      ],
+      "state": "early"
+    },
+    {
+      "id": "AVCanalWall_Posterior",
+      "label": "Atrioventricular canal wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.025,
+        -0.055
+      ]
+    },
+    {
+      "id": "AVCanalWall_Anterior",
+      "label": "Atrioventricular canal wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.025,
+        0.055
+      ]
+    },
+    {
+      "id": "CushionAnchor_Ventral",
+      "label": "Endocardial cushion anchor \u2014 ventral",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.035,
+        0.025
+      ]
+    },
+    {
+      "id": "CushionAnchor_Dorsal",
+      "label": "Endocardial cushion anchor \u2014 dorsal",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.035,
+        -0.025
+      ]
+    },
+    {
+      "id": "SeptumPrimum_Early",
+      "label": "Septum primum \u2014 ostium primum below free edge",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.045,
+        0.025,
+        0
+      ],
+      "state": "early"
+    },
+    {
+      "id": "SeptumPrimum_Later",
+      "label": "Septum primum \u2014 ostium secundum and open lower flap",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.05,
+        0,
+        0
+      ],
+      "state": "later"
+    },
+    {
+      "id": "SeptumSecundum_Later",
+      "label": "Superior interatrial fold \u2014 two wall limbs and roof groove",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        -0.05,
+        0,
+        0
+      ],
+      "state": "later"
+    },
+    {
+      "id": "MesenchymalCap_Early",
+      "label": "Mesenchymal cap \u2014 primary septal free edge (enlarged)",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.035,
+        0,
+        0.025
+      ],
+      "state": "early"
+    },
+    {
+      "id": "DorsalMesenchymalProtrusion_Early",
+      "label": "Dorsal mesenchymal protrusion \u2014 early contribution (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.03
+      ],
+      "state": "early"
+    },
+    {
+      "id": "MesenchymalComplex_Later",
+      "label": "Joined mesenchymal complex \u2014 later inferior rim (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.035,
+        -0.02,
+        0
+      ],
+      "state": "later"
+    },
+    {
+      "id": "DorsalContribution_Later",
+      "label": "Dorsal contribution \u2014 later muscularized rim (schematic)",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.03
+      ],
+      "state": "later"
+    },
+    {
+      "id": "AtrialWall_Later_Anterior",
+      "label": "Later atrial roof/wall \u2014 anterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        0.065
+      ],
+      "state": "later"
+    },
+    {
+      "id": "AtrialWall_Later_Posterior",
+      "label": "Later atrial roof/wall \u2014 posterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        -0.065
+      ],
+      "state": "later"
+    }
+  ],
+  "states": [
+    {
+      "id": "early",
+      "label": "Early \u00b7 ostium primum"
+    },
+    {
+      "id": "later",
+      "label": "Later fetal reference \u00b7 roof fold"
+    }
+  ],
+  "defaultState": "early",
+  "defaultCutaway": true,
+  "defaultYaw": 0.7,
+  "defaultPitch": -0.08,
+  "presentationNote": "Regional septation diagram: early mesenchymal contributors and a later roof-open interatrial fold. Enlarged original geometry; the later arrangement is not an early embryonic snapshot."
+}

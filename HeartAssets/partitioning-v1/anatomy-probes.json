@@ -1,0 +1,70 @@
+{
+  "scope": "Local geometry probes at named landmarks; not comprehensive lumen connectivity, physiology, or expert anatomy validation",
+  "assets": [
+    {
+      "asset": "HeartPartition_01_Week04_EarlyPartitioning",
+      "tests": {
+        "superior_ventricular_gap_matches_stage": true,
+        "cushion_fusion_matches_stage": true,
+        "ostium_primum_matches_stage": true,
+        "Cutaway_usd_Y_up": true,
+        "Cutaway_usd_metres": true,
+        "Cutaway_usd_has_meshes": true,
+        "Full_usd_Y_up": true,
+        "Full_usd_metres": true,
+        "Full_usd_has_meshes": true
+      }
+    },
+    {
+      "asset": "HeartPartition_02_Weeks05-06_CushionFusion",
+      "tests": {
+        "superior_ventricular_gap_matches_stage": true,
+        "cushion_fusion_matches_stage": true,
+        "ostium_primum_matches_stage": true,
+        "ostium_secundum_is_real_hole": true,
+        "Cutaway_usd_Y_up": true,
+        "Cutaway_usd_metres": true,
+        "Cutaway_usd_has_meshes": true,
+        "Full_usd_Y_up": true,
+        "Full_usd_metres": true,
+        "Full_usd_has_meshes": true
+      }
+    },
+    {
+      "asset": "HeartPartition_03_Week07_VentricularClosure",
+      "tests": {
+        "superior_ventricular_gap_matches_stage": true,
+        "cushion_fusion_matches_stage": true,
+        "ostium_primum_matches_stage": true,
+        "ostium_secundum_is_real_hole": true,
+        "foramen_ovale_rim_has_lower_opening": true,
+        "primum_flap_overlaps_lower_opening": true,
+        "secundum_overlaps_upper_primum_opening": true,
+        "Cutaway_usd_Y_up": true,
+        "Cutaway_usd_metres": true,
+        "Cutaway_usd_has_meshes": true,
+        "Full_usd_Y_up": true,
+        "Full_usd_metres": true,
+        "Full_usd_has_meshes": true
+      }
+    },
+    {
+      "asset": "HeartPartition_04_Week08_FourChambers",
+      "tests": {
+        "superior_ventricular_gap_matches_stage": true,
+        "cushion_fusion_matches_stage": true,
+        "ostium_primum_matches_stage": true,
+        "ostium_secundum_is_real_hole": true,
+        "foramen_ovale_rim_has_lower_opening": true,
+        "primum_flap_overlaps_lower_opening": true,
+        "secundum_overlaps_upper_primum_opening": true,
+        "Cutaway_usd_Y_up": true,
+        "Cutaway_usd_metres": true,
+        "Cutaway_usd_has_meshes": true,
+        "Full_usd_Y_up": true,
+        "Full_usd_metres": true,
+        "Full_usd_has_meshes": true
+      }
+    }
+  ]
+}

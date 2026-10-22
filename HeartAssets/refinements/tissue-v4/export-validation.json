@@ -1,0 +1,274 @@
+[
+  {
+    "asset": "Heart_01_CardiogenicRegion",
+    "passed": true,
+    "catalogParts": 5,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_01_CardiogenicRegion_Normal.001.png",
+      "textures/Heart_01_CardiogenicRegion_Roughness.001.png",
+      "textures/Heart_01_CardiogenicRegion_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 8462049
+  },
+  {
+    "asset": "Heart_02_PairedHeartTubes",
+    "passed": true,
+    "catalogParts": 13,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_02_PairedHeartTubes_Normal.001.png",
+      "textures/Heart_02_PairedHeartTubes_Roughness.001.png",
+      "textures/Heart_02_PairedHeartTubes_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 20148982
+  },
+  {
+    "asset": "Heart_03_PrimitiveHeartTube",
+    "passed": true,
+    "catalogParts": 36,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_03_PrimitiveHeartTube_Normal.001.png",
+      "textures/Heart_03_PrimitiveHeartTube_Roughness.001.png",
+      "textures/Heart_03_PrimitiveHeartTube_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 16587394
+  },
+  {
+    "asset": "Heart_04_CardiacLooping",
+    "passed": true,
+    "catalogParts": 40,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_04_CardiacLooping_Normal.001.png",
+      "textures/Heart_04_CardiacLooping_Roughness.001.png",
+      "textures/Heart_04_CardiacLooping_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 24369075
+  },
+  {
+    "asset": "Heart_05_AtrialSeptation",
+    "passed": true,
+    "catalogParts": 9,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_05_AtrialSeptation_Normal.001.png",
+      "textures/Heart_05_AtrialSeptation_Roughness.001.png",
+      "textures/Heart_05_AtrialSeptation_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 8565463
+  },
+  {
+    "asset": "Heart_06_EndocardialCushions",
+    "passed": true,
+    "catalogParts": 8,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_06_EndocardialCushions_Normal.001.png",
+      "textures/Heart_06_EndocardialCushions_Roughness.001.png",
+      "textures/Heart_06_EndocardialCushions_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 7684946
+  },
+  {
+    "asset": "Heart_07_VentricularSeptation",
+    "passed": true,
+    "catalogParts": 19,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_07_VentricularSeptation_Normal.001.png",
+      "textures/Heart_07_VentricularSeptation_Roughness.001.png",
+      "textures/Heart_07_VentricularSeptation_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 12541506
+  },
+  {
+    "asset": "Heart_08_OutflowSeptation",
+    "passed": true,
+    "catalogParts": 20,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_08_OutflowSeptation_Normal.001.png",
+      "textures/Heart_08_OutflowSeptation_Roughness.001.png",
+      "textures/Heart_08_OutflowSeptation_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 10228446
+  },
+  {
+    "asset": "Heart_09_ValvularRefinement",
+    "passed": true,
+    "catalogParts": 51,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_09_ValvularRefinement_Normal.001.png",
+      "textures/Heart_09_ValvularRefinement_Roughness.001.png",
+      "textures/Heart_09_ValvularRefinement_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 10141359
+  },
+  {
+    "asset": "Heart_10_CirculatoryTransition",
+    "passed": true,
+    "catalogParts": 23,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_10_CirculatoryTransition_Normal.001.png",
+      "textures/Heart_10_CirculatoryTransition_Roughness.001.png",
+      "textures/Heart_10_CirculatoryTransition_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 10857802
+  },
+  {
+    "asset": "Heart_11_VentricularSeptalDefect",
+    "passed": true,
+    "catalogParts": 22,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_11_VentricularSeptalDefect_Normal.001.png",
+      "textures/Heart_11_VentricularSeptalDefect_Roughness.001.png",
+      "textures/Heart_11_VentricularSeptalDefect_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 12880419
+  },
+  {
+    "asset": "Heart_12_AtrialSeptalDefect",
+    "passed": true,
+    "catalogParts": 19,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_12_AtrialSeptalDefect_Normal.001.png",
+      "textures/Heart_12_AtrialSeptalDefect_Roughness.001.png",
+      "textures/Heart_12_AtrialSeptalDefect_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 8852250
+  },
+  {
+    "asset": "Heart_13_TetralogyOfFallot",
+    "passed": true,
+    "catalogParts": 28,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_13_TetralogyOfFallot_Normal.001.png",
+      "textures/Heart_13_TetralogyOfFallot_Roughness.001.png",
+      "textures/Heart_13_TetralogyOfFallot_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 10362155
+  },
+  {
+    "asset": "Heart_14_TranspositionGreatArteries",
+    "passed": true,
+    "catalogParts": 24,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_14_TranspositionGreatArteries_Normal.001.png",
+      "textures/Heart_14_TranspositionGreatArteries_Roughness.001.png",
+      "textures/Heart_14_TranspositionGreatArteries_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 12038335
+  },
+  {
+    "asset": "Heart_15_AorticCoarctation",
+    "passed": true,
+    "catalogParts": 17,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_15_AorticCoarctation_Normal.001.png",
+      "textures/Heart_15_AorticCoarctation_Roughness.001.png",
+      "textures/Heart_15_AorticCoarctation_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 9153621
+  },
+  {
+    "asset": "Heart_16_PatentDuctusArteriosus",
+    "passed": true,
+    "catalogParts": 21,
+    "pbrChannels": [
+      "diffuseColor",
+      "roughness",
+      "normal"
+    ],
+    "textures": [
+      "textures/Heart_16_PatentDuctusArteriosus_Normal.001.png",
+      "textures/Heart_16_PatentDuctusArteriosus_Roughness.001.png",
+      "textures/Heart_16_PatentDuctusArteriosus_Color.001.png"
+    ],
+    "textureResolution": 2048,
+    "bytes": 9778592
+  }
+]

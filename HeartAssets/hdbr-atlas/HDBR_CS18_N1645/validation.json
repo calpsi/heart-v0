@@ -1,0 +1,74 @@
+{
+  "asset": "HDBR_CS18_N1645",
+  "passed": true,
+  "sourceFile": "cs18.glb",
+  "sourceSHA256": "e44f40f2f18962be8b60c70715a564cff5f9d2f5c07f0ebce8aaaa7673f7ee58",
+  "parts": [
+    {
+      "id": "CS18_cs18_N1645_aorta",
+      "source": "cs18_N1645_aorta",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 9824
+    },
+    {
+      "id": "CS18_cs18_N1645_ductus_arteriosus",
+      "source": "cs18_N1645_ductus-arteriosus",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 714
+    },
+    {
+      "id": "CS18_cs18_N1645_epicardium",
+      "source": "cs18_N1645_epicardium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 1096
+    },
+    {
+      "id": "CS18_cs18_N1645_left_atrium",
+      "source": "cs18_N1645_left-atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 16096
+    },
+    {
+      "id": "CS18_cs18_N1645_left_ventricle",
+      "source": "cs18_N1645_left-ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 21980
+    },
+    {
+      "id": "CS18_cs18_N1645_outflow_tract",
+      "source": "cs18_N1645_outflow-tract",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 8400
+    },
+    {
+      "id": "CS18_cs18_N1645_pulmonary",
+      "source": "cs18_N1645_pulmonary",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 2102
+    },
+    {
+      "id": "CS18_cs18_N1645_right_atrium",
+      "source": "cs18_N1645_right-atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 130434
+    },
+    {
+      "id": "CS18_cs18_N1645_right_ventricle",
+      "source": "cs18_N1645_right-ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 16834
+    },
+    {
+      "id": "CS18_cs18_N1645_veins",
+      "source": "cs18_N1645_veins",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 6436
+    }
+  ],
+  "exportedMeshes": 10,
+  "uniformDisplayScale": 0.0002713841078135649,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "960e7daaae9a17566a8b1ffbb67ba9a3ecbc294e079c9e2d732c38b86904ca1b"
+}

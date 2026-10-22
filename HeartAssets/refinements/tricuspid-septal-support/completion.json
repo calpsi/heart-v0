@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "installed": true,
+  "buildPassed": true,
+  "liveRuntimePassed": true,
+  "assetsTested": 23,
+  "isolatedPartPivotsTested": 429,
+  "simulatorScreenshotInspected": true,
+  "completeAnatomicalValidation": false,
+  "remainingVisualIssue": "Model remains low in the lesson viewport; no end-to-end pointer interaction check performed."
+}

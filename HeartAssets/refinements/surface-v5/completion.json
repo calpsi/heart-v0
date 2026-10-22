@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "installedAssets": 16,
+  "parts": 355,
+  "buildPassed": true,
+  "runtimePassed": true,
+  "isolatedPartPivotChecks": 355,
+  "geometryRebuilt": false,
+  "anatomicalValidation": "incomplete",
+  "buildLog": "/private/tmp/heart-all-assets-build.log",
+  "preview": "all-installed-assets.jpg"
+}

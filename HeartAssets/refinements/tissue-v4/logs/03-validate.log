@@ -1,0 +1,5 @@
+00:00.951  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/blender/Heart_03_PrimitiveHeartTube.blend"
+VALIDATION PASSED [{"asset": "Heart_03_PrimitiveHeartTube", "mesh_count": 36, "triangles": 224064, "embedded_textures": 3, "usdz_bytes": 16587394, "metres_per_unit": 1, "up_axis": "Y"}]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

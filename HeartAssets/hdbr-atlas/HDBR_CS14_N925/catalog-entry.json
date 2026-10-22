@@ -1,0 +1,57 @@
+{
+  "id": "HDBR_CS14_N925",
+  "lesson": "Carnegie stage 14 \u00b7 N925",
+  "stageIndex": 3,
+  "category": "reference",
+  "parts": [
+    {
+      "id": "CS14_N925_vena_cava_sm_dec",
+      "label": "Venous channels",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_aorta_sm_dec",
+      "label": "Aorta and pharyngeal arch arteries",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_left_atrium_sm_dec",
+      "label": "Left atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_left_ventricle_sm_dec",
+      "label": "Left ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_oft_sm_dec",
+      "label": "Outflow tract",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_outside_tissue_sm_dec",
+      "label": "Surrounding tissue (source region)",
+      "category": "context"
+    },
+    {
+      "id": "CS14_N925_right_ventricle_sm_dec",
+      "label": "Right ventricular region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_right_atrium_sm_dec",
+      "label": "Right atrial region",
+      "category": "anatomy"
+    },
+    {
+      "id": "CS14_N925_sinus_venosus_sm_dec",
+      "label": "Systemic venous sinus",
+      "category": "anatomy"
+    }
+  ],
+  "previewImage": "ReferenceCS14",
+  "defaultYaw": 0.35,
+  "defaultPitch": 0.12,
+  "presentationNote": "CS14 \u00b7 HDBR specimen N925 \u00b7 chamber regions and vessel lumens"
+}

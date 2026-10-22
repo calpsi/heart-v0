@@ -1,0 +1,5 @@
+00:01.914  blend            | Read blend: "/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/blender/Heart_07_VentricularSeptation.blend"
+VALIDATION PASSED [{"asset": "Heart_07_VentricularSeptation", "mesh_count": 19, "triangles": 124424, "embedded_textures": 3, "usdz_bytes": 12541506, "metres_per_unit": 1, "up_axis": "Y"}]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-18",
+  "build": "passed",
+  "liveRealityKitValidation": true,
+  "referenceModels": 7,
+  "referenceRegions": 57,
+  "existingModelsChecked": 16,
+  "allIsolatedPivotsChecked": 412,
+  "sourceGeometryPreserved": true,
+  "completeAnatomyRebuild": false
+}

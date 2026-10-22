@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "Heart_02_PairedHeartTubes",
+    "passed": true,
+    "parts": 13,
+    "triangles": 324320,
+    "textureMaps": [
+      "textures/Heart_02_PairedHeartTubes_Normal.png",
+      "textures/Heart_02_PairedHeartTubes_Roughness.png",
+      "textures/Heart_02_PairedHeartTubes_Color.png"
+    ],
+    "sha256": "20585e1e7234adb25733cfa12b25d63418f34d9326c6d453ee89b992d0b6f942"
+  },
+  {
+    "asset": "Heart_03_PrimitiveHeartTube",
+    "passed": true,
+    "parts": 36,
+    "triangles": 242112,
+    "textureMaps": [
+      "textures/Heart_03_PrimitiveHeartTube_Normal.png",
+      "textures/Heart_03_PrimitiveHeartTube_Roughness.png",
+      "textures/Heart_03_PrimitiveHeartTube_Color.png"
+    ],
+    "sha256": "b8a4c875037d40d90037aaf71143868ab91821c18b829c6d4f082cd75e75f9c1"
+  }
+]

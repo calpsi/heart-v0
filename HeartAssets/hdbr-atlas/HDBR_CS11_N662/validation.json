@@ -1,0 +1,50 @@
+{
+  "asset": "HDBR_CS11_N662",
+  "passed": true,
+  "sourceFile": "cs11-662.glb",
+  "sourceSHA256": "b1f26cd34f7bf73513124ef4fff0dc73c8f1e930c9cea11694f8fca0ba032737",
+  "parts": [
+    {
+      "id": "CS11_N662_aorta",
+      "source": "N662_aorta",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 44642
+    },
+    {
+      "id": "CS11_N662_atria",
+      "source": "N662_atria",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 35162
+    },
+    {
+      "id": "CS11_N662_left_ventricle",
+      "source": "N662_left_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 30390
+    },
+    {
+      "id": "CS11_N662_outflow_tract",
+      "source": "N662_outflow_tract",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 29246
+    },
+    {
+      "id": "CS11_N662_right_ventricle",
+      "source": "N662_right_ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 21642
+    },
+    {
+      "id": "CS11_N662_veins",
+      "source": "N662_veins",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 9826
+    }
+  ],
+  "exportedMeshes": 6,
+  "uniformDisplayScale": 0.0002001268870912539,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "cda4830323c63190edce1b8c6c2caeda5c6ee16ff9798419f8411f81dae0012d"
+}

@@ -1,0 +1,477 @@
+{
+  "asset": "HeartPartition_02_Weeks05-06_CushionFusion",
+  "stage": 2,
+  "age_basis": "approximate post-fertilization age; overlapping events, not a day-exact reconstruction",
+  "units": "metres",
+  "blender_axes": "+X anatomical left; -Y anterior; +Z superior",
+  "export_axes": "+X anatomical left; +Y superior; +Z anterior",
+  "scale": "enlarged teaching model, about 20 cm tall",
+  "parts": [
+    {
+      "id": "AtrialWall_Posterior",
+      "label": "Atrial wall \u2014 posterior",
+      "role": "wall"
+    },
+    {
+      "id": "AtrialWall_Anterior",
+      "label": "Atrial wall \u2014 anterior",
+      "role": "removable_front"
+    },
+    {
+      "id": "VentricularWall_Posterior",
+      "label": "Ventricular wall \u2014 posterior",
+      "role": "wall"
+    },
+    {
+      "id": "VentricularWall_Anterior",
+      "label": "Ventricular wall \u2014 anterior",
+      "role": "removable_front"
+    },
+    {
+      "id": "MuscularInterventricularSeptum",
+      "label": "Muscular interventricular septum",
+      "role": "anatomy"
+    },
+    {
+      "id": "MuscularInterventricularSeptum_AnteriorContinuation",
+      "label": "Muscular interventricular septum \u2014 anterior continuation",
+      "role": "removable_front"
+    },
+    {
+      "id": "SeptumPrimum",
+      "label": "Septum primum",
+      "role": "anatomy"
+    },
+    {
+      "id": "SeptumPrimum_AnteriorContinuation",
+      "label": "Septum primum \u2014 anterior continuation",
+      "role": "removable_front"
+    },
+    {
+      "id": "DorsalEndocardialCushion",
+      "label": "Dorsal (superior) endocardial cushion",
+      "role": "anatomy"
+    },
+    {
+      "id": "VentralEndocardialCushion",
+      "label": "Ventral (inferior) endocardial cushion",
+      "role": "anatomy"
+    },
+    {
+      "id": "VentralEndocardialCushion_AnteriorContinuation",
+      "label": "Ventral (inferior) endocardial cushion \u2014 anterior continuation",
+      "role": "removable_front"
+    },
+    {
+      "id": "RV_Trabecula_01",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_02",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_03",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_04",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_05",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_06",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_07",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_08",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_09",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_10",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "RV_Trabecula_11",
+      "label": "Right ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_01",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_02",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_03",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_04",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_05",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_06",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_07",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_08",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_09",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_10",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "LV_Trabecula_11",
+      "label": "Left ventricular trabecula",
+      "role": "anatomy"
+    },
+    {
+      "id": "Tricuspid_Leaflet_1",
+      "label": "Tricuspid valve primordium",
+      "role": "anatomy"
+    },
+    {
+      "id": "Tricuspid_Leaflet_2",
+      "label": "Tricuspid valve primordium",
+      "role": "anatomy"
+    },
+    {
+      "id": "Tricuspid_Leaflet_3",
+      "label": "Tricuspid valve primordium",
+      "role": "anatomy"
+    },
+    {
+      "id": "Mitral_Leaflet_1",
+      "label": "Mitral valve primordium",
+      "role": "anatomy"
+    },
+    {
+      "id": "Mitral_Leaflet_2",
+      "label": "Mitral valve primordium",
+      "role": "anatomy"
+    }
+  ],
+  "checks": [
+    {
+      "part": "AtrialWall_Posterior",
+      "vertices": 29329,
+      "faces": 28605,
+      "nonmanifold_edges": 0,
+      "volume_m3": 0.00014772329208353108
+    },
+    {
+      "part": "AtrialWall_Anterior",
+      "vertices": 16971,
+      "faces": 16152,
+      "nonmanifold_edges": 0,
+      "volume_m3": 8.012195093717941e-05
+    },
+    {
+      "part": "VentricularWall_Posterior",
+      "vertices": 38860,
+      "faces": 38061,
+      "nonmanifold_edges": 0,
+      "volume_m3": 0.0002552615602847187
+    },
+    {
+      "part": "VentricularWall_Anterior",
+      "vertices": 27438,
+      "faces": 26538,
+      "nonmanifold_edges": 0,
+      "volume_m3": 0.00016659208965542766
+    },
+    {
+      "part": "MuscularInterventricularSeptum",
+      "vertices": 1803,
+      "faces": 1576,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.300522142722912e-05
+    },
+    {
+      "part": "MuscularInterventricularSeptum_AnteriorContinuation",
+      "vertices": 1084,
+      "faces": 901,
+      "nonmanifold_edges": 0,
+      "volume_m3": 1.3920352117850872e-05
+    },
+    {
+      "part": "SeptumPrimum",
+      "vertices": 1991,
+      "faces": 1676,
+      "nonmanifold_edges": 0,
+      "volume_m3": 1.2824774040732808e-05
+    },
+    {
+      "part": "SeptumPrimum_AnteriorContinuation",
+      "vertices": 641,
+      "faces": 471,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.010282858331514e-06
+    },
+    {
+      "part": "DorsalEndocardialCushion",
+      "vertices": 814,
+      "faces": 805,
+      "nonmanifold_edges": 0,
+      "volume_m3": 8.410633411853852e-06
+    },
+    {
+      "part": "VentralEndocardialCushion",
+      "vertices": 473,
+      "faces": 422,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.86476822392254e-06
+    },
+    {
+      "part": "VentralEndocardialCushion_AnteriorContinuation",
+      "vertices": 511,
+      "faces": 469,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.545866137402978e-06
+    },
+    {
+      "part": "RV_Trabecula_01",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 1.7239017522386906e-07
+    },
+    {
+      "part": "RV_Trabecula_02",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.2700365543632613e-07
+    },
+    {
+      "part": "RV_Trabecula_03",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.5561076094019445e-07
+    },
+    {
+      "part": "RV_Trabecula_04",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.488201812952754e-07
+    },
+    {
+      "part": "RV_Trabecula_05",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.927447998555973e-07
+    },
+    {
+      "part": "RV_Trabecula_06",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 6.93258389897202e-07
+    },
+    {
+      "part": "RV_Trabecula_07",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.7356035329354703e-07
+    },
+    {
+      "part": "RV_Trabecula_08",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.656581921448655e-07
+    },
+    {
+      "part": "RV_Trabecula_09",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.2852171309135313e-07
+    },
+    {
+      "part": "RV_Trabecula_10",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.494295965114062e-07
+    },
+    {
+      "part": "RV_Trabecula_11",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.545106569918636e-07
+    },
+    {
+      "part": "LV_Trabecula_01",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.281917081403875e-07
+    },
+    {
+      "part": "LV_Trabecula_02",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.6988416182024366e-07
+    },
+    {
+      "part": "LV_Trabecula_03",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.9712563567208957e-07
+    },
+    {
+      "part": "LV_Trabecula_04",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.627198844614324e-07
+    },
+    {
+      "part": "LV_Trabecula_05",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.091896839451827e-07
+    },
+    {
+      "part": "LV_Trabecula_06",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.150908020172764e-07
+    },
+    {
+      "part": "LV_Trabecula_07",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 5.804866441230489e-07
+    },
+    {
+      "part": "LV_Trabecula_08",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 4.1883384889072273e-07
+    },
+    {
+      "part": "LV_Trabecula_09",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.7768853928361393e-07
+    },
+    {
+      "part": "LV_Trabecula_10",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.6981594812821954e-07
+    },
+    {
+      "part": "LV_Trabecula_11",
+      "vertices": 384,
+      "faces": 374,
+      "nonmanifold_edges": 0,
+      "volume_m3": 5.010914105779653e-07
+    },
+    {
+      "part": "Tricuspid_Leaflet_1",
+      "vertices": 8330,
+      "faces": 8328,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.2436094282719978e-07
+    },
+    {
+      "part": "Tricuspid_Leaflet_2",
+      "vertices": 8330,
+      "faces": 8328,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.255121203319558e-07
+    },
+    {
+      "part": "Tricuspid_Leaflet_3",
+      "vertices": 8330,
+      "faces": 8328,
+      "nonmanifold_edges": 0,
+      "volume_m3": 2.2625562257863578e-07
+    },
+    {
+      "part": "Mitral_Leaflet_1",
+      "vertices": 8330,
+      "faces": 8328,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.3633046966930373e-07
+    },
+    {
+      "part": "Mitral_Leaflet_2",
+      "vertices": 8330,
+      "faces": 8328,
+      "nonmanifold_edges": 0,
+      "volume_m3": 3.3633046355590183e-07
+    }
+  ],
+  "limitations": [
+    "Original illustrative anatomy, not a specimen-derived reconstruction",
+    "Septation geometry simplified and thickness exaggerated for teaching",
+    "Outflow tract and vessels omitted to expose chamber partitioning",
+    "Fetal foramen ovale retained; no postnatal sealing implied",
+    "Static stages; no morph animation; stage 4 valve attachments are simplified primordia"
+  ],
+  "export_note": "Cutaway exports omit removable anterior wall meshes. Full exports and blend retain walls plus anterior continuations of internal septa/cushions."
+}

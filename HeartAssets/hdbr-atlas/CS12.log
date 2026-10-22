@@ -1,0 +1,15 @@
+16:55:16 | INFO: Data are loaded, start creating Blender stuff
+16:55:16 | INFO: Blender create Mesh node Cube
+16:55:16 | INFO: Blender create Mesh node N288_arches
+16:55:16 | INFO: Blender create Mesh node N288_atrium
+16:55:16 | INFO: Blender create Mesh node N288_left_ventricle
+16:55:16 | INFO: Blender create Mesh node N288_OFT
+16:55:16 | INFO: Blender create Mesh node N288_right_ventricle
+16:55:16 | INFO: glTF import finished in 0.68s
+00:06.485  render           | Saved: '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS12_N288/preview.png'
+Info: Saved as "HDBR_CS12_N288.blend"
+HDBR STAGED MODEL COMPLETE HDBR_CS12_N288 5
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD export of '/Users/phillicia/Desktop/School/Spatial/heart v3/HeartAssets/hdbr-atlas/HDBR_CS12_N288/HDBR_CS12_N288.usdz' took 118.66 ms
+
+Blender quit

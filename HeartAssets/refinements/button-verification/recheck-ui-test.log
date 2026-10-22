@@ -1,0 +1,2104 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath /private/tmp/heart-v3-asset-build -parallel-testing-enabled NO test "-only-testing:HeartV3UITests/HeartV3InteractionTests/testCutawaySearchAndSliders" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testEveryLessonCanAdvanceAndFinish" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testGuidedPhasesAndRecovery" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testExplorationPanelsAndIsolation" -resultBundlePath /private/tmp/heart-ui-recheck-1.xcresult
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+Writing result bundle at path:
+	/private/tmp/heart-ui-recheck-1.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'HeartV3UITests' in project 'heart v3'
+        ➜ Explicit dependency on target 'heart v3' in project 'heart v3'
+    Target 'heart v3' in project 'heart v3'
+        ➜ Explicit dependency on target 'RealityKitContent-product' in project 'RealityKitContent'
+    Target 'RealityKitContent-product' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: fd47e59dd58b941734475dcb79d2e4fe
+Build description path: /tmp/heart-v3-asset-build/Build/Intermediates.noindex/XCBuildData/fd47e59dd58b941734475dcb79d2e4fe.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -o /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+
+RealityAssetsSchemaGen /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_FILE_0\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json -D SCRIPT_INPUT_FILE_1\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_11\=/tmp -D SCRIPT_INPUT_ANCESTOR_12\=/tmp/heart-v3-asset-build -D SCRIPT_INPUT_ANCESTOR_13\=/tmp/heart-v3-asset-build/Build -D SCRIPT_INPUT_ANCESTOR_14\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_15\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_16\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_17\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_18\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_19\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/tmp -D SCRIPT_OUTPUT_ANCESTOR_2\=/tmp/heart-v3-asset-build -D SCRIPT_OUTPUT_ANCESTOR_3\=/tmp/heart-v3-asset-build/Build -D SCRIPT_OUTPUT_ANCESTOR_4\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SCRIPT_OUTPUT_ANCESTOR_5\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_OUTPUT_ANCESTOR_6\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_7\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_OUTPUT_ANCESTOR_8\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_OUTPUT_ANCESTOR_9\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex -D SYMROOT\=/tmp/heart-v3-asset-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/tmp/heart-v3-asset-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/tmp/heart-v3-asset-build/Index.noindex/DataStore -D TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/23331ec9d0236d2e22a3863c59d2d82b.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool create-schema --output-schema /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json
+
+SwiftDriver heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+SwiftDriver HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ GuidedLearningView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile GuidedLearningView.swift
+
+SwiftCompile normal arm64 Compiling\ HeartV3InteractionTests.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartV3InteractionTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+Copy /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftmodule /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+SwiftDriverJobDiscovery normal arm64 Compiling GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/heart-v3-asset-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/heart-v3-asset-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/heart-v3-asset-build/ModuleCache.noindex -sdk-module-cache-path /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/heart-v3-asset-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/include -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform xrsimulator -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PkgInfo -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -filelist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.LinkFileList -install_name @rpath/heart\ v3.debug.dylib -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+
+ConstructStubExecutorLinkFileList /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    construct-stub-executor-link-file-list /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'heart v3' from project 'heart v3')
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.app-Simulated.xcent.der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name heart_v3 --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3 --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app --target-triple arm64-apple-xros26.5-simulator --binary-file /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 --dependency-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat --stringsdata-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList --metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyMetadataFileList --static-metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-21 19:20:53.120 appintentsmetadataprocessor[20335:458698] Starting appintentsmetadataprocessor export
+2026-10-21 19:20:53.125 appintentsmetadataprocessor[20335:458698] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app/__preview.dylib
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart v3.app/__preview.dylib: replacing existing signature
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app
+
+Validate /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-validationUtility /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/heart\ v3.app -shallow-bundle -infoplist-subpath Info.plist
+
+Ld /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests normal (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F/tmp/heart-v3-asset-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -filelist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests
+
+ExtractAppIntentsMetadata (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name HeartV3UITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3.ui-tests --output /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest --target-triple arm64-apple-xros26.5-simulator --binary-file /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --dependency-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat --stringsdata-file /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList --metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyMetadataFileList --static-metadata-file-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-21 19:20:54.802 appintentsmetadataprocessor[20345:458754] Starting appintentsmetadataprocessor export
+2026-10-21 19:20:54.803 appintentsmetadataprocessor[20345:458754] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ProcessInfoPlistFile /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/PlugIns --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/SystemExtensions --scan-folder /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/heart-v3-asset-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest
+
+CodeSign /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app
+/tmp/heart-v3-asset-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app: replacing existing signature
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/heart-v3-asset-build/SDKExplicitPrecompiledModules
+
+2026-10-21 19:21:11.603932+0800 HeartV3UITests-Runner[20368:459181] [Default] Running tests...
+2026-10-21 19:21:11.634586+0800 HeartV3UITests-Runner[20368:459181] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-21 19:21:11.917722+0800 HeartV3UITests-Runner[20368:459582] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x102f3e0a0> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-21 19:21:11.995710+0800 HeartV3UITests-Runner[20368:459583] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-21 19:21:11.995792+0800 HeartV3UITests-Runner[20368:459583] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+    t =      nans Interface orientation changed to Unknown
+objc[20368]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x101e98118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-21 19:21:13.321469+0800 HeartV3UITests-Runner[20368:459181] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.leeRCH/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+Test Suite 'Selected tests' started at 2026-10-21 19:21:13.590.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-21 19:21:13.593.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-21 19:21:13.593.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testCutawaySearchAndSliders]' started.
+    t =     0.01s Start Test at 2026-10-21 19:21:13.602
+    t =     0.09s Set Up
+    t =     0.10s Open phil.heart-v3
+    t =     0.10s     Launch phil.heart-v3
+2026-10-21 19:21:13.995 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:21:13.995 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     3.41s         Setting up automation session
+    t =     8.02s         Wait for phil.heart-v3 to idle
+    t =    11.69s Waiting 30.0s for "tool.Cutaway" Button to exist
+    t =    12.73s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Cutaway" Button`
+    t =    12.73s         Checking existence of `"tool.Cutaway" Button`
+    t =    14.03s Checking `Expect predicate `enabled == 1` for object "tool.Cutaway" Button`
+    t =    14.03s     Find the "tool.Cutaway" Button
+    t =    14.10s Tap "tool.Cutaway" Button
+    t =    14.10s     Wait for phil.heart-v3 to idle
+    t =    14.10s     Find the "tool.Cutaway" Button
+    t =    14.14s     Check for interrupting elements affecting "tool.Cutaway" Button
+    t =    14.17s         Wait for com.apple.SurfBoard to idle
+    t =    14.20s     Synthesize event
+    t =    14.71s     Wait for phil.heart-v3 to idle
+    t =    14.73s Waiting 30.0s for "tool.Cutaway" Button to exist
+    t =    15.83s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Cutaway" Button`
+    t =    15.83s         Checking existence of `"tool.Cutaway" Button`
+    t =    16.93s Checking `Expect predicate `enabled == 1` for object "tool.Cutaway" Button`
+    t =    16.93s     Find the "tool.Cutaway" Button
+    t =    16.99s Tap "tool.Cutaway" Button
+    t =    16.99s     Wait for phil.heart-v3 to idle
+    t =    17.00s     Find the "tool.Cutaway" Button
+    t =    17.03s     Check for interrupting elements affecting "tool.Cutaway" Button
+    t =    17.04s         Wait for com.apple.SurfBoard to idle
+    t =    17.04s     Synthesize event
+    t =    17.45s     Wait for phil.heart-v3 to idle
+    t =    17.46s Waiting 30.0s for "tool.Parts" Button to exist
+    t =    18.52s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Parts" Button`
+    t =    18.52s         Checking existence of `"tool.Parts" Button`
+    t =    19.62s Checking `Expect predicate `enabled == 1` for object "tool.Parts" Button`
+    t =    19.62s     Find the "tool.Parts" Button
+    t =    19.65s Tap "tool.Parts" Button
+    t =    19.65s     Wait for phil.heart-v3 to idle
+    t =    19.66s     Find the "tool.Parts" Button
+    t =    19.69s     Check for interrupting elements affecting "tool.Parts" Button
+    t =    19.69s         Wait for com.apple.SurfBoard to idle
+    t =    19.70s     Synthesize event
+    t =    20.32s     Wait for phil.heart-v3 to idle
+    t =    20.96s Waiting 10.0s for "Find a tissue or region" TextField to exist
+    t =    21.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Find a tissue or region" TextField`
+    t =    21.96s         Checking existence of `"Find a tissue or region" TextField`
+    t =    22.00s Tap "Find a tissue or region" TextField
+    t =    22.00s     Wait for phil.heart-v3 to idle
+    t =    22.01s     Find the "Find a tissue or region" TextField
+    t =    22.02s     Check for interrupting elements affecting "Find a tissue or region" TextField
+    t =    22.02s         Wait for com.apple.SurfBoard to idle
+    t =    22.03s     Synthesize event
+    t =    23.00s     Wait for phil.heart-v3 to idle
+    t =    23.00s Type 'no-such-tissue' into "Find a tissue or region" TextField
+    t =    23.00s     Wait for phil.heart-v3 to idle
+    t =    23.01s     Find the "Find a tissue or region" TextField
+    t =    23.02s     Check for interrupting elements affecting "Find a tissue or region" TextField
+    t =    23.03s         Wait for com.apple.SurfBoard to idle
+    t =    23.03s     Synthesize event
+    t =    23.49s     Wait for phil.heart-v3 to idle
+    t =    23.74s Waiting 30.0s for "Clear search" Button to exist
+    t =    24.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Clear search" Button`
+    t =    24.79s         Checking existence of `"Clear search" Button`
+    t =    25.83s Checking `Expect predicate `enabled == 1` for object "Clear search" Button`
+    t =    25.83s     Find the "Clear search" Button
+    t =    25.87s Tap "Clear search" Button
+    t =    25.87s     Wait for phil.heart-v3 to idle
+    t =    25.87s     Find the "Clear search" Button
+    t =    25.89s     Check for interrupting elements affecting "Clear search" Button
+    t =    25.89s         Wait for com.apple.SurfBoard to idle
+    t =    25.90s     Synthesize event
+    t =    26.37s     Wait for phil.heart-v3 to idle
+    t =    26.37s Waiting 30.0s for "part.Myocardium_L_Posterior" Button to exist
+    t =    27.43s     Checking `Expect predicate `existsNoRetry == 1` for object "part.Myocardium_L_Posterior" Button`
+    t =    27.43s         Checking existence of `"part.Myocardium_L_Posterior" Button`
+    t =    28.51s Checking `Expect predicate `enabled == 1` for object "part.Myocardium_L_Posterior" Button`
+    t =    28.51s     Find the "part.Myocardium_L_Posterior" Button
+    t =    28.55s Tap "part.Myocardium_L_Posterior" Button
+    t =    28.55s     Wait for phil.heart-v3 to idle
+    t =    28.55s     Find the "part.Myocardium_L_Posterior" Button
+    t =    28.57s     Check for interrupting elements affecting "part.Myocardium_L_Posterior" Button
+    t =    28.58s         Wait for com.apple.SurfBoard to idle
+    t =    28.58s     Synthesize event
+    t =    28.98s     Wait for phil.heart-v3 to idle
+    t =    29.48s Waiting 30.0s for "tool.Isolate" Button to exist
+    t =    30.53s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Isolate" Button`
+    t =    30.53s         Checking existence of `"tool.Isolate" Button`
+    t =    31.62s Checking `Expect predicate `enabled == 1` for object "tool.Isolate" Button`
+    t =    31.62s     Find the "tool.Isolate" Button
+    t =    31.66s Tap "tool.Isolate" Button
+    t =    31.66s     Wait for phil.heart-v3 to idle
+    t =    31.67s     Find the "tool.Isolate" Button
+    t =    31.70s     Check for interrupting elements affecting "tool.Isolate" Button
+    t =    31.71s         Wait for com.apple.SurfBoard to idle
+    t =    31.72s     Synthesize event
+    t =    32.13s     Wait for phil.heart-v3 to idle
+    t =    32.14s Waiting 30.0s for "tool.View" Button to exist
+    t =    33.20s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.View" Button`
+    t =    33.20s         Checking existence of `"tool.View" Button`
+    t =    34.30s Checking `Expect predicate `enabled == 1` for object "tool.View" Button`
+    t =    34.31s     Find the "tool.View" Button
+    t =    34.38s Tap "tool.View" Button
+    t =    34.38s     Wait for phil.heart-v3 to idle
+    t =    34.38s     Find the "tool.View" Button
+    t =    34.42s     Check for interrupting elements affecting "tool.View" Button
+    t =    34.42s         Wait for com.apple.SurfBoard to idle
+    t =    34.43s     Synthesize event
+    t =    35.05s     Wait for phil.heart-v3 to idle
+    t =    35.06s Waiting 30.0s for "Part separation" Slider to exist
+    t =    36.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Part separation" Slider`
+    t =    36.09s         Checking existence of `"Part separation" Slider`
+    t =    37.16s Checking `Expect predicate `enabled == 1` for object "Part separation" Slider`
+    t =    37.16s     Find the "Part separation" Slider
+    t =    37.19s Find the "AXSliderKnob" Slider
+    t =    37.21s Press "AXSliderKnob" Slider[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Slider[0.50, 0.50] -> (90.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    37.21s     Wait for phil.heart-v3 to idle
+    t =    37.21s     Find the "AXSliderKnob" Slider
+    t =    37.22s     Check for interrupting elements affecting "AXSliderKnob" Slider
+    t =    37.23s         Wait for com.apple.SurfBoard to idle
+    t =    37.24s     Synthesize event
+    t =    37.24s         Find the "AXSliderKnob" Slider
+    t =    37.25s         Find the "AXSliderKnob" Slider
+    t =    37.26s         Find the "AXSliderKnob" Slider
+    t =    37.28s         Find the "AXSliderKnob" Slider
+    t =    37.29s         Find the "AXSliderKnob" Slider
+    t =    38.02s     Wait for phil.heart-v3 to idle
+    t =    38.02s Find the "AXSliderKnob" Slider
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:30: error: -[HeartV3UITests.HeartV3InteractionTests testCutawaySearchAndSliders] : XCTAssertNotEqual failed: ("Optional("0%")") is equal to ("Optional("0%")") - Slider did not respond: Part separation
+    t =    38.17s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testCutawaySearchAndSliders]' failed (39.003 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testEveryLessonCanAdvanceAndFinish]' started.
+    t =     0.00s Start Test at 2026-10-21 19:21:52.607
+    t =     0.03s Set Up
+    t =     0.03s Open phil.heart-v3
+    t =     0.03s     Launch phil.heart-v3
+    t =     0.03s         Terminate phil.heart-v3:20389
+2026-10-21 19:21:53.679 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:21:53.679 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.28s         Setting up automation session
+    t =     5.76s         Wait for phil.heart-v3 to idle
+    t =     8.65s Waiting 30.0s for "Hide lesson" Button to exist
+    t =     9.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =     9.70s         Checking existence of `"Hide lesson" Button`
+    t =    10.85s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    10.85s     Find the "Hide lesson" Button
+    t =    10.88s Tap "Hide lesson" Button
+    t =    10.88s     Wait for phil.heart-v3 to idle
+    t =    10.88s     Find the "Hide lesson" Button
+    t =    10.89s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    10.90s         Wait for com.apple.SurfBoard to idle
+    t =    10.91s     Synthesize event
+    t =    11.30s     Wait for phil.heart-v3 to idle
+    t =    11.30s Checking existence of `"Finish lesson" Button`
+    t =    11.38s Waiting 30.0s for "Next step" Button to exist
+    t =    12.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    12.42s         Checking existence of `"Next step" Button`
+    t =    13.48s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    13.48s     Find the "Next step" Button
+    t =    13.49s Tap "chevron.right" Button
+    t =    13.49s     Wait for phil.heart-v3 to idle
+    t =    13.50s     Find the "chevron.right" Button
+    t =    13.52s     Check for interrupting elements affecting "chevron.right" Button
+    t =    13.52s         Wait for com.apple.SurfBoard to idle
+    t =    13.53s     Synthesize event
+    t =    13.92s     Wait for phil.heart-v3 to idle
+    t =    13.92s Checking existence of `"Finish lesson" Button`
+    t =    13.99s Waiting 30.0s for "Next step" Button to exist
+    t =    14.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    14.99s         Checking existence of `"Next step" Button`
+    t =    16.02s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    16.03s     Find the "Next step" Button
+    t =    16.05s Tap "chevron.right" Button
+    t =    16.05s     Wait for phil.heart-v3 to idle
+    t =    16.06s     Find the "chevron.right" Button
+    t =    16.07s     Check for interrupting elements affecting "chevron.right" Button
+    t =    16.08s         Wait for com.apple.SurfBoard to idle
+    t =    16.09s     Synthesize event
+    t =    16.47s     Wait for phil.heart-v3 to idle
+    t =    16.47s Checking existence of `"Finish lesson" Button`
+    t =    16.49s Tap "Finish lesson" Button
+    t =    16.49s     Wait for phil.heart-v3 to idle
+    t =    16.49s     Find the "Finish lesson" Button
+    t =    16.50s     Check for interrupting elements affecting "checkmark" Button
+    t =    16.51s         Wait for com.apple.SurfBoard to idle
+    t =    16.52s     Synthesize event
+    t =    16.89s     Wait for phil.heart-v3 to idle
+    t =    16.89s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    17.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    17.92s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    17.94s Open phil.heart-v3
+    t =    17.94s     Launch phil.heart-v3
+    t =    17.94s         Terminate phil.heart-v3:20419
+2026-10-21 19:22:11.597 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:22:11.597 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    19.20s         Setting up automation session
+    t =    23.78s         Wait for phil.heart-v3 to idle
+    t =    27.66s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    28.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    28.70s         Checking existence of `"Hide lesson" Button`
+    t =    29.91s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    29.91s     Find the "Hide lesson" Button
+    t =    29.94s Tap "Hide lesson" Button
+    t =    29.94s     Wait for phil.heart-v3 to idle
+    t =    29.94s     Find the "Hide lesson" Button
+    t =    29.95s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    29.96s         Wait for com.apple.SurfBoard to idle
+    t =    29.97s     Synthesize event
+    t =    30.40s     Wait for phil.heart-v3 to idle
+    t =    30.41s Checking existence of `"Finish lesson" Button`
+    t =    30.54s Waiting 30.0s for "Next step" Button to exist
+    t =    31.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    31.57s         Checking existence of `"Next step" Button`
+    t =    32.62s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    32.62s     Find the "Next step" Button
+    t =    32.64s Tap "chevron.right" Button
+    t =    32.65s     Wait for phil.heart-v3 to idle
+    t =    32.65s     Find the "chevron.right" Button
+    t =    32.66s     Check for interrupting elements affecting "chevron.right" Button
+    t =    32.66s         Wait for com.apple.SurfBoard to idle
+    t =    32.67s     Synthesize event
+    t =    33.05s     Wait for phil.heart-v3 to idle
+    t =    33.06s Checking existence of `"Finish lesson" Button`
+    t =    33.12s Waiting 30.0s for "Next step" Button to exist
+    t =    34.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    34.14s         Checking existence of `"Next step" Button`
+    t =    35.19s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    35.19s     Find the "Next step" Button
+    t =    35.23s Tap "chevron.right" Button
+    t =    35.23s     Wait for phil.heart-v3 to idle
+    t =    35.23s     Find the "chevron.right" Button
+    t =    35.25s     Check for interrupting elements affecting "chevron.right" Button
+    t =    35.25s         Wait for com.apple.SurfBoard to idle
+    t =    35.26s     Synthesize event
+    t =    35.64s     Wait for phil.heart-v3 to idle
+    t =    35.64s Checking existence of `"Finish lesson" Button`
+    t =    35.66s Tap "Finish lesson" Button
+    t =    35.66s     Wait for phil.heart-v3 to idle
+    t =    35.66s     Find the "Finish lesson" Button
+    t =    35.68s     Check for interrupting elements affecting "checkmark" Button
+    t =    35.68s         Wait for com.apple.SurfBoard to idle
+    t =    35.69s     Synthesize event
+    t =    36.07s     Wait for phil.heart-v3 to idle
+    t =    36.07s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    37.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    37.12s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    37.13s Open phil.heart-v3
+    t =    37.13s     Launch phil.heart-v3
+    t =    37.13s         Terminate phil.heart-v3:20450
+2026-10-21 19:22:30.841 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:22:30.841 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    38.44s         Setting up automation session
+    t =    43.06s         Wait for phil.heart-v3 to idle
+    t =    45.90s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    46.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    46.92s         Checking existence of `"Hide lesson" Button`
+    t =    48.05s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    48.05s     Find the "Hide lesson" Button
+    t =    48.08s Tap "Hide lesson" Button
+    t =    48.08s     Wait for phil.heart-v3 to idle
+    t =    48.08s     Find the "Hide lesson" Button
+    t =    48.10s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    48.11s         Wait for com.apple.SurfBoard to idle
+    t =    48.12s     Synthesize event
+    t =    48.67s     Wait for phil.heart-v3 to idle
+    t =    48.67s Checking existence of `"Finish lesson" Button`
+    t =    48.77s Waiting 30.0s for "Next step" Button to exist
+    t =    49.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    49.82s         Checking existence of `"Next step" Button`
+    t =    50.89s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    50.89s     Find the "Next step" Button
+    t =    50.92s Tap "chevron.right" Button
+    t =    50.92s     Wait for phil.heart-v3 to idle
+    t =    50.93s     Find the "chevron.right" Button
+    t =    50.95s     Check for interrupting elements affecting "chevron.right" Button
+    t =    50.95s         Wait for com.apple.SurfBoard to idle
+    t =    50.96s     Synthesize event
+    t =    51.41s     Wait for phil.heart-v3 to idle
+    t =    51.41s Checking existence of `"Finish lesson" Button`
+    t =    51.51s Waiting 30.0s for "Next step" Button to exist
+    t =    52.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    52.52s         Checking existence of `"Next step" Button`
+    t =    53.57s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    53.57s     Find the "Next step" Button
+    t =    53.61s Tap "chevron.right" Button
+    t =    53.61s     Wait for phil.heart-v3 to idle
+    t =    53.61s     Find the "chevron.right" Button
+    t =    53.63s     Check for interrupting elements affecting "chevron.right" Button
+    t =    53.63s         Wait for com.apple.SurfBoard to idle
+    t =    53.64s     Synthesize event
+    t =    54.09s     Wait for phil.heart-v3 to idle
+    t =    54.09s Checking existence of `"Finish lesson" Button`
+    t =    54.12s Tap "Finish lesson" Button
+    t =    54.12s     Wait for phil.heart-v3 to idle
+    t =    54.12s     Find the "Finish lesson" Button
+    t =    54.14s     Check for interrupting elements affecting "checkmark" Button
+    t =    54.14s         Wait for com.apple.SurfBoard to idle
+    t =    54.15s     Synthesize event
+    t =    54.63s     Wait for phil.heart-v3 to idle
+    t =    54.63s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    55.63s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    55.64s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    55.65s Open phil.heart-v3
+    t =    55.65s     Launch phil.heart-v3
+    t =    55.65s         Terminate phil.heart-v3:20482
+2026-10-21 19:22:49.280 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:22:49.280 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    56.89s         Setting up automation session
+    t =    61.20s         Wait for phil.heart-v3 to idle
+    t =    63.96s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    65.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    65.01s         Checking existence of `"Hide lesson" Button`
+    t =    66.16s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    66.16s     Find the "Hide lesson" Button
+    t =    66.17s Tap "Hide lesson" Button
+    t =    66.17s     Wait for phil.heart-v3 to idle
+    t =    66.18s     Find the "Hide lesson" Button
+    t =    66.19s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    66.19s         Wait for com.apple.SurfBoard to idle
+    t =    66.20s     Synthesize event
+    t =    66.60s     Wait for phil.heart-v3 to idle
+    t =    66.61s Checking existence of `"Finish lesson" Button`
+    t =    66.68s Waiting 30.0s for "Next step" Button to exist
+    t =    67.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    67.72s         Checking existence of `"Next step" Button`
+    t =    68.77s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    68.77s     Find the "Next step" Button
+    t =    68.79s Tap "chevron.right" Button
+    t =    68.79s     Wait for phil.heart-v3 to idle
+    t =    68.79s     Find the "chevron.right" Button
+    t =    68.80s     Check for interrupting elements affecting "chevron.right" Button
+    t =    68.81s         Wait for com.apple.SurfBoard to idle
+    t =    68.82s     Synthesize event
+    t =    69.19s     Wait for phil.heart-v3 to idle
+    t =    69.19s Checking existence of `"Finish lesson" Button`
+    t =    69.26s Waiting 30.0s for "Next step" Button to exist
+    t =    70.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    70.27s         Checking existence of `"Next step" Button`
+    t =    71.32s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    71.32s     Find the "Next step" Button
+    t =    71.36s Tap "chevron.right" Button
+    t =    71.36s     Wait for phil.heart-v3 to idle
+    t =    71.36s     Find the "chevron.right" Button
+    t =    71.38s     Check for interrupting elements affecting "chevron.right" Button
+    t =    71.38s         Wait for com.apple.SurfBoard to idle
+    t =    71.39s     Synthesize event
+    t =    71.82s     Wait for phil.heart-v3 to idle
+    t =    71.83s Checking existence of `"Finish lesson" Button`
+    t =    71.85s Tap "Finish lesson" Button
+    t =    71.85s     Wait for phil.heart-v3 to idle
+    t =    71.85s     Find the "Finish lesson" Button
+    t =    71.87s     Check for interrupting elements affecting "checkmark" Button
+    t =    71.87s         Wait for com.apple.SurfBoard to idle
+    t =    71.88s     Synthesize event
+    t =    72.35s     Wait for phil.heart-v3 to idle
+    t =    72.36s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    73.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    73.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    73.44s Open phil.heart-v3
+    t =    73.44s     Launch phil.heart-v3
+    t =    73.44s         Terminate phil.heart-v3:20504
+2026-10-21 19:23:07.093 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:23:07.093 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    74.70s         Setting up automation session
+    t =    79.27s         Wait for phil.heart-v3 to idle
+    t =    82.36s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    83.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    83.40s         Checking existence of `"Hide lesson" Button`
+    t =    84.51s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    84.51s     Find the "Hide lesson" Button
+    t =    84.55s Tap "Hide lesson" Button
+    t =    84.55s     Wait for phil.heart-v3 to idle
+    t =    84.56s     Find the "Hide lesson" Button
+    t =    84.57s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    84.58s         Wait for com.apple.SurfBoard to idle
+    t =    84.59s     Synthesize event
+    t =    84.99s     Wait for phil.heart-v3 to idle
+    t =    84.99s Checking existence of `"Finish lesson" Button`
+    t =    85.09s Waiting 30.0s for "Next step" Button to exist
+    t =    86.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    86.12s         Checking existence of `"Next step" Button`
+    t =    87.19s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    87.19s     Find the "Next step" Button
+    t =    87.21s Tap "chevron.right" Button
+    t =    87.21s     Wait for phil.heart-v3 to idle
+    t =    87.21s     Find the "chevron.right" Button
+    t =    87.22s     Check for interrupting elements affecting "chevron.right" Button
+    t =    87.23s         Wait for com.apple.SurfBoard to idle
+    t =    87.24s     Synthesize event
+    t =    87.62s     Wait for phil.heart-v3 to idle
+    t =    87.62s Checking existence of `"Finish lesson" Button`
+    t =    87.70s Waiting 30.0s for "Next step" Button to exist
+    t =    88.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    88.72s         Checking existence of `"Next step" Button`
+    t =    89.77s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    89.77s     Find the "Next step" Button
+    t =    89.80s Tap "chevron.right" Button
+    t =    89.80s     Wait for phil.heart-v3 to idle
+    t =    89.80s     Find the "chevron.right" Button
+    t =    89.82s     Check for interrupting elements affecting "chevron.right" Button
+    t =    89.82s         Wait for com.apple.SurfBoard to idle
+    t =    89.83s     Synthesize event
+    t =    90.27s     Wait for phil.heart-v3 to idle
+    t =    90.28s Checking existence of `"Finish lesson" Button`
+    t =    90.36s Waiting 30.0s for "Next step" Button to exist
+    t =    91.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    91.37s         Checking existence of `"Next step" Button`
+    t =    92.42s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    92.42s     Find the "Next step" Button
+    t =    92.46s Tap "chevron.right" Button
+    t =    92.46s     Wait for phil.heart-v3 to idle
+    t =    92.46s     Find the "chevron.right" Button
+    t =    92.48s     Check for interrupting elements affecting "chevron.right" Button
+    t =    92.48s         Wait for com.apple.SurfBoard to idle
+    t =    92.49s     Synthesize event
+    t =    92.92s     Wait for phil.heart-v3 to idle
+    t =    92.93s Checking existence of `"Finish lesson" Button`
+    t =    92.96s Tap "Finish lesson" Button
+    t =    92.96s     Wait for phil.heart-v3 to idle
+    t =    92.96s     Find the "Finish lesson" Button
+    t =    92.98s     Check for interrupting elements affecting "checkmark" Button
+    t =    92.98s         Wait for com.apple.SurfBoard to idle
+    t =    92.99s     Synthesize event
+    t =    93.40s     Wait for phil.heart-v3 to idle
+    t =    93.41s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    94.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    94.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    94.45s Open phil.heart-v3
+    t =    94.45s     Launch phil.heart-v3
+    t =    94.45s         Terminate phil.heart-v3:20521
+2026-10-21 19:23:28.123 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:23:28.123 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    95.72s         Setting up automation session
+    t =   100.11s         Wait for phil.heart-v3 to idle
+    t =   103.01s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   104.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   104.02s         Checking existence of `"Hide lesson" Button`
+    t =   105.16s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   105.16s     Find the "Hide lesson" Button
+    t =   105.20s Tap "Hide lesson" Button
+    t =   105.20s     Wait for phil.heart-v3 to idle
+    t =   105.20s     Find the "Hide lesson" Button
+    t =   105.22s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   105.22s         Wait for com.apple.SurfBoard to idle
+    t =   105.23s     Synthesize event
+    t =   105.67s     Wait for phil.heart-v3 to idle
+    t =   105.67s Checking existence of `"Finish lesson" Button`
+    t =   105.75s Waiting 30.0s for "Next step" Button to exist
+    t =   106.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   106.79s         Checking existence of `"Next step" Button`
+    t =   107.84s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   107.85s     Find the "Next step" Button
+    t =   107.87s Tap "chevron.right" Button
+    t =   107.87s     Wait for phil.heart-v3 to idle
+    t =   107.87s     Find the "chevron.right" Button
+    t =   107.88s     Check for interrupting elements affecting "chevron.right" Button
+    t =   107.89s         Wait for com.apple.SurfBoard to idle
+    t =   107.89s     Synthesize event
+    t =   108.32s     Wait for phil.heart-v3 to idle
+    t =   108.33s Checking existence of `"Finish lesson" Button`
+    t =   108.41s Waiting 30.0s for "Next step" Button to exist
+    t =   109.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   109.42s         Checking existence of `"Next step" Button`
+    t =   110.46s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   110.46s     Find the "Next step" Button
+    t =   110.48s Tap "chevron.right" Button
+    t =   110.48s     Wait for phil.heart-v3 to idle
+    t =   110.48s     Find the "chevron.right" Button
+    t =   110.50s     Check for interrupting elements affecting "chevron.right" Button
+    t =   110.50s         Wait for com.apple.SurfBoard to idle
+    t =   110.51s     Synthesize event
+    t =   110.88s     Wait for phil.heart-v3 to idle
+    t =   110.89s Checking existence of `"Finish lesson" Button`
+    t =   110.91s Tap "Finish lesson" Button
+    t =   110.91s     Wait for phil.heart-v3 to idle
+    t =   110.91s     Find the "Finish lesson" Button
+    t =   110.92s     Check for interrupting elements affecting "checkmark" Button
+    t =   110.93s         Wait for com.apple.SurfBoard to idle
+    t =   110.93s     Synthesize event
+    t =   111.32s     Wait for phil.heart-v3 to idle
+    t =   111.32s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   112.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   112.40s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   112.43s Open phil.heart-v3
+    t =   112.43s     Launch phil.heart-v3
+    t =   112.43s         Terminate phil.heart-v3:20539
+2026-10-21 19:23:46.122 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:23:46.122 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   113.72s         Setting up automation session
+    t =   118.05s         Wait for phil.heart-v3 to idle
+    t =   120.81s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   121.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   121.82s         Checking existence of `"Hide lesson" Button`
+    t =   122.92s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   122.92s     Find the "Hide lesson" Button
+    t =   122.96s Tap "Hide lesson" Button
+    t =   122.96s     Wait for phil.heart-v3 to idle
+    t =   122.96s     Find the "Hide lesson" Button
+    t =   122.98s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   122.98s         Wait for com.apple.SurfBoard to idle
+    t =   122.99s     Synthesize event
+    t =   123.47s     Wait for phil.heart-v3 to idle
+    t =   123.47s Checking existence of `"Finish lesson" Button`
+    t =   123.57s Waiting 30.0s for "Next step" Button to exist
+    t =   124.59s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   124.59s         Checking existence of `"Next step" Button`
+    t =   125.62s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   125.62s     Find the "Next step" Button
+    t =   125.66s Tap "chevron.right" Button
+    t =   125.66s     Wait for phil.heart-v3 to idle
+    t =   125.66s     Find the "chevron.right" Button
+    t =   125.68s     Check for interrupting elements affecting "chevron.right" Button
+    t =   125.69s         Wait for com.apple.SurfBoard to idle
+    t =   125.70s     Synthesize event
+    t =   126.14s     Wait for phil.heart-v3 to idle
+    t =   126.14s Checking existence of `"Finish lesson" Button`
+    t =   126.24s Waiting 30.0s for "Next step" Button to exist
+    t =   127.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   127.32s         Checking existence of `"Next step" Button`
+    t =   128.39s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   128.39s     Find the "Next step" Button
+    t =   128.42s Tap "chevron.right" Button
+    t =   128.42s     Wait for phil.heart-v3 to idle
+    t =   128.42s     Find the "chevron.right" Button
+    t =   128.44s     Check for interrupting elements affecting "chevron.right" Button
+    t =   128.44s         Wait for com.apple.SurfBoard to idle
+    t =   128.45s     Synthesize event
+    t =   128.87s     Wait for phil.heart-v3 to idle
+    t =   128.87s Checking existence of `"Finish lesson" Button`
+    t =   128.90s Tap "Finish lesson" Button
+    t =   128.90s     Wait for phil.heart-v3 to idle
+    t =   128.91s     Find the "Finish lesson" Button
+    t =   128.92s     Check for interrupting elements affecting "checkmark" Button
+    t =   128.93s         Wait for com.apple.SurfBoard to idle
+    t =   128.94s     Synthesize event
+    t =   129.39s     Wait for phil.heart-v3 to idle
+    t =   129.39s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   130.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   130.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   130.43s Open phil.heart-v3
+    t =   130.43s     Launch phil.heart-v3
+    t =   130.43s         Terminate phil.heart-v3:20550
+2026-10-21 19:24:04.059 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:24:04.059 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   131.66s         Setting up automation session
+    t =   135.99s         Wait for phil.heart-v3 to idle
+    t =   138.66s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   139.71s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   139.71s         Checking existence of `"Hide lesson" Button`
+    t =   140.83s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   140.83s     Find the "Hide lesson" Button
+    t =   140.85s Tap "Hide lesson" Button
+    t =   140.85s     Wait for phil.heart-v3 to idle
+    t =   140.85s     Find the "Hide lesson" Button
+    t =   140.87s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   140.87s         Wait for com.apple.SurfBoard to idle
+    t =   140.88s     Synthesize event
+    t =   141.32s     Wait for phil.heart-v3 to idle
+    t =   141.32s Checking existence of `"Finish lesson" Button`
+    t =   141.40s Waiting 30.0s for "Next step" Button to exist
+    t =   142.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   142.42s         Checking existence of `"Next step" Button`
+    t =   143.47s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   143.47s     Find the "Next step" Button
+    t =   143.51s Tap "chevron.right" Button
+    t =   143.51s     Wait for phil.heart-v3 to idle
+    t =   143.51s     Find the "chevron.right" Button
+    t =   143.53s     Check for interrupting elements affecting "chevron.right" Button
+    t =   143.54s         Wait for com.apple.SurfBoard to idle
+    t =   143.54s     Synthesize event
+    t =   143.97s     Wait for phil.heart-v3 to idle
+    t =   143.98s Checking existence of `"Finish lesson" Button`
+    t =   144.06s Waiting 30.0s for "Next step" Button to exist
+    t =   145.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   145.12s         Checking existence of `"Next step" Button`
+    t =   146.19s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   146.19s     Find the "Next step" Button
+    t =   146.22s Tap "chevron.right" Button
+    t =   146.22s     Wait for phil.heart-v3 to idle
+    t =   146.23s     Find the "chevron.right" Button
+    t =   146.25s     Check for interrupting elements affecting "chevron.right" Button
+    t =   146.25s         Wait for com.apple.SurfBoard to idle
+    t =   146.26s     Synthesize event
+    t =   146.69s     Wait for phil.heart-v3 to idle
+    t =   146.70s Checking existence of `"Finish lesson" Button`
+    t =   146.72s Tap "Finish lesson" Button
+    t =   146.72s     Wait for phil.heart-v3 to idle
+    t =   146.72s     Find the "Finish lesson" Button
+    t =   146.74s     Check for interrupting elements affecting "checkmark" Button
+    t =   146.74s         Wait for com.apple.SurfBoard to idle
+    t =   146.75s     Synthesize event
+    t =   147.20s     Wait for phil.heart-v3 to idle
+    t =   147.20s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   148.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   148.22s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   148.25s Open phil.heart-v3
+    t =   148.25s     Launch phil.heart-v3
+    t =   148.25s         Terminate phil.heart-v3:20571
+2026-10-21 19:24:21.909 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:24:21.909 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   149.51s         Setting up automation session
+    t =   153.91s         Wait for phil.heart-v3 to idle
+    t =   156.74s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   157.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   157.80s         Checking existence of `"Hide lesson" Button`
+    t =   159.00s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   159.00s     Find the "Hide lesson" Button
+    t =   159.04s Tap "Hide lesson" Button
+    t =   159.04s     Wait for phil.heart-v3 to idle
+    t =   159.05s     Find the "Hide lesson" Button
+    t =   159.06s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   159.07s         Wait for com.apple.SurfBoard to idle
+    t =   159.08s     Synthesize event
+    t =   159.52s     Wait for phil.heart-v3 to idle
+    t =   159.52s Checking existence of `"Finish lesson" Button`
+    t =   159.65s Waiting 30.0s for "Next step" Button to exist
+    t =   160.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   160.72s         Checking existence of `"Next step" Button`
+    t =   161.79s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   161.79s     Find the "Next step" Button
+    t =   161.81s Tap "chevron.right" Button
+    t =   161.81s     Wait for phil.heart-v3 to idle
+    t =   161.81s     Find the "chevron.right" Button
+    t =   161.83s     Check for interrupting elements affecting "chevron.right" Button
+    t =   161.83s         Wait for com.apple.SurfBoard to idle
+    t =   161.84s     Synthesize event
+    t =   162.23s     Wait for phil.heart-v3 to idle
+    t =   162.24s Checking existence of `"Finish lesson" Button`
+    t =   162.34s Waiting 30.0s for "Next step" Button to exist
+    t =   163.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   163.40s         Checking existence of `"Next step" Button`
+    t =   164.42s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   164.42s     Find the "Next step" Button
+    t =   164.44s Tap "chevron.right" Button
+    t =   164.44s     Wait for phil.heart-v3 to idle
+    t =   164.44s     Find the "chevron.right" Button
+    t =   164.46s     Check for interrupting elements affecting "chevron.right" Button
+    t =   164.46s         Wait for com.apple.SurfBoard to idle
+    t =   164.47s     Synthesize event
+    t =   164.87s     Wait for phil.heart-v3 to idle
+    t =   164.87s Checking existence of `"Finish lesson" Button`
+    t =   164.90s Tap "Finish lesson" Button
+    t =   164.90s     Wait for phil.heart-v3 to idle
+    t =   164.90s     Find the "Finish lesson" Button
+    t =   164.92s     Check for interrupting elements affecting "checkmark" Button
+    t =   165.02s         Wait for com.apple.SurfBoard to idle
+    t =   165.03s     Synthesize event
+    t =   165.40s     Wait for phil.heart-v3 to idle
+    t =   165.40s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   166.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   166.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   166.43s Open phil.heart-v3
+    t =   166.43s     Launch phil.heart-v3
+    t =   166.43s         Terminate phil.heart-v3:20594
+2026-10-21 19:24:40.081 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:24:40.081 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   167.69s         Setting up automation session
+    t =   172.01s         Wait for phil.heart-v3 to idle
+    t =   174.81s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   175.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   175.82s         Checking existence of `"Hide lesson" Button`
+    t =   176.97s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   176.97s     Find the "Hide lesson" Button
+    t =   176.99s Tap "Hide lesson" Button
+    t =   176.99s     Wait for phil.heart-v3 to idle
+    t =   176.99s     Find the "Hide lesson" Button
+    t =   177.01s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   177.01s         Wait for com.apple.SurfBoard to idle
+    t =   177.02s     Synthesize event
+    t =   177.43s     Wait for phil.heart-v3 to idle
+    t =   177.44s Checking existence of `"Finish lesson" Button`
+    t =   177.53s Waiting 30.0s for "Next step" Button to exist
+    t =   178.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   178.56s         Checking existence of `"Next step" Button`
+    t =   179.62s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   179.62s     Find the "Next step" Button
+    t =   179.66s Tap "chevron.right" Button
+    t =   179.66s     Wait for phil.heart-v3 to idle
+    t =   179.66s     Find the "chevron.right" Button
+    t =   179.68s     Check for interrupting elements affecting "chevron.right" Button
+    t =   179.79s         Wait for com.apple.SurfBoard to idle
+    t =   179.80s     Synthesize event
+    t =   180.29s     Wait for phil.heart-v3 to idle
+    t =   180.29s Checking existence of `"Finish lesson" Button`
+    t =   180.38s Waiting 30.0s for "Next step" Button to exist
+    t =   181.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   181.42s         Checking existence of `"Next step" Button`
+    t =   182.49s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   182.50s     Find the "Next step" Button
+    t =   182.54s Tap "chevron.right" Button
+    t =   182.54s     Wait for phil.heart-v3 to idle
+    t =   182.54s     Find the "chevron.right" Button
+    t =   182.56s     Check for interrupting elements affecting "chevron.right" Button
+    t =   182.57s         Wait for com.apple.SurfBoard to idle
+    t =   182.58s     Synthesize event
+    t =   182.97s     Wait for phil.heart-v3 to idle
+    t =   182.97s Checking existence of `"Finish lesson" Button`
+    t =   182.99s Tap "Finish lesson" Button
+    t =   182.99s     Wait for phil.heart-v3 to idle
+    t =   182.99s     Find the "Finish lesson" Button
+    t =   183.00s     Check for interrupting elements affecting "checkmark" Button
+    t =   183.01s         Wait for com.apple.SurfBoard to idle
+    t =   183.01s     Synthesize event
+    t =   183.40s     Wait for phil.heart-v3 to idle
+    t =   183.41s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   184.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   184.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   184.45s Open phil.heart-v3
+    t =   184.45s     Launch phil.heart-v3
+    t =   184.45s         Terminate phil.heart-v3:20628
+2026-10-21 19:24:58.094 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:24:58.094 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   185.70s         Setting up automation session
+    t =   189.99s         Wait for phil.heart-v3 to idle
+    t =   192.77s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   193.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   193.81s         Checking existence of `"Hide lesson" Button`
+    t =   194.92s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   194.92s     Find the "Hide lesson" Button
+    t =   194.94s Tap "Hide lesson" Button
+    t =   194.94s     Wait for phil.heart-v3 to idle
+    t =   194.94s     Find the "Hide lesson" Button
+    t =   194.95s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   194.96s         Wait for com.apple.SurfBoard to idle
+    t =   194.96s     Synthesize event
+    t =   195.45s     Wait for phil.heart-v3 to idle
+    t =   195.46s Checking existence of `"Finish lesson" Button`
+    t =   195.55s Waiting 30.0s for "Next step" Button to exist
+    t =   196.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   196.59s         Checking existence of `"Next step" Button`
+    t =   197.62s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   197.62s     Find the "Next step" Button
+    t =   197.64s Tap "chevron.right" Button
+    t =   197.64s     Wait for phil.heart-v3 to idle
+    t =   197.64s     Find the "chevron.right" Button
+    t =   197.66s     Check for interrupting elements affecting "chevron.right" Button
+    t =   197.66s         Wait for com.apple.SurfBoard to idle
+    t =   197.67s     Synthesize event
+    t =   198.15s     Wait for phil.heart-v3 to idle
+    t =   198.16s Checking existence of `"Finish lesson" Button`
+    t =   198.23s Waiting 30.0s for "Next step" Button to exist
+    t =   199.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   199.26s         Checking existence of `"Next step" Button`
+    t =   200.31s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   200.31s     Find the "Next step" Button
+    t =   200.33s Tap "chevron.right" Button
+    t =   200.33s     Wait for phil.heart-v3 to idle
+    t =   200.34s     Find the "chevron.right" Button
+    t =   200.35s     Check for interrupting elements affecting "chevron.right" Button
+    t =   200.36s         Wait for com.apple.SurfBoard to idle
+    t =   200.36s     Synthesize event
+    t =   200.77s     Wait for phil.heart-v3 to idle
+    t =   200.77s Checking existence of `"Finish lesson" Button`
+    t =   200.79s Tap "Finish lesson" Button
+    t =   200.79s     Wait for phil.heart-v3 to idle
+    t =   200.79s     Find the "Finish lesson" Button
+    t =   200.80s     Check for interrupting elements affecting "checkmark" Button
+    t =   200.81s         Wait for com.apple.SurfBoard to idle
+    t =   200.82s     Synthesize event
+    t =   201.20s     Wait for phil.heart-v3 to idle
+    t =   201.20s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   202.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   202.22s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   202.25s Open phil.heart-v3
+    t =   202.26s     Launch phil.heart-v3
+    t =   202.26s         Terminate phil.heart-v3:20641
+2026-10-21 19:25:15.926 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:25:15.926 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   203.53s         Setting up automation session
+    t =   207.94s         Wait for phil.heart-v3 to idle
+    t =   210.67s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   211.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   211.72s         Checking existence of `"Hide lesson" Button`
+    t =   212.86s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   212.86s     Find the "Hide lesson" Button
+    t =   212.89s Tap "Hide lesson" Button
+    t =   212.89s     Wait for phil.heart-v3 to idle
+    t =   212.90s     Find the "Hide lesson" Button
+    t =   212.91s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   212.92s         Wait for com.apple.SurfBoard to idle
+    t =   212.93s     Synthesize event
+    t =   213.37s     Wait for phil.heart-v3 to idle
+    t =   213.37s Checking existence of `"Finish lesson" Button`
+    t =   213.47s Waiting 30.0s for "Next step" Button to exist
+    t =   214.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   214.50s         Checking existence of `"Next step" Button`
+    t =   215.56s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   215.56s     Find the "Next step" Button
+    t =   215.58s Tap "chevron.right" Button
+    t =   215.58s     Wait for phil.heart-v3 to idle
+    t =   215.58s     Find the "chevron.right" Button
+    t =   215.59s     Check for interrupting elements affecting "chevron.right" Button
+    t =   215.60s         Wait for com.apple.SurfBoard to idle
+    t =   215.60s     Synthesize event
+    t =   216.00s     Wait for phil.heart-v3 to idle
+    t =   216.00s Checking existence of `"Finish lesson" Button`
+    t =   216.09s Waiting 30.0s for "Next step" Button to exist
+    t =   217.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   217.09s         Checking existence of `"Next step" Button`
+    t =   218.12s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   218.12s     Find the "Next step" Button
+    t =   218.14s Tap "chevron.right" Button
+    t =   218.14s     Wait for phil.heart-v3 to idle
+    t =   218.14s     Find the "chevron.right" Button
+    t =   218.15s     Check for interrupting elements affecting "chevron.right" Button
+    t =   218.16s         Wait for com.apple.SurfBoard to idle
+    t =   218.17s     Synthesize event
+    t =   218.55s     Wait for phil.heart-v3 to idle
+    t =   218.55s Checking existence of `"Finish lesson" Button`
+    t =   218.64s Waiting 30.0s for "Next step" Button to exist
+    t =   219.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   219.72s         Checking existence of `"Next step" Button`
+    t =   220.76s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   220.76s     Find the "Next step" Button
+    t =   220.78s Tap "chevron.right" Button
+    t =   220.78s     Wait for phil.heart-v3 to idle
+    t =   220.78s     Find the "chevron.right" Button
+    t =   220.79s     Check for interrupting elements affecting "chevron.right" Button
+    t =   220.90s         Wait for com.apple.SurfBoard to idle
+    t =   220.91s     Synthesize event
+    t =   221.35s     Wait for phil.heart-v3 to idle
+    t =   221.36s Checking existence of `"Finish lesson" Button`
+    t =   221.38s Tap "Finish lesson" Button
+    t =   221.38s     Wait for phil.heart-v3 to idle
+    t =   221.38s     Find the "Finish lesson" Button
+    t =   221.40s     Check for interrupting elements affecting "checkmark" Button
+    t =   221.40s         Wait for com.apple.SurfBoard to idle
+    t =   221.41s     Synthesize event
+    t =   221.83s     Wait for phil.heart-v3 to idle
+    t =   221.84s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   222.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   222.90s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   222.94s Open phil.heart-v3
+    t =   222.94s     Launch phil.heart-v3
+    t =   222.94s         Terminate phil.heart-v3:20656
+2026-10-21 19:25:36.615 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:25:36.615 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   224.22s         Setting up automation session
+    t =   228.60s         Wait for phil.heart-v3 to idle
+    t =   231.48s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   232.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   232.52s         Checking existence of `"Hide lesson" Button`
+    t =   233.68s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   233.68s     Find the "Hide lesson" Button
+    t =   233.71s Tap "Hide lesson" Button
+    t =   233.71s     Wait for phil.heart-v3 to idle
+    t =   233.72s     Find the "Hide lesson" Button
+    t =   233.73s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   233.74s         Wait for com.apple.SurfBoard to idle
+    t =   233.75s     Synthesize event
+    t =   234.22s     Wait for phil.heart-v3 to idle
+    t =   234.22s Checking existence of `"Finish lesson" Button`
+    t =   234.32s Waiting 30.0s for "Next step" Button to exist
+    t =   235.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   235.32s         Checking existence of `"Next step" Button`
+    t =   236.39s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   236.39s     Find the "Next step" Button
+    t =   236.41s Tap "chevron.right" Button
+    t =   236.41s     Wait for phil.heart-v3 to idle
+    t =   236.41s     Find the "chevron.right" Button
+    t =   236.42s     Check for interrupting elements affecting "chevron.right" Button
+    t =   236.43s         Wait for com.apple.SurfBoard to idle
+    t =   236.43s     Synthesize event
+    t =   236.83s     Wait for phil.heart-v3 to idle
+    t =   236.84s Checking existence of `"Finish lesson" Button`
+    t =   236.91s Waiting 30.0s for "Next step" Button to exist
+    t =   237.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   237.92s         Checking existence of `"Next step" Button`
+    t =   238.97s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   238.97s     Find the "Next step" Button
+    t =   238.99s Tap "chevron.right" Button
+    t =   238.99s     Wait for phil.heart-v3 to idle
+    t =   238.99s     Find the "chevron.right" Button
+    t =   239.01s     Check for interrupting elements affecting "chevron.right" Button
+    t =   239.01s         Wait for com.apple.SurfBoard to idle
+    t =   239.02s     Synthesize event
+    t =   239.40s     Wait for phil.heart-v3 to idle
+    t =   239.41s Checking existence of `"Finish lesson" Button`
+    t =   239.50s Waiting 30.0s for "Next step" Button to exist
+    t =   240.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   240.52s         Checking existence of `"Next step" Button`
+    t =   241.59s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   241.59s     Find the "Next step" Button
+    t =   241.63s Tap "chevron.right" Button
+    t =   241.63s     Wait for phil.heart-v3 to idle
+    t =   241.63s     Find the "chevron.right" Button
+    t =   241.65s     Check for interrupting elements affecting "chevron.right" Button
+    t =   241.66s         Wait for com.apple.SurfBoard to idle
+    t =   241.66s     Synthesize event
+    t =   242.10s     Wait for phil.heart-v3 to idle
+    t =   242.11s Checking existence of `"Finish lesson" Button`
+    t =   242.13s Tap "Finish lesson" Button
+    t =   242.13s     Wait for phil.heart-v3 to idle
+    t =   242.13s     Find the "Finish lesson" Button
+    t =   242.15s     Check for interrupting elements affecting "checkmark" Button
+    t =   242.16s         Wait for com.apple.SurfBoard to idle
+    t =   242.16s     Synthesize event
+    t =   242.57s     Wait for phil.heart-v3 to idle
+    t =   242.57s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   243.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   243.62s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   243.65s Open phil.heart-v3
+    t =   243.65s     Launch phil.heart-v3
+    t =   243.65s         Terminate phil.heart-v3:20672
+2026-10-21 19:25:57.308 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:25:57.308 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   244.91s         Setting up automation session
+    t =   249.27s         Wait for phil.heart-v3 to idle
+    t =   252.12s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   253.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   253.12s         Checking existence of `"Hide lesson" Button`
+    t =   254.28s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   254.28s     Find the "Hide lesson" Button
+    t =   254.31s Tap "Hide lesson" Button
+    t =   254.31s     Wait for phil.heart-v3 to idle
+    t =   254.31s     Find the "Hide lesson" Button
+    t =   254.33s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   254.33s         Wait for com.apple.SurfBoard to idle
+    t =   254.34s     Synthesize event
+    t =   254.80s     Wait for phil.heart-v3 to idle
+    t =   254.81s Checking existence of `"Finish lesson" Button`
+    t =   254.89s Waiting 30.0s for "Next step" Button to exist
+    t =   255.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   255.92s         Checking existence of `"Next step" Button`
+    t =   257.00s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   257.00s     Find the "Next step" Button
+    t =   257.03s Tap "chevron.right" Button
+    t =   257.03s     Wait for phil.heart-v3 to idle
+    t =   257.04s     Find the "chevron.right" Button
+    t =   257.05s     Check for interrupting elements affecting "chevron.right" Button
+    t =   257.05s         Wait for com.apple.SurfBoard to idle
+    t =   257.06s     Synthesize event
+    t =   257.55s     Wait for phil.heart-v3 to idle
+    t =   257.55s Checking existence of `"Finish lesson" Button`
+    t =   257.65s Waiting 30.0s for "Next step" Button to exist
+    t =   258.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   258.72s         Checking existence of `"Next step" Button`
+    t =   259.77s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   259.77s     Find the "Next step" Button
+    t =   259.79s Tap "chevron.right" Button
+    t =   259.79s     Wait for phil.heart-v3 to idle
+    t =   259.79s     Find the "chevron.right" Button
+    t =   259.81s     Check for interrupting elements affecting "chevron.right" Button
+    t =   259.81s         Wait for com.apple.SurfBoard to idle
+    t =   259.82s     Synthesize event
+    t =   260.20s     Wait for phil.heart-v3 to idle
+    t =   260.20s Checking existence of `"Finish lesson" Button`
+    t =   260.22s Tap "Finish lesson" Button
+    t =   260.22s     Wait for phil.heart-v3 to idle
+    t =   260.22s     Find the "Finish lesson" Button
+    t =   260.24s     Check for interrupting elements affecting "checkmark" Button
+    t =   260.24s         Wait for com.apple.SurfBoard to idle
+    t =   260.25s     Synthesize event
+    t =   260.62s     Wait for phil.heart-v3 to idle
+    t =   260.62s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   261.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   261.70s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   261.73s Open phil.heart-v3
+    t =   261.73s     Launch phil.heart-v3
+    t =   261.73s         Terminate phil.heart-v3:20684
+2026-10-21 19:26:15.426 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:26:15.426 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   263.03s         Setting up automation session
+    t =   267.38s         Wait for phil.heart-v3 to idle
+    t =   270.08s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   271.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   271.12s         Checking existence of `"Hide lesson" Button`
+    t =   272.22s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   272.22s     Find the "Hide lesson" Button
+    t =   272.25s Tap "Hide lesson" Button
+    t =   272.25s     Wait for phil.heart-v3 to idle
+    t =   272.26s     Find the "Hide lesson" Button
+    t =   272.27s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   272.28s         Wait for com.apple.SurfBoard to idle
+    t =   272.29s     Synthesize event
+    t =   272.87s     Wait for phil.heart-v3 to idle
+    t =   272.87s Checking existence of `"Finish lesson" Button`
+    t =   272.96s Waiting 30.0s for "Next step" Button to exist
+    t =   274.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   274.02s         Checking existence of `"Next step" Button`
+    t =   275.08s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   275.08s     Find the "Next step" Button
+    t =   275.11s Tap "chevron.right" Button
+    t =   275.11s     Wait for phil.heart-v3 to idle
+    t =   275.12s     Find the "chevron.right" Button
+    t =   275.14s     Check for interrupting elements affecting "chevron.right" Button
+    t =   275.14s         Wait for com.apple.SurfBoard to idle
+    t =   275.15s     Synthesize event
+    t =   275.69s     Wait for phil.heart-v3 to idle
+    t =   275.70s Checking existence of `"Finish lesson" Button`
+    t =   275.78s Waiting 30.0s for "Next step" Button to exist
+    t =   276.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   276.82s         Checking existence of `"Next step" Button`
+    t =   277.89s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   277.89s     Find the "Next step" Button
+    t =   277.93s Tap "chevron.right" Button
+    t =   277.93s     Wait for phil.heart-v3 to idle
+    t =   277.93s     Find the "chevron.right" Button
+    t =   277.95s     Check for interrupting elements affecting "chevron.right" Button
+    t =   277.95s         Wait for com.apple.SurfBoard to idle
+    t =   277.96s     Synthesize event
+    t =   278.42s     Wait for phil.heart-v3 to idle
+    t =   278.42s Checking existence of `"Finish lesson" Button`
+    t =   278.49s Waiting 30.0s for "Next step" Button to exist
+    t =   279.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   279.50s         Checking existence of `"Next step" Button`
+    t =   280.54s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   280.54s     Find the "Next step" Button
+    t =   280.56s Tap "chevron.right" Button
+    t =   280.56s     Wait for phil.heart-v3 to idle
+    t =   280.56s     Find the "chevron.right" Button
+    t =   280.57s     Check for interrupting elements affecting "chevron.right" Button
+    t =   280.58s         Wait for com.apple.SurfBoard to idle
+    t =   280.59s     Synthesize event
+    t =   280.97s     Wait for phil.heart-v3 to idle
+    t =   280.97s Checking existence of `"Finish lesson" Button`
+    t =   280.99s Tap "Finish lesson" Button
+    t =   280.99s     Wait for phil.heart-v3 to idle
+    t =   280.99s     Find the "Finish lesson" Button
+    t =   281.00s     Check for interrupting elements affecting "checkmark" Button
+    t =   281.01s         Wait for com.apple.SurfBoard to idle
+    t =   281.01s     Synthesize event
+    t =   281.40s     Wait for phil.heart-v3 to idle
+    t =   281.40s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   282.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   282.42s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   282.45s Open phil.heart-v3
+    t =   282.45s     Launch phil.heart-v3
+    t =   282.45s         Terminate phil.heart-v3:20702
+2026-10-21 19:26:36.113 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:26:36.113 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =   283.72s         Setting up automation session
+    t =   288.02s         Wait for phil.heart-v3 to idle
+    t =   290.78s Waiting 30.0s for "Hide lesson" Button to exist
+    t =   291.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =   291.82s         Checking existence of `"Hide lesson" Button`
+    t =   292.92s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =   292.92s     Find the "Hide lesson" Button
+    t =   292.95s Tap "Hide lesson" Button
+    t =   292.95s     Wait for phil.heart-v3 to idle
+    t =   292.96s     Find the "Hide lesson" Button
+    t =   292.97s     Check for interrupting elements affecting "Hide lesson" Button
+    t =   292.98s         Wait for com.apple.SurfBoard to idle
+    t =   292.99s     Synthesize event
+    t =   293.44s     Wait for phil.heart-v3 to idle
+    t =   293.44s Checking existence of `"Finish lesson" Button`
+    t =   293.53s Waiting 30.0s for "Next step" Button to exist
+    t =   294.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   294.57s         Checking existence of `"Next step" Button`
+    t =   295.62s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   295.62s     Find the "Next step" Button
+    t =   295.66s Tap "chevron.right" Button
+    t =   295.66s     Wait for phil.heart-v3 to idle
+    t =   295.66s     Find the "chevron.right" Button
+    t =   295.68s     Check for interrupting elements affecting "chevron.right" Button
+    t =   295.68s         Wait for com.apple.SurfBoard to idle
+    t =   295.69s     Synthesize event
+    t =   296.24s     Wait for phil.heart-v3 to idle
+    t =   296.24s Checking existence of `"Finish lesson" Button`
+    t =   296.33s Waiting 30.0s for "Next step" Button to exist
+    t =   297.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =   297.40s         Checking existence of `"Next step" Button`
+    t =   298.43s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =   298.43s     Find the "Next step" Button
+    t =   298.47s Tap "chevron.right" Button
+    t =   298.47s     Wait for phil.heart-v3 to idle
+    t =   298.47s     Find the "chevron.right" Button
+    t =   298.49s     Check for interrupting elements affecting "chevron.right" Button
+    t =   298.50s         Wait for com.apple.SurfBoard to idle
+    t =   298.50s     Synthesize event
+    t =   299.00s     Wait for phil.heart-v3 to idle
+    t =   299.00s Checking existence of `"Finish lesson" Button`
+    t =   299.02s Tap "Finish lesson" Button
+    t =   299.02s     Wait for phil.heart-v3 to idle
+    t =   299.02s     Find the "Finish lesson" Button
+    t =   299.04s     Check for interrupting elements affecting "checkmark" Button
+    t =   299.04s         Wait for com.apple.SurfBoard to idle
+    t =   299.05s     Synthesize event
+    t =   299.42s     Wait for phil.heart-v3 to idle
+    t =   299.43s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =   300.49s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =   300.50s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =   300.51s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testEveryLessonCanAdvanceAndFinish]' passed (303.727 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testExplorationPanelsAndIsolation]' started.
+    t =     0.01s Start Test at 2026-10-21 19:26:56.358
+    t =     0.08s Set Up
+    t =     0.08s Open phil.heart-v3
+    t =     0.08s     Launch phil.heart-v3
+    t =     0.08s         Terminate phil.heart-v3:20716
+2026-10-21 19:26:57.437 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:26:57.437 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.30s         Setting up automation session
+    t =     5.66s         Wait for phil.heart-v3 to idle
+    t =     8.26s Waiting 30.0s for "tool.Parts" Button to exist
+    t =     9.28s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Parts" Button`
+    t =     9.28s         Checking existence of `"tool.Parts" Button`
+    t =    10.43s Checking `Expect predicate `enabled == 1` for object "tool.Parts" Button`
+    t =    10.43s     Find the "tool.Parts" Button
+    t =    10.50s Tap "tool.Parts" Button
+    t =    10.50s     Wait for phil.heart-v3 to idle
+    t =    10.50s     Find the "tool.Parts" Button
+    t =    10.53s     Check for interrupting elements affecting "tool.Parts" Button
+    t =    10.54s         Wait for com.apple.SurfBoard to idle
+    t =    10.54s     Synthesize event
+    t =    11.25s     Wait for phil.heart-v3 to idle
+    t =    11.26s Waiting 15.0s for "Anatomy" StaticText to exist
+    t =    12.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Anatomy" StaticText`
+    t =    12.28s         Checking existence of `"Anatomy" StaticText`
+    t =    12.32s Waiting 30.0s for "Whole model" Button to exist
+    t =    13.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Whole model" Button`
+    t =    13.37s         Checking existence of `"Whole model" Button`
+    t =    14.47s Checking `Expect predicate `enabled == 1` for object "Whole model" Button`
+    t =    14.47s     Find the "Whole model" Button
+    t =    14.49s Tap "part.whole" Button
+    t =    14.49s     Wait for phil.heart-v3 to idle
+    t =    14.50s     Find the "part.whole" Button
+    t =    14.51s     Check for interrupting elements affecting "part.whole" Button
+    t =    14.51s         Wait for com.apple.SurfBoard to idle
+    t =    14.52s     Synthesize event
+    t =    14.91s     Wait for phil.heart-v3 to idle
+    t =    14.98s Waiting 30.0s for "tool.Parts" Button to exist
+    t =    16.06s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Parts" Button`
+    t =    16.06s         Checking existence of `"tool.Parts" Button`
+    t =    17.13s Checking `Expect predicate `enabled == 1` for object "tool.Parts" Button`
+    t =    17.13s     Find the "tool.Parts" Button
+    t =    17.16s Tap "tool.Parts" Button
+    t =    17.16s     Wait for phil.heart-v3 to idle
+    t =    17.17s     Find the "tool.Parts" Button
+    t =    17.20s     Check for interrupting elements affecting "tool.Parts" Button
+    t =    17.20s         Wait for com.apple.SurfBoard to idle
+    t =    17.21s     Synthesize event
+    t =    17.59s     Wait for phil.heart-v3 to idle
+    t =    18.09s Waiting 30.0s for "part.CardiogenicCrescent" Button to exist
+    t =    19.13s     Checking `Expect predicate `existsNoRetry == 1` for object "part.CardiogenicCrescent" Button`
+    t =    19.13s         Checking existence of `"part.CardiogenicCrescent" Button`
+    t =    20.17s Checking `Expect predicate `enabled == 1` for object "part.CardiogenicCrescent" Button`
+    t =    20.17s     Find the "part.CardiogenicCrescent" Button
+    t =    20.18s Tap "part.CardiogenicCrescent" Button
+    t =    20.18s     Wait for phil.heart-v3 to idle
+    t =    20.18s     Find the "part.CardiogenicCrescent" Button
+    t =    20.20s     Check for interrupting elements affecting "part.CardiogenicCrescent" Button
+    t =    20.20s         Wait for com.apple.SurfBoard to idle
+    t =    20.21s     Synthesize event
+    t =    20.59s     Wait for phil.heart-v3 to idle
+    t =    20.67s Waiting 30.0s for "tool.Isolate" Button to exist
+    t =    21.68s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Isolate" Button`
+    t =    21.68s         Checking existence of `"tool.Isolate" Button`
+    t =    22.78s Checking `Expect predicate `enabled == 1` for object "tool.Isolate" Button`
+    t =    22.78s     Find the "tool.Isolate" Button
+    t =    22.84s Tap "tool.Isolate" Button
+    t =    22.84s     Wait for phil.heart-v3 to idle
+    t =    22.84s     Find the "tool.Isolate" Button
+    t =    22.88s     Check for interrupting elements affecting "tool.Isolate" Button
+    t =    22.88s         Wait for com.apple.SurfBoard to idle
+    t =    22.89s     Synthesize event
+    t =    23.31s     Wait for phil.heart-v3 to idle
+    t =    23.31s Waiting 10.0s for "tool.Show all" Button to exist
+    t =    24.38s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Show all" Button`
+    t =    24.38s         Checking existence of `"tool.Show all" Button`
+    t =    24.49s Waiting 30.0s for "tool.Parts" Button to exist
+    t =    25.55s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Parts" Button`
+    t =    25.55s         Checking existence of `"tool.Parts" Button`
+    t =    26.67s Checking `Expect predicate `enabled == 1` for object "tool.Parts" Button`
+    t =    26.67s     Find the "tool.Parts" Button
+    t =    26.73s Tap "tool.Parts" Button
+    t =    26.73s     Wait for phil.heart-v3 to idle
+    t =    26.73s     Find the "tool.Parts" Button
+    t =    26.76s     Check for interrupting elements affecting "tool.Parts" Button
+    t =    26.77s         Wait for com.apple.SurfBoard to idle
+    t =    26.78s     Synthesize event
+    t =    27.17s     Wait for phil.heart-v3 to idle
+    t =    27.67s Waiting 30.0s for "part.whole" Button to exist
+    t =    28.68s     Checking `Expect predicate `existsNoRetry == 1` for object "part.whole" Button`
+    t =    28.68s         Checking existence of `"part.whole" Button`
+    t =    29.76s Checking `Expect predicate `enabled == 1` for object "part.whole" Button`
+    t =    29.77s     Find the "part.whole" Button
+    t =    29.78s Tap "part.whole" Button
+    t =    29.78s     Wait for phil.heart-v3 to idle
+    t =    29.79s     Find the "part.whole" Button
+    t =    29.80s     Check for interrupting elements affecting "part.whole" Button
+    t =    29.80s         Wait for com.apple.SurfBoard to idle
+    t =    29.81s     Synthesize event
+    t =    30.19s     Wait for phil.heart-v3 to idle
+    t =    30.25s Find the "tool.Isolate" Button
+    t =    30.30s Waiting 30.0s for "tool.Parts" Button to exist
+    t =    31.38s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Parts" Button`
+    t =    31.38s         Checking existence of `"tool.Parts" Button`
+    t =    32.48s Checking `Expect predicate `enabled == 1` for object "tool.Parts" Button`
+    t =    32.48s     Find the "tool.Parts" Button
+    t =    32.54s Tap "tool.Parts" Button
+    t =    32.54s     Wait for phil.heart-v3 to idle
+    t =    32.55s     Find the "tool.Parts" Button
+    t =    32.58s     Check for interrupting elements affecting "tool.Parts" Button
+    t =    32.58s         Wait for com.apple.SurfBoard to idle
+    t =    32.59s     Synthesize event
+    t =    33.03s     Wait for phil.heart-v3 to idle
+    t =    33.53s Waiting 30.0s for "part.CardiogenicCrescent" Button to exist
+    t =    34.56s     Checking `Expect predicate `existsNoRetry == 1` for object "part.CardiogenicCrescent" Button`
+    t =    34.56s         Checking existence of `"part.CardiogenicCrescent" Button`
+    t =    35.67s Checking `Expect predicate `enabled == 1` for object "part.CardiogenicCrescent" Button`
+    t =    35.67s     Find the "part.CardiogenicCrescent" Button
+    t =    35.70s Tap "part.CardiogenicCrescent" Button
+    t =    35.70s     Wait for phil.heart-v3 to idle
+    t =    35.70s     Find the "part.CardiogenicCrescent" Button
+    t =    35.72s     Check for interrupting elements affecting "part.CardiogenicCrescent" Button
+    t =    35.73s         Wait for com.apple.SurfBoard to idle
+    t =    35.73s     Synthesize event
+    t =    36.20s     Wait for phil.heart-v3 to idle
+    t =    36.29s Waiting 30.0s for "tool.Isolate" Button to exist
+    t =    37.37s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Isolate" Button`
+    t =    37.38s         Checking existence of `"tool.Isolate" Button`
+    t =    38.48s Checking `Expect predicate `enabled == 1` for object "tool.Isolate" Button`
+    t =    38.48s     Find the "tool.Isolate" Button
+    t =    38.52s Tap "tool.Isolate" Button
+    t =    38.52s     Wait for phil.heart-v3 to idle
+    t =    38.52s     Find the "tool.Isolate" Button
+    t =    38.56s     Check for interrupting elements affecting "tool.Isolate" Button
+    t =    38.56s         Wait for com.apple.SurfBoard to idle
+    t =    38.57s     Synthesize event
+    t =    38.94s     Wait for phil.heart-v3 to idle
+    t =    38.95s Waiting 30.0s for "tool.Show all" Button to exist
+    t =    39.98s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Show all" Button`
+    t =    39.98s         Checking existence of `"tool.Show all" Button`
+    t =    41.08s Checking `Expect predicate `enabled == 1` for object "tool.Show all" Button`
+    t =    41.08s     Find the "tool.Show all" Button
+    t =    41.12s Tap "tool.Show all" Button
+    t =    41.12s     Wait for phil.heart-v3 to idle
+    t =    41.12s     Find the "tool.Show all" Button
+    t =    41.16s     Check for interrupting elements affecting "tool.Show all" Button
+    t =    41.16s         Wait for com.apple.SurfBoard to idle
+    t =    41.17s     Synthesize event
+    t =    41.54s     Wait for phil.heart-v3 to idle
+    t =    41.54s Waiting 30.0s for "tool.View" Button to exist
+    t =    42.58s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.View" Button`
+    t =    42.58s         Checking existence of `"tool.View" Button`
+    t =    43.68s Checking `Expect predicate `enabled == 1` for object "tool.View" Button`
+    t =    43.68s     Find the "tool.View" Button
+    t =    43.73s Tap "tool.View" Button
+    t =    43.73s     Wait for phil.heart-v3 to idle
+    t =    43.73s     Find the "tool.View" Button
+    t =    43.77s     Check for interrupting elements affecting "tool.View" Button
+    t =    43.77s         Wait for com.apple.SurfBoard to idle
+    t =    43.78s     Synthesize event
+    t =    44.38s     Wait for phil.heart-v3 to idle
+    t =    44.38s Waiting 15.0s for "View controls" StaticText to exist
+    t =    45.42s     Checking `Expect predicate `existsNoRetry == 1` for object "View controls" StaticText`
+    t =    45.42s         Checking existence of `"View controls" StaticText`
+    t =    45.46s Find the Target Application 'phil.heart-v3'
+    t =    47.42s Added attachment named 'View controls outside the model'
+    t =    47.42s Checking existence of `"Part label" Switch`
+    t =    47.43s Find the "Part label" Switch
+    t =    47.44s Tap "Part label" Switch
+    t =    47.44s     Wait for phil.heart-v3 to idle
+    t =    47.44s     Find the "Part label" Switch
+    t =    47.45s     Check for interrupting elements affecting "Part label" Switch
+    t =    47.56s         Wait for com.apple.SurfBoard to idle
+    t =    47.57s     Synthesize event
+    t =    47.99s     Wait for phil.heart-v3 to idle
+    t =    48.33s Find the "Part label" Switch
+    t =    48.34s Tap "Part label" Switch
+    t =    48.35s     Wait for phil.heart-v3 to idle
+    t =    48.35s     Find the "Part label" Switch
+    t =    48.36s     Check for interrupting elements affecting "Part label" Switch
+    t =    48.36s         Wait for com.apple.SurfBoard to idle
+    t =    48.37s     Synthesize event
+    t =    48.76s     Wait for phil.heart-v3 to idle
+    t =    49.10s Find the "Part label" Switch
+    t =    49.12s Checking existence of `"Orientation cue" Switch`
+    t =    49.13s Find the "Orientation cue" Switch
+    t =    49.14s Tap "Orientation cue" Switch
+    t =    49.14s     Wait for phil.heart-v3 to idle
+    t =    49.14s     Find the "Orientation cue" Switch
+    t =    49.15s     Check for interrupting elements affecting "Orientation cue" Switch
+    t =    49.16s         Wait for com.apple.SurfBoard to idle
+    t =    49.16s     Synthesize event
+    t =    49.54s     Wait for phil.heart-v3 to idle
+    t =    49.87s Find the "Orientation cue" Switch
+    t =    49.88s Tap "Orientation cue" Switch
+    t =    49.88s     Wait for phil.heart-v3 to idle
+    t =    49.89s     Find the "Orientation cue" Switch
+    t =    49.90s     Check for interrupting elements affecting "Orientation cue" Switch
+    t =    49.90s         Wait for com.apple.SurfBoard to idle
+    t =    49.91s     Synthesize event
+    t =    50.38s     Wait for phil.heart-v3 to idle
+    t =    50.73s Find the "Orientation cue" Switch
+    t =    50.75s Checking existence of `"Model backdrop" Switch`
+    t =    50.77s Find the "Model backdrop" Switch
+    t =    50.78s Tap "Model backdrop" Switch
+    t =    50.78s     Wait for phil.heart-v3 to idle
+    t =    50.78s     Find the "Model backdrop" Switch
+    t =    50.80s     Check for interrupting elements affecting "Model backdrop" Switch
+    t =    50.80s         Wait for com.apple.SurfBoard to idle
+    t =    50.81s     Synthesize event
+    t =    51.19s     Wait for phil.heart-v3 to idle
+    t =    51.52s Find the "Model backdrop" Switch
+    t =    51.53s Tap "Model backdrop" Switch
+    t =    51.53s     Wait for phil.heart-v3 to idle
+    t =    51.54s     Find the "Model backdrop" Switch
+    t =    51.55s     Check for interrupting elements affecting "Model backdrop" Switch
+    t =    51.55s         Wait for com.apple.SurfBoard to idle
+    t =    51.56s     Synthesize event
+    t =    51.96s     Wait for phil.heart-v3 to idle
+    t =    52.29s Find the "Model backdrop" Switch
+    t =    52.30s Checking existence of `"Transparent surroundings" Switch`
+    t =    52.32s Find the "Transparent surroundings" Switch
+    t =    52.33s Tap "Transparent surroundings" Switch
+    t =    52.33s     Wait for phil.heart-v3 to idle
+    t =    52.34s     Find the "Transparent surroundings" Switch
+    t =    52.35s     Check for interrupting elements affecting "Transparent surroundings" Switch
+    t =    52.35s         Wait for com.apple.SurfBoard to idle
+    t =    52.36s     Synthesize event
+    t =    52.78s     Wait for phil.heart-v3 to idle
+    t =    53.11s Find the "Transparent surroundings" Switch
+    t =    53.14s Tap "Transparent surroundings" Switch
+    t =    53.14s     Wait for phil.heart-v3 to idle
+    t =    53.14s     Find the "Transparent surroundings" Switch
+    t =    53.16s     Check for interrupting elements affecting "Transparent surroundings" Switch
+    t =    53.16s         Wait for com.apple.SurfBoard to idle
+    t =    53.17s     Synthesize event
+    t =    53.61s     Wait for phil.heart-v3 to idle
+    t =    53.96s Find the "Transparent surroundings" Switch
+    t =    53.99s Checking existence of `"Surrounding tissue" Switch`
+    t =    54.01s Find the "Surrounding tissue" Switch
+    t =    54.03s Tap "Surrounding tissue" Switch
+    t =    54.03s     Wait for phil.heart-v3 to idle
+    t =    54.03s     Find the "Surrounding tissue" Switch
+    t =    54.04s     Check for interrupting elements affecting "Surrounding tissue" Switch
+    t =    54.04s         Wait for com.apple.SurfBoard to idle
+    t =    54.05s     Synthesize event
+    t =    54.51s     Wait for phil.heart-v3 to idle
+    t =    54.85s Find the "Surrounding tissue" Switch
+    t =    54.87s Tap "Surrounding tissue" Switch
+    t =    54.87s     Wait for phil.heart-v3 to idle
+    t =    54.88s     Find the "Surrounding tissue" Switch
+    t =    54.89s     Check for interrupting elements affecting "Surrounding tissue" Switch
+    t =    54.90s         Wait for com.apple.SurfBoard to idle
+    t =    54.90s     Synthesize event
+    t =    55.28s     Wait for phil.heart-v3 to idle
+    t =    55.61s Find the "Surrounding tissue" Switch
+    t =    55.64s Waiting 30.0s for "View side" Button to exist
+    t =    56.68s     Checking `Expect predicate `existsNoRetry == 1` for object "View side" Button`
+    t =    56.68s         Checking existence of `"View side" Button`
+    t =    57.75s Checking `Expect predicate `enabled == 1` for object "View side" Button`
+    t =    57.76s     Find the "View side" Button
+    t =    57.79s Tap "View side" Button
+    t =    57.79s     Wait for phil.heart-v3 to idle
+    t =    57.79s     Find the "View side" Button
+    t =    57.81s     Check for interrupting elements affecting "View side" Button
+    t =    57.81s         Wait for com.apple.SurfBoard to idle
+    t =    57.82s     Synthesize event
+    t =    58.21s     Wait for phil.heart-v3 to idle
+    t =    58.21s Waiting 30.0s for "Opposite" Button to exist
+    t =    59.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Opposite" Button`
+    t =    59.26s         Checking existence of `"Opposite" Button`
+    t =    60.28s Checking `Expect predicate `enabled == 1` for object "Opposite" Button`
+    t =    60.28s     Find the "Opposite" Button
+    t =    60.29s Tap "Opposite" Button
+    t =    60.29s     Wait for phil.heart-v3 to idle
+    t =    60.30s     Find the "Opposite" Button
+    t =    60.31s     Check for interrupting elements affecting "Opposite" Button
+    t =    60.32s         Wait for com.apple.SurfBoard to idle
+    t =    60.32s     Synthesize event
+    t =    60.71s     Wait for phil.heart-v3 to idle
+    t =    60.71s Waiting 30.0s for "Cranial" Button to exist
+    t =    61.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Cranial" Button`
+    t =    61.75s         Checking existence of `"Cranial" Button`
+    t =    62.78s Checking `Expect predicate `enabled == 1` for object "Cranial" Button`
+    t =    62.78s     Find the "Cranial" Button
+    t =    62.79s Tap "Cranial" Button
+    t =    62.79s     Wait for phil.heart-v3 to idle
+    t =    62.80s     Find the "Cranial" Button
+    t =    62.81s     Check for interrupting elements affecting "Cranial" Button
+    t =    62.81s         Wait for com.apple.SurfBoard to idle
+    t =    62.82s     Synthesize event
+    t =    63.21s     Wait for phil.heart-v3 to idle
+    t =    63.21s Waiting 30.0s for "Done" Button to exist
+    t =    64.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    64.28s         Checking existence of `"Done" Button`
+    t =    65.37s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    65.37s     Find the "Done" Button
+    t =    65.40s Tap "Done" Button
+    t =    65.40s     Wait for phil.heart-v3 to idle
+    t =    65.41s     Find the "Done" Button
+    t =    65.42s     Check for interrupting elements affecting "Done" Button
+    t =    65.43s         Wait for com.apple.SurfBoard to idle
+    t =    65.44s     Synthesize event
+    t =    65.88s     Wait for phil.heart-v3 to idle
+    t =    65.95s Waiting 30.0s for "tool.Separate" Button to exist
+    t =    66.96s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Separate" Button`
+    t =    66.96s         Checking existence of `"tool.Separate" Button`
+    t =    68.08s Checking `Expect predicate `enabled == 1` for object "tool.Separate" Button`
+    t =    68.08s     Find the "tool.Separate" Button
+    t =    68.12s Tap "tool.Separate" Button
+    t =    68.12s     Wait for phil.heart-v3 to idle
+    t =    68.12s     Find the "tool.Separate" Button
+    t =    68.16s     Check for interrupting elements affecting "tool.Separate" Button
+    t =    68.16s         Wait for com.apple.SurfBoard to idle
+    t =    68.17s     Synthesize event
+    t =    68.60s     Wait for phil.heart-v3 to idle
+    t =    68.60s Waiting 10.0s for "tool.Reassemble" Button to exist
+    t =    69.68s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reassemble" Button`
+    t =    69.68s         Checking existence of `"tool.Reassemble" Button`
+    t =    69.72s Waiting 30.0s for "tool.Reassemble" Button to exist
+    t =    70.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reassemble" Button`
+    t =    70.78s         Checking existence of `"tool.Reassemble" Button`
+    t =    71.87s Checking `Expect predicate `enabled == 1` for object "tool.Reassemble" Button`
+    t =    71.87s     Find the "tool.Reassemble" Button
+    t =    71.94s Tap "tool.Reassemble" Button
+    t =    71.94s     Wait for phil.heart-v3 to idle
+    t =    71.94s     Find the "tool.Reassemble" Button
+    t =    71.98s     Check for interrupting elements affecting "tool.Reassemble" Button
+    t =    71.98s         Wait for com.apple.SurfBoard to idle
+    t =    71.99s     Synthesize event
+    t =    72.43s     Wait for phil.heart-v3 to idle
+    t =    72.43s Waiting 30.0s for "tool.Reset view" Button to exist
+    t =    73.48s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reset view" Button`
+    t =    73.48s         Checking existence of `"tool.Reset view" Button`
+    t =    74.56s Checking `Expect predicate `enabled == 1` for object "tool.Reset view" Button`
+    t =    74.56s     Find the "tool.Reset view" Button
+    t =    74.59s Tap "tool.Reset view" Button
+    t =    74.59s     Wait for phil.heart-v3 to idle
+    t =    74.60s     Find the "tool.Reset view" Button
+    t =    74.61s     Check for interrupting elements affecting "tool.Reset view" Button
+    t =    74.62s         Wait for com.apple.SurfBoard to idle
+    t =    74.63s     Synthesize event
+    t =    75.06s     Wait for phil.heart-v3 to idle
+    t =    75.06s Waiting 30.0s for "tool.Move parts" Button to exist
+    t =    76.07s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Move parts" Button`
+    t =    76.07s         Checking existence of `"tool.Move parts" Button`
+    t =    77.18s Checking `Expect predicate `enabled == 1` for object "tool.Move parts" Button`
+    t =    77.18s     Find the "tool.Move parts" Button
+    t =    77.22s Tap "tool.Move parts" Button
+    t =    77.22s     Wait for phil.heart-v3 to idle
+    t =    77.23s     Find the "tool.Move parts" Button
+    t =    77.26s     Check for interrupting elements affecting "tool.Move parts" Button
+    t =    77.27s         Wait for com.apple.SurfBoard to idle
+    t =    77.27s     Synthesize event
+    t =    77.66s     Wait for phil.heart-v3 to idle
+    t =    77.66s Waiting 30.0s for "tool.Rotate" Button to exist
+    t =    78.68s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Rotate" Button`
+    t =    78.68s         Checking existence of `"tool.Rotate" Button`
+    t =    79.78s Checking `Expect predicate `enabled == 1` for object "tool.Rotate" Button`
+    t =    79.78s     Find the "tool.Rotate" Button
+    t =    79.82s Tap "tool.Rotate" Button
+    t =    79.82s     Wait for phil.heart-v3 to idle
+    t =    79.82s     Find the "tool.Rotate" Button
+    t =    79.85s     Check for interrupting elements affecting "tool.Rotate" Button
+    t =    79.86s         Wait for com.apple.SurfBoard to idle
+    t =    79.87s     Synthesize event
+    t =    80.33s     Wait for phil.heart-v3 to idle
+    t =    80.33s Waiting 30.0s for "Location" Button to exist
+    t =    81.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Location" Button`
+    t =    81.38s         Checking existence of `"Location" Button`
+    t =    82.45s Checking `Expect predicate `enabled == 1` for object "Location" Button`
+    t =    82.45s     Find the "Location" Button
+    t =    82.49s Tap "Location" Button
+    t =    82.49s     Wait for phil.heart-v3 to idle
+    t =    82.49s     Find the "Location" Button
+    t =    82.51s     Check for interrupting elements affecting "Location" Button
+    t =    82.51s         Wait for com.apple.SurfBoard to idle
+    t =    82.52s     Synthesize event
+    t =    83.00s     Wait for phil.heart-v3 to idle
+    t =    83.48s Waiting 15.0s for "Location guide" StaticText to exist
+    t =    84.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Location guide" StaticText`
+    t =    84.58s         Checking existence of `"Location guide" StaticText`
+    t =    84.59s Waiting 30.0s for "Done" Button to exist
+    t =    85.64s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    85.64s         Checking existence of `"Done" Button`
+    t =    86.68s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    86.68s     Find the "Done" Button
+    t =    86.71s Tap "Done" Button
+    t =    86.71s     Wait for phil.heart-v3 to idle
+    t =    86.71s     Find the "Done" Button
+    t =    86.73s     Check for interrupting elements affecting "Done" Button
+    t =    86.73s         Wait for com.apple.SurfBoard to idle
+    t =    86.74s     Synthesize event
+    t =    87.14s     Wait for phil.heart-v3 to idle
+    t =    87.21s Waiting 30.0s for "Model info" Button to exist
+    t =    88.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Model info" Button`
+    t =    88.28s         Checking existence of `"Model info" Button`
+    t =    89.38s Checking `Expect predicate `enabled == 1` for object "Model info" Button`
+    t =    89.38s     Find the "Model info" Button
+    t =    89.42s Tap "Model info" Button
+    t =    89.42s     Wait for phil.heart-v3 to idle
+    t =    89.42s     Find the "Model info" Button
+    t =    89.44s     Check for interrupting elements affecting "Model info" Button
+    t =    89.45s         Wait for com.apple.SurfBoard to idle
+    t =    89.45s     Synthesize event
+    t =    89.84s     Wait for phil.heart-v3 to idle
+    t =    90.38s Waiting 15.0s for "About this model" StaticText to exist
+    t =    91.48s     Checking `Expect predicate `existsNoRetry == 1` for object "About this model" StaticText`
+    t =    91.48s         Checking existence of `"About this model" StaticText`
+    t =    91.49s Waiting 30.0s for "Done" Button to exist
+    t =    92.55s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    92.55s         Checking existence of `"Done" Button`
+    t =    93.57s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    93.58s     Find the "Done" Button
+    t =    93.59s Tap "Done" Button
+    t =    93.59s     Wait for phil.heart-v3 to idle
+    t =    93.59s     Find the "Done" Button
+    t =    93.60s     Check for interrupting elements affecting "Done" Button
+    t =    93.60s         Wait for com.apple.SurfBoard to idle
+    t =    93.61s     Synthesize event
+    t =    93.99s     Wait for phil.heart-v3 to idle
+    t =    94.03s Waiting 30.0s for "Close-up" Button to exist
+    t =    95.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Close-up" Button`
+    t =    95.08s         Checking existence of `"Close-up" Button`
+    t =    96.14s Checking `Expect predicate `enabled == 1` for object "Close-up" Button`
+    t =    96.14s     Find the "Close-up" Button
+    t =    96.18s Tap "Close-up" Button
+    t =    96.18s     Wait for phil.heart-v3 to idle
+    t =    96.18s     Find the "Close-up" Button
+    t =    96.20s     Check for interrupting elements affecting "Close-up" Button
+    t =    96.20s         Wait for com.apple.SurfBoard to idle
+    t =    96.21s     Synthesize event
+    t =    96.63s     Wait for phil.heart-v3 to idle
+    t =    96.75s Waiting 30.0s for "Close 3D close-up" Button to exist
+    t =    97.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Close 3D close-up" Button`
+    t =    97.78s         Checking existence of `"Close 3D close-up" Button`
+    t =    98.86s Checking `Expect predicate `enabled == 1` for object "Close 3D close-up" Button`
+    t =    98.86s     Find the "Close 3D close-up" Button
+    t =    98.91s Tap "xmark" Button
+    t =    98.91s     Wait for phil.heart-v3 to idle
+    t =    98.92s     Find the "xmark" Button
+    t =    98.95s     Check for interrupting elements affecting "xmark" Button
+    t =    99.06s         Wait for com.apple.SurfBoard to idle
+    t =    99.07s     Synthesize event
+    t =    99.54s     Wait for phil.heart-v3 to idle
+    t =    99.55s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testExplorationPanelsAndIsolation]' passed (100.868 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testGuidedPhasesAndRecovery]' started.
+    t =     0.00s Start Test at 2026-10-21 19:28:37.217
+    t =     0.03s Set Up
+    t =     0.04s Open phil.heart-v3
+    t =     0.04s     Launch phil.heart-v3
+    t =     0.04s         Terminate phil.heart-v3:20728
+2026-10-21 19:28:38.328 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-21 19:28:38.329 xcodebuild[20292:458146] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.32s         Setting up automation session
+    t =     5.76s         Wait for phil.heart-v3 to idle
+    t =     8.56s Waiting 30.0s for "Phase 3 of 3: Later Valve Tissue Layers" Button to exist
+    t =     9.61s     Checking `Expect predicate `existsNoRetry == 1` for object "Phase 3 of 3: Later Valve Tissue Layers" Button`
+    t =     9.61s         Checking existence of `"Phase 3 of 3: Later Valve Tissue Layers" Button`
+    t =    10.80s Checking `Expect predicate `enabled == 1` for object "Phase 3 of 3: Later Valve Tissue Layers" Button`
+    t =    10.81s     Find the "Phase 3 of 3: Later Valve Tissue Layers" Button
+    t =    10.87s Tap "Phase 3 of 3: Later Valve Tissue Layers" Button
+    t =    10.87s     Wait for phil.heart-v3 to idle
+    t =    10.88s     Find the "Phase 3 of 3: Later Valve Tissue Layers" Button
+    t =    10.91s     Check for interrupting elements affecting "Phase 3 of 3: Later Valve Tissue Layers" Button
+    t =    10.92s         Wait for com.apple.SurfBoard to idle
+    t =    10.92s     Synthesize event
+    t =    11.35s     Wait for phil.heart-v3 to idle
+    t =    11.35s Checking existence of `"Finish lesson" Button`
+    t =    11.45s Waiting 30.0s for "Phase 1 of 3: AV Leaflet Delamination" Button to exist
+    t =    12.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Phase 1 of 3: AV Leaflet Delamination" Button`
+    t =    12.48s         Checking existence of `"Phase 1 of 3: AV Leaflet Delamination" Button`
+    t =    13.59s Checking `Expect predicate `enabled == 1` for object "Phase 1 of 3: AV Leaflet Delamination" Button`
+    t =    13.59s     Find the "Phase 1 of 3: AV Leaflet Delamination" Button
+    t =    13.65s Tap "Phase 1 of 3: AV Leaflet Delamination" Button
+    t =    13.65s     Wait for phil.heart-v3 to idle
+    t =    13.66s     Find the "Phase 1 of 3: AV Leaflet Delamination" Button
+    t =    13.69s     Check for interrupting elements affecting "Phase 1 of 3: AV Leaflet Delamination" Button
+    t =    13.70s         Wait for com.apple.SurfBoard to idle
+    t =    13.70s     Synthesize event
+    t =    14.17s     Wait for phil.heart-v3 to idle
+    t =    14.18s Find the "Previous step" Button
+    t =    14.20s Waiting 30.0s for "Hide lesson" Button to exist
+    t =    15.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide lesson" Button`
+    t =    15.30s         Checking existence of `"Hide lesson" Button`
+    t =    16.35s Checking `Expect predicate `enabled == 1` for object "Hide lesson" Button`
+    t =    16.35s     Find the "Hide lesson" Button
+    t =    16.39s Tap "Hide lesson" Button
+    t =    16.39s     Wait for phil.heart-v3 to idle
+    t =    16.39s     Find the "Hide lesson" Button
+    t =    16.41s     Check for interrupting elements affecting "Hide lesson" Button
+    t =    16.41s         Wait for com.apple.SurfBoard to idle
+    t =    16.42s     Synthesize event
+    t =    16.87s     Wait for phil.heart-v3 to idle
+    t =    16.88s Waiting 30.0s for "Next step" Button to exist
+    t =    17.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Next step" Button`
+    t =    17.91s         Checking existence of `"Next step" Button`
+    t =    18.99s Checking `Expect predicate `enabled == 1` for object "Next step" Button`
+    t =    18.99s     Find the "Next step" Button
+    t =    19.03s Tap "chevron.right" Button
+    t =    19.03s     Wait for phil.heart-v3 to idle
+    t =    19.03s     Find the "chevron.right" Button
+    t =    19.05s     Check for interrupting elements affecting "chevron.right" Button
+    t =    19.05s         Wait for com.apple.SurfBoard to idle
+    t =    19.06s     Synthesize event
+    t =    19.51s     Wait for phil.heart-v3 to idle
+    t =    19.51s Waiting 30.0s for "Previous step" Button to exist
+    t =    20.61s     Checking `Expect predicate `existsNoRetry == 1` for object "Previous step" Button`
+    t =    20.61s         Checking existence of `"Previous step" Button`
+    t =    21.71s Checking `Expect predicate `enabled == 1` for object "Previous step" Button`
+    t =    21.71s     Find the "Previous step" Button
+    t =    21.74s Tap "chevron.left" Button
+    t =    21.74s     Wait for phil.heart-v3 to idle
+    t =    21.75s     Find the "chevron.left" Button
+    t =    21.76s     Check for interrupting elements affecting "chevron.left" Button
+    t =    21.88s         Wait for com.apple.SurfBoard to idle
+    t =    21.89s     Synthesize event
+    t =    22.31s     Wait for phil.heart-v3 to idle
+    t =    22.31s Waiting 30.0s for "Show lesson" Button to exist
+    t =    23.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Show lesson" Button`
+    t =    23.37s         Checking existence of `"Show lesson" Button`
+    t =    24.41s Checking `Expect predicate `enabled == 1` for object "Show lesson" Button`
+    t =    24.41s     Find the "Show lesson" Button
+    t =    24.45s Tap "Show lesson" Button
+    t =    24.45s     Wait for phil.heart-v3 to idle
+    t =    24.46s     Find the "Show lesson" Button
+    t =    24.48s     Check for interrupting elements affecting "Show lesson" Button
+    t =    24.48s         Wait for com.apple.SurfBoard to idle
+    t =    24.49s     Synthesize event
+    t =    25.01s     Wait for phil.heart-v3 to idle
+    t =    25.01s Waiting 30.0s for "Show narration" Button to exist
+    t =    26.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Show narration" Button`
+    t =    26.08s         Checking existence of `"Show narration" Button`
+    t =    27.11s Checking `Expect predicate `enabled == 1` for object "Show narration" Button`
+    t =    27.11s     Find the "Show narration" Button
+    t =    27.15s Tap "captions.bubble" Button
+    t =    27.15s     Wait for phil.heart-v3 to idle
+    t =    27.15s     Find the "captions.bubble" Button
+    t =    27.17s     Check for interrupting elements affecting "captions.bubble" Button
+    t =    27.17s         Wait for com.apple.SurfBoard to idle
+    t =    27.18s     Synthesize event
+    t =    27.66s     Wait for phil.heart-v3 to idle
+    t =    27.66s Waiting 15.0s for "NARRATION" StaticText to exist
+    t =    28.71s     Checking `Expect predicate `existsNoRetry == 1` for object "NARRATION" StaticText`
+    t =    28.71s         Checking existence of `"NARRATION" StaticText`
+    t =    28.79s Waiting 30.0s for "Hide narration" Button to exist
+    t =    29.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Hide narration" Button`
+    t =    29.81s         Checking existence of `"Hide narration" Button`
+    t =    30.91s Checking `Expect predicate `enabled == 1` for object "Hide narration" Button`
+    t =    30.91s     Find the "Hide narration" Button
+    t =    30.95s Tap "captions.bubble" Button
+    t =    30.95s     Wait for phil.heart-v3 to idle
+    t =    30.95s     Find the "captions.bubble" Button
+    t =    30.97s     Check for interrupting elements affecting "captions.bubble" Button
+    t =    30.98s         Wait for com.apple.SurfBoard to idle
+    t =    30.98s     Synthesize event
+    t =    31.41s     Wait for phil.heart-v3 to idle
+    t =    31.42s Waiting 30.0s for "Play narration" Button to exist
+    t =    32.51s     Checking `Expect predicate `existsNoRetry == 1` for object "Play narration" Button`
+    t =    32.51s         Checking existence of `"Play narration" Button`
+    t =    33.61s Checking `Expect predicate `enabled == 1` for object "Play narration" Button`
+    t =    33.61s     Find the "Play narration" Button
+    t =    33.63s Tap "play.fill" Button
+    t =    33.63s     Wait for phil.heart-v3 to idle
+    t =    33.63s     Find the "play.fill" Button
+    t =    33.64s     Check for interrupting elements affecting "play.fill" Button
+    t =    33.76s         Wait for com.apple.SurfBoard to idle
+    t =    33.76s     Synthesize event
+    t =    34.22s     Wait for phil.heart-v3 to idle
+    t =    34.23s Waiting 30.0s for "Pause narration" Button to exist
+    t =    35.25s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause narration" Button`
+    t =    35.25s         Checking existence of `"Pause narration" Button`
+    t =    36.31s Checking `Expect predicate `enabled == 1` for object "Pause narration" Button`
+    t =    36.31s     Find the "Pause narration" Button
+    t =    36.33s Tap "pause.fill" Button
+    t =    36.33s     Wait for phil.heart-v3 to idle
+    t =    36.33s     Find the "pause.fill" Button
+    t =    36.35s     Check for interrupting elements affecting "pause.fill" Button
+    t =    36.35s         Wait for com.apple.SurfBoard to idle
+    t =    36.36s     Synthesize event
+    t =    36.90s     Wait for phil.heart-v3 to idle
+    t =    36.93s Waiting 30.0s for "Resume narration" Button to exist
+    t =    38.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Resume narration" Button`
+    t =    38.01s         Checking existence of `"Resume narration" Button`
+    t =    39.11s Checking `Expect predicate `enabled == 1` for object "Resume narration" Button`
+    t =    39.11s     Find the "Resume narration" Button
+    t =    39.13s Tap "play.fill" Button
+    t =    39.13s     Wait for phil.heart-v3 to idle
+    t =    39.13s     Find the "play.fill" Button
+    t =    39.15s     Check for interrupting elements affecting "play.fill" Button
+    t =    39.15s         Wait for com.apple.SurfBoard to idle
+    t =    39.16s     Synthesize event
+    t =    39.58s     Wait for phil.heart-v3 to idle
+    t =    39.58s Waiting 30.0s for "Pause narration" Button to exist
+    t =    40.61s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause narration" Button`
+    t =    40.61s         Checking existence of `"Pause narration" Button`
+    t =    41.70s Checking `Expect predicate `enabled == 1` for object "Pause narration" Button`
+    t =    41.70s     Find the "Pause narration" Button
+    t =    41.74s Tap "pause.fill" Button
+    t =    41.74s     Wait for phil.heart-v3 to idle
+    t =    41.75s     Find the "pause.fill" Button
+    t =    41.76s     Check for interrupting elements affecting "pause.fill" Button
+    t =    41.77s         Wait for com.apple.SurfBoard to idle
+    t =    41.78s     Synthesize event
+    t =    42.19s     Wait for phil.heart-v3 to idle
+    t =    42.19s Waiting 30.0s for "Resume narration" Button to exist
+    t =    43.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Resume narration" Button`
+    t =    43.21s         Checking existence of `"Resume narration" Button`
+    t =    44.29s Checking `Expect predicate `enabled == 1` for object "Resume narration" Button`
+    t =    44.29s     Find the "Resume narration" Button
+    t =    44.30s Tap "play.fill" Button
+    t =    44.30s     Wait for phil.heart-v3 to idle
+    t =    44.31s     Find the "play.fill" Button
+    t =    44.32s     Check for interrupting elements affecting "play.fill" Button
+    t =    44.32s         Wait for com.apple.SurfBoard to idle
+    t =    44.33s     Synthesize event
+    t =    44.70s     Wait for phil.heart-v3 to idle
+    t =    44.71s Waiting 30.0s for "Next phase" Button to exist
+    t =    45.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Next phase" Button`
+    t =    45.77s         Checking existence of `"Next phase" Button`
+    t =    46.85s Checking `Expect predicate `enabled == 1` for object "Next phase" Button`
+    t =    46.85s     Find the "Next phase" Button
+    t =    46.88s Tap "Next phase" Button
+    t =    46.88s     Wait for phil.heart-v3 to idle
+    t =    46.88s     Find the "Next phase" Button
+    t =    46.90s     Check for interrupting elements affecting "Next phase" Button
+    t =    46.91s         Wait for com.apple.SurfBoard to idle
+    t =    46.91s     Synthesize event
+    t =    47.33s     Wait for phil.heart-v3 to idle
+    t =    47.33s Waiting 30.0s for "Pause narration" Button to exist
+    t =    48.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause narration" Button`
+    t =    48.38s         Checking existence of `"Pause narration" Button`
+    t =    49.45s Checking `Expect predicate `enabled == 1` for object "Pause narration" Button`
+    t =    49.46s     Find the "Pause narration" Button
+    t =    49.48s Tap "pause.fill" Button
+    t =    49.48s     Wait for phil.heart-v3 to idle
+    t =    49.48s     Find the "pause.fill" Button
+    t =    49.50s     Check for interrupting elements affecting "pause.fill" Button
+    t =    49.50s         Wait for com.apple.SurfBoard to idle
+    t =    49.51s     Synthesize event
+    t =    49.89s     Wait for phil.heart-v3 to idle
+    t =    49.90s Waiting 30.0s for "tool.Focus" Button to exist
+    t =    50.91s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Focus" Button`
+    t =    50.91s         Checking existence of `"tool.Focus" Button`
+    t =    52.01s Checking `Expect predicate `enabled == 1` for object "tool.Focus" Button`
+    t =    52.01s     Find the "tool.Focus" Button
+    t =    52.08s Tap "tool.Focus" Button
+    t =    52.08s     Wait for phil.heart-v3 to idle
+    t =    52.08s     Find the "tool.Focus" Button
+    t =    52.12s     Check for interrupting elements affecting "tool.Focus" Button
+    t =    52.13s         Wait for com.apple.SurfBoard to idle
+    t =    52.13s     Synthesize event
+    t =    52.15s         Scroll element to visible
+    t =    52.17s         Find the "tool.Focus" Button
+    t =    52.26s         Computed hit point {810, 581.5} after scrolling to visible
+    t =    52.64s     Wait for phil.heart-v3 to idle
+    t =    52.65s Waiting 10.0s for "tool.Show all" Button to exist
+    t =    53.71s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Show all" Button`
+    t =    53.71s         Checking existence of `"tool.Show all" Button`
+    t =    53.81s Waiting 30.0s for "tool.Show all" Button to exist
+    t =    54.81s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Show all" Button`
+    t =    54.81s         Checking existence of `"tool.Show all" Button`
+    t =    55.91s Checking `Expect predicate `enabled == 1` for object "tool.Show all" Button`
+    t =    55.91s     Find the "tool.Show all" Button
+    t =    55.97s Tap "tool.Show all" Button
+    t =    55.97s     Wait for phil.heart-v3 to idle
+    t =    55.97s     Find the "tool.Show all" Button
+    t =    56.02s     Check for interrupting elements affecting "tool.Show all" Button
+    t =    56.03s         Wait for com.apple.SurfBoard to idle
+    t =    56.03s     Synthesize event
+    t =    56.44s     Wait for phil.heart-v3 to idle
+    t =    56.45s Waiting 30.0s for "tool.Separate" Button to exist
+    t =    57.47s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Separate" Button`
+    t =    57.47s         Checking existence of `"tool.Separate" Button`
+    t =    58.57s Checking `Expect predicate `enabled == 1` for object "tool.Separate" Button`
+    t =    58.57s     Find the "tool.Separate" Button
+    t =    58.63s Tap "tool.Separate" Button
+    t =    58.63s     Wait for phil.heart-v3 to idle
+    t =    58.63s     Find the "tool.Separate" Button
+    t =    58.68s     Check for interrupting elements affecting "tool.Separate" Button
+    t =    58.68s         Wait for com.apple.SurfBoard to idle
+    t =    58.69s     Synthesize event
+    t =    59.09s     Wait for phil.heart-v3 to idle
+    t =    59.09s Waiting 30.0s for "tool.Reassemble" Button to exist
+    t =    60.11s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reassemble" Button`
+    t =    60.11s         Checking existence of `"tool.Reassemble" Button`
+    t =    61.21s Checking `Expect predicate `enabled == 1` for object "tool.Reassemble" Button`
+    t =    61.21s     Find the "tool.Reassemble" Button
+    t =    61.29s Tap "tool.Reassemble" Button
+    t =    61.29s     Wait for phil.heart-v3 to idle
+    t =    61.29s     Find the "tool.Reassemble" Button
+    t =    61.34s     Check for interrupting elements affecting "tool.Reassemble" Button
+    t =    61.34s         Wait for com.apple.SurfBoard to idle
+    t =    61.35s     Synthesize event
+    t =    61.72s     Wait for phil.heart-v3 to idle
+    t =    61.73s Waiting 30.0s for "tool.Restore step" Button to exist
+    t =    62.77s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Restore step" Button`
+    t =    62.77s         Checking existence of `"tool.Restore step" Button`
+    t =    63.89s Checking `Expect predicate `enabled == 1` for object "tool.Restore step" Button`
+    t =    63.89s     Find the "tool.Restore step" Button
+    t =    63.98s Tap "tool.Restore step" Button
+    t =    63.98s     Wait for phil.heart-v3 to idle
+    t =    63.98s     Find the "tool.Restore step" Button
+    t =    64.03s     Check for interrupting elements affecting "tool.Restore step" Button
+    t =    64.03s         Wait for com.apple.SurfBoard to idle
+    t =    64.04s     Synthesize event
+    t =    64.05s         Scroll element to visible
+    t =    64.05s         Find the "tool.Restore step" Button
+    t =    64.19s         Computed hit point {102.25, 621.5} after scrolling to visible
+    t =    64.58s     Wait for phil.heart-v3 to idle
+    t =    64.58s Waiting 30.0s for "tool.Reset view" Button to exist
+    t =    65.61s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reset view" Button`
+    t =    65.61s         Checking existence of `"tool.Reset view" Button`
+    t =    66.69s Checking `Expect predicate `enabled == 1` for object "tool.Reset view" Button`
+    t =    66.69s     Find the "tool.Reset view" Button
+    t =    66.78s Tap "tool.Reset view" Button
+    t =    66.78s     Wait for phil.heart-v3 to idle
+    t =    66.78s     Find the "tool.Reset view" Button
+    t =    66.81s     Check for interrupting elements affecting "tool.Reset view" Button
+    t =    66.81s         Wait for com.apple.SurfBoard to idle
+    t =    66.82s     Synthesize event
+    t =    67.26s     Wait for phil.heart-v3 to idle
+    t =    67.27s Waiting 30.0s for "Next phase" Button to exist
+    t =    68.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Next phase" Button`
+    t =    68.31s         Checking existence of `"Next phase" Button`
+    t =    69.39s Checking `Expect predicate `enabled == 1` for object "Next phase" Button`
+    t =    69.39s     Find the "Next phase" Button
+    t =    69.43s Tap "Next phase" Button
+    t =    69.43s     Wait for phil.heart-v3 to idle
+    t =    69.44s     Find the "Next phase" Button
+    t =    69.46s     Check for interrupting elements affecting "Next phase" Button
+    t =    69.46s         Wait for com.apple.SurfBoard to idle
+    t =    69.47s     Synthesize event
+    t =    69.89s     Wait for phil.heart-v3 to idle
+    t =    69.89s Waiting 30.0s for "Finish lesson" Button to exist
+    t =    70.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Finish lesson" Button`
+    t =    70.91s         Checking existence of `"Finish lesson" Button`
+    t =    72.01s Checking `Expect predicate `enabled == 1` for object "Finish lesson" Button`
+    t =    72.01s     Find the "Finish lesson" Button
+    t =    72.04s Tap "Finish lesson" Button
+    t =    72.04s     Wait for phil.heart-v3 to idle
+    t =    72.04s     Find the "Finish lesson" Button
+    t =    72.06s     Check for interrupting elements affecting "Finish lesson" Button
+    t =    72.06s         Wait for com.apple.SurfBoard to idle
+    t =    72.07s     Synthesize event
+    t =    72.58s     Wait for phil.heart-v3 to idle
+    t =    72.58s Waiting 15.0s for "Follow the heart from its first cells to birth." StaticText to exist
+    t =    73.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Follow the heart from its first cells to birth." StaticText`
+    t =    73.58s         Checking existence of `"Follow the heart from its first cells to birth." StaticText`
+    t =    73.61s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testGuidedPhasesAndRecovery]' passed (75.019 seconds).
+Test Suite 'HeartV3InteractionTests' failed at 2026-10-21 19:29:52.237.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 518.617 (518.644) seconds
+Test Suite 'HeartV3UITests.xctest' failed at 2026-10-21 19:29:52.242.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 518.617 (518.649) seconds
+Test Suite 'Selected tests' failed at 2026-10-21 19:29:52.243.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 518.617 (518.652) seconds
+2026-10-21 19:39:53.206 xcodebuild[20292:468032]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Timed out after 600.0 seconds while waiting for a response from the invoked process
+2026-10-21 19:39:53.257 xcodebuild[20292:458146] [MT] IDETestOperationsObserverDebug: 1138.394 elapsed -- Testing started completed.
+2026-10-21 19:39:53.257 xcodebuild[20292:458146] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-21 19:39:53.257 xcodebuild[20292:458146] [MT] IDETestOperationsObserverDebug: 1138.395 sec, +1138.395 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/heart-ui-recheck-1.xcresult
+
+Failing tests:
+	HeartV3InteractionTests.testCutawaySearchAndSliders()
+
+** TEST FAILED **
+
+Testing started

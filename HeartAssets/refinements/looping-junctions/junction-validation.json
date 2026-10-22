@@ -1,0 +1,284 @@
+{
+  "asset": "Heart_04_CardiacLooping",
+  "status": "draft_not_installed",
+  "geometryChecks": [
+    {
+      "part": "ArterialBranch_L",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "ArterialBranch_R",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_AVCanal_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_AVCanal_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_AVCanal_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_AVCanal_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_AVCanal_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_AVCanal_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_BulbusCordis_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_BulbusCordis_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_BulbusCordis_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_BulbusCordis_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_BulbusCordis_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_BulbusCordis_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_PrimitiveAtrium_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_PrimitiveAtrium_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_PrimitiveAtrium_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_PrimitiveAtrium_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_PrimitiveAtrium_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_PrimitiveAtrium_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_PrimitiveVentricle_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_PrimitiveVentricle_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_PrimitiveVentricle_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_PrimitiveVentricle_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_PrimitiveVentricle_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_PrimitiveVentricle_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_SinusVenosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_SinusVenosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_SinusVenosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_SinusVenosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_SinusVenosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_SinusVenosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_TruncusArteriosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "CardiacJelly_TruncusArteriosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_TruncusArteriosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Endocardium_TruncusArteriosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_TruncusArteriosus_Anterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "Myocardium_TruncusArteriosus_Posterior",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "VenousInflow_L",
+      "watertight": true,
+      "positiveVolume": true
+    },
+    {
+      "part": "VenousInflow_R",
+      "watertight": true,
+      "positiveVolume": true
+    }
+  ],
+  "junctionChecks": [
+    {
+      "junction": "ArterialBranch_R",
+      "probes": 850,
+      "blockedProbes": 0,
+      "firstFailures": [],
+      "changedParts": [
+        "ArterialBranch_L",
+        "CardiacJelly_TruncusArteriosus_Posterior",
+        "Endocardium_TruncusArteriosus_Posterior",
+        "Myocardium_TruncusArteriosus_Posterior"
+      ]
+    },
+    {
+      "junction": "VenousInflow_R",
+      "probes": 850,
+      "blockedProbes": 0,
+      "firstFailures": [],
+      "changedParts": [
+        "Endocardium_PrimitiveAtrium_Posterior",
+        "Myocardium_PrimitiveAtrium_Posterior",
+        "CardiacJelly_SinusVenosus_Anterior",
+        "CardiacJelly_SinusVenosus_Posterior",
+        "Endocardium_SinusVenosus_Anterior",
+        "Endocardium_SinusVenosus_Posterior",
+        "Myocardium_SinusVenosus_Anterior",
+        "Myocardium_SinusVenosus_Posterior",
+        "Myocardium_TruncusArteriosus_Posterior",
+        "VenousInflow_L"
+      ]
+    },
+    {
+      "junction": "ArterialBranch_L",
+      "probes": 850,
+      "blockedProbes": 0,
+      "firstFailures": [],
+      "changedParts": [
+        "ArterialBranch_R"
+      ]
+    },
+    {
+      "junction": "VenousInflow_L",
+      "probes": 850,
+      "blockedProbes": 0,
+      "firstFailures": [],
+      "changedParts": [
+        "CardiacJelly_PrimitiveAtrium_Posterior",
+        "Endocardium_PrimitiveAtrium_Posterior",
+        "CardiacJelly_SinusVenosus_Anterior",
+        "CardiacJelly_SinusVenosus_Posterior",
+        "Endocardium_SinusVenosus_Anterior",
+        "Endocardium_SinusVenosus_Posterior",
+        "Myocardium_SinusVenosus_Anterior",
+        "Myocardium_SinusVenosus_Posterior",
+        "VenousInflow_R"
+      ]
+    }
+  ],
+  "patencyPassed": true,
+  "remainingBlockers": [
+    "Continuous endocardial lining through reconstructed junction collars is not yet established.",
+    "Whole-heart lumen and chamber geometry still need stage-matched review.",
+    "This silhouette is not a specimen reconstruction; layer proportions are illustrative."
+  ],
+  "source": "../layered-tissue/Heart_04_CardiacLooping.blend",
+  "materialChanges": {
+    "normalReliefMultiplier": 0.22,
+    "roughnessOffset": 0.09,
+    "purpose": "Reduce exaggerated mottled highlights; artistic material adjustment, not a histological reconstruction."
+  },
+  "exportChecks": {
+    "meshCount": 40,
+    "partIDsRetained": true,
+    "portableMaps": 3,
+    "mapSize": 2048,
+    "passed": true
+  },
+  "usdzSHA256": "0f21a0ecc07e2a0abd569cf692560de1c39db200f1a524e56865edcb0845c75d"
+}

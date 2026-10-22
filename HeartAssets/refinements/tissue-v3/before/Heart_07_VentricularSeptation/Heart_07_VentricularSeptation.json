@@ -1,0 +1,247 @@
+{
+  "asset": "Heart_07_VentricularSeptation",
+  "batch": 4,
+  "status": "illustrative_prototype",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior; USD +Y cranial, +Z anterior. Outflow is a regional schematic, not a registered whole-heart coordinate system.",
+  "display_scale": "enlarged regional illustration, not embryo life size",
+  "states": [
+    {
+      "id": "open",
+      "label": "Open communication"
+    },
+    {
+      "id": "closed",
+      "label": "Septal closure"
+    }
+  ],
+  "defaultState": "open",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "VentricularWall_R_Anterior",
+      "label": "Right ventricular wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.035,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_R_Posterior",
+      "label": "Right ventricular wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_L_Anterior",
+      "label": "Left ventricular wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.035,
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "VentricularWall_L_Posterior",
+      "label": "Left ventricular wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.035,
+        0,
+        -0.055
+      ]
+    },
+    {
+      "id": "MuscularSeptum_Open",
+      "label": "Muscular ventricular septum \u2014 open communication",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.05,
+        -0.025,
+        0
+      ],
+      "state": "open"
+    },
+    {
+      "id": "MuscularSeptum_Closed",
+      "label": "Muscular ventricular septum \u2014 closure state",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.05,
+        -0.025,
+        0
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "AVSeptalContribution",
+      "label": "AV cushion contribution",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0,
+        0.025,
+        -0.035
+      ]
+    },
+    {
+      "id": "OutletSeptalContribution",
+      "label": "Proximal outlet cushion contribution",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0,
+        0.025,
+        0.035
+      ]
+    },
+    {
+      "id": "MembranousSeptum_Closed",
+      "label": "Membranous septal closure \u2014 enlarged teaching patch",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.05,
+        0.025,
+        0
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "SubaorticOutlet_Posterior",
+      "label": "Left ventricular subaortic outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.021500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "SubaorticOutlet_Anterior",
+      "label": "Left ventricular subaortic outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.021500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "SubpulmonaryOutlet_Posterior",
+      "label": "Right ventricular subpulmonary outlet \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.02,
+        -0.04
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "SubpulmonaryOutlet_Anterior",
+      "label": "Right ventricular subpulmonary outlet \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.021500000000000002,
+        0.02,
+        0.04
+      ],
+      "state": "closed"
+    },
+    {
+      "id": "Trabecula_R1",
+      "label": "Right ventricular trabecular ridge 1",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_R2",
+      "label": "Right ventricular trabecular ridge 2",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_R3",
+      "label": "Right ventricular trabecular ridge 3",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        -0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L1",
+      "label": "Left ventricular trabecular ridge 1",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L2",
+      "label": "Left ventricular trabecular ridge 2",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "Trabecula_L3",
+      "label": "Left ventricular trabecular ridge 3",
+      "category": "anatomy",
+      "parent": "Heart_07_VentricularSeptation",
+      "separationOffset": [
+        0.04,
+        0,
+        -0.035
+      ]
+    }
+  ],
+  "limitations": [
+    "Discrete structural snapshots; no tissue-growth, blood-flow or flap animation",
+    "Simplified regional anatomy with exaggerated thickness; requires expert teaching review",
+    "No atria, coronary arteries, arch branches or complete venous connections",
+    "Ventricular outlet alignment and outflow twist are illustrative, not exact human staging",
+    "Semilunar structures are rounded primordia, not functional mature valve leaflets"
+  ],
+  "triangles": 52632
+}

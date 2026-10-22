@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_06_EndocardialCushions",
+  "passed": true,
+  "parts": 8,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "d7cc65c0fea686b7ebc5757b9606a2cb94a62ef95b6ee7b26c253801a43d758a",
+  "anatomicallyValidated": false
+}

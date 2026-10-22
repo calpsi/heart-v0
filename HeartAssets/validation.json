@@ -1,0 +1,1953 @@
+[
+  {
+    "asset": "Heart_01_CardiogenicRegion",
+    "mesh_count": 5,
+    "triangles": 49828,
+    "embedded_textures": 3,
+    "usdz_bytes": 8462049,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Endoderm_Context",
+        "triangles": 7520,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "NeuralPlate_Context",
+        "triangles": 7520,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiogenicCrescent",
+        "triangles": 11596,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AngioblasticCord_L",
+        "triangles": 11596,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AngioblasticCord_R",
+        "triangles": 11596,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_02_PairedHeartTubes",
+    "mesh_count": 13,
+    "triangles": 324320,
+    "embedded_textures": 3,
+    "usdz_bytes": 22434555,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Endoderm_Context",
+        "triangles": 7520,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_L_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_L_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_L_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_L_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_L_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_L_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_R_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_R_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_R_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_R_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_R_Posterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_R_Anterior",
+        "triangles": 26400,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_03_PrimitiveHeartTube",
+    "mesh_count": 36,
+    "triangles": 242112,
+    "embedded_textures": 3,
+    "usdz_bytes": 18875911,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Myocardium_SinusVenosus_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_SinusVenosus_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Posterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Anterior",
+        "triangles": 6072,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_AVCanal_Posterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_AVCanal_Anterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Posterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Anterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_AVCanal_Posterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_AVCanal_Anterior",
+        "triangles": 3328,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Posterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Anterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Posterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Anterior",
+        "triangles": 9600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Posterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Anterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Posterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Anterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Posterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Anterior",
+        "triangles": 8816,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Posterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Anterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Posterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Anterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Posterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Anterior",
+        "triangles": 6464,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_04_CardiacLooping",
+    "mesh_count": 40,
+    "triangles": 349062,
+    "embedded_textures": 3,
+    "usdz_bytes": 24369075,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Myocardium_SinusVenosus_Posterior",
+        "triangles": 5896,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_SinusVenosus_Anterior",
+        "triangles": 7502,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Posterior",
+        "triangles": 5332,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_SinusVenosus_Anterior",
+        "triangles": 7358,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Posterior",
+        "triangles": 5056,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_SinusVenosus_Anterior",
+        "triangles": 7308,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Posterior",
+        "triangles": 8270,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveAtrium_Anterior",
+        "triangles": 7704,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Posterior",
+        "triangles": 8578,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveAtrium_Anterior",
+        "triangles": 8272,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Posterior",
+        "triangles": 8590,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveAtrium_Anterior",
+        "triangles": 8364,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_AVCanal_Posterior",
+        "triangles": 8206,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_AVCanal_Anterior",
+        "triangles": 9498,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Posterior",
+        "triangles": 7550,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_AVCanal_Anterior",
+        "triangles": 9390,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_AVCanal_Posterior",
+        "triangles": 7182,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_AVCanal_Anterior",
+        "triangles": 9412,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Posterior",
+        "triangles": 10386,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_PrimitiveVentricle_Anterior",
+        "triangles": 11834,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Posterior",
+        "triangles": 10902,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_PrimitiveVentricle_Anterior",
+        "triangles": 12152,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Posterior",
+        "triangles": 10956,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_PrimitiveVentricle_Anterior",
+        "triangles": 12240,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Posterior",
+        "triangles": 12132,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_BulbusCordis_Anterior",
+        "triangles": 11700,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Posterior",
+        "triangles": 12558,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_BulbusCordis_Anterior",
+        "triangles": 11494,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Posterior",
+        "triangles": 12688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_BulbusCordis_Anterior",
+        "triangles": 11464,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Posterior",
+        "triangles": 9540,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Myocardium_TruncusArteriosus_Anterior",
+        "triangles": 7084,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Posterior",
+        "triangles": 9302,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CardiacJelly_TruncusArteriosus_Anterior",
+        "triangles": 6194,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Posterior",
+        "triangles": 11214,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Endocardium_TruncusArteriosus_Anterior",
+        "triangles": 5786,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ArterialBranch_R",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VenousInflow_R",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ArterialBranch_L",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VenousInflow_L",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_05_AtrialSeptation",
+    "mesh_count": 9,
+    "triangles": 40376,
+    "embedded_textures": 3,
+    "usdz_bytes": 8565463,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "AtrialWall_Anterior",
+        "triangles": 5894,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_Posterior",
+        "triangles": 5894,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AVCanalWall_Posterior",
+        "triangles": 1620,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AVCanalWall_Anterior",
+        "triangles": 1620,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionAnchor_Ventral",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionAnchor_Dorsal",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SeptumPrimum_Early",
+        "triangles": 4382,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SeptumPrimum_Later",
+        "triangles": 6372,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SeptumSecundum_Later",
+        "triangles": 4610,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_06_EndocardialCushions",
+    "mesh_count": 8,
+    "triangles": 26552,
+    "embedded_textures": 3,
+    "usdz_bytes": 7684946,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "AVCanalWall_Posterior",
+        "triangles": 1620,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AVCanalWall_Anterior",
+        "triangles": 1620,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LateralCushion_R",
+        "triangles": 4694,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LateralCushion_L",
+        "triangles": 4694,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionSuperior_Unfused",
+        "triangles": 4350,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionInferior_Unfused",
+        "triangles": 4350,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionSuperior_Fused",
+        "triangles": 2612,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "CushionInferior_Fused",
+        "triangles": 2612,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_07_VentricularSeptation",
+    "mesh_count": 19,
+    "triangles": 124424,
+    "embedded_textures": 3,
+    "usdz_bytes": 12541506,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "VentricularWall_R_Anterior",
+        "triangles": 4840,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Posterior",
+        "triangles": 4450,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Anterior",
+        "triangles": 4840,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Posterior",
+        "triangles": 4450,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MuscularSeptum_Open",
+        "triangles": 4094,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MuscularSeptum_Closed",
+        "triangles": 4094,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AVSeptalContribution",
+        "triangles": 1006,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "OutletSeptalContribution",
+        "triangles": 954,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MembranousSeptum_Closed",
+        "triangles": 1600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubaorticOutlet_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubaorticOutlet_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubpulmonaryOutlet_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubpulmonaryOutlet_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R1",
+        "triangles": 16308,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R2",
+        "triangles": 15468,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R3",
+        "triangles": 15152,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L1",
+        "triangles": 15988,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L2",
+        "triangles": 15092,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L3",
+        "triangles": 14792,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_08_OutflowSeptation",
+    "mesh_count": 20,
+    "triangles": 78832,
+    "embedded_textures": 3,
+    "usdz_bytes": 10228446,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "OutflowWall_Posterior",
+        "triangles": 10176,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "OutflowWall_Anterior",
+        "triangles": 10176,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SeptalRidge_Ridges",
+        "triangles": 3116,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SeptalRidge_Divided",
+        "triangles": 516,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ParietalRidge_Ridges",
+        "triangles": 3116,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ParietalRidge_Divided",
+        "triangles": 516,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticTrunk_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticTrunk_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCuspPrimordium_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCuspPrimordium_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCuspPrimordium_3",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryCuspPrimordium_3",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "NeuralCrestMarker_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "NeuralCrestMarker_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "NeuralCrestMarker_3",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "NeuralCrestMarker_4",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_09_ValvularRefinement",
+    "mesh_count": 51,
+    "triangles": 75768,
+    "embedded_textures": 3,
+    "usdz_bytes": 10141359,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "MitralAnnulus_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralAnnulus_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralWall_Anterior",
+        "triangles": 3996,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralWall_Posterior",
+        "triangles": 3996,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Mitral_Anterior_Cushions",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Mitral_Anterior_Refined",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Mitral_Posterior_Cushions",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Mitral_Posterior_Refined",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralPapillary_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralPapillary_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralChord_1_1",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralChord_1_2",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralChord_2_1",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MitralChord_2_2",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidAnnulus_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidAnnulus_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidWall_Anterior",
+        "triangles": 3996,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidWall_Posterior",
+        "triangles": 3996,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Anterior_Cushions",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Anterior_Refined",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Posterior_Cushions",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Posterior_Refined",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Septal_Cushions",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Tricuspid_Septal_Refined",
+        "triangles": 1096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidPapillary_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidPapillary_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidPapillary_3",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_1_1",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_1_2",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_2_1",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_2_2",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_3_1",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidChord_3_2",
+        "triangles": 44,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticAnnulus_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticAnnulus_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aortic_Cusp1_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ventricularis_AorticCusp1_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Spongiosa_AorticCusp1_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Fibrosa_AorticCusp1_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aortic_Cusp2_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aortic_Cusp2_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aortic_Cusp3_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aortic_Cusp3_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryAnnulus_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryAnnulus_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp1_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp1_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp2_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp2_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp3_Cushions",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Pulmonary_Cusp3_Refined",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_10_CirculatoryTransition",
+    "mesh_count": 23,
+    "triangles": 90282,
+    "embedded_textures": 3,
+    "usdz_bytes": 10341636,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "AtriumWall_R_Anterior",
+        "triangles": 4090,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtriumWall_R_Posterior",
+        "triangles": 4018,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtriumWall_L_Anterior",
+        "triangles": 4102,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtriumWall_L_Posterior",
+        "triangles": 4030,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricleWall_R_Anterior",
+        "triangles": 4710,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricleWall_R_Posterior",
+        "triangles": 4018,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricleWall_L_Anterior",
+        "triangles": 4714,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricleWall_L_Posterior",
+        "triangles": 4022,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularSeptum",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialSeptum",
+        "triangles": 6108,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ForamenFlap_Fetal",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "ForamenFlap_Transition",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aorta",
+        "triangles": 7630,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryArtery",
+        "triangles": 5960,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryArtery",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ductus_Fetal",
+        "triangles": 3968,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ductus_Transition",
+        "triangles": 3968,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Lung_R",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Lung_L",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_11_VentricularSeptalDefect",
+    "mesh_count": 22,
+    "triangles": 129786,
+    "embedded_textures": 3,
+    "usdz_bytes": 12880419,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "VentricularWall_R_Anterior",
+        "triangles": 4840,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Posterior",
+        "triangles": 4450,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Anterior",
+        "triangles": 4840,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Posterior",
+        "triangles": 4450,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MuscularSeptum_Open",
+        "triangles": 4094,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AVSeptalContribution",
+        "triangles": 1006,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "OutletSeptalContribution",
+        "triangles": 954,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "MembranousSeptum_Closed",
+        "triangles": 1600,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubaorticOutlet_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubaorticOutlet_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubpulmonaryOutlet_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SubpulmonaryOutlet_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R1",
+        "triangles": 16308,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R2",
+        "triangles": 15468,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_R3",
+        "triangles": 15152,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L1",
+        "triangles": 15988,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L2",
+        "triangles": 15092,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Trabecula_L3",
+        "triangles": 14792,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCusp_1",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCusp_2",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticCusp_3",
+        "triangles": 1488,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "TricuspidSeptalLeaflet",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_12_AtrialSeptalDefect",
+    "mesh_count": 19,
+    "triangles": 55302,
+    "embedded_textures": 3,
+    "usdz_bytes": 8852250,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "AtrialWall_R_Anterior",
+        "triangles": 4310,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_R_Posterior",
+        "triangles": 5348,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_L_Anterior",
+        "triangles": 4194,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_L_Posterior",
+        "triangles": 3902,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialSeptalRim",
+        "triangles": 5052,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "FossaFloor_Defect",
+        "triangles": 4944,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "FossaFloor_Intact",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SuperiorCavalMouth_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "SuperiorCavalMouth_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "InferiorCavalMouth_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "InferiorCavalMouth_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPectinate_1",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPectinate_2",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPectinate_3",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPectinate_4",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_13_TetralogyOfFallot",
+    "mesh_count": 28,
+    "triangles": 83440,
+    "embedded_textures": 3,
+    "usdz_bytes": 10362155,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Aorta_Fallot",
+        "triangles": 6528,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Fallot",
+        "triangles": 5536,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Fallot",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Fallot_Anterior",
+        "triangles": 5026,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Fallot_Posterior",
+        "triangles": 4970,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Fallot_Anterior",
+        "triangles": 3872,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Fallot_Posterior",
+        "triangles": 5008,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularSeptum_Fallot",
+        "triangles": 5196,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Fallot_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Fallot_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Fallot_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Fallot_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RVOutflow_Fallot_Posterior",
+        "triangles": 980,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RVOutflow_Fallot_Anterior",
+        "triangles": 980,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aorta_Normal_Fallot",
+        "triangles": 6528,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Normal_Fallot",
+        "triangles": 5588,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Normal_Fallot",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Normal_Fallot_Anterior",
+        "triangles": 4682,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Normal_Fallot_Posterior",
+        "triangles": 4754,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Normal_Fallot_Anterior",
+        "triangles": 3848,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Normal_Fallot_Posterior",
+        "triangles": 5024,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularSeptum_Normal_Fallot",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Normal_Fallot_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV_Normal_Fallot_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Normal_Fallot_Posterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV_Normal_Fallot_Anterior",
+        "triangles": 324,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RVOutflow_Normal_Fallot_Posterior",
+        "triangles": 980,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RVOutflow_Normal_Fallot_Anterior",
+        "triangles": 980,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_14_TranspositionGreatArteries",
+    "mesh_count": 24,
+    "triangles": 113344,
+    "embedded_textures": 3,
+    "usdz_bytes": 12038335,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Aorta_Tga",
+        "triangles": 7808,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Tga",
+        "triangles": 5452,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Tga",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Tga_Anterior",
+        "triangles": 4666,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Tga_Posterior",
+        "triangles": 4716,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Tga_Anterior",
+        "triangles": 3804,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Tga_Posterior",
+        "triangles": 5362,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularSeptum_Tga",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Aorta_Normal",
+        "triangles": 6528,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Normal",
+        "triangles": 5514,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Normal",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Normal_Anterior",
+        "triangles": 4674,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_R_Normal_Posterior",
+        "triangles": 4716,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Normal_Anterior",
+        "triangles": 3848,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularWall_L_Normal_Posterior",
+        "triangles": 5592,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "VentricularSeptum_Normal",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_R_Anterior",
+        "triangles": 4596,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_R_Posterior",
+        "triangles": 3544,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_L_Anterior",
+        "triangles": 4596,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialWall_L_Posterior",
+        "triangles": 3544,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialSeptum_Tga",
+        "triangles": 6096,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AtrialSeptum_Normal",
+        "triangles": 4992,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightAV",
+        "triangles": 3968,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftAV",
+        "triangles": 3968,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_15_AorticCoarctation",
+    "mesh_count": 17,
+    "triangles": 63208,
+    "embedded_textures": 3,
+    "usdz_bytes": 9153621,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Brachiocephalic_Posterior",
+        "triangles": 1218,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Brachiocephalic_Anterior",
+        "triangles": 1358,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftCarotid_Posterior",
+        "triangles": 898,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftCarotid_Anterior",
+        "triangles": 1002,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftSubclavian_Posterior",
+        "triangles": 1210,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftSubclavian_Anterior",
+        "triangles": 1352,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticArch_Posterior",
+        "triangles": 18376,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticArch_Anterior",
+        "triangles": 20398,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "DescendingAorta_Posterior",
+        "triangles": 1424,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "DescendingAorta_Anterior",
+        "triangles": 1592,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk",
+        "triangles": 5504,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Coarctation_Posterior",
+        "triangles": 1168,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Coarctation_Anterior",
+        "triangles": 1336,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Normal_Posterior",
+        "triangles": 1144,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Normal_Anterior",
+        "triangles": 1200,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ligamentum",
+        "triangles": 1340,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  {
+    "asset": "Heart_16_PatentDuctusArteriosus",
+    "mesh_count": 21,
+    "triangles": 75004,
+    "embedded_textures": 3,
+    "usdz_bytes": 9778592,
+    "metres_per_unit": 1,
+    "up_axis": "Y",
+    "parts": [
+      {
+        "id": "Brachiocephalic_Posterior",
+        "triangles": 1218,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Brachiocephalic_Anterior",
+        "triangles": 1358,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftCarotid_Posterior",
+        "triangles": 898,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftCarotid_Anterior",
+        "triangles": 1002,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftSubclavian_Posterior",
+        "triangles": 1210,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "LeftSubclavian_Anterior",
+        "triangles": 1352,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticArch_Posterior",
+        "triangles": 18376,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticArch_Anterior",
+        "triangles": 20398,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "DescendingAorta_Posterior",
+        "triangles": 1424,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "DescendingAorta_Anterior",
+        "triangles": 1592,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Patent_Posterior",
+        "triangles": 1144,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Patent_Anterior",
+        "triangles": 1540,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Patent",
+        "triangles": 5912,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Patent",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Closed_Posterior",
+        "triangles": 1144,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "AorticIsthmus_Closed_Anterior",
+        "triangles": 1200,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "PulmonaryTrunk_Closed",
+        "triangles": 5504,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "RightPulmonaryBranch_Closed",
+        "triangles": 2688,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ductus_Patent_Posterior",
+        "triangles": 1424,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ductus_Patent_Anterior",
+        "triangles": 1592,
+        "nonmanifold_edges": 0
+      },
+      {
+        "id": "Ligamentum_Closed",
+        "triangles": 1340,
+        "nonmanifold_edges": 0
+      }
+    ]
+  }
+]

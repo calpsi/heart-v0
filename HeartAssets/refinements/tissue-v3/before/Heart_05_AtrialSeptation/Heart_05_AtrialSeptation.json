@@ -1,0 +1,132 @@
+{
+  "asset": "Heart_05_AtrialSeptation",
+  "batch": 3,
+  "status": "illustrative_prototype",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior. USD +Y cranial and +Z anterior.",
+  "display_scale": "enlarged regional teaching model; not embryo life size",
+  "states": [
+    {
+      "id": "early",
+      "label": "Early \u00b7 ostium primum"
+    },
+    {
+      "id": "later",
+      "label": "Later \u00b7 overlapping septa"
+    }
+  ],
+  "defaultState": "early",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "AtrialWall_Anterior",
+      "label": "Common atrial wall \u2014 anterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        0.065
+      ]
+    },
+    {
+      "id": "AtrialWall_Posterior",
+      "label": "Common atrial wall \u2014 posterior teaching panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        0,
+        -0.065
+      ]
+    },
+    {
+      "id": "AVCanalWall_Posterior",
+      "label": "Atrioventricular canal wall \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.025,
+        -0.055
+      ]
+    },
+    {
+      "id": "AVCanalWall_Anterior",
+      "label": "Atrioventricular canal wall \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.025,
+        0.055
+      ]
+    },
+    {
+      "id": "CushionAnchor_Ventral",
+      "label": "Endocardial cushion anchor \u2014 ventral",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.035,
+        0.025
+      ]
+    },
+    {
+      "id": "CushionAnchor_Dorsal",
+      "label": "Endocardial cushion anchor \u2014 dorsal",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0,
+        -0.035,
+        -0.025
+      ]
+    },
+    {
+      "id": "SeptumPrimum_Early",
+      "label": "Septum primum \u2014 ostium primum below free edge",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.045,
+        0.025,
+        0
+      ],
+      "state": "early"
+    },
+    {
+      "id": "SeptumPrimum_Later",
+      "label": "Septum primum \u2014 ostium secundum and open lower flap",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        0.05,
+        0,
+        0
+      ],
+      "state": "later"
+    },
+    {
+      "id": "SeptumSecundum_Later",
+      "label": "Septum secundum \u2014 incomplete rim of foramen ovale",
+      "category": "anatomy",
+      "parent": "Heart_05_AtrialSeptation",
+      "separationOffset": [
+        -0.05,
+        0,
+        0
+      ],
+      "state": "later"
+    }
+  ],
+  "limitations": [
+    "Focused regional anatomy, not a whole-heart reconstruction",
+    "Discrete structural snapshots; no continuous tissue growth or fluid simulation",
+    "Exaggerated tissue thickness and openings for inspection",
+    "Requires anatomical teaching review before assessed use"
+  ],
+  "triangles": 32864
+}

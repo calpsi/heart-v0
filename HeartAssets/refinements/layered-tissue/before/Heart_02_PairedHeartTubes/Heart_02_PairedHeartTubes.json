@@ -1,0 +1,103 @@
+{
+  "asset": "Heart_02_PairedHeartTubes",
+  "status": "original_educational_refinement",
+  "batch": 1,
+  "units": "metres",
+  "display_scale": "enlarged teaching model; not embryo life size",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +Z cranial, -Y viewing side; USD +Y cranial, +Z viewing side. L/R IDs denote anatomical sides in dorsal-style schematic view.",
+  "parts": [
+    {
+      "id": "Endoderm_Context",
+      "label": "Endoderm (schematic context)",
+      "category": "context",
+      "parent": "EmbryonicContext"
+    },
+    {
+      "id": "Myocardium_L_Posterior",
+      "label": "Myocardial mantle \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Myocardium_L_Anterior",
+      "label": "Myocardial mantle \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "CardiacJelly_L_Posterior",
+      "label": "Cardiac jelly \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "CardiacJelly_L_Anterior",
+      "label": "Cardiac jelly \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Endocardium_L_Posterior",
+      "label": "Endocardial lining \u2014 L, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Endocardium_L_Anterior",
+      "label": "Endocardial lining \u2014 L, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_L"
+    },
+    {
+      "id": "Myocardium_R_Posterior",
+      "label": "Myocardial mantle \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Myocardium_R_Anterior",
+      "label": "Myocardial mantle \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "CardiacJelly_R_Posterior",
+      "label": "Cardiac jelly \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "CardiacJelly_R_Anterior",
+      "label": "Cardiac jelly \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Endocardium_R_Posterior",
+      "label": "Endocardial lining \u2014 R, posterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    },
+    {
+      "id": "Endocardium_R_Anterior",
+      "label": "Endocardial lining \u2014 R, anterior panel",
+      "category": "anatomy",
+      "parent": "Tube_R"
+    }
+  ],
+  "triangles": 293216,
+  "revision": "tissue-v4",
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Rebuilt early tissue volumes and folded context"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism.",
+  "detailChanges": [
+    "Rounded exposed cut margins with preserved hollow lumens and removable tissue layers",
+    "Directional fine tissue grain and broader, less plastic surface highlights; three embedded PBR maps"
+  ]
+}

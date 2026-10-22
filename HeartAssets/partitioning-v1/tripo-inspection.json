@@ -1,0 +1,128 @@
+{
+  "source": "/Users/phillicia/Desktop/School/Spatial/aorta+3d+model",
+  "meshes": [
+    {
+      "name": "tripo_node_4099c023",
+      "vertices": 964516,
+      "polygons": 1929044,
+      "uv_layers": 1,
+      "dimensions": [
+        0.5959778428077698,
+        0.3142243027687073,
+        0.97869873046875
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_mat_4099c023",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "values": {
+            "Metallic": 0.0,
+            "Roughness": 0.5,
+            "IOR": 1.5,
+            "Coat Weight": 0.0,
+            "Subsurface Weight": 0.0
+          }
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "aorta_3d_model_basecolor"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "aorta_3d_model_normal"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "aorta_3d_model_roughness"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.003",
+          "image": "aorta_3d_model_metallic"
+        }
+      ],
+      "links": [
+        "Principled BSDF.BSDF -> Material Output.Surface",
+        "Normal Map.Normal -> Principled BSDF.Normal",
+        "Image Texture.Color -> Principled BSDF.Base Color",
+        "Image Texture.001.Color -> Normal Map.Color",
+        "Image Texture.002.Color -> Principled BSDF.Roughness",
+        "Image Texture.003.Color -> Principled BSDF.Metallic"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "aorta_3d_model_basecolor",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "aorta_3d_model_metallic",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "aorta_3d_model_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "aorta_3d_model_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "texture_statistics": {
+    "aorta_3d_model_roughness.JPEG": {
+      "mean_8bit": [
+        11.581951141357422
+      ],
+      "extrema_8bit": [
+        [
+          0,
+          96
+        ]
+      ]
+    },
+    "aorta_3d_model_metallic.JPEG": {
+      "mean_8bit": [
+        2.795844078063965
+      ],
+      "extrema_8bit": [
+        [
+          0,
+          81
+        ]
+      ]
+    }
+  }
+}

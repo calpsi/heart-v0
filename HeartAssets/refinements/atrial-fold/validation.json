@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "asset": "Heart_05_AtrialSeptation",
+  "parts": [
+    {
+      "id": "AtrialWall_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AtrialWall_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AVCanalWall_Posterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AVCanalWall_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "CushionAnchor_Ventral",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "CushionAnchor_Dorsal",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumPrimum_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumPrimum_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "SeptumSecundum_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MesenchymalCap_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalMesenchymalProtrusion_Early",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "MesenchymalComplex_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "DorsalContribution_Later",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AtrialWall_Later_Anterior",
+      "closedPositiveVolume": true
+    },
+    {
+      "id": "AtrialWall_Later_Posterior",
+      "closedPositiveVolume": true
+    }
+  ],
+  "foldConnectedComponents": 1,
+  "grooveOpenToExterior": true,
+  "foldWallsBothSides": true,
+  "fetalCommunicationRouteClear": true,
+  "earlyOpeningProbes": 9,
+  "usdzSHA256": "f938d8f620d4a8a485f62569036572e785d86112460bdc49211e1d79c7679378",
+  "limitations": [
+    "Original enlarged regional geometry, not histologically measured",
+    "Venous entrances not reconstructed",
+    "Overlapping selectable interfaces are teaching cuts",
+    "Later fetal reference has no exact specimen registration"
+  ]
+}

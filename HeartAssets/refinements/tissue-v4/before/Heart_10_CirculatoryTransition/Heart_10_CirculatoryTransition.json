@@ -1,0 +1,298 @@
+{
+  "asset": "Heart_10_CirculatoryTransition",
+  "batch": 5,
+  "status": "original_educational_refinement",
+  "units": "metres",
+  "usd_up_axis": "Y",
+  "coordinate_note": "Blender +X anatomical left, +Z cranial, -Y anterior. USD +Y cranial, +Z anterior. Valve assemblies are spaced apart for teaching.",
+  "display_scale": "enlarged educational illustration, not patient or embryo dimensions",
+  "states": [
+    {
+      "id": "fetal",
+      "label": "Before birth"
+    },
+    {
+      "id": "transition",
+      "label": "After birth \u00b7 transitioning"
+    }
+  ],
+  "defaultState": "fetal",
+  "defaultCutaway": true,
+  "parts": [
+    {
+      "id": "AtriumWall_R_Anterior",
+      "label": "Right atrium wall \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.035,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "AtriumWall_R_Posterior",
+      "label": "Right atrium wall \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "AtriumWall_L_Anterior",
+      "label": "Left atrium wall \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.035,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "AtriumWall_L_Posterior",
+      "label": "Left atrium wall \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.035,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "VentricleWall_R_Anterior",
+      "label": "Right ventricle wall \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.035,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "VentricleWall_R_Posterior",
+      "label": "Right ventricle wall \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.035,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "VentricleWall_L_Anterior",
+      "label": "Left ventricle wall \u2014 anterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.035,
+        0,
+        0.05
+      ]
+    },
+    {
+      "id": "VentricleWall_L_Posterior",
+      "label": "Left ventricle wall \u2014 posterior cut",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.035,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "VentricularSeptum",
+      "label": "Ventricular septum",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.045,
+        -0.015,
+        0
+      ]
+    },
+    {
+      "id": "AtrialSeptum",
+      "label": "Atrial septal rim around foramen ovale",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.04,
+        0.025,
+        0
+      ]
+    },
+    {
+      "id": "ForamenFlap_Fetal",
+      "label": "Foramen ovale flap \u2014 open toward left atrium",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.065,
+        0,
+        0
+      ],
+      "state": "fetal"
+    },
+    {
+      "id": "ForamenFlap_Transition",
+      "label": "Foramen ovale flap \u2014 apposed after birth",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.065,
+        0,
+        0
+      ],
+      "state": "transition"
+    },
+    {
+      "id": "RightAV_Posterior",
+      "label": "RightAV junction \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.024,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "RightAV_Anterior",
+      "label": "RightAV junction \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.024,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "LeftAV_Posterior",
+      "label": "LeftAV junction \u2014 posterior panel",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.024,
+        0.02,
+        -0.04
+      ]
+    },
+    {
+      "id": "LeftAV_Anterior",
+      "label": "LeftAV junction \u2014 anterior panel",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.024,
+        0.02,
+        0.04
+      ]
+    },
+    {
+      "id": "Aorta",
+      "label": "Ascending aorta, arch and descending segment",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.05,
+        0.035,
+        -0.025
+      ]
+    },
+    {
+      "id": "PulmonaryArtery",
+      "label": "Pulmonary trunk and left pulmonary branch",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.045,
+        0.025,
+        0.03
+      ]
+    },
+    {
+      "id": "RightPulmonaryArtery",
+      "label": "Right pulmonary artery",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.05,
+        0.01,
+        -0.03
+      ]
+    },
+    {
+      "id": "Ductus_Fetal",
+      "label": "Ductus arteriosus \u2014 patent fetal lumen",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.055,
+        0.05,
+        0.035
+      ],
+      "state": "fetal"
+    },
+    {
+      "id": "Ductus_Transition",
+      "label": "Ductus arteriosus \u2014 constricting, still patent",
+      "category": "anatomy",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.055,
+        0.05,
+        0.035
+      ],
+      "state": "transition"
+    },
+    {
+      "id": "Lung_R",
+      "label": "Right lung (orientation context)",
+      "category": "context",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        -0.05,
+        0,
+        -0.03
+      ]
+    },
+    {
+      "id": "Lung_L",
+      "label": "Left lung (orientation context)",
+      "category": "context",
+      "parent": "Heart_10_CirculatoryTransition",
+      "separationOffset": [
+        0.05,
+        0,
+        -0.03
+      ]
+    }
+  ],
+  "limitations": [
+    "Discrete illustrative states; no flow, pressure, contraction or inflation simulation",
+    "Exaggerated wall/leaflet thickness and simplified spatial relationships; anatomical review required",
+    "Birth model omits complete pulmonary venous/systemic returns, coronary vessels and arch branches",
+    "Ductus narrowing and flap apposition depict different aspects of a gradual transition, not simultaneous complete anatomical closure",
+    "Three-layer cusp segmentation is a simplified teaching section, not histology"
+  ],
+  "triangles": 77946,
+  "revision": "tissue-v3",
+  "contourRefinement": true,
+  "appearanceChanges": [
+    "Embedded 2048px colour, roughness and tangent-normal atlases baked from continuous 3D tissue fields",
+    "Irregular warm tissue mottling and fine surface relief",
+    "Nonmetallic moist highlights",
+    "UV coverage on every surface; original selectable part IDs retained",
+    "Coherent organic contour refinement; existing anatomical topology and diagnostic openings retained"
+  ],
+  "appearanceLimit": "Illustrative tissue finish, not specimen-derived or anatomically validated photorealism."
+}

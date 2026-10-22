@@ -1,0 +1,150 @@
+[
+  {
+    "asset": "WholeHeart_01_Week04_LoopedHeart",
+    "fbx_meshes": 4,
+    "fbx_material_connections": {
+      "Whole_ArterialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_AtrialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_Myocardium": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_VenousTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ]
+    },
+    "usd_up": "Y",
+    "usd_metres_per_unit": 1.0,
+    "status": "passed"
+  },
+  {
+    "asset": "WholeHeart_02_Weeks05-06_Remodeling",
+    "fbx_meshes": 6,
+    "fbx_material_connections": {
+      "Whole_ArterialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_AtrialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_Myocardium": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_VenousTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ]
+    },
+    "usd_up": "Y",
+    "usd_metres_per_unit": 1.0,
+    "status": "passed"
+  },
+  {
+    "asset": "WholeHeart_03_Week07_SeparatedOutflows",
+    "fbx_meshes": 12,
+    "fbx_material_connections": {
+      "Whole_ArterialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_AtrialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_Myocardium": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_VenousTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ]
+    },
+    "usd_up": "Y",
+    "usd_metres_per_unit": 1.0,
+    "status": "passed"
+  },
+  {
+    "asset": "WholeHeart_04_Week08_FourChamberExterior",
+    "fbx_meshes": 12,
+    "fbx_material_connections": {
+      "Whole_ArterialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_AtrialTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_Myocardium": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ],
+      "Whole_VenousTissue": [
+        "Surface",
+        "Normal",
+        "Base Color",
+        "Color",
+        "Roughness"
+      ]
+    },
+    "usd_up": "Y",
+    "usd_metres_per_unit": 1.0,
+    "status": "passed"
+  }
+]

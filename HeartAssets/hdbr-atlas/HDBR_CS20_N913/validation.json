@@ -1,0 +1,68 @@
+{
+  "asset": "HDBR_CS20_N913",
+  "passed": true,
+  "sourceFile": "CS20-heart.glb",
+  "sourceSHA256": "891da43b694cc1232a2b4c232dfaa179d3512329f00bc5ce24937712339ef1e7",
+  "parts": [
+    {
+      "id": "CS20_CS20_913_left_ventricle",
+      "source": "CS20-913-left-ventricle",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 50401
+    },
+    {
+      "id": "CS20_CS20_N913_aorta",
+      "source": "CS20_N913_aorta",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 25143
+    },
+    {
+      "id": "CS20_CS20_N913_ductus_arteriosus",
+      "source": "CS20_N913_ductus-arteriosus",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 2396
+    },
+    {
+      "id": "CS20_CS20_N913_left_atrium",
+      "source": "CS20_N913_left-atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 40790
+    },
+    {
+      "id": "CS20_CS20_N913_outflow",
+      "source": "CS20_N913_outflow",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 11672
+    },
+    {
+      "id": "CS20_CS20_N913_pulmonary",
+      "source": "CS20_N913_pulmonary",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 12050
+    },
+    {
+      "id": "CS20_CS20_N913_right_atrium",
+      "source": "CS20_N913_right-atrium",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 35269
+    },
+    {
+      "id": "CS20_CS20_N913_right_ventricle_surf",
+      "source": "CS20_N913_right-ventricle.surf",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 43570
+    },
+    {
+      "id": "CS20_CS20_N913_veins",
+      "source": "CS20_N913_veins",
+      "vertexCoordinatesUnchanged": true,
+      "triangles": 15060
+    }
+  ],
+  "exportedMeshes": 9,
+  "uniformDisplayScale": 0.00048807160329764103,
+  "specimenScalePreserved": false,
+  "anatomicalStatus": "Source-derived stage-labelled regional reconstruction; source limitations retained; not a full tissue-layer model",
+  "license": "CC BY-NC-SA 4.0",
+  "usdzSHA256": "5a50ae2ad8e23a1371e52dfba1f9697ae18cfc0d51e00146575213c3132fc231"
+}

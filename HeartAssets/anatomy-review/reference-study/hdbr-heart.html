@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/hdbr-atlas-template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF584127QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VF584127QN');
+</script>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HDBR Atlas</title>
+
+ <link href="/style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Embryonic Heart Models</title>
+<meta name="description" content="3D interactive models of human embryonic hearts.">
+<link rel="stylesheet" href="../interactivestyle.css">
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="/modal.css">
+<link rel="stylesheet" href="/interactivestyle-fullpage.css">
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+
+<!-- ==========================================
+     COOKIE CONSENT / GOOGLE ANALYTICS
+     ========================================== -->
+
+<script>
+(function () {
+
+    const CONSENT_COOKIE = "hdbr_cookie_consent";
+    const CONSENT_DAYS = 180;
+    const GA_ID = "G-VF584127QN";
+
+    /*
+     * Read existing consent
+     */
+    function getConsent() {
+
+        const cookies = document.cookie.split("; ");
+
+        const cookie = cookies.find(function (item) {
+            return item.startsWith(CONSENT_COOKIE + "=");
+        });
+
+        if (!cookie) {
+            return null;
+        }
+
+        return decodeURIComponent(
+            cookie.substring(CONSENT_COOKIE.length + 1)
+        );
+    }
+
+
+    /*
+     * Store consent
+     */
+    function setConsent(value) {
+
+        const maxAge =
+            CONSENT_DAYS * 24 * 60 * 60;
+
+        document.cookie =
+            CONSENT_COOKIE +
+            "=" +
+            encodeURIComponent(value) +
+            "; Max-Age=" +
+            maxAge +
+            "; Path=/" +
+            "; SameSite=Lax" +
+            "; Secure";
+    }
+
+
+    /*
+     * Load Google Analytics ONLY after consent.
+     *
+     * This is deliberately not loaded when the
+     * page first opens.
+     */
+    function loadGoogleAnalytics() {
+
+        if (window.hdbrGoogleAnalyticsLoaded) {
+            return;
+        }
+
+        window.hdbrGoogleAnalyticsLoaded = true;
+
+        /*
+         * Create gtag function
+         */
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        window.gtag = gtag;
+
+
+        /*
+         * Set consent AFTER the visitor has
+         * explicitly accepted.
+         */
+        gtag("consent", "update", {
+            analytics_storage: "granted"
+        });
+
+
+        /*
+         * Load Google's tag
+         */
+        const script =
+            document.createElement("script");
+
+        script.async = true;
+
+        script.src =
+            "https://www.googletagmanager.com/gtag/js?id=" +
+            GA_ID;
+
+        document.head.appendChild(script);
+
+
+        /*
+         * Configure GA4 once the tag has loaded.
+         */
+        script.onload = function () {
+
+            gtag("js", new Date());
+
+            gtag("config", GA_ID);
+
+        };
+
+    }
+
+
+    /*
+     * Make functions available to the cookie
+     * banner later in the page.
+     */
+    window.hdbrCookieConsent = {
+
+        getConsent: getConsent,
+
+        setConsent: setConsent,
+
+        accept: function () {
+
+            setConsent("accepted");
+
+            loadGoogleAnalytics();
+
+        },
+
+        refuseAnalytics: function () {
+
+            setConsent("necessary");
+
+        }
+
+    };
+
+
+    /*
+     * If the visitor has already consented,
+     * load Analytics.
+     */
+    if (getConsent() === "accepted") {
+
+        loadGoogleAnalytics();
+
+    }
+
+})();
+</script>
+	
+	
+<!-- InstanceBeginEditable name="Head Editable" -->
+	
+<!-- InstanceEndEditable -->	
+</head>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ==========================================
+       NAVIGATION DROPDOWN
+       ========================================== */
+
+    const navButton =
+        document.querySelector(".dropdown-button");
+
+    const navMenu =
+        document.querySelector(".dropdown-menu");
+
+
+    if (navButton && navMenu) {
+
+        navButton.addEventListener(
+            "click",
+            function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                if (navMenu.style.display === "block") {
+
+                    navMenu.style.display = "none";
+
+                } else {
+
+                    navMenu.style.display = "block";
+
+                }
+
+            }
+        );
+
+
+        document.addEventListener(
+            "click",
+            function () {
+
+                navMenu.style.display = "none";
+
+            }
+        );
+
+    }
+
+});
+
+</script>
+
+<body>
+
+
+
+<!-- ==========================================
+     COOKIE BANNER
+     ========================================== -->
+
+<div
+    id="cookieBanner"
+    class="cookie-banner"
+    role="dialog"
+    aria-labelledby="cookieBannerTitle"
+    aria-describedby="cookieBannerText"
+    hidden
+>
+
+    <div class="cookie-banner-inner">
+
+        <div class="cookie-banner-text">
+
+            <strong id="cookieBannerTitle">
+                We use cookies
+            </strong>
+
+            <span id="cookieBannerText">
+            We use cookies to understand which aspects of the HDBR Atlas visitors find most useful and to help us make improvements to the website. 
+                
+        </span>
+
+        </div>
+
+
+        <div class="cookie-banner-buttons">
+
+            <button
+                type="button"
+                id="cookieSettingsButton"
+                class="cookie-button cookie-button-settings"
+            >
+                Cookie settings
+            </button>
+
+            <button
+                type="button"
+                id="cookieAcceptButton"
+                class="cookie-button cookie-button-accept"
+            >
+                Accept analytics cookies
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     COOKIE SETTINGS MODAL
+     ========================================================= -->
+
+<div
+    id="cookieModal"
+    class="cookie-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookieModalTitle"
+    hidden
+>
+
+    <div class="cookie-modal-box">
+
+        <button
+            type="button"
+            id="cookieModalClose"
+            class="cookie-modal-close"
+            aria-label="Close cookie settings"
+        >
+            &times;
+        </button>
+
+
+        <h2 id="cookieModalTitle">
+            Cookie settings
+        </h2>
+
+
+        <p>
+            We use cookies to understand how visitors
+            use the HDBR Atlas and to help us improve
+            the website.
+        </p>
+
+
+        <div class="cookie-setting">
+
+            <div class="cookie-setting-header">
+
+                <div>
+
+                    <h3>
+                        Google Analytics
+                    </h3>
+
+                    <p>
+                        These cookies help us understand
+                        which pages and resources are being
+                        used and how visitors interact with
+                        the Atlas.
+                    </p>
+
+                </div>
+
+
+                <label class="cookie-switch">
+
+                    <input
+                        type="checkbox"
+                        id="analyticsCookies"
+                    >
+
+                    <span class="cookie-slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="cookie-modal-buttons">
+
+            <button
+                type="button"
+                id="cookieSaveButton"
+                class="cookie-button cookie-button-accept"
+            >
+                Save preferences
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="topbar">
+
+        <div class="site-logo">
+            <a href="index.html">
+                <img src="../redesign/images/HDBRAtlaslogo.png"
+                     alt="HDBR Atlas">
+            </a>
+        </div>
+
+        <div class="partner-logos">
+            <img src="../redesign/images/all_logos.png"
+                 alt="Partner organisations">
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar" aria-label="Main navigation">
+
+      <ul class="nav-links">
+
+            <li>
+                <a class="active" href="/index.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li class="dropdown">
+
+                <div class="dropdown-toggle">
+
+                   
+
+                    <button
+                        class="dropdown-button"
+                        type="button"
+                        aria-label="Open Atlas Resources menu"
+                        aria-expanded="false"
+                    >
+                      Atlas Resources ▼
+                    </button>
+
+                </div>
+
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="/ehistology.html">
+                            eHistology viewer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/embryonic-stages.html">
+                            Embryonic Stages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/fetal-stages.html">
+                            Fetal Stages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/organ-systems.html">
+                            Organ Systems
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/gene-expression.html"
+                           
+                          >
+                            Gene Expression
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/mouse-dev.html">
+                            Mouse Development
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/omics.html">
+                            Omics Data
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/animated-embryology.html">
+                            Animated Embryology
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/documentation.html">
+                            Documentation
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a href="/about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="https://hdbr.org"
+                   target="_blank"
+                   rel="noopener">
+                    HDBR.org
+                </a>
+            </li>
+
+            <li>
+                <a href="/contact.html">
+                    Contact Us
+                </a>
+            </li>
+
+            <li>
+                <a href="/links.html">
+                    External Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="/news.html">
+                    News
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Feedback
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+	
+	
+<!--
+===============================================================
+	BREADCRUMB
+===============================================================	
+-->
+	
+<div class="breadcrumb-container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+
+        <!-- InstanceBeginEditable name="breadcrumb" -->
+       <a href="/index.html">Home</a>
+<span class="separator">›</span>
+<a href="/organ-systems.html">Organ Systems</a>
+<span class="separator">›</span>
+	<a href="/organ-systems/cvs.html">Cardiovascular System</a>
+<span class="separator">›</span>
+		<a href="/organ-systems/cardiovascular-system/heart.html">Heart</a>
+<span class="separator">›</span>
+<span class="current">Interactive Heart Models</span>
+        <!-- InstanceEndEditable -->
+
+    </nav>
+</div>	
+	
+<!-- =========================================================
+     MAIN EDITABLE REGION
+========================================================= -->
+<!-- InstanceBeginEditable name="main-content" -->
+
+<!-- Import the component -->
+	<div class="page-content">
+	  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      
+      <table width="100%" border="0" align="center">
+	    <tr>
+    <td width="15%" valign="top" align="left">&nbsp;</td>
+    <td width="70%"><h1 align="center">Interactive heart models</h1></td>
+    <td width="15%">&nbsp;</td>
+  </tr>
+</table>
+<a name="top"></a>
+<p style="line-height: 1.5rem">The 3D heart models below illustrate the early development of the human embryonic heart. Individual cardiac chambers and the lumen of blood vessels have been manually defined in 3D embryo models as follows:
+
+Aorta and  pharyngeal arch arteries - dark red; Outflow tract - light purple; Pulmonary trunk (from CS17) - sky blue; Ductus arteriosus (from CS17) - dark purple; Common atrial chamber (CS11 and CS12) - bright pink; Left atrium - light red; Right atrium - light blue; Left ventricle - red; Right ventricle - blue; Epicardium - pale pink; Vena cava and sinus venosus - orange.</p>
+<!--<p style="line-height: 1.5rem">&nbsp;</p>-->
+
+<p>Interactive models are on the left with a movie of the same model within the body on the right. Click and hold to manipulate the interactive models. The mouse wheel can be used to zoom in and out.</p>
+<p>&nbsp;</p>
+<table width="1050" border="0" align="center">
+<tbody>
+
+
+
+<tr>
+<td width="500"><div align="center">
+<model-viewer id="reveal" loading="eager" bounds="tight" src="heart/cs11-662.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+  <a name="CS11">  <p style="color: #666666">CS11 - 662</p> </a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</div></td>
+<td width="50">&nbsp;</td>
+<td width="500"><video width="700" height="900" title="3D model of a human embryo" controls="controls" >
+  <source src="heart/CS11_N662.mp4" type="video/mp4">
+</video></td>
+</tr>
+
+
+
+<tr>
+<td width="500"><div align="center">
+<model-viewer id="reveal1" loading="eager" bounds="tight" src="heart/CS12-N288-heart.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+  <a name="CS12">  <p style="color: #666666">CS12 - 288</p> </a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</div></td>
+<td width="8">&nbsp;</td>
+<td width="500"><video title="3D model of a human embryo" width="500px" height="500px" controls>
+    <source src="heart/CS12-N288-heart.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td width="500">
+
+<model-viewer id="reveal2" loading="eager" bounds="tight" src="heart/CS14-N925-heart.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+   <a name="CS14"> <p style="color: #666666">CS14 - 925</p> </a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</td>
+<td>&nbsp;</td>
+<td width="502"><video title="3D model of a human embryo" width="502px" height="502px" controls>
+    <source src="heart/CS14-N925.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+
+
+<tr>
+<td width="500">
+
+<model-viewer id="reveal3" loading="eager" bounds="tight" src="heart/CS16-1815-heart2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+   <p style="color: #666666">CS16 - 1815</p> <a name="CS16"></a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</td>
+<td>&nbsp;</td>
+<td width="502"><video title="3D model of a human embryo" width="502px" height="502px" controls>
+    <source src="heart/CS16-1815-heart.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+
+<tr>
+<td width="500">
+
+<model-viewer id="reveal4" loading="eager" bounds="tight" src="heart/cs17_v2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+   <p style="color: #666666">CS17 - 1699</p> <a name="CS17"></a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</td>
+<td>&nbsp;</td>
+<td width="502"><video title="3D model of a human embryo" width="502px" height="502px" controls>
+    <source src="heart/cs17_1699_v2.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+<tr>
+<td width="500">
+
+<model-viewer id="reveal5" loading="eager" bounds="tight" src="heart/cs18.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+   <p style="color: #666666">CS19 - 1645</p> <a name="CS17"></a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</td>
+<td>&nbsp;</td>
+<td width="502"><video title="3D model of a human embryo" width="502px" height="502px" controls>
+    <source src="heart/CS18_1645_heart.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+<tr>
+<td width="500">
+
+<model-viewer id="reveal6" loading="eager" bounds="tight" src="heart/CS20-heart.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"  shadow-intensity="1" alt="Interactive model of a human embryonic heart">
+
+    <div class="progress-bar hide" slot="progress-bar">
+   <p style="color: #666666">CS20 - 913</p> <a name="CS20"></a>
+<!--        <div class="update-bar"><a href="CS12e.glb">CS12</a></div>-->
+    </div>
+</model-viewer>
+
+</td>
+<td>&nbsp;</td>
+<td width="502"><video title="3D model of a human embryo" width="502px" height="502px" controls>
+    <source src="heart/CS20-heart.mp4" type="video/mp4">  </video></td>
+</tr>
+
+
+
+
+
+
+</tbody>
+</table>
+
+
+
+<p style="line-height: 1.5rem">&nbsp;</p>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<p style="font-size: 0.9rem">The anatomical regions were defined by Marta Chroscik, Molly Healey, Ellie McCaffery and Robert Petecki and Janet Kerwin</p>
+<p style="font-size: 0.9rem">in consultation with <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/deborahhenderson.html" target="_blank">Professor Deborah J. Henderson,</a> Professor of Cardiac Development.</p>
+
+
+&nbsp;<a href="#top"><p style="font-size: 0.825rem">Back to top</p></a>
+<p>&nbsp;</p>
+</div>
+
+
+
+
+
+
+<!-- InstanceEndEditable -->
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+    <div>
+
+        <h3>HDBR Atlas</h3>
+
+        <p>
+            Interactive atlas of human embryonic and fetal development.
+        </p>
+
+<!--
+        <p>
+            Explore human development through histology,
+            imaging, 3D models and molecular data.
+        </p>
+-->
+
+    </div>
+
+
+    <div>
+
+        <h3>Explore</h3>
+
+        <ul>
+
+            <li><a href="ehistology.html">eHistology Viewer</a></li>
+
+            <li><a href="../embryonic-stages.html">Embryo Scans</a></li>
+
+            <li><a href="../fetal-stages.html">Fetal Scans</a></li>
+
+            <li><a href="../organ-systems.html">Organ Systems</a></li>
+
+            <li><a href="https://portal.hdbratlas.org/" target="_blank">Gene Expression Portal</a></li>
+
+            <li><a href="../omics.html">Omics Data</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <div>
+
+        <h3>Resources</h3>
+
+        <ul>
+
+            <li><a href="../animated-embryology.html">Animated Embryology</a></li>
+
+            <li><a href="../hdbr-publications.html">Publications</a></li>
+			<li><a href="../protocols.html">Protocols</a></li>
+			
+			<li><a href="../data-submission.html">Data Submissions</a></li>
+<li><a href="../digital-downloads.html">Downloads</a></li>
+        </ul>
+
+    </div>
+
+
+    <div>
+
+      <h3>Information</h3>
+
+        <ul>
+
+            <li><a href="../about.html">About the HDBR Atlas</a></li>
+        
+
+            <li><a href="#">About HDBR</a></li>
+
+            <li><a href="../redesign/substack.html">News</a></li>
+			
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+
+            <li></li>
+			
+			
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <div>
+        © HDBR Atlas 2026
+    </div>
+<p>&nbsp;</p>
+    <div><a href="privacy.html">Privacy</a>
+        <span> · </span>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+
+</div>
+
+</footer>
+
+<!-- =========================================================
+     NAVIGATION JAVASCRIPT
+========================================================= -->
+<!--
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navButton =
+        document.querySelector(".dropdown-button");
+
+    const navMenu =
+        document.querySelector(".dropdown-menu");
+
+
+    if (!navButton || !navMenu) {
+        return;
+    }
+
+
+    navButton.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const isOpen =
+            navMenu.classList.toggle("open");
+
+        navButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+    });
+
+
+    document.addEventListener("click", function (event) {
+
+        if (!event.target.closest(".dropdown")) {
+
+            navMenu.classList.remove("open");
+
+            navButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    });
+
+});
+
+</script>
+-->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =========================================================
+       COOKIE CONSENT
+    ========================================================= */
+
+    const cookieBanner =
+        document.getElementById("cookieBanner");
+
+    const cookieAcceptButton =
+        document.getElementById("cookieAcceptButton");
+
+    const cookieSettingsButton =
+        document.getElementById("cookieSettingsButton");
+
+    const cookieModal =
+        document.getElementById("cookieModal");
+
+    const cookieModalClose =
+        document.getElementById("cookieModalClose");
+
+    const cookieSaveButton =
+        document.getElementById("cookieSaveButton");
+
+    const analyticsCookies =
+        document.getElementById("analyticsCookies");
+
+
+    /* =========================================================
+       CHECK EXISTING CONSENT
+    ========================================================= */
+
+    const existingConsent =
+        window.hdbrCookieConsent.getConsent();
+
+
+    /* =========================================================
+       SHOW BANNER IF NO CHOICE EXISTS
+    ========================================================= */
+
+    if (!existingConsent && cookieBanner) {
+
+        cookieBanner.hidden = false;
+
+    }
+
+
+    /* =========================================================
+       ACCEPT ANALYTICS COOKIES
+    ========================================================= */
+
+    if (cookieAcceptButton) {
+
+        cookieAcceptButton.addEventListener(
+            "click",
+            function () {
+
+                window.hdbrCookieConsent.accept();
+
+                if (cookieBanner) {
+                    cookieBanner.hidden = true;
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================================
+       OPEN COOKIE SETTINGS
+    ========================================================= */
+
+    if (cookieSettingsButton) {
+
+        cookieSettingsButton.addEventListener(
+            "click",
+            function () {
+
+                if (analyticsCookies) {
+
+                    analyticsCookies.checked =
+                        window.hdbrCookieConsent.getConsent()
+                        === "accepted";
+
+                }
+
+                if (cookieModal) {
+
+                    cookieModal.hidden = false;
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================================
+       CLOSE COOKIE MODAL
+    ========================================================= */
+
+    if (cookieModalClose) {
+
+        cookieModalClose.addEventListener(
+            "click",
+            function () {
+
+                if (cookieModal) {
+
+                    cookieModal.hidden = true;
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================================
+       SAVE COOKIE PREFERENCES
+    ========================================================= */
+
+    if (cookieSaveButton) {
+
+        cookieSaveButton.addEventListener(
+            "click",
+            function () {
+
+                if (
+                    analyticsCookies &&
+                    analyticsCookies.checked
+                ) {
+
+                    window.hdbrCookieConsent.accept();
+
+                } else {
+
+                    window.hdbrCookieConsent.refuseAnalytics();
+
+                }
+
+
+                if (cookieModal) {
+
+                    cookieModal.hidden = true;
+
+                }
+
+
+                if (cookieBanner) {
+
+                    cookieBanner.hidden = true;
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================================
+       CLOSE MODAL WHEN CLICKING OUTSIDE
+    ========================================================= */
+
+    if (cookieModal) {
+
+        cookieModal.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === cookieModal) {
+
+                    cookieModal.hidden = true;
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================================
+       NAVIGATION DROPDOWN
+    ========================================================= */
+
+    const navButton =
+        document.querySelector(".dropdown-button");
+
+    const navMenu =
+        document.querySelector(".dropdown-menu");
+
+
+    if (navButton && navMenu) {
+
+        navButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                const isOpen =
+                    navMenu.classList.toggle("open");
+
+                navButton.setAttribute(
+                    "aria-expanded",
+                    isOpen ? "true" : "false"
+                );
+
+            }
+        );
+
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+                if (!event.target.closest(".dropdown")) {
+
+                    navMenu.classList.remove("open");
+
+                    navButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+});
+
+</script>	
+	
+	
+	
+</body>
+
+<!-- InstanceEnd --></html>

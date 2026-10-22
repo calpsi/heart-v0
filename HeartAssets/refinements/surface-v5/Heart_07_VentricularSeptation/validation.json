@@ -1,0 +1,10 @@
+{
+  "asset": "Heart_07_VentricularSeptation",
+  "passed": true,
+  "parts": 19,
+  "geometryUnchanged": true,
+  "mapCount": 3,
+  "mapSize": 2048,
+  "sha256": "962c1fa853bf362398928647761b697fb8b62502ff5c1943f2540abb93feea59",
+  "anatomicallyValidated": false
+}
