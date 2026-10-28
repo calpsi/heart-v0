@@ -1,0 +1,71 @@
+{
+  "kind": "original regional teaching reconstruction",
+  "base": "HeartV0 batch08 arrangement, reauthored smooth vessel networks",
+  "source": "https://www.merckmanuals.com/professional/pediatrics/congenital-cardiovascular-anomalies/patent-ductus-arteriosus-pda",
+  "limitations": [
+    "Not a scanned specimen or patient measurement",
+    "No microscopic layer segmentation or haemodynamic simulation",
+    "Open and closed anatomical endpoints; not instantaneous birth closure",
+    "No complete heart/chambers or distal vessels"
+  ],
+  "models": [
+    {
+      "asset": "PDA_Patent",
+      "parts": [
+        {
+          "part": "Aorta",
+          "vertices": 19615,
+          "faces": 18865,
+          "nonManifoldEdges": 0,
+          "volume": 0.000159561738728052
+        },
+        {
+          "part": "PulmonaryArteries",
+          "vertices": 12231,
+          "faces": 11417,
+          "nonManifoldEdges": 0,
+          "volume": 7.453173854402118e-05
+        },
+        {
+          "part": "Ductus",
+          "vertices": 1042,
+          "faces": 804,
+          "nonManifoldEdges": 0,
+          "volume": 9.576554092824242e-07
+        }
+      ],
+      "ductCentreRayBlockers": []
+    },
+    {
+      "asset": "PDA_Closed",
+      "parts": [
+        {
+          "part": "Aorta",
+          "vertices": 19239,
+          "faces": 18643,
+          "nonManifoldEdges": 0,
+          "volume": 0.00015998403013383093
+        },
+        {
+          "part": "PulmonaryArteries",
+          "vertices": 11787,
+          "faces": 11124,
+          "nonManifoldEdges": 0,
+          "volume": 7.503405055217777e-05
+        },
+        {
+          "part": "Ligament",
+          "vertices": 372,
+          "faces": 251,
+          "nonManifoldEdges": 0,
+          "volume": 9.95724884661285e-08
+        }
+      ],
+      "ductCentreRayBlockers": [
+        "Aorta",
+        "PulmonaryArteries",
+        "Ligament"
+      ]
+    }
+  ]
+}

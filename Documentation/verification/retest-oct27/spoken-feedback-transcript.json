@@ -1,0 +1,62 @@
+{
+  "source": "/Users/phillicia/Downloads/RPReplay_Final1793038876.MP4",
+  "method": "Local faster-whisper small.en, automatic transcript; requires contextual checking",
+  "segments": [
+    {
+      "start": 10.54,
+      "end": 18.94,
+      "text": "the app should have a minimum size and when it scales it should scale evenly not just move the ui",
+      "avg_logprob": -0.16573929920625152,
+      "no_speech_prob": 0.11805924028158188
+    },
+    {
+      "start": 18.94,
+      "end": 47.41,
+      "text": "around this is very ugly and again there should be a minimum with no size because some of the",
+      "avg_logprob": -0.16573929920625152,
+      "no_speech_prob": 0.11805924028158188
+    },
+    {
+      "start": 47.41,
+      "end": 132.94,
+      "text": "elements are cut off i think this is correlation for this is okay linear organization an unfolded",
+      "avg_logprob": -0.16573929920625152,
+      "no_speech_prob": 0.11805924028158188
+    },
+    {
+      "start": 132.94,
+      "end": 142.86,
+      "text": "map of it we can't wait for this is it's not great because it doesn't show what the sections",
+      "avg_logprob": -0.16573929920625152,
+      "no_speech_prob": 0.11805924028158188
+    },
+    {
+      "start": 142.86,
+      "end": 154.27,
+      "text": "are supposed to be. For this one the UI should be also consistent with the others. I don't think",
+      "avg_logprob": -0.2732169441322782,
+      "no_speech_prob": 0.28270089626312256
+    },
+    {
+      "start": 154.27,
+      "end": 169.09,
+      "text": "this is when separating it should separate like the others and they should be able to see the",
+      "avg_logprob": -0.2732169441322782,
+      "no_speech_prob": 0.28270089626312256
+    },
+    {
+      "start": 169.09,
+      "end": 180.16,
+      "text": "cross section and should be able to see the cross section instead of just this drop down it should",
+      "avg_logprob": -0.2732169441322782,
+      "no_speech_prob": 0.28270089626312256
+    },
+    {
+      "start": 180.16,
+      "end": 185.44,
+      "text": "you present the, over here, the posture.",
+      "avg_logprob": -0.860364345403818,
+      "no_speech_prob": 0.05266098305583
+    }
+  ]
+}

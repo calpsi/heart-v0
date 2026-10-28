@@ -1,0 +1,27 @@
+sandbox-exec: sandbox_apply: Operation not permitted
+sandbox-exec: sandbox_apply: Operation not permitted
+Tests/SpatialPolicy/main.swift:145:23: error: cannot find 'simd_length' in scope
+143 |         for normal in surface.normals {
+144 |             check(normal.x.isFinite && normal.y.isFinite && normal.z.isFinite, "Invalid surface normal")
+145 |             check(abs(simd_length(normal) - 1) < 0.001, "Surface normal is not unit length")
+    |                       `- error: cannot find 'simd_length' in scope
+146 |         }
+147 |         for index in stride(from: 0, to: surface.triangles.count, by: 3) {
+
+Tests/SpatialPolicy/main.swift:151:19: error: cannot find 'simd_length_squared' in scope
+149 |             let b = surface.positions[Int(surface.triangles[index + 1])]
+150 |             let c = surface.positions[Int(surface.triangles[index + 2])]
+151 |             check(simd_length_squared(simd_cross(b-a, c-a)) > 1e-20, "Collapsed surface triangle")
+    |                   `- error: cannot find 'simd_length_squared' in scope
+152 |         }
+153 |     }
+
+Tests/SpatialPolicy/main.swift:151:39: error: cannot find 'simd_cross' in scope
+149 |             let b = surface.positions[Int(surface.triangles[index + 1])]
+150 |             let c = surface.positions[Int(surface.triangles[index + 2])]
+151 |             check(simd_length_squared(simd_cross(b-a, c-a)) > 1e-20, "Collapsed surface triangle")
+    |                                       `- error: cannot find 'simd_cross' in scope
+152 |         }
+153 |     }
+error: input file 'Tests/SpatialPolicy/main.swift' was modified during the build
+error: input file 'Tests/SpatialPolicy/main.swift' was modified during the build

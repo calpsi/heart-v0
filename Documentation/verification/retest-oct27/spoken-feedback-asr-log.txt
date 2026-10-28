@@ -1,0 +1,11 @@
+Decoded 202.1116875 seconds
+2026-10-27 13:19:23.180 python3[9678:2871220] 2026-10-27 13:19:23.180510 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier
+10.5–18.9:  the app should have a minimum size and when it scales it should scale evenly not just move the ui
+18.9–47.4:  around this is very ugly and again there should be a minimum with no size because some of the
+47.4–132.9:  elements are cut off i think this is correlation for this is okay linear organization an unfolded
+132.9–142.9:  map of it we can't wait for this is it's not great because it doesn't show what the sections
+142.9–154.3:  are supposed to be. For this one the UI should be also consistent with the others. I don't think
+154.3–169.1:  this is when separating it should separate like the others and they should be able to see the
+169.1–180.2:  cross section and should be able to see the cross section instead of just this drop down it should
+180.2–185.4:  you present the, over here, the posture.
+Complete

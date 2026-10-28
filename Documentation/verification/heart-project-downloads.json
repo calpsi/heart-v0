@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Normal_Teenage_Heart.usdz",
+    "bytes": 6020711,
+    "sha256": "4cee41e9ce6cc9c1da2fcbff5511fd9a02240570087897f11982ef86cf51f8bf"
+  },
+  {
+    "file": "Coarctation.usdz",
+    "bytes": 28728956,
+    "sha256": "dec9872fec702feb7f3b59b7400d10f255a9b49cbbaa9cf31a6ed76609001d36"
+  },
+  {
+    "file": "Tetralogy_of_Fallot.usdz",
+    "bytes": 71436057,
+    "sha256": "3265bea1f68ce16e2fdade795f652e7452d5c06621172e5d8bec07853b9cefe0"
+  }
+]

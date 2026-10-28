@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Normal_Neonatal_Heart",
+    "meshes": [
+      {
+        "name": "Extract1_Extract1_0",
+        "vertices": 11108,
+        "polygons": 18178,
+        "materials": [
+          "Extract1"
+        ]
+      },
+      {
+        "name": "Extract3_1_Extract3_1_0",
+        "vertices": 30930,
+        "polygons": 56642,
+        "materials": [
+          "Extract1"
+        ]
+      },
+      {
+        "name": "MM634_BP51951_FMA4706_Coronary_sinus821_MM634_BP51951_FMA4706_Coronary_sinus821_0",
+        "vertices": 43826,
+        "polygons": 75686,
+        "materials": [
+          "Extract1"
+        ]
+      },
+      {
+        "name": "VALVES_VALVES_0",
+        "vertices": 20774,
+        "polygons": 27897,
+        "materials": [
+          "Extract1"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Atrial_Septal_Defect_ASD",
+    "meshes": [
+      {
+        "name": "Default1_2_Default1_2_0",
+        "vertices": 21247,
+        "polygons": 40014,
+        "materials": [
+          "Extract1"
+        ]
+      },
+      {
+        "name": "Default6_Default6_0",
+        "vertices": 43893,
+        "polygons": 87886,
+        "materials": [
+          "Default6"
+        ]
+      },
+      {
+        "name": "Extract1_copy1_Extract1_copy1_0",
+        "vertices": 15875,
+        "polygons": 27386,
+        "materials": [
+          "Extract1"
+        ]
+      },
+      {
+        "name": "Extract1_Extract1_0",
+        "vertices": 18857,
+        "polygons": 34109,
+        "materials": [
+          "Extract1"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ventricular_Septal_Defect",
+    "meshes": [
+      {
+        "name": "Default13_01_Default13_01_0",
+        "vertices": 20214,
+        "polygons": 40460,
+        "materials": [
+          "Default15"
+        ]
+      },
+      {
+        "name": "Default15_Default15_0",
+        "vertices": 24831,
+        "polygons": 50044,
+        "materials": [
+          "Default15"
+        ]
+      },
+      {
+        "name": "Default1_Default1_0",
+        "vertices": 3793,
+        "polygons": 7420,
+        "materials": [
+          "Default1"
+        ]
+      },
+      {
+        "name": "Default_copy1_Default_copy1_0",
+        "vertices": 65532,
+        "polygons": 40840,
+        "materials": [
+          "Default_copy1"
+        ]
+      },
+      {
+        "name": "Default_copy1_Default_copy1_0.001",
+        "vertices": 65532,
+        "polygons": 28799,
+        "materials": [
+          "Default_copy1"
+        ]
+      },
+      {
+        "name": "Default_copy1_Default_copy1_0.002",
+        "vertices": 14966,
+        "polygons": 5660,
+        "materials": [
+          "Default_copy1"
+        ]
+      },
+      {
+        "name": "Default_copy2_Default_copy2_0",
+        "vertices": 4146,
+        "polygons": 7188,
+        "materials": [
+          "Default_copy2"
+        ]
+      },
+      {
+        "name": "Default_Default_0",
+        "vertices": 10056,
+        "polygons": 18327,
+        "materials": [
+          "Default"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Transposition_of_the_great_arteries",
+    "meshes": [
+      {
+        "name": "POGING_14_POGING_14_0",
+        "vertices": 65534,
+        "polygons": 108500,
+        "materials": [
+          "POGING_14"
+        ]
+      },
+      {
+        "name": "POGING_14_POGING_14_0.001",
+        "vertices": 25094,
+        "polygons": 13092,
+        "materials": [
+          "POGING_14"
+        ]
+      },
+      {
+        "name": "POGING_19_POGING_19_0",
+        "vertices": 65532,
+        "polygons": 111843,
+        "materials": [
+          "POGING_19"
+        ]
+      },
+      {
+        "name": "POGING_19_POGING_19_0.001",
+        "vertices": 49163,
+        "polygons": 80543,
+        "materials": [
+          "POGING_19"
+        ]
+      },
+      {
+        "name": "POGING_4_POGING_4_0",
+        "vertices": 22710,
+        "polygons": 45412,
+        "materials": [
+          "POGING_4"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Atrioventricular_septal_defect_4_chamber_view",
+    "meshes": [
+      {
+        "name": "avsd_4_kamer132_avsd_4_kamer132_0",
+        "vertices": 59712,
+        "polygons": 87482,
+        "materials": [
+          "avsd_4_kamer334"
+        ]
+      },
+      {
+        "name": "avsd_4_kamer334_avsd_4_kamer334_0",
+        "vertices": 44946,
+        "polygons": 84734,
+        "materials": [
+          "avsd_4_kamer334"
+        ]
+      },
+      {
+        "name": "MM634_BP51951_FMA4706_Coronary_sinus847_MM634_BP51951_FMA4706_Coronary_sinus847_0",
+        "vertices": 4823,
+        "polygons": 6639,
+        "materials": [
+          "avsd_4_kamer334"
+        ]
+      }
+    ]
+  }
+]

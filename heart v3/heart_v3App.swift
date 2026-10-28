@@ -26,17 +26,9 @@ struct heart_v3App: App {
         .defaultSize(width: 1100, height: 780)
         .windowResizability(.contentSize)
 
-        WindowGroup(id: "heart-close-up", for: HeartCloseUpRequest.self) { request in
-            if let request = request.wrappedValue,
-               let asset = HeartAsset.allIncludingReferences.first(where: { $0.id == request.assetID }) {
-                HeartCloseUpView(asset: asset, controls: request.controls).tint(Color.accentColor)
-            }
-        }
-        .windowStyle(.volumetric)
-        .defaultSize(width: 1.1, height: 0.85, depth: 0.9, in: .meters)
-
         WindowGroup(id: "guided-lesson") {
             GuidedLessonWindowView().tint(Color.accentColor)
+                .modifier(HeartWorkspaceBackground())
                 .defaultAppStorage(progressStore)
         }
         .windowStyle(.plain)

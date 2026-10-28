@@ -1,0 +1,11 @@
+WINDOW 0 35
+2026-10-27 13:21:31.074 python3[9837:2873219] 2026-10-27 13:21:31.074431 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier
+10.5 19.3  the app should have a minimum size and when it scales it should scale evenly not just move the ui around
+21.9 23.0  this is very ugly
+WINDOW 120 150
+121.6 126.2  Yes, the separation for this is okay.
+133.7 143.7  The cutaway for this is not great because it doesn't show what the sections are supposed to be.
+WINDOW 145 175
+150.1 169.8  For this one, the UI should be also consistent with the others, I would think this is a separate thing, it should separate the others and they should be able to see the cross section
+WINDOW 170 202
+175.4 182.9  You should be able to see the cross section instead of just this drop down, it should be presented over here.

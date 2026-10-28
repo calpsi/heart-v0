@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "joining",
+    "opening": 0,
+    "identical": true,
+    "beforeMsPerFrame": 8.175920571428573,
+    "afterMsPerFrame": 2.7977479523809525
+  },
+  {
+    "kind": "joining",
+    "opening": 0.5,
+    "identical": true,
+    "beforeMsPerFrame": 7.960966333333333,
+    "afterMsPerFrame": 3.164297714285714
+  },
+  {
+    "kind": "joining",
+    "opening": 1,
+    "identical": true,
+    "beforeMsPerFrame": 7.893997904761905,
+    "afterMsPerFrame": 3.1219345714285707
+  },
+  {
+    "kind": "looping",
+    "opening": 0,
+    "identical": true,
+    "beforeMsPerFrame": 3.922882952380952,
+    "afterMsPerFrame": 1.615547619047619
+  },
+  {
+    "kind": "looping",
+    "opening": 0.5,
+    "identical": true,
+    "beforeMsPerFrame": 3.9874881428571434,
+    "afterMsPerFrame": 1.6881370000000002
+  },
+  {
+    "kind": "looping",
+    "opening": 1,
+    "identical": true,
+    "beforeMsPerFrame": 4.479192428571428,
+    "afterMsPerFrame": 1.5898333333333337
+  },
+  {
+    "kind": "outflow",
+    "opening": 0,
+    "identical": true,
+    "beforeMsPerFrame": 1.2157559523809522,
+    "afterMsPerFrame": 0.25057533333333337
+  },
+  {
+    "kind": "outflow",
+    "opening": 0.5,
+    "identical": true,
+    "beforeMsPerFrame": 0.5820514761904763,
+    "afterMsPerFrame": 0.2374722380952381
+  },
+  {
+    "kind": "outflow",
+    "opening": 1,
+    "identical": true,
+    "beforeMsPerFrame": 0.3509979523809523,
+    "afterMsPerFrame": 0.15160509523809526
+  }
+]

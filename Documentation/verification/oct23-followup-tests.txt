@@ -1,0 +1,18 @@
+23 October follow-up verification
+
+PASS: final model/depth validation, 16 teaching assets and 7 reference assets. See oct23-asset-validation.json.
+PASS: portable resize/recognition tests, including 20,000 resize samples.
+PASS: simulator reset/undo, guided phases/recovery/transcript, and answer-concealment tests.
+PASS: build after removing the close-up scene and applying the depth/clipping correction.
+Visual check: oct23-maximum-zoom.png shows 2.5x, cropped anatomy, visible footer and navigation.
+
+Initial slider run on visionOS 27 stalled and was interrupted. On visionOS 26.5 the test completed with an unchanged separation slider; its location was below the visible settings area. Settings now pins size/separation and Done. The unchanged slider interaction test passed on retest (66.1 seconds, zero failures), including separation and repeated model-size changes.
+
+Passing UI checks across targeted runs:
+- testFullResetAndUndo
+- testGuidedPhasesAndRecovery
+- testRecognitionDoesNotRevealAnswerUntilRequested
+- testCutawaySearchAndSliders
+
+The final slider build includes the updated settings layout. Geometry validation was run after the depth correction, before subsequent UI-only settings changes.
+Headset hand tracking, physical readability, off-axis clipping and full regression suite remain unverified.

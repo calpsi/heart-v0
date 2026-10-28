@@ -1,0 +1,26 @@
+Verification completed 24 October 2026
+
+Build: passed.
+Portable production-policy tests: passed (20,000 resize samples, 2.5x reachability, recognition evidence, local review scheduling and later recall).
+Live RealityKit validation: all 16 teaching assets and seven reference assets passed, including matched comparison scale/centre/depth. See remaining-asset-validation.json.
+Review metadata: all 16 teaching assets have the original audit date/scope bundled.
+Final lesson-panel layout visually checked; see remaining-lesson-panel.png.
+
+UI regression results across runs (not a claim that the initial full run passed):
+PASS testCutawaySearchAndSliders (60.693s; heart-complete-suite.log)
+PASS testDevelopmentAndAnomalyNavigation (96.009s; heart-complete-suite.log)
+PASS testEveryLessonCanAdvanceAndFinish (288.985s; heart-complete-suite.log)
+PASS testExplorationPanelsAndIsolation (113.869s; heart-oct24-rerun.log)
+PASS testFullResetAndUndo (27.886s; heart-complete-suite.log)
+PASS testGuidedPhasesAndRecovery (107.267s; heart-final-affected.log)
+PASS testHomeNavigationAndReferences (29.086s; heart-complete-suite.log)
+PASS testLayerCompareAndDetachedPartRecovery (74.620s; heart-final-affected.log)
+PASS testLessonCatalogueAndAtlas (70.954s; heart-oct24-rerun.log)
+PASS testRecognitionDoesNotRevealAnswerUntilRequested (40.073s; heart-oct24-rerun.log)
+PASS testReviewPracticeKeepsAnswersHidden (37.476s; heart-oct24-rerun.log)
+PASS testSourcesReturnToModel (28.791s; heart-final-affected.log)
+PASS testTransitionClarityAndLearningProgress (71.404s; heart-oct24-rerun.log)
+
+The initial full run passed all-lesson progression but encountered an unsupported optional XCTest screenshot and later simulator foreground-activation failures. Screenshot attachment calls were removed without removing interaction assertions. The five affected checks were rerun with bounded timeouts. Final narration/recovery/source-panel checks also passed after the last layout and gesture changes.
+
+Not verified: physical hand tracking, headset readability/ergonomics, oblique-angle clipping, clinical validity, unfamiliar-representation transfer and measured long-term retention. See HEADSET_ACCEPTANCE.md and CLINICAL_VALIDATION_HANDOFF.md. No original audit issue is marked device-accepted.

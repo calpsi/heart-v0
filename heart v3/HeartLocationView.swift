@@ -59,9 +59,9 @@ struct HeartLocationView: View {
                 } else {
                     HeartRegionDiagram(regions: guide.regions)
                     Label("Highlighted region", systemImage: "circle.fill")
-                        .font(.caption).foregroundStyle(Color.accentColor)
+                        .font(.subheadline).foregroundStyle(Color.accentColor)
                     Text("Simplified heart layout. Positions and proportions are schematic; the 3D model is shown separately.")
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.subheadline).foregroundStyle(.secondary)
                 }
                 Text(guide.detail)
                 Text(asset.lesson).font(.subheadline).foregroundStyle(.secondary)
@@ -76,7 +76,7 @@ private struct HeartRegionDiagram: View {
 
     private func region(_ name: String, _ region: HeartRegion, height: CGFloat) -> some View {
         let selected = regions.contains(region) || regions.contains(.wholeHeart)
-        return Text(name).font(.caption.weight(.semibold)).multilineTextAlignment(.center)
+        return Text(name).font(.subheadline.weight(.semibold)).multilineTextAlignment(.center)
             .frame(maxWidth: .infinity).frame(height: height)
             .background(selected ? Color.accentColor.opacity(0.4) : .white.opacity(0.08),
                         in: RoundedRectangle(cornerRadius: 18))

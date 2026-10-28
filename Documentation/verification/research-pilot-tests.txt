@@ -1,0 +1,9 @@
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testCoarctationNormalReferenceFirst]' passed (51.937 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testLearningPilotPredictionAndRecall]' passed (45.307 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testOptionalInvestigationCanBeDismissed]' passed (38.796 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testRecognitionDoesNotRevealAnswerUntilRequested]' passed (30.561 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testReviewPracticeKeepsAnswersHidden]' passed (29.497 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testCoarctationNormalReferenceFirst]' passed (56.990 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testLearningPilotPredictionAndRecall]' passed (42.729 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testSeparateReassembleAfterZoom]' passed (44.478 seconds).
+** TEST SUCCEEDED **

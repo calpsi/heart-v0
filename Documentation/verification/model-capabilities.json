@@ -1,0 +1,286 @@
+[
+  {
+    "id": "Heart_01_CardiogenicRegion",
+    "sourceGroups": 5,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_02_PairedHeartTubes",
+    "sourceGroups": 13,
+    "authoredLayerNames": [
+      "CardiacJelly",
+      "Endocardium",
+      "Myocardium"
+    ],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_03_PrimitiveHeartTube",
+    "sourceGroups": 36,
+    "authoredLayerNames": [
+      "CardiacJelly",
+      "Endocardium",
+      "Myocardium"
+    ],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_04_CardiacLooping",
+    "sourceGroups": 40,
+    "authoredLayerNames": [
+      "CardiacJelly",
+      "Endocardium",
+      "Myocardium"
+    ],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_05_AtrialSeptation",
+    "sourceGroups": 15,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_06_EndocardialCushions",
+    "sourceGroups": 8,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_07_VentricularSeptation",
+    "sourceGroups": 19,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_08_OutflowSeptation",
+    "sourceGroups": 20,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_09_ValvularRefinement",
+    "sourceGroups": 60,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_10_CirculatoryTransition",
+    "sourceGroups": 23,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_11_VentricularSeptalDefect",
+    "sourceGroups": 22,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_12_AtrialSeptalDefect",
+    "sourceGroups": 19,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_13_TetralogyOfFallot",
+    "sourceGroups": 30,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_14_TranspositionGreatArteries",
+    "sourceGroups": 24,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_15_AorticCoarctation",
+    "sourceGroups": 17,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Heart_16_PatentDuctusArteriosus",
+    "sourceGroups": 21,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": true,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS11_N662",
+    "sourceGroups": 6,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS12_N288",
+    "sourceGroups": 5,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS14_N925",
+    "sourceGroups": 9,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS16_N1815",
+    "sourceGroups": 8,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS17_N1699",
+    "sourceGroups": 10,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS18_N1645",
+    "sourceGroups": 10,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "HDBR_CS20_N913",
+    "sourceGroups": 9,
+    "authoredLayerNames": [],
+    "hasAuthoredCutaway": false,
+    "geometricSection": "three axes; no added caps or layers",
+    "anatomicalAccuracy": "not established by interaction tests"
+  },
+  {
+    "id": "Normal_Teenage_Heart",
+    "sourceSHA256": "4cee41e9ce6cc9c1da2fcbff5511fd9a02240570087897f11982ef86cf51f8bf",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 2,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Ventricular_Septal_Defect",
+    "sourceSHA256": "8faef94d7da6e8e38fc91b60d4bb1a2eb3c4ca4d0238fc5ae8f8ab56875c027a",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 6,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Coarctation",
+    "sourceSHA256": "dec9872fec702feb7f3b59b7400d10f255a9b49cbbaa9cf31a6ed76609001d36",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 2,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Atrial_Septal_Defect_ASD",
+    "sourceSHA256": "e1dc3006d2a638dac2ea75342f08531e9ce1ca24a110e21dcc6635fc2f56324e",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 4,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Atrioventricular_septal_defect_4_chamber_view",
+    "sourceSHA256": "2f84bc25e2022d2ff42f21a383228d33f5c3ffbd91b1561165a9256669559078",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 3,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Normal_Neonatal_Heart",
+    "sourceSHA256": "8ac79d84bb383025b017c886624394b625b547766ff1fa18ec0e5e1d2ab833ed",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 4,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Transposition_of_the_great_arteries",
+    "sourceSHA256": "022425fd054e0c2c1abfb9f2b885d65c3640a426612dee70dc6b29a57e9eb08c",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 3,
+    "separationAvailable": true,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  },
+  {
+    "id": "Tetralogy_of_Fallot",
+    "sourceSHA256": "3265bea1f68ce16e2fdade795f652e7452d5c06621172e5d8bec07853b9cefe0",
+    "geometricSection": "three axes; no added caps or layers",
+    "tissueLayers": "source surfaces only; no inferred histological layers",
+    "anatomicalAccuracy": "source geometry retained; not independently established",
+    "sourceGroups": 1,
+    "separationAvailable": false,
+    "movement": "bounded source-group offsets; 30% of visible diameter",
+    "defaultSeparation": "15% of visible diameter; unique inspection direction per group"
+  }
+]

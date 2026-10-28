@@ -1,0 +1,12 @@
+Tests/SpatialPolicy/main.swift:253:47: warning: 'generate(from:withName:options:)' was deprecated in macOS 15.0: replaced by 'init(image:withName:options:)' [#DeprecatedDeclaration]
+251 | textureContext.setFillColor(CGColor(red: 0.5, green: 0.5, blue: 1, alpha: 1))
+252 | textureContext.fill(CGRect(x: 0, y: 0, width: 2, height: 2))
+253 | let preservationTexture = try TextureResource.generate(from: textureContext.makeImage()!, options: .init(semantic: .color))
+    |                                               |- warning: 'generate(from:withName:options:)' was deprecated in macOS 15.0: replaced by 'init(image:withName:options:)' [#DeprecatedDeclaration]
+    |                                               `- note: use 'init(image:withName:options:)' instead
+254 | var authoredTexture = MaterialParameters.Texture(preservationTexture)
+255 | authoredTexture.uvIndex = 1
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+error: input file 'Tests/SpatialPolicy/main.swift' was modified during the build
+error: input file 'Tests/SpatialPolicy/main.swift' was modified during the build

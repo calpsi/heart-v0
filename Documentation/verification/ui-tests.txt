@@ -1,0 +1,27 @@
+heartv3-ui-tests.log
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testDevelopmentAndAnomalyNavigation]' passed (98.431 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testFullResetAndUndo]' passed (37.574 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testGuidedPhasesAndRecovery]' passed (87.613 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testHomeNavigationAndReferences]' passed (43.974 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testRecognitionDoesNotRevealAnswerUntilRequested]' passed (29.068 seconds).
+	 Executed 5 tests, with 0 failures (0 unexpected) in 296.660 (296.692) seconds
+	 Executed 5 tests, with 0 failures (0 unexpected) in 296.660 (296.706) seconds
+	 Executed 5 tests, with 0 failures (0 unexpected) in 296.660 (296.711) seconds
+** TEST SUCCEEDED **
+heartv3-final-tests.log
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testFullResetAndUndo]' passed (48.512 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testRecognitionDoesNotRevealAnswerUntilRequested]' passed (48.830 seconds).
+	 Executed 2 tests, with 0 failures (0 unexpected) in 97.342 (97.355) seconds
+	 Executed 2 tests, with 0 failures (0 unexpected) in 97.342 (97.366) seconds
+	 Executed 2 tests, with 0 failures (0 unexpected) in 97.342 (97.376) seconds
+** TEST SUCCEEDED **
+heartv3-layout-retry.log
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testRecognitionDoesNotRevealAnswerUntilRequested]' passed (30.729 seconds).
+	 Executed 1 test, with 0 failures (0 unexpected) in 30.729 (30.736) seconds
+	 Executed 1 test, with 0 failures (0 unexpected) in 30.729 (30.739) seconds
+	 Executed 1 test, with 0 failures (0 unexpected) in 30.729 (30.743) seconds
+** TEST SUCCEEDED **
+
+Final compact-panel regression
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testRecognitionDoesNotRevealAnswerUntilRequested]' passed (28.475 seconds).
+** TEST SUCCEEDED **

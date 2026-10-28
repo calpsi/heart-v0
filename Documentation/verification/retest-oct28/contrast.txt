@@ -1,0 +1,3 @@
+primary / white: 17.01:1
+secondary / white: 9.12:1
+white / accent: 4.62:1

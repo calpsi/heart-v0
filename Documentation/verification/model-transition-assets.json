@@ -1,0 +1,11 @@
+{
+  "cancellation" : true,
+  "failedLoadPreservesSource" : true,
+  "latestRequestWins" : true,
+  "morphControlsPlanePoses" : 198,
+  "morphEnvelopeFrames" : 22,
+  "passed" : true,
+  "reducedMotion" : true,
+  "retainedWhileLoading" : true,
+  "singleInstalledRoot" : true
+}

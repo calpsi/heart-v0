@@ -6,26 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
-        BEE100000000000000000001 = {isa = PBXFileSystemSynchronizedRootGroup; path = HeartV3UITests; sourceTree = "<group>"; };
-        BEE100000000000000000002 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HeartV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        BEE100000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-        BEE100000000000000000004 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-        BEE100000000000000000005 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-        BEE100000000000000000006 = {isa = PBXContainerItemProxy; containerPortal = 2A78F4D1305276D900CDA6AB; proxyType = 1; remoteGlobalIDString = 2A78F4D8305276D900CDA6AB; remoteInfo = "heart v3"; };
-        BEE100000000000000000007 = {isa = PBXTargetDependency; target = 2A78F4D8305276D900CDA6AB; targetProxy = BEE100000000000000000006; };
-        BEE100000000000000000008 = {isa = PBXNativeTarget; buildConfigurationList = BEE100000000000000000009; buildPhases = (BEE100000000000000000003, BEE100000000000000000004, BEE100000000000000000005); buildRules = (); dependencies = (BEE100000000000000000007); fileSystemSynchronizedGroups = (BEE100000000000000000001); name = HeartV3UITests; productName = HeartV3UITests; productReference = BEE100000000000000000002; productType = "com.apple.product-type.bundle.ui-testing"; };
-        BEE100000000000000000009 = {isa = XCConfigurationList; buildConfigurations = (BEE10000000000000000000A, BEE10000000000000000000B); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-        BEE10000000000000000000A = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = phil.heart-v3.ui-tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = xros; SUPPORTED_PLATFORMS = "xros xrsimulator"; TARGETED_DEVICE_FAMILY = 7; TEST_TARGET_NAME = "heart v3"; SWIFT_VERSION = 5.0; XROS_DEPLOYMENT_TARGET = 26.5; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = 5BZMWHTZSA; }; name = Debug; };
-        BEE10000000000000000000B = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = phil.heart-v3.ui-tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = xros; SUPPORTED_PLATFORMS = "xros xrsimulator"; TARGETED_DEVICE_FAMILY = 7; TEST_TARGET_NAME = "heart v3"; SWIFT_VERSION = 5.0; XROS_DEPLOYMENT_TARGET = 26.5; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = 5BZMWHTZSA; }; name = Release; };
-
-
 /* Begin PBXBuildFile section */
 		2A78F4DF305276D900CDA6AB /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2A78F4DE305276D900CDA6AB /* RealityKitContent */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BEE100000000000000000006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A78F4D1305276D900CDA6AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A78F4D8305276D900CDA6AB;
+			remoteInfo = "heart v3";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2A78F4D9305276D900CDA6AB /* heart v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heart v3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A78F4DD305276D900CDA6AB /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		BEE100000000000000000002 /* HeartV3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HeartV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -47,6 +45,11 @@
 			path = "heart v3";
 			sourceTree = "<group>";
 		};
+		BEE100000000000000000001 /* HeartV3UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HeartV3UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A78F4DF305276D900CDA6AB /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE100000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2A78F4D9305276D900CDA6AB /* heart v3.app */,
-                BEE100000000000000000002 /* HeartV3UITests.xctest */,
+				BEE100000000000000000002 /* HeartV3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +124,27 @@
 			productReference = 2A78F4D9305276D900CDA6AB /* heart v3.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BEE100000000000000000008 /* HeartV3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE100000000000000000009 /* Build configuration list for PBXNativeTarget "HeartV3UITests" */;
+			buildPhases = (
+				BEE100000000000000000003 /* Sources */,
+				BEE100000000000000000004 /* Frameworks */,
+				BEE100000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE100000000000000000007 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BEE100000000000000000001 /* HeartV3UITests */,
+			);
+			name = HeartV3UITests;
+			productName = HeartV3UITests;
+			productReference = BEE100000000000000000002 /* HeartV3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-                BEE100000000000000000008 /* HeartV3UITests */,
+				BEE100000000000000000008 /* HeartV3UITests */,
 				2A78F4D8305276D900CDA6AB /* heart v3 */,
 			);
 		};
@@ -154,6 +185,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		2A78F4D7305276D900CDA6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE100000000000000000005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,7 +208,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEE100000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEE100000000000000000007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A78F4D8305276D900CDA6AB /* heart v3 */;
+			targetProxy = BEE100000000000000000006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2A78F4E9305276DB00CDA6AB /* Debug */ = {
@@ -352,6 +405,40 @@
 			};
 			name = Release;
 		};
+		BEE10000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BZMWHTZSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "phil.heart-v3.ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_TARGET_NAME = "heart v3";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		BEE10000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BZMWHTZSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "phil.heart-v3.ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_TARGET_NAME = "heart v3";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,6 +456,15 @@
 			buildConfigurations = (
 				2A78F4E9305276DB00CDA6AB /* Debug */,
 				2A78F4EA305276DB00CDA6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE100000000000000000009 /* Build configuration list for PBXNativeTarget "HeartV3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE10000000000000000000A /* Debug */,
+				BEE10000000000000000000B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

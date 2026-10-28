@@ -1,0 +1,17 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -sdk xrsimulator -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath .audit-build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = xrsimulator27.0
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+2026-10-25 15:08:19.111 xcodebuild[95260:1434097] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+2026-10-25 15:08:19.111 xcodebuild[95260:1434097] Writing error result bundle to /var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/T/ResultBundle_2026-25-10_15-08-0019.xcresult
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+		{ platform:visionOS Simulator, id:87B2FF46-44A0-4183-85CD-E913A347A8E0 }

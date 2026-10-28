@@ -1,0 +1,1212 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -sdk xrsimulator -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath .audit-build CODE_SIGNING_ALLOWED=NO "-only-testing:HeartV3UITests/HeartV3InteractionTests/testTubeLayersFollowMorphInBothModes" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testMorphInspectionSurvivesRepresentationChanges" test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = xrsimulator27.0
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'HeartV3UITests' in project 'heart v3'
+        ➜ Explicit dependency on target 'heart v3' in project 'heart v3'
+    Target 'heart v3' in project 'heart v3'
+        ➜ Explicit dependency on target 'RealityKitContent-product' in project 'RealityKitContent'
+    Target 'RealityKitContent-product' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent' in project 'RealityKitContent'
+        ➜ Explicit dependency on target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent'
+    Target 'RealityKitContent_RealityKitContent' in project 'RealityKitContent' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: db6bd1ae0878dd40f183e22978967b16
+Build description path: /Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Build/Intermediates.noindex/XCBuildData/db6bd1ae0878dd40f183e22978967b16.xcbuilddata
+RealityAssetsSchemaGen /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    /usr/bin/sandbox-exec -D SCRIPT_OUTPUT_FILE_0\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda -D SCRIPT_INPUT_FILE_0\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json -D SCRIPT_INPUT_FILE_1\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.swift -D SCRIPT_INPUT_ANCESTOR_0\=/ -D SCRIPT_INPUT_ANCESTOR_1\=/Users -D SCRIPT_INPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_INPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_INPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_INPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_INPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_INPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build -D SCRIPT_INPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build -D SCRIPT_INPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex -D SCRIPT_INPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_INPUT_ANCESTOR_11\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_INPUT_ANCESTOR_12\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_INPUT_ANCESTOR_13\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_INPUT_ANCESTOR_14\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SCRIPT_INPUT_ANCESTOR_15\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages -D SCRIPT_INPUT_ANCESTOR_16\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D SCRIPT_INPUT_ANCESTOR_17\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources -D SCRIPT_INPUT_ANCESTOR_18\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent/Sources/RealityKitContent -D SCRIPT_OUTPUT_ANCESTOR_0\=/ -D SCRIPT_OUTPUT_ANCESTOR_1\=/Users -D SCRIPT_OUTPUT_ANCESTOR_2\=/Users/phillicia -D SCRIPT_OUTPUT_ANCESTOR_3\=/Users/phillicia/Desktop -D SCRIPT_OUTPUT_ANCESTOR_4\=/Users/phillicia/Desktop/School -D SCRIPT_OUTPUT_ANCESTOR_5\=/Users/phillicia/Desktop/School/Spatial -D SCRIPT_OUTPUT_ANCESTOR_6\=/Users/phillicia/Desktop/School/Spatial/heart\ v3 -D SCRIPT_OUTPUT_ANCESTOR_7\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build -D SCRIPT_OUTPUT_ANCESTOR_8\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build -D SCRIPT_OUTPUT_ANCESTOR_9\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex -D SCRIPT_OUTPUT_ANCESTOR_10\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build -D SCRIPT_OUTPUT_ANCESTOR_11\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D SCRIPT_OUTPUT_ANCESTOR_12\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D SCRIPT_OUTPUT_ANCESTOR_13\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -D SCRIPT_OUTPUT_ANCESTOR_14\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated -D SRCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D PROJECT_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D OBJROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex -D SYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products -D DSTROOT\=/tmp/RealityKitContent.dst -D SHARED_PRECOMPS_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/PrecompiledHeaders -D CACHE_ROOT\=/var/folders/wq/hrdlcxqj0k7c1vszbsxrq2fh0000gn/C/com.apple.DeveloperTools/27.1-27A9275/Xcode -D CONFIGURATION_BUILD_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -D CONFIGURATION_TEMP_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator -D LOCROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D LOCSYMROOT\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent -D INDEX_PRECOMPS_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/PrecompiledHeaders -D INDEX_DATA_STORE_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -D TEMP_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D TARGET_TEMP_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build -D DERIVED_FILE_DIR\=/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources -f /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/c9fc4ce87f19eaf88e0e01e2d424780b.sb /Applications/Xcode.app/Contents/Developer/usr/bin/realitytool create-schema --output-schema /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/CustomComponentUSDInitializers.usda /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/DerivedSources/RealityAssetsGenerated/ModuleWithDependencies.json
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache
+
+ProcessInfoPlistFile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist (in target 'RealityKitContent_RealityKitContent' from project 'RealityKitContent')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3/Packages/RealityKitContent
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/RealityKitContent.build/Debug-xrsimulator/RealityKitContent_RealityKitContent-b.build/empty-RealityKitContent_RealityKitContent.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform xrsimulator -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/RealityKitContent_RealityKitContent.bundle/Info.plist
+
+SwiftDriver heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftCompile normal arm64 Compiling\ HeartAssetValidation.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartAssetValidation.swift
+
+/Users/phillicia/Desktop/School/Spatial/heart v3/heart v3/HeartAssetValidation.swift:482:37: warning: call to main actor-isolated instance method 'markChanged()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 10 |     private let lock = NSLock()
+ 11 |     private var changed = false
+ 12 |     func markChanged() { lock.lock(); changed = true; lock.unlock() }
+    |          `- note: calls to instance method 'markChanged()' from outside of its actor context are implicitly asynchronous
+ 13 |     var didChange: Bool { lock.lock(); defer { lock.unlock() }; return changed }
+ 14 | }
+    :
+480 |                                 context: true, separation: 0, state: asset.defaultState)
+481 |                     scene.fit(in: workspace, zoom: 1)
+482 |                 } onChange: { probe.markChanged() }
+    |                                     `- warning: call to main actor-isolated instance method 'markChanged()' in a synchronous nonisolated context [#ActorIsolatedCall]
+483 |                 scene.apply(asset: asset, selected: "", isolate: false, cutaway: false,
+484 |                             context: true, separation: 0, state: asset.defaultState)
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+SwiftCompile normal arm64 Compiling\ HeartMorphSession.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartMorphSession.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartMorphSession.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartMorphSession.swift
+
+SwiftCompile normal arm64 Compiling\ HeartLoopingMorphView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartLoopingMorphView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartLoopingMorphView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartLoopingMorphView.swift
+
+SwiftCompile normal arm64 Compiling\ HeartMorphMesh.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartMorphMesh.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/HeartMorphMesh.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartMorphMesh.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartMorphSession.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 Compiling\ DevelopmentConnectionView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/DevelopmentConnectionView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/DevelopmentConnectionView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile DevelopmentConnectionView.swift
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ContentView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/ContentView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile ContentView.swift
+
+SwiftCompile normal arm64 Compiling\ GuidedLearningView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile GuidedLearningView.swift
+
+SwiftCompile normal arm64 Compiling\ FreeExplorationView.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/FreeExplorationView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/FreeExplorationView.swift (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile FreeExplorationView.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartMorphMesh.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DevelopmentConnectionView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartLoopingMorphView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for heart_v3 (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftsourceinfo /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+Copy /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.swiftmodule
+
+Copy /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.abi.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart_v3.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+SwiftDriver HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    
+
+SwiftCompile normal arm64 Compiling\ HeartV3InteractionTests.swift /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftCompile normal arm64 /Users/phillicia/Desktop/School/Spatial/heart\ v3/HeartV3UITests/HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-SwiftPerFileCompile HeartV3InteractionTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for HeartV3UITests (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation\ Requirements HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftsourceinfo /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/Project/arm64-apple-xros-simulator.swiftsourceinfo
+
+Copy /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.abi.json /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests.swiftmodule/arm64-apple-xros-simulator.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling FreeExplorationView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartV3InteractionTests.swift (in target 'HeartV3UITests' from project 'heart v3')
+
+SwiftDriver\ Compilation HeartV3UITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name HeartV3UITests -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling HeartAssetValidation.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GuidedLearningView.swift (in target 'heart v3' from project 'heart v3')
+
+SwiftDriver\ Compilation heart\ v3 normal arm64 com.apple.xcode.tools.swift.compiler (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name heart_v3 -Onone @/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -target arm64-apple-xros26.5-simulator -g -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -emit-localized-strings -emit-localized-strings-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKStatCaches.noindex/xrsimulator27.0-24M361-ddeb6230c2d320a853818128273d881a.sdkstatcache -output-file-map /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex -sdk-module-cache-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_const_extract_protocols.json -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-generated-files.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-own-target-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3-058c6f8aefbd0e0ce4e8744c08d45ca4-VFS-xrsimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-project-headers.hmap -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/include -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources-normal/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources/arm64 -Xcc -I/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3-Swift.h -working-directory /Users/phillicia/Desktop/School/Spatial/heart\ v3 -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/heart\ v3/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PkgInfo -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/assetcatalog_generated_info.plist -scanforprivacyfile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/RealityKitContent_RealityKitContent.bundle -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Info.plist
+
+Ld /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -filelist /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.LinkFileList -install_name @rpath/heart\ v3.debug.dylib -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart_v3.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    construct-stub-executor-link-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'heart v3' from project 'heart v3')
+
+Ld /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 normal (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3-ExecutorLinkFileList-normal-arm64.txt /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3
+
+CopySwiftLibs /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3.debug.dylib --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/PlugIns --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/SystemExtensions --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'heart v3' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name heart_v3 --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3 --output /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app --target-triple arm64-apple-xros26.5-simulator --binary-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/heart\ v3.app/heart\ v3 --dependency-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3_dependency_info.dat --stringsdata-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftFileList --metadata-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyMetadataFileList --static-metadata-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/heart\ v3.DependencyStaticMetadataFileList --swift-const-vals-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/heart\ v3.build/Objects-normal/arm64/heart\ v3.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-26 22:11:47.256 appintentsmetadataprocessor[74853:2408265] Starting appintentsmetadataprocessor export
+2026-10-26 22:11:47.261 appintentsmetadataprocessor[74853:2408265] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ProcessInfoPlistFile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-infoPlistUtility /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/empty-HeartV3UITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform xrsimulator -additionalcontentfile /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Info.plist
+
+Ld /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests normal (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-xros26.5-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -L/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-xrsimulator -F/Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk/Developer/Library/Frameworks -filelist /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/xrsimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests
+
+CopySwiftLibs /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/PlugIns --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/SystemExtensions --scan-folder /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Extensions --platform xrsimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'HeartV3UITests' from project 'heart v3')
+    cd /Users/phillicia/Desktop/School/Spatial/heart\ v3
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name HeartV3UITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator27.0.sdk --xcode-version 27A9275 --platform-family xrOS --deployment-target 26.5 --bundle-identifier phil.heart-v3.ui-tests --output /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest --target-triple arm64-apple-xros26.5-simulator --binary-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Products/Debug-xrsimulator/HeartV3UITests-Runner.app/PlugIns/HeartV3UITests.xctest/HeartV3UITests --dependency-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests_dependency_info.dat --stringsdata-file /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftFileList --metadata-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyMetadataFileList --static-metadata-file-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/HeartV3UITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/phillicia/Desktop/School/Spatial/heart\ v3/.audit-build/Build/Intermediates.noindex/heart\ v3.build/Debug-xrsimulator/HeartV3UITests.build/Objects-normal/arm64/HeartV3UITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-26 22:11:47.470 appintentsmetadataprocessor[74856:2408278] Starting appintentsmetadataprocessor export
+2026-10-26 22:11:47.472 appintentsmetadataprocessor[74856:2408278] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+PruneExplicitPrecompiledModules /Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+2026-10-26 22:12:06.973504+0800 HeartV3UITests-Runner[74922:2409280] [assertions] failed to observe with mask <BLSXPCBacklightProxyObserverMask: 0x1037d88b0; didUpdateToState: YES; eventsArray: YES> error:<XPC error received on message reply handler (3:BSServiceConnectionErrorDomain) "The operation couldn’t be completed. XPC error received on message reply handler">
+2026-10-26 22:12:07.172174+0800 HeartV3UITests-Runner[74922:2408862] [Default] Running tests...
+2026-10-26 22:12:07.257256+0800 HeartV3UITests-Runner[74922:2408862] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-26 22:12:07.846513+0800 HeartV3UITests-Runner[74922:2409280] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x1068d0e60> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-26 22:12:08.093319+0800 HeartV3UITests-Runner[74922:2409281] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-26 22:12:08.095553+0800 HeartV3UITests-Runner[74922:2409281] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+    t =      nans Interface orientation changed to Unknown
+objc[74922]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.Odullg/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.Odullg/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x106358118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-26 22:12:09.429154+0800 HeartV3UITests-Runner[74922:2408862] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.Odullg/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+Test Suite 'Selected tests' started at 2026-10-26 22:12:09.816.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-26 22:12:09.818.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-26 22:12:09.818.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testMorphInspectionSurvivesRepresentationChanges]' started.
+    t =     0.00s Start Test at 2026-10-26 22:12:09.822
+    t =     0.08s Set Up
+    t =     0.09s Open phil.heart-v3
+    t =     0.09s     Launch phil.heart-v3
+    t =     0.09s         Terminate phil.heart-v3:72942
+2026-10-26 22:12:11.396 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-26 22:12:11.397 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     3.78s         Setting up automation session
+    t =     8.67s         Wait for phil.heart-v3 to idle
+    t =    14.78s Find the "Developmental stage" Slider
+    t =    15.26s Waiting 30.0s for "Open wall" Button to exist
+    t =    16.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Open wall" Button`
+    t =    16.29s         Checking existence of `"Open wall" Button`
+    t =    17.33s Checking `Expect predicate `enabled == 1` for object "Open wall" Button`
+    t =    17.34s     Find the "Open wall" Button
+    t =    17.37s Tap "morph.wall" Button
+    t =    17.37s     Wait for phil.heart-v3 to idle
+    t =    17.37s     Find the "morph.wall" Button
+    t =    17.40s     Check for interrupting elements affecting "morph.wall" Button
+    t =    17.44s         Wait for com.apple.SurfBoard to idle
+    t =    17.49s     Synthesize event
+    t =    18.02s     Wait for phil.heart-v3 to idle
+    t =    19.30s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    19.30s     Find the "morph.wall" Button
+    t =    19.34s Waiting 30.0s for "Separate layers" Button to exist
+    t =    20.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Separate layers" Button`
+    t =    20.37s         Checking existence of `"Separate layers" Button`
+    t =    21.43s Checking `Expect predicate `enabled == 1` for object "Separate layers" Button`
+    t =    21.43s     Find the "Separate layers" Button
+    t =    21.46s Tap "morph.separateLayers" Button
+    t =    21.46s     Wait for phil.heart-v3 to idle
+    t =    21.46s     Find the "morph.separateLayers" Button
+    t =    21.48s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =    21.49s         Wait for com.apple.SurfBoard to idle
+    t =    21.50s     Synthesize event
+    t =    21.90s     Wait for phil.heart-v3 to idle
+    t =    21.93s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =    22.94s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =    22.94s         Checking existence of `"morph.moveLayer" Button`
+    t =    24.00s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =    24.01s     Find the "morph.moveLayer" Button
+    t =    24.05s Tap "morph.moveLayer" Button
+    t =    24.05s     Wait for phil.heart-v3 to idle
+    t =    24.05s     Find the "morph.moveLayer" Button
+    t =    24.07s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =    24.08s         Wait for com.apple.SurfBoard to idle
+    t =    24.09s     Synthesize event
+    t =    24.68s     Wait for phil.heart-v3 to idle
+    t =    24.68s Waiting 30.0s for "Cardiac jelly" Button to exist
+    t =    25.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Cardiac jelly" Button`
+    t =    25.74s         Checking existence of `"Cardiac jelly" Button`
+    t =    26.83s Checking `Expect predicate `enabled == 1` for object "Cardiac jelly" Button`
+    t =    26.83s     Find the "Cardiac jelly" Button
+    t =    26.86s Tap "Cardiac jelly" Button
+    t =    26.86s     Wait for phil.heart-v3 to idle
+    t =    26.86s     Find the "Cardiac jelly" Button
+    t =    26.88s     Check for interrupting elements affecting "Cardiac jelly" Button
+    t =    26.88s         Wait for com.apple.SurfBoard to idle
+    t =    26.89s     Synthesize event
+    t =    27.30s     Wait for phil.heart-v3 to idle
+    t =    27.32s Waiting 30.0s for "Isolate layer" Button to exist
+    t =    28.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Isolate layer" Button`
+    t =    28.34s         Checking existence of `"Isolate layer" Button`
+    t =    29.38s Checking `Expect predicate `enabled == 1` for object "Isolate layer" Button`
+    t =    29.38s     Find the "Isolate layer" Button
+    t =    29.40s Tap "morph.layerVisibility" Button
+    t =    29.40s     Wait for phil.heart-v3 to idle
+    t =    29.40s     Find the "morph.layerVisibility" Button
+    t =    29.42s     Check for interrupting elements affecting "morph.layerVisibility" Button
+    t =    29.42s         Wait for com.apple.SurfBoard to idle
+    t =    29.43s     Synthesize event
+    t =    29.80s     Wait for phil.heart-v3 to idle
+    t =    29.81s Waiting 30.0s for "Done" Button to exist
+    t =    30.84s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    30.84s         Checking existence of `"Done" Button`
+    t =    31.92s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    31.92s     Find the "Done" Button
+    t =    31.93s Tap "Done" Button
+    t =    31.93s     Wait for phil.heart-v3 to idle
+    t =    31.93s     Find the "Done" Button
+    t =    31.94s     Check for interrupting elements affecting "Done" Button
+    t =    31.94s         Wait for com.apple.SurfBoard to idle
+    t =    31.95s     Synthesize event
+    t =    32.35s     Wait for phil.heart-v3 to idle
+    t =    32.43s Waiting 30.0s for "Morph size" Slider to exist
+    t =    33.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Morph size" Slider`
+    t =    33.44s         Checking existence of `"Morph size" Slider`
+    t =    34.53s Checking `Expect predicate `enabled == 1` for object "Morph size" Slider`
+    t =    34.53s     Find the "Morph size" Slider
+    t =    34.57s Find the "AXSliderKnob" Slider
+    t =    34.60s Checking existence of `"AXSliderKnob" Other`
+    t =    34.62s Press "AXSliderKnob" Other[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Other[0.50, 0.50] -> (35.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    34.62s     Wait for phil.heart-v3 to idle
+    t =    34.62s     Find the "AXSliderKnob" Other
+    t =    34.64s     Check for interrupting elements affecting "AXSliderKnob" Other
+    t =    34.65s         Wait for com.apple.SurfBoard to idle
+    t =    34.65s     Synthesize event
+    t =    34.65s         Find the "AXSliderKnob" Other
+    t =    34.68s         Find the "AXSliderKnob" Other
+    t =    34.70s         Find the "AXSliderKnob" Other
+    t =    34.72s         Find the "AXSliderKnob" Other
+    t =    34.85s         Find the "AXSliderKnob" Other
+    t =    35.44s     Wait for phil.heart-v3 to idle
+    t =    35.44s Find the "AXSliderKnob" Slider
+    t =    35.47s Find the "Morph size" Slider
+    t =    35.51s Waiting 30.0s for "Heart anatomy" Button to exist
+    t =    36.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Heart anatomy" Button`
+    t =    36.54s         Checking existence of `"Heart anatomy" Button`
+    t =    37.62s Checking `Expect predicate `enabled == 1` for object "Heart anatomy" Button`
+    t =    37.62s     Find the "Heart anatomy" Button
+    t =    37.68s Tap "Heart anatomy" Button
+    t =    37.68s     Wait for phil.heart-v3 to idle
+    t =    37.68s     Find the "Heart anatomy" Button
+    t =    37.72s     Check for interrupting elements affecting "Heart anatomy" Button
+    t =    37.72s         Wait for com.apple.SurfBoard to idle
+    t =    37.73s     Synthesize event
+    t =    38.42s     Wait for phil.heart-v3 to idle
+    t =    38.42s Waiting 30.0s for "Development" Button to exist
+    t =    39.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Development" Button`
+    t =    39.44s         Checking existence of `"Development" Button`
+    t =    40.54s Checking `Expect predicate `enabled == 1` for object "Development" Button`
+    t =    40.54s     Find the "Development" Button
+    t =    40.56s Tap "Development" Button
+    t =    40.56s     Wait for phil.heart-v3 to idle
+    t =    40.56s     Find the "Development" Button
+    t =    40.58s     Check for interrupting elements affecting "Development" Button
+    t =    40.59s         Wait for com.apple.SurfBoard to idle
+    t =    40.59s     Synthesize event
+    t =    41.11s     Wait for phil.heart-v3 to idle
+    t =    41.11s Waiting 15.0s for "Reassemble layers" Button to exist
+    t =    42.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Reassemble layers" Button`
+    t =    42.14s         Checking existence of `"Reassemble layers" Button`
+    t =    43.21s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    43.21s     Find the "morph.wall" Button
+    t =    43.24s Waiting 15.0s for "Only Cardiac jelly" StaticText to exist
+    t =    44.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Cardiac jelly" StaticText`
+    t =    44.24s         Checking existence of `"Only Cardiac jelly" StaticText`
+    t =    44.29s Find the "Developmental stage" Slider
+    t =    44.32s Find the "Morph size" Slider
+    t =    44.35s Checking existence of `"Play morph" Button`
+    t =    44.38s Checking existence of `"morph.error" StaticText`
+    t =    44.41s Waiting 30.0s for "Reset morph" Button to exist
+    t =    45.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset morph" Button`
+    t =    45.44s         Checking existence of `"Reset morph" Button`
+    t =    46.53s Checking `Expect predicate `enabled == 1` for object "Reset morph" Button`
+    t =    46.54s     Find the "Reset morph" Button
+    t =    46.59s Tap "Reset morph" Button
+    t =    46.59s     Wait for phil.heart-v3 to idle
+    t =    46.60s     Find the "Reset morph" Button
+    t =    46.62s     Check for interrupting elements affecting "Reset morph" Button
+    t =    46.62s         Wait for com.apple.SurfBoard to idle
+    t =    46.63s     Synthesize event
+    t =    47.22s     Wait for phil.heart-v3 to idle
+    t =    47.33s Waiting 15.0s for "0%" StaticText to exist
+    t =    48.34s     Checking `Expect predicate `existsNoRetry == 1` for object "0%" StaticText`
+    t =    48.34s         Checking existence of `"0%" StaticText`
+    t =    48.39s Checking existence of `"morph.isolatedLayer" StaticText`
+    t =    48.42s Checking existence of `"Separate layers" Button`
+    t =    48.47s Open phil.heart-v3
+    t =    48.47s     Launch phil.heart-v3
+    t =    48.47s         Terminate phil.heart-v3:75017
+2026-10-26 22:12:59.336 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-26 22:12:59.336 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    49.75s         Setting up automation session
+    t =    56.46s         Wait for phil.heart-v3 to idle
+    t =    60.87s Waiting 30.0s for "learning.loopingMorph" Button to exist
+    t =    61.91s     Checking `Expect predicate `existsNoRetry == 1` for object "learning.loopingMorph" Button`
+    t =    61.91s         Checking existence of `"learning.loopingMorph" Button`
+    t =    63.21s Checking `Expect predicate `enabled == 1` for object "learning.loopingMorph" Button`
+    t =    63.21s     Find the "learning.loopingMorph" Button
+    t =    63.29s Tap "learning.loopingMorph" Button
+    t =    63.29s     Wait for phil.heart-v3 to idle
+    t =    63.29s     Find the "learning.loopingMorph" Button
+    t =    63.34s     Check for interrupting elements affecting "learning.loopingMorph" Button
+    t =    63.35s         Wait for com.apple.SurfBoard to idle
+    t =    63.35s     Synthesize event
+    t =    63.36s         Scroll element to visible
+    t =    63.37s         Find the "learning.loopingMorph" Button
+    t =    63.47s         Computed hit point {891.25, 543.5} after scrolling to visible
+    t =    64.28s     Wait for phil.heart-v3 to idle
+    t =    65.06s Waiting 30.0s for "Looping progression" Slider to exist
+    t =    66.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Looping progression" Slider`
+    t =    66.06s         Checking existence of `"Looping progression" Slider`
+    t =    67.17s Checking `Expect predicate `enabled == 1` for object "Looping progression" Slider`
+    t =    67.17s     Find the "Looping progression" Slider
+    t =    67.22s Find the "AXSliderKnob" Slider
+    t =    67.24s Checking existence of `"AXSliderKnob" Other`
+    t =    67.27s Press "AXSliderKnob" Other[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Other[0.50, 0.50] -> (45.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    67.27s     Wait for phil.heart-v3 to idle
+    t =    67.27s     Find the "AXSliderKnob" Other
+    t =    67.30s     Check for interrupting elements affecting "AXSliderKnob" Other
+    t =    67.30s         Wait for com.apple.SurfBoard to idle
+    t =    67.31s     Synthesize event
+    t =    67.31s         Find the "AXSliderKnob" Other
+    t =    67.34s         Find the "AXSliderKnob" Other
+    t =    67.37s         Find the "AXSliderKnob" Other
+    t =    67.39s         Find the "AXSliderKnob" Other
+    t =    67.42s         Find the "AXSliderKnob" Other
+    t =    68.04s     Wait for phil.heart-v3 to idle
+    t =    68.04s Find the "AXSliderKnob" Slider
+    t =    68.07s Find the "Looping progression" Slider
+    t =    68.17s Waiting 30.0s for "Open wall" Button to exist
+    t =    69.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Open wall" Button`
+    t =    69.24s         Checking existence of `"Open wall" Button`
+    t =    70.31s Checking `Expect predicate `enabled == 1` for object "Open wall" Button`
+    t =    70.31s     Find the "Open wall" Button
+    t =    70.35s Tap "morph.wall" Button
+    t =    70.35s     Wait for phil.heart-v3 to idle
+    t =    70.35s     Find the "morph.wall" Button
+    t =    70.38s     Check for interrupting elements affecting "morph.wall" Button
+    t =    70.39s         Wait for com.apple.SurfBoard to idle
+    t =    70.39s     Synthesize event
+    t =    70.77s     Wait for phil.heart-v3 to idle
+    t =    72.09s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    72.10s     Find the "morph.wall" Button
+    t =    72.16s Waiting 30.0s for "Separate layers" Button to exist
+    t =    73.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Separate layers" Button`
+    t =    73.20s         Checking existence of `"Separate layers" Button`
+    t =    74.29s Checking `Expect predicate `enabled == 1` for object "Separate layers" Button`
+    t =    74.29s     Find the "Separate layers" Button
+    t =    74.35s Tap "morph.separateLayers" Button
+    t =    74.35s     Wait for phil.heart-v3 to idle
+    t =    74.36s     Find the "morph.separateLayers" Button
+    t =    74.39s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =    74.39s         Wait for com.apple.SurfBoard to idle
+    t =    74.40s     Synthesize event
+    t =    74.77s     Wait for phil.heart-v3 to idle
+    t =    74.80s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =    75.84s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =    75.84s         Checking existence of `"morph.moveLayer" Button`
+    t =    76.90s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =    76.90s     Find the "morph.moveLayer" Button
+    t =    76.96s Tap "morph.moveLayer" Button
+    t =    76.96s     Wait for phil.heart-v3 to idle
+    t =    76.97s     Find the "morph.moveLayer" Button
+    t =    77.00s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =    77.00s         Wait for com.apple.SurfBoard to idle
+    t =    77.01s     Synthesize event
+    t =    77.42s     Wait for phil.heart-v3 to idle
+    t =    77.99s Waiting 30.0s for "Cardiac jelly" Button to exist
+    t =    79.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Cardiac jelly" Button`
+    t =    79.03s         Checking existence of `"Cardiac jelly" Button`
+    t =    80.11s Checking `Expect predicate `enabled == 1` for object "Cardiac jelly" Button`
+    t =    80.11s     Find the "Cardiac jelly" Button
+    t =    80.13s Tap "Cardiac jelly" Button
+    t =    80.13s     Wait for phil.heart-v3 to idle
+    t =    80.14s     Find the "Cardiac jelly" Button
+    t =    80.16s     Check for interrupting elements affecting "Cardiac jelly" Button
+    t =    80.16s         Wait for com.apple.SurfBoard to idle
+    t =    80.17s     Synthesize event
+    t =    80.55s     Wait for phil.heart-v3 to idle
+    t =    80.57s Waiting 30.0s for "Isolate layer" Button to exist
+    t =    81.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Isolate layer" Button`
+    t =    81.60s         Checking existence of `"Isolate layer" Button`
+    t =    82.63s Checking `Expect predicate `enabled == 1` for object "Isolate layer" Button`
+    t =    82.63s     Find the "Isolate layer" Button
+    t =    82.66s Tap "morph.layerVisibility" Button
+    t =    82.66s     Wait for phil.heart-v3 to idle
+    t =    82.67s     Find the "morph.layerVisibility" Button
+    t =    82.68s     Check for interrupting elements affecting "morph.layerVisibility" Button
+    t =    82.69s         Wait for com.apple.SurfBoard to idle
+    t =    82.69s     Synthesize event
+    t =    83.23s     Wait for phil.heart-v3 to idle
+    t =    83.23s Waiting 30.0s for "Done" Button to exist
+    t =    84.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    84.24s         Checking existence of `"Done" Button`
+    t =    85.29s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    85.29s     Find the "Done" Button
+    t =    85.30s Tap "Done" Button
+    t =    85.30s     Wait for phil.heart-v3 to idle
+    t =    85.31s     Find the "Done" Button
+    t =    85.32s     Check for interrupting elements affecting "Done" Button
+    t =    85.32s         Wait for com.apple.SurfBoard to idle
+    t =    85.33s     Synthesize event
+    t =    85.70s     Wait for phil.heart-v3 to idle
+    t =    85.76s Waiting 30.0s for "Morph size" Slider to exist
+    t =    86.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Morph size" Slider`
+    t =    86.84s         Checking existence of `"Morph size" Slider`
+    t =    87.94s Checking `Expect predicate `enabled == 1` for object "Morph size" Slider`
+    t =    87.97s     Find the "Morph size" Slider
+    t =    88.11s Find the "AXSliderKnob" Slider
+    t =    88.18s Checking existence of `"AXSliderKnob" Other`
+    t =    88.24s Press "AXSliderKnob" Other[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Other[0.50, 0.50] -> (35.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    88.24s     Wait for phil.heart-v3 to idle
+    t =    88.25s     Find the "AXSliderKnob" Other
+    t =    88.33s     Check for interrupting elements affecting "AXSliderKnob" Other
+    t =    88.36s         Wait for com.apple.SurfBoard to idle
+    t =    88.42s     Synthesize event
+    t =    88.42s         Find the "AXSliderKnob" Other
+    t =    88.47s         Find the "AXSliderKnob" Other
+    t =    88.51s         Find the "AXSliderKnob" Other
+    t =    88.54s         Find the "AXSliderKnob" Other
+    t =    88.59s         Find the "AXSliderKnob" Other
+    t =    89.29s     Wait for phil.heart-v3 to idle
+    t =    89.29s Find the "AXSliderKnob" Slider
+    t =    89.32s Find the "Morph size" Slider
+    t =    89.40s Waiting 30.0s for "Return to lesson" Button to exist
+    t =    90.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Return to lesson" Button`
+    t =    90.44s         Checking existence of `"Return to lesson" Button`
+    t =    91.54s Checking `Expect predicate `enabled == 1` for object "Return to lesson" Button`
+    t =    91.54s     Find the "Return to lesson" Button
+    t =    91.57s Tap "Return to lesson" Button
+    t =    91.57s     Wait for phil.heart-v3 to idle
+    t =    91.57s     Find the "Return to lesson" Button
+    t =    91.59s     Check for interrupting elements affecting "Return to lesson" Button
+    t =    91.60s         Wait for com.apple.SurfBoard to idle
+    t =    91.61s     Synthesize event
+    t =    92.02s     Wait for phil.heart-v3 to idle
+    t =    92.45s Waiting 15.0s for "Phase 1 of 3" StaticText to exist
+    t =    93.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Phase 1 of 3" StaticText`
+    t =    93.46s         Checking existence of `"Phase 1 of 3" StaticText`
+    t =    93.50s Waiting 30.0s for "learning.loopingMorph" Button to exist
+    t =    94.53s     Checking `Expect predicate `existsNoRetry == 1` for object "learning.loopingMorph" Button`
+    t =    94.54s         Checking existence of `"learning.loopingMorph" Button`
+    t =    95.63s Checking `Expect predicate `enabled == 1` for object "learning.loopingMorph" Button`
+    t =    95.63s     Find the "learning.loopingMorph" Button
+    t =    95.68s Tap "learning.loopingMorph" Button
+    t =    95.68s     Wait for phil.heart-v3 to idle
+    t =    95.69s     Find the "learning.loopingMorph" Button
+    t =    95.73s     Check for interrupting elements affecting "learning.loopingMorph" Button
+    t =    95.73s         Wait for com.apple.SurfBoard to idle
+    t =    95.74s     Synthesize event
+    t =    96.25s     Wait for phil.heart-v3 to idle
+    t =    97.01s Waiting 15.0s for "Reassemble layers" Button to exist
+    t =    98.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Reassemble layers" Button`
+    t =    98.04s         Checking existence of `"Reassemble layers" Button`
+    t =    99.17s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    99.17s     Find the "morph.wall" Button
+    t =    99.23s Waiting 15.0s for "Only Cardiac jelly" StaticText to exist
+    t =   100.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Cardiac jelly" StaticText`
+    t =   100.24s         Checking existence of `"Only Cardiac jelly" StaticText`
+    t =   100.30s Find the "Looping progression" Slider
+    t =   100.36s Find the "Morph size" Slider
+    t =   100.41s Checking existence of `"Play morph" Button`
+    t =   100.47s Checking existence of `"morph.error" StaticText`
+    t =   100.53s Waiting 30.0s for "Reset morph" Button to exist
+    t =   101.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset morph" Button`
+    t =   101.53s         Checking existence of `"Reset morph" Button`
+    t =   102.62s Checking `Expect predicate `enabled == 1` for object "Reset morph" Button`
+    t =   102.62s     Find the "Reset morph" Button
+    t =   102.68s Tap "Reset morph" Button
+    t =   102.68s     Wait for phil.heart-v3 to idle
+    t =   102.69s     Find the "Reset morph" Button
+    t =   102.72s     Check for interrupting elements affecting "Reset morph" Button
+    t =   102.73s         Wait for com.apple.SurfBoard to idle
+    t =   102.73s     Synthesize event
+    t =   103.17s     Wait for phil.heart-v3 to idle
+    t =   103.38s Waiting 15.0s for "0%" StaticText to exist
+    t =   104.44s     Checking `Expect predicate `existsNoRetry == 1` for object "0%" StaticText`
+    t =   104.44s         Checking existence of `"0%" StaticText`
+    t =   104.51s Checking existence of `"morph.isolatedLayer" StaticText`
+    t =   104.57s Checking existence of `"Separate layers" Button`
+    t =   104.63s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testMorphInspectionSurvivesRepresentationChanges]' passed (106.614 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testTubeLayersFollowMorphInBothModes]' started.
+    t =     0.01s Start Test at 2026-10-26 22:13:56.442
+    t =     0.06s Set Up
+    t =     0.06s Open phil.heart-v3
+    t =     0.06s     Launch phil.heart-v3
+    t =     0.06s         Terminate phil.heart-v3:75104
+2026-10-26 22:13:57.562 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-26 22:13:57.562 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.33s         Setting up automation session
+    t =     6.03s         Wait for phil.heart-v3 to idle
+    t =     9.27s Waiting 30.0s for "Open wall" Button to exist
+    t =    10.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Open wall" Button`
+    t =    10.32s         Checking existence of `"Open wall" Button`
+    t =    11.48s Checking `Expect predicate `enabled == 1` for object "Open wall" Button`
+    t =    11.48s     Find the "Open wall" Button
+    t =    11.50s Tap "morph.wall" Button
+    t =    11.51s     Wait for phil.heart-v3 to idle
+    t =    11.51s     Find the "morph.wall" Button
+    t =    11.53s     Check for interrupting elements affecting "morph.wall" Button
+    t =    11.53s         Wait for com.apple.SurfBoard to idle
+    t =    11.54s     Synthesize event
+    t =    11.95s     Wait for phil.heart-v3 to idle
+    t =    13.18s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    13.18s     Find the "morph.wall" Button
+    t =    13.22s Waiting 30.0s for "Separate layers" Button to exist
+    t =    14.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Separate layers" Button`
+    t =    14.24s         Checking existence of `"Separate layers" Button`
+    t =    15.32s Checking `Expect predicate `enabled == 1` for object "Separate layers" Button`
+    t =    15.32s     Find the "Separate layers" Button
+    t =    15.36s Tap "morph.separateLayers" Button
+    t =    15.36s     Wait for phil.heart-v3 to idle
+    t =    15.36s     Find the "morph.separateLayers" Button
+    t =    15.38s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =    15.39s         Wait for com.apple.SurfBoard to idle
+    t =    15.39s     Synthesize event
+    t =    15.82s     Wait for phil.heart-v3 to idle
+    t =    15.88s Checking existence of `"Reassemble layers" Button`
+    t =    15.98s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =    17.02s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =    17.02s         Checking existence of `"morph.moveLayer" Button`
+    t =    18.07s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =    18.07s     Find the "morph.moveLayer" Button
+    t =    18.11s Tap "morph.moveLayer" Button
+    t =    18.11s     Wait for phil.heart-v3 to idle
+    t =    18.12s     Find the "morph.moveLayer" Button
+    t =    18.14s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =    18.14s         Wait for com.apple.SurfBoard to idle
+    t =    18.15s     Synthesize event
+    t =    18.58s     Wait for phil.heart-v3 to idle
+    t =    19.20s Waiting 15.0s for "Inspect one layer" StaticText to exist
+    t =    20.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Inspect one layer" StaticText`
+    t =    20.22s         Checking existence of `"Inspect one layer" StaticText`
+    t =    20.26s Waiting 30.0s for "Endocardium" Button to exist
+    t =    21.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Endocardium" Button`
+    t =    21.29s         Checking existence of `"Endocardium" Button`
+    t =    22.32s Checking `Expect predicate `enabled == 1` for object "Endocardium" Button`
+    t =    22.32s     Find the "Endocardium" Button
+    t =    22.34s Tap "Endocardium" Button
+    t =    22.34s     Wait for phil.heart-v3 to idle
+    t =    22.34s     Find the "Endocardium" Button
+    t =    22.36s     Check for interrupting elements affecting "Endocardium" Button
+    t =    22.36s         Wait for com.apple.SurfBoard to idle
+    t =    22.37s     Synthesize event
+    t =    22.77s     Wait for phil.heart-v3 to idle
+    t =    22.78s Waiting 15.0s for "Inner cell layer lining the blood channel" StaticText to exist
+    t =    23.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Inner cell layer lining the blood channel" StaticText`
+    t =    23.81s         Checking existence of `"Inner cell layer lining the blood channel" StaticText`
+    t =    23.84s Waiting 30.0s for "Right" Button to exist
+    t =    24.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Right" Button`
+    t =    24.87s         Checking existence of `"Right" Button`
+    t =    25.91s Checking `Expect predicate `enabled == 1` for object "Right" Button`
+    t =    25.92s     Find the "Right" Button
+    t =    25.93s Tap "Right" Button
+    t =    25.93s     Wait for phil.heart-v3 to idle
+    t =    25.93s     Find the "Right" Button
+    t =    25.94s     Check for interrupting elements affecting "Right" Button
+    t =    25.94s         Wait for com.apple.SurfBoard to idle
+    t =    25.95s     Synthesize event
+    t =    26.38s     Wait for phil.heart-v3 to idle
+    t =    26.43s Waiting 30.0s for "Nearer" Button to exist
+    t =    27.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Nearer" Button`
+    t =    27.48s         Checking existence of `"Nearer" Button`
+    t =    28.52s Checking `Expect predicate `enabled == 1` for object "Nearer" Button`
+    t =    28.52s     Find the "Nearer" Button
+    t =    28.55s Tap "Nearer" Button
+    t =    28.55s     Wait for phil.heart-v3 to idle
+    t =    28.56s     Find the "Nearer" Button
+    t =    28.57s     Check for interrupting elements affecting "Nearer" Button
+    t =    28.58s         Wait for com.apple.SurfBoard to idle
+    t =    28.59s     Synthesize event
+    t =    29.15s     Wait for phil.heart-v3 to idle
+    t =    29.21s Waiting 30.0s for "Isolate layer" Button to exist
+    t =    30.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Isolate layer" Button`
+    t =    30.22s         Checking existence of `"Isolate layer" Button`
+    t =    31.28s Checking `Expect predicate `enabled == 1` for object "Isolate layer" Button`
+    t =    31.28s     Find the "Isolate layer" Button
+    t =    31.31s Tap "morph.layerVisibility" Button
+    t =    31.31s     Wait for phil.heart-v3 to idle
+    t =    31.31s     Find the "morph.layerVisibility" Button
+    t =    31.32s     Check for interrupting elements affecting "morph.layerVisibility" Button
+    t =    31.33s         Wait for com.apple.SurfBoard to idle
+    t =    31.34s     Synthesize event
+    t =    31.74s     Wait for phil.heart-v3 to idle
+    t =    31.74s Waiting 30.0s for "Done" Button to exist
+    t =    32.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    32.77s         Checking existence of `"Done" Button`
+    t =    33.81s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    33.81s     Find the "Done" Button
+    t =    33.83s Tap "Done" Button
+    t =    33.83s     Wait for phil.heart-v3 to idle
+    t =    33.83s     Find the "Done" Button
+    t =    33.84s     Check for interrupting elements affecting "Done" Button
+    t =    33.84s         Wait for com.apple.SurfBoard to idle
+    t =    33.85s     Synthesize event
+    t =    34.30s     Wait for phil.heart-v3 to idle
+    t =    34.39s Waiting 15.0s for "Only Endocardium" StaticText to exist
+    t =    35.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Endocardium" StaticText`
+    t =    35.42s         Checking existence of `"Only Endocardium" StaticText`
+    t =    35.47s Waiting 30.0s for "Developmental stage" Slider to exist
+    t =    36.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Developmental stage" Slider`
+    t =    36.50s         Checking existence of `"Developmental stage" Slider`
+    t =    37.58s Checking `Expect predicate `enabled == 1` for object "Developmental stage" Slider`
+    t =    37.58s     Find the "Developmental stage" Slider
+    t =    37.60s Find the "AXSliderKnob" Slider
+    t =    37.62s Checking existence of `"AXSliderKnob" Other`
+    t =    37.65s Press "AXSliderKnob" Other[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Other[0.50, 0.50] -> (18.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    37.65s     Wait for phil.heart-v3 to idle
+    t =    37.65s     Find the "AXSliderKnob" Other
+    t =    37.67s     Check for interrupting elements affecting "AXSliderKnob" Other
+    t =    37.78s         Wait for com.apple.SurfBoard to idle
+    t =    37.78s     Synthesize event
+    t =    37.78s         Find the "AXSliderKnob" Other
+    t =    37.81s         Find the "AXSliderKnob" Other
+    t =    37.84s         Find the "AXSliderKnob" Other
+    t =    37.86s         Find the "AXSliderKnob" Other
+    t =    37.89s         Find the "AXSliderKnob" Other
+    t =    38.48s     Wait for phil.heart-v3 to idle
+    t =    38.48s Find the "AXSliderKnob" Slider
+    t =    38.51s Checking existence of `"Reassemble layers" Button`
+    t =    38.55s Checking existence of `"morph.error" StaticText`
+    t =    38.57s Waiting 30.0s for "About layers" Button to exist
+    t =    39.62s     Checking `Expect predicate `existsNoRetry == 1` for object "About layers" Button`
+    t =    39.62s         Checking existence of `"About layers" Button`
+    t =    40.70s Checking `Expect predicate `enabled == 1` for object "About layers" Button`
+    t =    40.70s     Find the "About layers" Button
+    t =    40.75s Tap "info.circle" Button
+    t =    40.75s     Wait for phil.heart-v3 to idle
+    t =    40.75s     Find the "info.circle" Button
+    t =    40.77s     Check for interrupting elements affecting "info.circle" Button
+    t =    40.88s         Wait for com.apple.SurfBoard to idle
+    t =    40.89s     Synthesize event
+    t =    41.40s     Wait for phil.heart-v3 to idle
+    t =    41.92s Waiting 15.0s for "Early heart-tube wall" StaticText to exist
+    t =    43.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Early heart-tube wall" StaticText`
+    t =    43.01s         Checking existence of `"Early heart-tube wall" StaticText`
+    t =    43.02s Waiting 15.0s for "Cardiac jelly: Extracellular matrix between the two cell layers." StaticText to exist
+    t =    44.04s     Checking `Expect predicate `existsNoRetry == 1` for object "Cardiac jelly: Extracellular matrix between the two cell layers." StaticText`
+    t =    44.04s         Checking existence of `"Cardiac jelly: Extracellular matrix between the two cell layers." StaticText`
+    t =    44.05s Waiting 30.0s for "Done" Button to exist
+    t =    45.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    45.09s         Checking existence of `"Done" Button`
+    t =    46.12s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    46.12s     Find the "Done" Button
+    t =    46.14s Tap "Done" Button
+    t =    46.14s     Wait for phil.heart-v3 to idle
+    t =    46.15s     Find the "Done" Button
+    t =    46.16s     Check for interrupting elements affecting "Done" Button
+    t =    46.16s         Wait for com.apple.SurfBoard to idle
+    t =    46.17s     Synthesize event
+    t =    46.56s     Wait for phil.heart-v3 to idle
+    t =    46.63s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =    47.68s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =    47.68s         Checking existence of `"morph.moveLayer" Button`
+    t =    48.71s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =    48.71s     Find the "morph.moveLayer" Button
+    t =    48.74s Tap "morph.moveLayer" Button
+    t =    48.74s     Wait for phil.heart-v3 to idle
+    t =    48.74s     Find the "morph.moveLayer" Button
+    t =    48.76s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =    48.76s         Wait for com.apple.SurfBoard to idle
+    t =    48.77s     Synthesize event
+    t =    49.16s     Wait for phil.heart-v3 to idle
+    t =    49.67s Waiting 15.0s for "Inner cell layer lining the blood channel" StaticText to exist
+    t =    50.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Inner cell layer lining the blood channel" StaticText`
+    t =    50.70s         Checking existence of `"Inner cell layer lining the blood channel" StaticText`
+    t =    50.74s Waiting 30.0s for "Reset layer move" Button to exist
+    t =    51.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset layer move" Button`
+    t =    51.77s         Checking existence of `"Reset layer move" Button`
+    t =    52.82s Checking `Expect predicate `enabled == 1` for object "Reset layer move" Button`
+    t =    52.82s     Find the "Reset layer move" Button
+    t =    52.84s Tap "Reset layer move" Button
+    t =    52.84s     Wait for phil.heart-v3 to idle
+    t =    52.84s     Find the "Reset layer move" Button
+    t =    52.85s     Check for interrupting elements affecting "Reset layer move" Button
+    t =    52.86s         Wait for com.apple.SurfBoard to idle
+    t =    52.86s     Synthesize event
+    t =    53.26s     Wait for phil.heart-v3 to idle
+    t =    53.31s Waiting 30.0s for "Done" Button to exist
+    t =    54.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    54.32s         Checking existence of `"Done" Button`
+    t =    55.35s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    55.36s     Find the "Done" Button
+    t =    55.38s Tap "Done" Button
+    t =    55.38s     Wait for phil.heart-v3 to idle
+    t =    55.38s     Find the "Done" Button
+    t =    55.39s     Check for interrupting elements affecting "Done" Button
+    t =    55.39s         Wait for com.apple.SurfBoard to idle
+    t =    55.40s     Synthesize event
+    t =    55.85s     Wait for phil.heart-v3 to idle
+    t =    55.94s Waiting 30.0s for "morph.resetView" Button to exist
+    t =    57.00s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.resetView" Button`
+    t =    57.08s         Checking existence of `"morph.resetView" Button`
+    t =    58.40s Checking `Expect predicate `enabled == 1` for object "morph.resetView" Button`
+    t =    58.41s     Find the "morph.resetView" Button
+    t =    58.44s Tap "morph.resetView" Button
+    t =    58.44s     Wait for phil.heart-v3 to idle
+    t =    58.45s     Find the "morph.resetView" Button
+    t =    58.49s     Check for interrupting elements affecting "morph.resetView" Button
+    t =    58.53s         Wait for com.apple.SurfBoard to idle
+    t =    58.58s     Synthesize event
+    t =    59.12s     Wait for phil.heart-v3 to idle
+    t =    59.12s Checking existence of `"Reassemble layers" Button`
+    t =    59.23s Waiting 15.0s for "Only Endocardium" StaticText to exist
+    t =    60.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Endocardium" StaticText`
+    t =    60.31s         Checking existence of `"Only Endocardium" StaticText`
+    t =    60.34s Waiting 30.0s for "morph.showAllLayers" Button to exist
+    t =    61.38s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.showAllLayers" Button`
+    t =    61.38s         Checking existence of `"morph.showAllLayers" Button`
+    t =    62.47s Checking `Expect predicate `enabled == 1` for object "morph.showAllLayers" Button`
+    t =    62.47s     Find the "morph.showAllLayers" Button
+    t =    62.51s Tap "morph.showAllLayers" Button
+    t =    62.51s     Wait for phil.heart-v3 to idle
+    t =    62.51s     Find the "morph.showAllLayers" Button
+    t =    62.53s     Check for interrupting elements affecting "morph.showAllLayers" Button
+    t =    62.54s         Wait for com.apple.SurfBoard to idle
+    t =    62.55s     Synthesize event
+    t =    63.33s     Wait for phil.heart-v3 to idle
+    t =    63.33s Checking existence of `"morph.isolatedLayer" StaticText`
+    t =    63.38s Checking existence of `"Reassemble layers" Button`
+    t =    63.41s Waiting 30.0s for "Reassemble layers" Button to exist
+    t =    64.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Reassemble layers" Button`
+    t =    64.42s         Checking existence of `"Reassemble layers" Button`
+    t =    65.48s Checking `Expect predicate `enabled == 1` for object "Reassemble layers" Button`
+    t =    65.48s     Find the "Reassemble layers" Button
+    t =    65.51s Tap "morph.separateLayers" Button
+    t =    65.51s     Wait for phil.heart-v3 to idle
+    t =    65.51s     Find the "morph.separateLayers" Button
+    t =    65.53s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =    65.53s         Wait for com.apple.SurfBoard to idle
+    t =    65.54s     Synthesize event
+    t =    65.97s     Wait for phil.heart-v3 to idle
+    t =    66.03s Waiting 30.0s for "Reset morph" Button to exist
+    t =    67.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset morph" Button`
+    t =    67.08s         Checking existence of `"Reset morph" Button`
+    t =    68.16s Checking `Expect predicate `enabled == 1` for object "Reset morph" Button`
+    t =    68.16s     Find the "Reset morph" Button
+    t =    68.20s Tap "Reset morph" Button
+    t =    68.20s     Wait for phil.heart-v3 to idle
+    t =    68.20s     Find the "Reset morph" Button
+    t =    68.22s     Check for interrupting elements affecting "Reset morph" Button
+    t =    68.22s         Wait for com.apple.SurfBoard to idle
+    t =    68.23s     Synthesize event
+    t =    68.77s     Wait for phil.heart-v3 to idle
+    t =    68.78s Waiting 15.0s for "0%" StaticText to exist
+    t =    69.82s     Checking `Expect predicate `existsNoRetry == 1` for object "0%" StaticText`
+    t =    69.82s         Checking existence of `"0%" StaticText`
+    t =    69.86s Checking existence of `"Separate layers" Button`
+    t =    69.89s Open phil.heart-v3
+    t =    69.89s     Launch phil.heart-v3
+    t =    69.89s         Terminate phil.heart-v3:75207
+2026-10-26 22:15:07.364 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-26 22:15:07.364 xcodebuild[74721:2407452] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    71.14s         Setting up automation session
+    t =    76.19s         Wait for phil.heart-v3 to idle
+    t =    79.75s Waiting 30.0s for "learning.loopingMorph" Button to exist
+    t =    80.80s     Checking `Expect predicate `existsNoRetry == 1` for object "learning.loopingMorph" Button`
+    t =    80.80s         Checking existence of `"learning.loopingMorph" Button`
+    t =    82.05s Checking `Expect predicate `enabled == 1` for object "learning.loopingMorph" Button`
+    t =    82.06s     Find the "learning.loopingMorph" Button
+    t =    82.14s Tap "learning.loopingMorph" Button
+    t =    82.14s     Wait for phil.heart-v3 to idle
+    t =    82.14s     Find the "learning.loopingMorph" Button
+    t =    82.19s     Check for interrupting elements affecting "learning.loopingMorph" Button
+    t =    82.19s         Wait for com.apple.SurfBoard to idle
+    t =    82.20s     Synthesize event
+    t =    82.21s         Scroll element to visible
+    t =    82.23s         Find the "learning.loopingMorph" Button
+    t =    82.32s         Computed hit point {891.25, 543.5} after scrolling to visible
+    t =    83.05s     Wait for phil.heart-v3 to idle
+    t =    83.84s Waiting 30.0s for "Open wall" Button to exist
+    t =    84.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Open wall" Button`
+    t =    84.89s         Checking existence of `"Open wall" Button`
+    t =    86.01s Checking `Expect predicate `enabled == 1` for object "Open wall" Button`
+    t =    86.01s     Find the "Open wall" Button
+    t =    86.05s Tap "morph.wall" Button
+    t =    86.05s     Wait for phil.heart-v3 to idle
+    t =    86.06s     Find the "morph.wall" Button
+    t =    86.09s     Check for interrupting elements affecting "morph.wall" Button
+    t =    86.09s         Wait for com.apple.SurfBoard to idle
+    t =    86.11s     Synthesize event
+    t =    86.48s     Wait for phil.heart-v3 to idle
+    t =    87.92s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    87.92s     Find the "morph.wall" Button
+    t =    87.98s Waiting 30.0s for "Separate layers" Button to exist
+    t =    89.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Separate layers" Button`
+    t =    89.01s         Checking existence of `"Separate layers" Button`
+    t =    90.10s Checking `Expect predicate `enabled == 1` for object "Separate layers" Button`
+    t =    90.10s     Find the "Separate layers" Button
+    t =    90.16s Tap "morph.separateLayers" Button
+    t =    90.16s     Wait for phil.heart-v3 to idle
+    t =    90.17s     Find the "morph.separateLayers" Button
+    t =    90.20s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =    90.20s         Wait for com.apple.SurfBoard to idle
+    t =    90.21s     Synthesize event
+    t =    90.72s     Wait for phil.heart-v3 to idle
+    t =    90.76s Checking existence of `"Reassemble layers" Button`
+    t =    90.94s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =    92.01s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =    92.01s         Checking existence of `"morph.moveLayer" Button`
+    t =    93.10s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =    93.10s     Find the "morph.moveLayer" Button
+    t =    93.16s Tap "morph.moveLayer" Button
+    t =    93.16s     Wait for phil.heart-v3 to idle
+    t =    93.16s     Find the "morph.moveLayer" Button
+    t =    93.20s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =    93.20s         Wait for com.apple.SurfBoard to idle
+    t =    93.21s     Synthesize event
+    t =    93.65s     Wait for phil.heart-v3 to idle
+    t =    94.29s Waiting 15.0s for "Inspect one layer" StaticText to exist
+    t =    95.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Inspect one layer" StaticText`
+    t =    95.32s         Checking existence of `"Inspect one layer" StaticText`
+    t =    95.34s Waiting 30.0s for "Endocardium" Button to exist
+    t =    96.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Endocardium" Button`
+    t =    96.37s         Checking existence of `"Endocardium" Button`
+    t =    97.41s Checking `Expect predicate `enabled == 1` for object "Endocardium" Button`
+    t =    97.41s     Find the "Endocardium" Button
+    t =    97.44s Tap "Endocardium" Button
+    t =    97.44s     Wait for phil.heart-v3 to idle
+    t =    97.44s     Find the "Endocardium" Button
+    t =    97.46s     Check for interrupting elements affecting "Endocardium" Button
+    t =    97.46s         Wait for com.apple.SurfBoard to idle
+    t =    97.47s     Synthesize event
+    t =    97.87s     Wait for phil.heart-v3 to idle
+    t =    97.89s Waiting 15.0s for "Inner cell layer lining the blood channel" StaticText to exist
+    t =    98.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Inner cell layer lining the blood channel" StaticText`
+    t =    98.91s         Checking existence of `"Inner cell layer lining the blood channel" StaticText`
+    t =    98.94s Waiting 30.0s for "Right" Button to exist
+    t =    99.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Right" Button`
+    t =    99.98s         Checking existence of `"Right" Button`
+    t =   101.02s Checking `Expect predicate `enabled == 1` for object "Right" Button`
+    t =   101.02s     Find the "Right" Button
+    t =   101.03s Tap "Right" Button
+    t =   101.03s     Wait for phil.heart-v3 to idle
+    t =   101.03s     Find the "Right" Button
+    t =   101.04s     Check for interrupting elements affecting "Right" Button
+    t =   101.05s         Wait for com.apple.SurfBoard to idle
+    t =   101.06s     Synthesize event
+    t =   101.43s     Wait for phil.heart-v3 to idle
+    t =   101.48s Waiting 30.0s for "Nearer" Button to exist
+    t =   102.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Nearer" Button`
+    t =   102.52s         Checking existence of `"Nearer" Button`
+    t =   103.58s Checking `Expect predicate `enabled == 1` for object "Nearer" Button`
+    t =   103.58s     Find the "Nearer" Button
+    t =   103.62s Tap "Nearer" Button
+    t =   103.62s     Wait for phil.heart-v3 to idle
+    t =   103.62s     Find the "Nearer" Button
+    t =   103.64s     Check for interrupting elements affecting "Nearer" Button
+    t =   103.75s         Wait for com.apple.SurfBoard to idle
+    t =   103.76s     Synthesize event
+    t =   104.13s     Wait for phil.heart-v3 to idle
+    t =   104.18s Waiting 30.0s for "Isolate layer" Button to exist
+    t =   105.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Isolate layer" Button`
+    t =   105.22s         Checking existence of `"Isolate layer" Button`
+    t =   106.28s Checking `Expect predicate `enabled == 1` for object "Isolate layer" Button`
+    t =   106.29s     Find the "Isolate layer" Button
+    t =   106.31s Tap "morph.layerVisibility" Button
+    t =   106.31s     Wait for phil.heart-v3 to idle
+    t =   106.31s     Find the "morph.layerVisibility" Button
+    t =   106.33s     Check for interrupting elements affecting "morph.layerVisibility" Button
+    t =   106.33s         Wait for com.apple.SurfBoard to idle
+    t =   106.34s     Synthesize event
+    t =   106.78s     Wait for phil.heart-v3 to idle
+    t =   106.79s Waiting 30.0s for "Done" Button to exist
+    t =   107.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   107.82s         Checking existence of `"Done" Button`
+    t =   108.86s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =   108.86s     Find the "Done" Button
+    t =   108.90s Tap "Done" Button
+    t =   108.90s     Wait for phil.heart-v3 to idle
+    t =   108.90s     Find the "Done" Button
+    t =   108.91s     Check for interrupting elements affecting "Done" Button
+    t =   108.92s         Wait for com.apple.SurfBoard to idle
+    t =   108.93s     Synthesize event
+    t =   109.33s     Wait for phil.heart-v3 to idle
+    t =   109.41s Waiting 15.0s for "Only Endocardium" StaticText to exist
+    t =   110.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Endocardium" StaticText`
+    t =   110.42s         Checking existence of `"Only Endocardium" StaticText`
+    t =   110.49s Waiting 30.0s for "Looping progression" Slider to exist
+    t =   111.51s     Checking `Expect predicate `existsNoRetry == 1` for object "Looping progression" Slider`
+    t =   111.51s         Checking existence of `"Looping progression" Slider`
+    t =   112.59s Checking `Expect predicate `enabled == 1` for object "Looping progression" Slider`
+    t =   112.59s     Find the "Looping progression" Slider
+    t =   112.62s Find the "AXSliderKnob" Slider
+    t =   112.65s Checking existence of `"AXSliderKnob" Other`
+    t =   112.67s Press "AXSliderKnob" Other[0.50, 0.50] for 0.2 seconds, then drag to "AXSliderKnob" Other[0.50, 0.50] -> (18.0, 0.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   112.67s     Wait for phil.heart-v3 to idle
+    t =   112.67s     Find the "AXSliderKnob" Other
+    t =   112.70s     Check for interrupting elements affecting "AXSliderKnob" Other
+    t =   112.71s         Wait for com.apple.SurfBoard to idle
+    t =   112.71s     Synthesize event
+    t =   112.71s         Find the "AXSliderKnob" Other
+    t =   112.74s         Find the "AXSliderKnob" Other
+    t =   112.77s         Find the "AXSliderKnob" Other
+    t =   112.80s         Find the "AXSliderKnob" Other
+    t =   112.83s         Find the "AXSliderKnob" Other
+    t =   113.38s     Wait for phil.heart-v3 to idle
+    t =   113.38s Find the "AXSliderKnob" Slider
+    t =   113.41s Checking existence of `"Reassemble layers" Button`
+    t =   113.49s Checking existence of `"morph.error" StaticText`
+    t =   113.56s Waiting 30.0s for "About layers" Button to exist
+    t =   114.57s     Checking `Expect predicate `existsNoRetry == 1` for object "About layers" Button`
+    t =   114.58s         Checking existence of `"About layers" Button`
+    t =   115.77s Checking `Expect predicate `enabled == 1` for object "About layers" Button`
+    t =   115.78s     Find the "About layers" Button
+    t =   115.85s Tap "info.circle" Button
+    t =   115.85s     Wait for phil.heart-v3 to idle
+    t =   115.85s     Find the "info.circle" Button
+    t =   115.88s     Check for interrupting elements affecting "info.circle" Button
+    t =   115.89s         Wait for com.apple.SurfBoard to idle
+    t =   115.89s     Synthesize event
+    t =   116.30s     Wait for phil.heart-v3 to idle
+    t =   116.80s Waiting 15.0s for "Early heart-tube wall" StaticText to exist
+    t =   117.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Early heart-tube wall" StaticText`
+    t =   117.81s         Checking existence of `"Early heart-tube wall" StaticText`
+    t =   117.83s Waiting 15.0s for "Cardiac jelly: Extracellular matrix between the two cell layers." StaticText to exist
+    t =   118.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Cardiac jelly: Extracellular matrix between the two cell layers." StaticText`
+    t =   118.86s         Checking existence of `"Cardiac jelly: Extracellular matrix between the two cell layers." StaticText`
+    t =   118.88s Waiting 30.0s for "Done" Button to exist
+    t =   119.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   119.91s         Checking existence of `"Done" Button`
+    t =   120.96s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =   120.96s     Find the "Done" Button
+    t =   120.98s Tap "Done" Button
+    t =   120.98s     Wait for phil.heart-v3 to idle
+    t =   120.98s     Find the "Done" Button
+    t =   120.99s     Check for interrupting elements affecting "Done" Button
+    t =   121.00s         Wait for com.apple.SurfBoard to idle
+    t =   121.01s     Synthesize event
+    t =   121.44s     Wait for phil.heart-v3 to idle
+    t =   121.51s Waiting 30.0s for "morph.moveLayer" Button to exist
+    t =   122.52s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.moveLayer" Button`
+    t =   122.52s         Checking existence of `"morph.moveLayer" Button`
+    t =   123.58s Checking `Expect predicate `enabled == 1` for object "morph.moveLayer" Button`
+    t =   123.58s     Find the "morph.moveLayer" Button
+    t =   123.62s Tap "morph.moveLayer" Button
+    t =   123.62s     Wait for phil.heart-v3 to idle
+    t =   123.62s     Find the "morph.moveLayer" Button
+    t =   123.66s     Check for interrupting elements affecting "morph.moveLayer" Button
+    t =   123.66s         Wait for com.apple.SurfBoard to idle
+    t =   123.67s     Synthesize event
+    t =   124.07s     Wait for phil.heart-v3 to idle
+    t =   124.59s Waiting 15.0s for "Inner cell layer lining the blood channel" StaticText to exist
+    t =   125.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Inner cell layer lining the blood channel" StaticText`
+    t =   125.60s         Checking existence of `"Inner cell layer lining the blood channel" StaticText`
+    t =   125.63s Waiting 30.0s for "Reset layer move" Button to exist
+    t =   126.67s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset layer move" Button`
+    t =   126.67s         Checking existence of `"Reset layer move" Button`
+    t =   127.71s Checking `Expect predicate `enabled == 1` for object "Reset layer move" Button`
+    t =   127.71s     Find the "Reset layer move" Button
+    t =   127.74s Tap "Reset layer move" Button
+    t =   127.74s     Wait for phil.heart-v3 to idle
+    t =   127.74s     Find the "Reset layer move" Button
+    t =   127.76s     Check for interrupting elements affecting "Reset layer move" Button
+    t =   127.86s         Wait for com.apple.SurfBoard to idle
+    t =   127.87s     Synthesize event
+    t =   128.25s     Wait for phil.heart-v3 to idle
+    t =   128.29s Waiting 30.0s for "Done" Button to exist
+    t =   129.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   129.32s         Checking existence of `"Done" Button`
+    t =   130.36s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =   130.36s     Find the "Done" Button
+    t =   130.38s Tap "Done" Button
+    t =   130.38s     Wait for phil.heart-v3 to idle
+    t =   130.39s     Find the "Done" Button
+    t =   130.40s     Check for interrupting elements affecting "Done" Button
+    t =   130.40s         Wait for com.apple.SurfBoard to idle
+    t =   130.41s     Synthesize event
+    t =   130.78s     Wait for phil.heart-v3 to idle
+    t =   130.85s Waiting 30.0s for "morph.resetView" Button to exist
+    t =   131.89s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.resetView" Button`
+    t =   131.89s         Checking existence of `"morph.resetView" Button`
+    t =   132.98s Checking `Expect predicate `enabled == 1` for object "morph.resetView" Button`
+    t =   132.98s     Find the "morph.resetView" Button
+    t =   133.03s Tap "morph.resetView" Button
+    t =   133.03s     Wait for phil.heart-v3 to idle
+    t =   133.03s     Find the "morph.resetView" Button
+    t =   133.07s     Check for interrupting elements affecting "morph.resetView" Button
+    t =   133.07s         Wait for com.apple.SurfBoard to idle
+    t =   133.08s     Synthesize event
+    t =   133.47s     Wait for phil.heart-v3 to idle
+    t =   133.47s Checking existence of `"Reassemble layers" Button`
+    t =   133.56s Waiting 15.0s for "Only Endocardium" StaticText to exist
+    t =   134.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Only Endocardium" StaticText`
+    t =   134.57s         Checking existence of `"Only Endocardium" StaticText`
+    t =   134.61s Waiting 30.0s for "morph.showAllLayers" Button to exist
+    t =   135.62s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.showAllLayers" Button`
+    t =   135.62s         Checking existence of `"morph.showAllLayers" Button`
+    t =   136.71s Checking `Expect predicate `enabled == 1` for object "morph.showAllLayers" Button`
+    t =   136.71s     Find the "morph.showAllLayers" Button
+    t =   136.77s Tap "morph.showAllLayers" Button
+    t =   136.77s     Wait for phil.heart-v3 to idle
+    t =   136.77s     Find the "morph.showAllLayers" Button
+    t =   136.81s     Check for interrupting elements affecting "morph.showAllLayers" Button
+    t =   136.81s         Wait for com.apple.SurfBoard to idle
+    t =   136.82s     Synthesize event
+    t =   137.23s     Wait for phil.heart-v3 to idle
+    t =   137.24s Checking existence of `"morph.isolatedLayer" StaticText`
+    t =   137.31s Checking existence of `"Reassemble layers" Button`
+    t =   137.36s Waiting 30.0s for "Reassemble layers" Button to exist
+    t =   138.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Reassemble layers" Button`
+    t =   138.41s         Checking existence of `"Reassemble layers" Button`
+    t =   139.50s Checking `Expect predicate `enabled == 1` for object "Reassemble layers" Button`
+    t =   139.50s     Find the "Reassemble layers" Button
+    t =   139.53s Tap "morph.separateLayers" Button
+    t =   139.53s     Wait for phil.heart-v3 to idle
+    t =   139.53s     Find the "morph.separateLayers" Button
+    t =   139.56s     Check for interrupting elements affecting "morph.separateLayers" Button
+    t =   139.57s         Wait for com.apple.SurfBoard to idle
+    t =   139.58s     Synthesize event
+    t =   139.98s     Wait for phil.heart-v3 to idle
+    t =   140.02s Waiting 30.0s for "Reset morph" Button to exist
+    t =   141.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Reset morph" Button`
+    t =   141.08s         Checking existence of `"Reset morph" Button`
+    t =   142.18s Checking `Expect predicate `enabled == 1` for object "Reset morph" Button`
+    t =   142.18s     Find the "Reset morph" Button
+    t =   142.25s Tap "Reset morph" Button
+    t =   142.25s     Wait for phil.heart-v3 to idle
+    t =   142.25s     Find the "Reset morph" Button
+    t =   142.29s     Check for interrupting elements affecting "Reset morph" Button
+    t =   142.29s         Wait for com.apple.SurfBoard to idle
+    t =   142.30s     Synthesize event
+    t =   142.75s     Wait for phil.heart-v3 to idle
+    t =   143.06s Waiting 15.0s for "0%" StaticText to exist
+    t =   144.08s     Checking `Expect predicate `existsNoRetry == 1` for object "0%" StaticText`
+    t =   144.08s         Checking existence of `"0%" StaticText`
+    t =   144.12s Checking existence of `"Separate layers" Button`
+    t =   144.18s Waiting 30.0s for "Return to lesson" Button to exist
+    t =   145.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Return to lesson" Button`
+    t =   145.21s         Checking existence of `"Return to lesson" Button`
+    t =   146.27s Checking `Expect predicate `enabled == 1` for object "Return to lesson" Button`
+    t =   146.27s     Find the "Return to lesson" Button
+    t =   146.33s Tap "Return to lesson" Button
+    t =   146.33s     Wait for phil.heart-v3 to idle
+    t =   146.34s     Find the "Return to lesson" Button
+    t =   146.37s     Check for interrupting elements affecting "Return to lesson" Button
+    t =   146.37s         Wait for com.apple.SurfBoard to idle
+    t =   146.37s     Synthesize event
+    t =   146.77s     Wait for phil.heart-v3 to idle
+    t =   147.12s Waiting 15.0s for "Phase 1 of 3" StaticText to exist
+    t =   148.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Phase 1 of 3" StaticText`
+    t =   148.21s         Checking existence of `"Phase 1 of 3" StaticText`
+    t =   148.25s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testTubeLayersFollowMorphInBothModes]' passed (150.745 seconds).
+Test Suite 'HeartV3InteractionTests' passed at 2026-10-26 22:16:27.185.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 257.359 (257.367) seconds
+Test Suite 'HeartV3UITests.xctest' passed at 2026-10-26 22:16:27.188.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 257.359 (257.370) seconds
+Test Suite 'Selected tests' passed at 2026-10-26 22:16:27.188.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 257.359 (257.372) seconds
+2026-10-26 22:16:27.863 xcodebuild[74721:2407452] [MT] IDETestOperationsObserverDebug: 280.299 elapsed -- Testing started completed.
+2026-10-26 22:16:27.863 xcodebuild[74721:2407452] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 22:16:27.863 xcodebuild[74721:2407452] [MT] IDETestOperationsObserverDebug: 280.299 sec, +280.299 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Logs/Test/Test-HeartV3InteractionTests-2026.10.26_22-11-35-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

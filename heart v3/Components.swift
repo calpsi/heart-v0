@@ -23,16 +23,18 @@ struct DButton: View {
                 icon
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 118, height: 110)
+                    .frame(width: 72, height: 72)
+                    .symbolRenderingMode(.hierarchical)
+                    .foregroundStyle(HeartDesign.accent)
                     .accessibilityHidden(true)
                 
                 VStack(spacing: 0) {
                     Text(title)
-                        .font(.system(size: 20, weight: .bold))
+                        .font(.title2.bold())
                         .fixedSize(horizontal: false, vertical: true)
                     
                     Text(description)
-                        .font(.system(size: 16, weight: .regular))
+                        .font(.body)
                         .multilineTextAlignment(.center)
                         .lineSpacing(3)
                         .fixedSize(horizontal: false, vertical: true)
@@ -43,10 +45,11 @@ struct DButton: View {
             }
             // Apply padding to the entire button content, including the icon.
             .padding(24)
-            .frame(width: 320)
-            .background(.regularMaterial)
-            .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
-            .contentShape(RoundedRectangle(cornerRadius: 32))
+            .frame(width: 320, height: 260)
+            .background(HeartDesign.surface)
+            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 20).stroke(HeartDesign.border, lineWidth: 1))
+            .contentShape(RoundedRectangle(cornerRadius: 20))
         }
         .buttonStyle(.plain)
         .accessibilityLabel(title)

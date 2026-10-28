@@ -1,0 +1,23 @@
+{
+  "boundedLayerMoves" : true,
+  "cancellation" : true,
+  "cancelledLayerMoveReset" : true,
+  "failedLoadPreservesSource" : true,
+  "independentSpecimenRecovery" : true,
+  "isolatedLayerFrames" : 63,
+  "latestRequestWins" : true,
+  "layerMorphFrames" : 21,
+  "morphControlsPlanePoses" : 198,
+  "morphEnvelopeFrames" : 22,
+  "morphMaterialsReused" : true,
+  "morphPaletteChecks" : 144,
+  "outflowInspectionFrames" : 9,
+  "passed" : true,
+  "reducedMotion" : true,
+  "retainedWhileLoading" : true,
+  "singleInstalledRoot" : true,
+  "specimensRecoveryTested" : 2,
+  "wallFrames" : 22,
+  "wallReducedMotion" : true,
+  "wallReversal" : true
+}

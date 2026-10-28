@@ -1,0 +1,765 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath .audit-build CODE_SIGNING_ALLOWED=NO test-without-building "-only-testing:HeartV3UITests/HeartV3InteractionTests/testDirectRotationAcrossViewerFamilies" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testBottomTimelineDrivesLoopingMorph" "-only-testing:HeartV3UITests/HeartV3InteractionTests/testSpecimenSectionsAndPartsAcrossModes"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+2026-10-28 22:12:04.199654+0800 HeartV3UITests-Runner[9207:103169] [assertions] failed to observe with mask <BLSXPCBacklightProxyObserverMask: 0x107370920; didUpdateToState: YES; eventsArray: YES> error:<XPC error received on message reply handler (3:BSServiceConnectionErrorDomain) "The operation couldn’t be completed. XPC error received on message reply handler">
+2026-10-28 22:12:04.215161+0800 HeartV3UITests-Runner[9207:102977] [Default] Running tests...
+2026-10-28 22:12:04.247710+0800 HeartV3UITests-Runner[9207:102977] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-28 22:12:04.441733+0800 HeartV3UITests-Runner[9207:103162] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x10a4d2d00> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-28 22:12:04.465193+0800 HeartV3UITests-Runner[9207:103170] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-28 22:12:04.465298+0800 HeartV3UITests-Runner[9207:103170] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+    t =      nans Interface orientation changed to Unknown
+objc[9207]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x106e00118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-28 22:12:05.414795+0800 HeartV3UITests-Runner[9207:102977] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+Test Suite 'Selected tests' started at 2026-10-28 22:12:05.565.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-28 22:12:05.569.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-28 22:12:05.569.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testBottomTimelineDrivesLoopingMorph]' started.
+    t =     0.02s Start Test at 2026-10-28 22:12:05.592
+    t =     0.10s Set Up
+    t =     0.12s Open phil.heart-v3
+    t =     0.12s     Launch phil.heart-v3
+    t =     0.12s         Terminate phil.heart-v3:9007
+2026-10-28 22:12:06.989 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:12:06.989 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.35s         Setting up automation session
+    t =     7.27s         Wait for phil.heart-v3 to idle
+    t =    11.80s Waiting 15.0s for "From a tube to a loop" StaticText to exist
+    t =    12.84s     Checking `Expect predicate `existsNoRetry == 1` for object "From a tube to a loop" StaticText`
+    t =    12.84s         Checking existence of `"From a tube to a loop" StaticText`
+    t =    13.06s Checking existence of `"Developmental stage" Slider`
+    t =    13.14s Checking existence of `"Looping progression" Slider`
+    t =    13.16s Waiting 30.0s for "Developmental stage" Slider to exist
+    t =    14.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Developmental stage" Slider`
+    t =    14.18s         Checking existence of `"Developmental stage" Slider`
+    t =    15.23s Checking `Expect predicate `enabled == 1` for object "Developmental stage" Slider`
+    t =    15.23s     Find the "Developmental stage" Slider
+    t =    15.26s Find the "Developmental stage" Slider
+    t =    15.28s Checking existence of `"AXSliderKnob" Other`
+    t =    15.30s Find the "Developmental stage" Slider
+    t =    15.32s Find the "Developmental stage" Slider
+    t =    15.34s Set normalized position of "Developmental stage" Slider to 0.39
+    t =    15.34s     Wait for phil.heart-v3 to idle
+    t =    15.35s     Find the "Developmental stage" Slider
+    t =    15.36s     Check for interrupting elements affecting "Developmental stage" Slider
+    t =    15.37s         Wait for com.apple.SurfBoard to idle
+    t =    15.40s     Synthesize event
+    t =    16.12s     Wait for phil.heart-v3 to idle
+    t =    16.12s Find the "Developmental stage" Slider
+    t =    16.14s Waiting 30.0s for "exploration.investigate" Button to exist
+    t =    17.18s     Checking `Expect predicate `existsNoRetry == 1` for object "exploration.investigate" Button`
+    t =    17.18s         Checking existence of `"exploration.investigate" Button`
+    t =    18.23s Checking `Expect predicate `enabled == 1` for object "exploration.investigate" Button`
+    t =    18.24s     Find the "exploration.investigate" Button
+    t =    18.27s Tap "exploration.investigate" Button
+    t =    18.27s     Wait for phil.heart-v3 to idle
+    t =    18.27s     Find the "exploration.investigate" Button
+    t =    18.29s     Check for interrupting elements affecting "exploration.investigate" Button
+    t =    18.29s         Wait for com.apple.SurfBoard to idle
+    t =    18.30s     Synthesize event
+    t =    18.73s     Wait for phil.heart-v3 to idle
+    t =    19.37s Waiting 30.0s for "Done" Button to exist
+    t =    20.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    20.38s         Checking existence of `"Done" Button`
+    t =    21.45s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    21.45s     Find the "Done" Button
+    t =    21.48s Tap "Done" Button
+    t =    21.48s     Wait for phil.heart-v3 to idle
+    t =    21.48s     Find the "Done" Button
+    t =    21.49s     Check for interrupting elements affecting "Done" Button
+    t =    21.50s         Wait for com.apple.SurfBoard to idle
+    t =    21.51s     Synthesize event
+    t =    21.95s     Wait for phil.heart-v3 to idle
+    t =    22.02s Waiting 30.0s for "Next developmental stage" Button to exist
+    t =    23.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Next developmental stage" Button`
+    t =    23.08s         Checking existence of `"Next developmental stage" Button`
+    t =    24.16s Checking `Expect predicate `enabled == 1` for object "Next developmental stage" Button`
+    t =    24.16s     Find the "Next developmental stage" Button
+    t =    24.19s Tap "chevron.right" Button
+    t =    24.19s     Wait for phil.heart-v3 to idle
+    t =    24.19s     Find the "chevron.right" Button
+    t =    24.21s     Check for interrupting elements affecting "chevron.right" Button
+    t =    24.22s         Wait for com.apple.SurfBoard to idle
+    t =    24.22s     Synthesize event
+    t =    24.60s     Wait for phil.heart-v3 to idle
+    t =    24.60s Waiting 15.0s for "100%" StaticText to exist
+    t =    25.68s     Checking `Expect predicate `existsNoRetry == 1` for object "100%" StaticText`
+    t =    25.68s         Checking existence of `"100%" StaticText`
+    t =    25.72s Checking existence of `"Developmental stage" Slider`
+    t =    25.75s Waiting 30.0s for "Open wall" Button to exist
+    t =    26.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Open wall" Button`
+    t =    26.78s         Checking existence of `"Open wall" Button`
+    t =    27.83s Checking `Expect predicate `enabled == 1` for object "Open wall" Button`
+    t =    27.83s     Find the "Open wall" Button
+    t =    27.85s Tap "morph.wall" Button
+    t =    27.86s     Wait for phil.heart-v3 to idle
+    t =    27.86s     Find the "morph.wall" Button
+    t =    27.88s     Check for interrupting elements affecting "morph.wall" Button
+    t =    27.88s         Wait for com.apple.SurfBoard to idle
+    t =    27.89s     Synthesize event
+    t =    28.29s     Wait for phil.heart-v3 to idle
+    t =    28.50s Waiting 30.0s for "Previous developmental stage" Button to exist
+    t =    29.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Previous developmental stage" Button`
+    t =    29.52s         Checking existence of `"Previous developmental stage" Button`
+    t =    30.58s Checking `Expect predicate `enabled == 1` for object "Previous developmental stage" Button`
+    t =    30.58s     Find the "Previous developmental stage" Button
+    t =    30.63s Tap "chevron.left" Button
+    t =    30.63s     Wait for phil.heart-v3 to idle
+    t =    30.64s     Find the "chevron.left" Button
+    t =    30.67s     Check for interrupting elements affecting "chevron.left" Button
+    t =    30.67s         Wait for com.apple.SurfBoard to idle
+    t =    30.68s     Synthesize event
+    t =    31.06s     Wait for phil.heart-v3 to idle
+    t =    31.07s Waiting 30.0s for "Previous developmental stage" Button to exist
+    t =    32.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Previous developmental stage" Button`
+    t =    32.08s         Checking existence of `"Previous developmental stage" Button`
+    t =    33.15s Checking `Expect predicate `enabled == 1` for object "Previous developmental stage" Button`
+    t =    33.15s     Find the "Previous developmental stage" Button
+    t =    33.21s Tap "chevron.left" Button
+    t =    33.21s     Wait for phil.heart-v3 to idle
+    t =    33.21s     Find the "chevron.left" Button
+    t =    33.24s     Check for interrupting elements affecting "chevron.left" Button
+    t =    33.24s         Wait for com.apple.SurfBoard to idle
+    t =    33.25s     Synthesize event
+    t =    33.69s     Wait for phil.heart-v3 to idle
+    t =    33.69s Waiting 15.0s for "From paired tubes to one channel" StaticText to exist
+    t =    34.73s     Checking `Expect predicate `existsNoRetry == 1` for object "From paired tubes to one channel" StaticText`
+    t =    34.73s         Checking existence of `"From paired tubes to one channel" StaticText`
+    t =    34.76s Find the "Open wall" Button
+    t =    34.78s Waiting 30.0s for "Next developmental stage" Button to exist
+    t =    35.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Next developmental stage" Button`
+    t =    35.79s         Checking existence of `"Next developmental stage" Button`
+    t =    36.87s Checking `Expect predicate `enabled == 1` for object "Next developmental stage" Button`
+    t =    36.87s     Find the "Next developmental stage" Button
+    t =    36.93s Tap "chevron.right" Button
+    t =    36.93s     Wait for phil.heart-v3 to idle
+    t =    36.93s     Find the "chevron.right" Button
+    t =    36.96s     Check for interrupting elements affecting "chevron.right" Button
+    t =    36.96s         Wait for com.apple.SurfBoard to idle
+    t =    36.97s     Synthesize event
+    t =    37.40s     Wait for phil.heart-v3 to idle
+    t =    37.50s Waiting 15.0s for "From a tube to a loop" StaticText to exist
+    t =    38.55s     Checking `Expect predicate `existsNoRetry == 1` for object "From a tube to a loop" StaticText`
+    t =    38.55s         Checking existence of `"From a tube to a loop" StaticText`
+    t =    38.57s Find the "Close wall" Button
+    t =    39.63s Checking `Expect predicate `value == "Open"` for object "morph.wall" Button`
+    t =    39.63s     Find the "morph.wall" Button
+    t =    39.66s Waiting 30.0s for "Reset morph" Button to exist
+2026-10-28 22:12:45.428679+0800 HeartV3UITests-Runner[9207:103164] [default] LaunchServices: disconnect event interruption received for service com.apple.lsd.mapdb
+2026-10-28 22:15:54.634652+0800 HeartV3UITests-Runner[9994:110723] [assertions] failed to observe with mask <BLSXPCBacklightProxyObserverMask: 0x1033688c0; didUpdateToState: YES; eventsArray: YES> error:<XPC error received on message reply handler (3:BSServiceConnectionErrorDomain) "The operation couldn’t be completed. XPC error received on message reply handler">
+objc[9994]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x102070118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-28 22:15:55.685552+0800 HeartV3UITests-Runner[9994:109350] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+2026-10-28 22:15:55.699399+0800 HeartV3UITests-Runner[9994:109350] [Default] Running tests...
+2026-10-28 22:15:55.729626+0800 HeartV3UITests-Runner[9994:109350] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-28 22:15:56.339122+0800 HeartV3UITests-Runner[9994:110724] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x106f42ac0> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-28 22:15:56.669008+0800 HeartV3UITests-Runner[9994:110725] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-28 22:15:56.669075+0800 HeartV3UITests-Runner[9994:110725] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+    t =      nans Interface orientation changed to Unknown
+
+Restarting after unexpected exit, crash, or test timeout; summary will include totals from previous launches.
+
+Test Suite 'Selected tests' started at 2026-10-28 22:15:57.003.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-28 22:15:57.003.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-28 22:15:57.004.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies]' started.
+    t =     0.02s Start Test at 2026-10-28 22:15:57.021
+    t =     0.27s Set Up
+    t =     0.28s Open phil.heart-v3
+    t =     0.29s     Launch phil.heart-v3
+2026-10-28 22:15:57.295 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:15:57.295 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.53s         Setting up automation session
+    t =     6.47s         Wait for phil.heart-v3 to idle
+    t =     9.95s Waiting 60.0s for "model.viewport" Any to exist
+    t =    11.05s     Checking `Expect predicate `existsNoRetry == 1` for object "model.viewport" Any`
+    t =    11.05s         Checking existence of `"model.viewport" Any`
+    t =    11.22s Waiting 10.0s for "interaction.state" Any to exist
+    t =    12.24s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" Any`
+    t =    12.24s         Checking existence of `"interaction.state" Any`
+    t =    12.35s Find the "interaction.state" Any
+Gesture baseline ["--preview-exploration", "--preview-stage", "0"]: 0.087904,-0.207616,0.018736,0.974073;1.000000;enabled=true;phase=active
+    t =    12.43s Find the "interaction.state" Other
+    t =    12.50s Find the "interaction.state" Other
+    t =    12.56s Find the "model.viewport" Any
+    t =    12.60s Find the "interaction.state" Other
+Gesture viewport (268.0, 200.0, 620.0, 339.5), input region (268.0, 200.0, 620.0, 339.5)
+    t =    12.67s Press "interaction.state" Other[0.50, 0.50] for 0.2 seconds, then drag to "interaction.state" Other[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    12.67s     Wait for phil.heart-v3 to idle
+    t =    12.67s     Find the "interaction.state" Other
+    t =    12.73s     Check for interrupting elements affecting "interaction.state" Other
+    t =    12.75s         Wait for com.apple.SurfBoard to idle
+    t =    12.86s     Synthesize event
+    t =    12.86s         Find the "interaction.state" Other
+    t =    12.92s         Find the "interaction.state" Other
+    t =    13.08s         Find the "interaction.state" Other
+    t =    13.15s         Find the "interaction.state" Other
+    t =    13.21s         Find the "interaction.state" Other
+    t =    14.07s     Wait for phil.heart-v3 to idle
+    t =    15.10s Find the "interaction.state" Other
+    t =    16.08s Find the "interaction.state" Other
+    t =    17.10s Find the "interaction.state" Other
+    t =    18.08s Find the "interaction.state" Other
+    t =    19.07s Find the "interaction.state" Other
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:70: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-exploration", "--preview-stage", "0"]
+    t =    19.36s Waiting 30.0s for "tool.Reset view" Button to exist
+    t =    20.40s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reset view" Button`
+    t =    20.40s         Checking existence of `"tool.Reset view" Button`
+    t =    21.43s Checking `Expect predicate `enabled == 1` for object "tool.Reset view" Button`
+    t =    21.43s     Find the "tool.Reset view" Button
+    t =    21.45s Tap "tool.Reset view" Button
+    t =    21.45s     Wait for phil.heart-v3 to idle
+    t =    21.46s     Find the "tool.Reset view" Button
+    t =    21.47s     Check for interrupting elements affecting "tool.Reset view" Button
+    t =    21.48s         Wait for com.apple.SurfBoard to idle
+    t =    21.49s     Synthesize event
+    t =    21.86s     Wait for phil.heart-v3 to idle
+    t =    21.86s Find the "interaction.state" Other
+    t =    21.92s Open phil.heart-v3
+    t =    21.92s     Launch phil.heart-v3
+    t =    21.92s         Terminate phil.heart-v3:10089
+2026-10-28 22:16:19.953 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:16:19.953 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    23.16s         Setting up automation session
+    t =    27.60s         Wait for phil.heart-v3 to idle
+    t =    31.51s Waiting 60.0s for "morph.viewport" Any to exist
+    t =    32.54s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.viewport" Any`
+    t =    32.54s         Checking existence of `"morph.viewport" Any`
+    t =    32.64s Waiting 10.0s for "interaction.state" Any to exist
+    t =    33.64s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" Any`
+    t =    33.64s         Checking existence of `"interaction.state" Any`
+    t =    33.68s Find the "interaction.state" Any
+Gesture baseline ["--preview-guided", "--preview-lesson", "3", "--preview-step", "0"]: 0.000000,0.000000,0.000000,1.000000;1.000000;enabled=true;phase=active
+    t =    33.70s Find the "interaction.state" Other
+    t =    33.73s Find the "interaction.state" Other
+    t =    33.76s Find the "morph.viewport" Any
+    t =    33.79s Find the "interaction.state" Other
+Gesture viewport (44.0, 344.5, 1012.0, 227.5), input region (44.0, 344.5, 1012.0, 227.5)
+    t =    33.82s Press "interaction.state" Other[0.50, 0.50] for 0.2 seconds, then drag to "interaction.state" Other[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    33.82s     Wait for phil.heart-v3 to idle
+    t =    33.82s     Find the "interaction.state" Other
+    t =    33.85s     Check for interrupting elements affecting "interaction.state" Other
+    t =    33.85s         Wait for com.apple.SurfBoard to idle
+    t =    33.87s     Synthesize event
+    t =    33.87s         Find the "interaction.state" Other
+    t =    33.89s         Find the "interaction.state" Other
+    t =    33.92s         Find the "interaction.state" Other
+    t =    33.95s         Find the "interaction.state" Other
+    t =    33.98s         Find the "interaction.state" Other
+    t =    39.66s     Wait for phil.heart-v3 to idle
+    t =    40.70s Find the "interaction.state" Other
+    t =    41.68s Find the "interaction.state" Other
+    t =    42.74s Find the "interaction.state" Other
+    t =    43.68s Find the "interaction.state" Other
+    t =    44.67s Find the "interaction.state" Other
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:70: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-guided", "--preview-lesson", "3", "--preview-step", "0"]
+    t =    44.71s Waiting 30.0s for "morph.resetView" Button to exist
+    t =    45.73s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.resetView" Button`
+    t =    45.73s         Checking existence of `"morph.resetView" Button`
+    t =    46.83s Checking `Expect predicate `enabled == 1` for object "morph.resetView" Button`
+    t =    46.83s     Find the "morph.resetView" Button
+    t =    46.87s Tap "morph.resetView" Button
+    t =    46.87s     Wait for phil.heart-v3 to idle
+    t =    46.88s     Find the "morph.resetView" Button
+    t =    46.90s     Check for interrupting elements affecting "morph.resetView" Button
+    t =    46.91s         Wait for com.apple.SurfBoard to idle
+    t =    46.92s     Synthesize event
+    t =    47.31s     Wait for phil.heart-v3 to idle
+    t =    47.31s Find the "interaction.state" Other
+    t =    47.34s Open phil.heart-v3
+    t =    47.34s     Launch phil.heart-v3
+    t =    47.34s         Terminate phil.heart-v3:10166
+2026-10-28 22:16:45.347 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:16:45.347 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    48.55s         Setting up automation session
+    t =    52.79s         Wait for phil.heart-v3 to idle
+    t =    55.78s Waiting 60.0s for "reference.ready" Any to exist
+    t =    56.83s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =    56.83s         Checking existence of `"reference.ready" Any`
+    t =    56.95s Waiting 60.0s for "reference.ready" Any to exist
+    t =    57.96s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =    57.96s         Checking existence of `"reference.ready" Any`
+    t =    58.02s Waiting 10.0s for "interaction.state" Any to exist
+    t =    59.03s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" Any`
+    t =    59.03s         Checking existence of `"interaction.state" Any`
+    t =    59.06s Find the "interaction.state" Any
+Gesture baseline ["--preview-exploration", "--preview-whole-heart"]: 0.000000,0.000000,0.000000,1.000000;1.000000;enabled=true;phase=active
+    t =    59.08s Find the "interaction.state" Other
+    t =    59.10s Find the "interaction.state" Other
+    t =    59.13s Find the "reference.ready" Any
+    t =    59.15s Find the "interaction.state" Other
+Gesture viewport (40.0, 260.5, 1020.0, 335.5), input region (40.0, 260.5, 1020.0, 335.5)
+    t =    59.18s Press "interaction.state" Other[0.50, 0.50] for 0.2 seconds, then drag to "interaction.state" Other[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    59.18s     Wait for phil.heart-v3 to idle
+    t =    59.18s     Find the "interaction.state" Other
+    t =    59.20s     Check for interrupting elements affecting "interaction.state" Other
+    t =    59.21s         Wait for com.apple.SurfBoard to idle
+    t =    59.22s     Synthesize event
+    t =    59.22s         Find the "interaction.state" Other
+    t =    59.24s         Find the "interaction.state" Other
+    t =    59.27s         Find the "interaction.state" Other
+    t =    59.29s         Find the "interaction.state" Other
+    t =    59.32s         Find the "interaction.state" Other
+    t =    59.99s     Wait for phil.heart-v3 to idle
+    t =    61.01s Find the "interaction.state" Other
+    t =    62.04s Find the "interaction.state" Other
+    t =    63.01s Find the "interaction.state" Other
+    t =    64.04s Find the "interaction.state" Other
+    t =    65.00s Find the "interaction.state" Other
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:70: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-exploration", "--preview-whole-heart"]
+    t =    65.03s Waiting 30.0s for "reference.reset" Button to exist
+    t =    66.03s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.reset" Button`
+    t =    66.03s         Checking existence of `"reference.reset" Button`
+    t =    67.08s Checking `Expect predicate `enabled == 1` for object "reference.reset" Button`
+    t =    67.08s     Find the "reference.reset" Button
+    t =    67.10s Tap "reference.reset" Button
+    t =    67.10s     Wait for phil.heart-v3 to idle
+    t =    67.11s     Find the "reference.reset" Button
+    t =    67.13s     Check for interrupting elements affecting "reference.reset" Button
+    t =    67.14s         Wait for com.apple.SurfBoard to idle
+    t =    67.15s     Synthesize event
+    t =    67.53s     Wait for phil.heart-v3 to idle
+    t =    67.53s Find the "interaction.state" Other
+    t =    67.56s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies]' failed (68.831 seconds).
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testSpecimenSectionsAndPartsAcrossModes]' started.
+    t =     0.00s Start Test at 2026-10-28 22:17:05.853
+    t =     0.02s Set Up
+    t =     0.02s Open phil.heart-v3
+    t =     0.02s     Launch phil.heart-v3
+    t =     0.02s         Terminate phil.heart-v3:10264
+2026-10-28 22:17:06.942 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:17:06.942 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.30s         Setting up automation session
+    t =     5.52s         Wait for phil.heart-v3 to idle
+    t =     8.32s Waiting 60.0s for "reference.ready" Any to exist
+    t =     9.36s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =     9.36s         Checking existence of `"reference.ready" Any`
+    t =     9.48s Waiting 30.0s for "reference.section" Button to exist
+    t =    10.50s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.section" Button`
+    t =    10.50s         Checking existence of `"reference.section" Button`
+    t =    11.57s Checking `Expect predicate `enabled == 1` for object "reference.section" Button`
+    t =    11.57s     Find the "reference.section" Button
+    t =    11.59s Tap "reference.section" Button
+    t =    11.59s     Wait for phil.heart-v3 to idle
+    t =    11.59s     Find the "reference.section" Button
+    t =    11.60s     Check for interrupting elements affecting "reference.section" Button
+    t =    11.61s         Wait for com.apple.SurfBoard to idle
+    t =    11.61s     Synthesize event
+    t =    12.02s     Wait for phil.heart-v3 to idle
+    t =    12.02s Waiting 30.0s for "Width" Button to exist
+    t =    13.05s     Checking `Expect predicate `existsNoRetry == 1` for object "Width" Button`
+    t =    13.06s         Checking existence of `"Width" Button`
+    t =    14.10s Checking `Expect predicate `enabled == 1` for object "Width" Button`
+    t =    14.10s     Find the "Width" Button
+    t =    14.16s Tap "Width" Button
+    t =    14.16s     Wait for phil.heart-v3 to idle
+    t =    14.16s     Find the "Width" Button
+    t =    14.19s     Check for interrupting elements affecting "Width" Button
+    t =    14.20s         Wait for com.apple.SurfBoard to idle
+    t =    14.20s     Synthesize event
+    t =    14.64s     Wait for phil.heart-v3 to idle
+    t =    14.64s Waiting 30.0s for "Depth" Button to exist
+    t =    15.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Depth" Button`
+    t =    15.70s         Checking existence of `"Depth" Button`
+    t =    16.79s Checking `Expect predicate `enabled == 1` for object "Depth" Button`
+    t =    16.79s     Find the "Depth" Button
+    t =    16.85s Tap "Depth" Button
+    t =    16.85s     Wait for phil.heart-v3 to idle
+    t =    16.85s     Find the "Depth" Button
+    t =    16.88s     Check for interrupting elements affecting "Depth" Button
+    t =    16.89s         Wait for com.apple.SurfBoard to idle
+    t =    16.89s     Synthesize event
+    t =    17.30s     Wait for phil.heart-v3 to idle
+    t =    17.31s Checking existence of `"reference.sectionError" StaticText`
+    t =    17.39s Waiting 15.0s for "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText to exist
+    t =    18.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    18.41s         Checking existence of `"Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    18.43s Waiting 30.0s for "reference.separate" Button to exist
+    t =    19.46s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    19.46s         Checking existence of `"reference.separate" Button`
+    t =    20.50s Checking `Expect predicate `enabled == 1` for object "reference.separate" Button`
+    t =    20.50s     Find the "reference.separate" Button
+    t =    20.52s Tap "reference.separate" Button
+    t =    20.52s     Wait for phil.heart-v3 to idle
+    t =    20.52s     Find the "reference.separate" Button
+    t =    20.54s     Check for interrupting elements affecting "reference.separate" Button
+    t =    20.54s         Wait for com.apple.SurfBoard to idle
+    t =    20.55s     Synthesize event
+    t =    20.96s     Wait for phil.heart-v3 to idle
+    t =    22.00s Checking `Expect predicate `BLOCKPREDICATE(0x107f41dd0)` for object "reference.separate" Button`
+    t =    22.00s     Find the "reference.separate" Button
+    t =    22.03s Waiting 30.0s for "reference.parts" Button to exist
+    t =    23.06s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.parts" Button`
+    t =    23.06s         Checking existence of `"reference.parts" Button`
+    t =    24.10s Checking `Expect predicate `enabled == 1` for object "reference.parts" Button`
+    t =    24.10s     Find the "reference.parts" Button
+    t =    24.14s Tap "reference.parts" Button
+    t =    24.14s     Wait for phil.heart-v3 to idle
+    t =    24.14s     Find the "reference.parts" Button
+    t =    24.16s     Check for interrupting elements affecting "reference.parts" Button
+    t =    24.27s         Wait for com.apple.SurfBoard to idle
+    t =    24.28s     Synthesize event
+    t =    24.83s     Wait for phil.heart-v3 to idle
+    t =    25.51s Waiting 15.0s for "Inspect parts" StaticText to exist
+    t =    26.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Inspect parts" StaticText`
+    t =    26.57s         Checking existence of `"Inspect parts" StaticText`
+    t =    26.67s Waiting 30.0s for "Right" Button to exist
+    t =    27.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Right" Button`
+    t =    27.70s         Checking existence of `"Right" Button`
+    t =    28.78s Checking `Expect predicate `enabled == 1` for object "Right" Button`
+    t =    28.78s     Find the "Right" Button
+    t =    28.79s Tap "Right" Button
+    t =    28.79s     Wait for phil.heart-v3 to idle
+    t =    28.79s     Find the "Right" Button
+    t =    28.81s     Check for interrupting elements affecting "Right" Button
+    t =    28.81s         Wait for com.apple.SurfBoard to idle
+    t =    28.82s     Synthesize event
+    t =    29.34s     Wait for phil.heart-v3 to idle
+    t =    29.34s Waiting 30.0s for "Nearer" Button to exist
+    t =    30.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Nearer" Button`
+    t =    30.38s         Checking existence of `"Nearer" Button`
+    t =    31.45s Checking `Expect predicate `enabled == 1` for object "Nearer" Button`
+    t =    31.45s     Find the "Nearer" Button
+    t =    31.49s Tap "Nearer" Button
+    t =    31.49s     Wait for phil.heart-v3 to idle
+    t =    31.49s     Find the "Nearer" Button
+    t =    31.51s     Check for interrupting elements affecting "Nearer" Button
+    t =    31.62s         Wait for com.apple.SurfBoard to idle
+    t =    31.65s     Synthesize event
+    t =    32.05s     Wait for phil.heart-v3 to idle
+    t =    32.05s Waiting 30.0s for "Return part" Button to exist
+    t =    33.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Return part" Button`
+    t =    33.11s         Checking existence of `"Return part" Button`
+    t =    34.17s Checking `Expect predicate `enabled == 1` for object "Return part" Button`
+    t =    34.17s     Find the "Return part" Button
+    t =    34.19s Tap "Return part" Button
+    t =    34.19s     Wait for phil.heart-v3 to idle
+    t =    34.19s     Find the "Return part" Button
+    t =    34.21s     Check for interrupting elements affecting "Return part" Button
+    t =    34.21s         Wait for com.apple.SurfBoard to idle
+    t =    34.22s     Synthesize event
+    t =    34.62s     Wait for phil.heart-v3 to idle
+    t =    34.62s Waiting 30.0s for "Done" Button to exist
+    t =    35.65s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    35.65s         Checking existence of `"Done" Button`
+    t =    36.70s Checking `Expect predicate `enabled == 1` for object "Done" Button`
+    t =    36.70s     Find the "Done" Button
+    t =    36.72s Tap "Done" Button
+    t =    36.72s     Wait for phil.heart-v3 to idle
+    t =    36.73s     Find the "Done" Button
+    t =    36.74s     Check for interrupting elements affecting "Done" Button
+    t =    36.74s         Wait for com.apple.SurfBoard to idle
+    t =    36.75s     Synthesize event
+    t =    37.14s     Wait for phil.heart-v3 to idle
+    t =    37.14s Find the "Heart size" Slider
+    t =    37.24s Waiting 30.0s for "Heart size" Slider to exist
+    t =    38.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Heart size" Slider`
+    t =    38.30s         Checking existence of `"Heart size" Slider`
+    t =    39.36s Checking `Expect predicate `enabled == 1` for object "Heart size" Slider`
+    t =    39.36s     Find the "Heart size" Slider
+    t =    39.38s Find the "Heart size" Slider
+    t =    39.39s Checking existence of `"AXSliderKnob" Other`
+    t =    39.41s Find the "Heart size" Slider
+    t =    39.43s Find the "Heart size" Slider
+    t =    39.45s Set normalized position of "Heart size" Slider to 0.45
+    t =    39.45s     Wait for phil.heart-v3 to idle
+    t =    39.45s     Find the "Heart size" Slider
+    t =    39.46s     Check for interrupting elements affecting "Heart size" Slider
+    t =    39.47s         Wait for com.apple.SurfBoard to idle
+    t =    39.48s     Synthesize event
+    t =    40.21s     Wait for phil.heart-v3 to idle
+    t =    40.21s Find the "Heart size" Slider
+    t =    40.23s Waiting 30.0s for "reference.reset" Button to exist
+    t =    41.25s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.reset" Button`
+    t =    41.25s         Checking existence of `"reference.reset" Button`
+    t =    42.30s Checking `Expect predicate `enabled == 1` for object "reference.reset" Button`
+    t =    42.30s     Find the "reference.reset" Button
+    t =    42.35s Tap "reference.reset" Button
+    t =    42.35s     Wait for phil.heart-v3 to idle
+    t =    42.35s     Find the "reference.reset" Button
+    t =    42.38s     Check for interrupting elements affecting "reference.reset" Button
+    t =    42.38s         Wait for com.apple.SurfBoard to idle
+    t =    42.39s     Synthesize event
+    t =    42.75s     Wait for phil.heart-v3 to idle
+    t =    42.76s Find the "Heart size" Slider
+    t =    42.78s Waiting 15.0s for "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText to exist
+    t =    43.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    43.81s         Checking existence of `"Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    43.83s Find the "reference.separate" Button
+    t =    43.85s Waiting 30.0s for "reference.separate" Button to exist
+    t =    44.88s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    44.88s         Checking existence of `"reference.separate" Button`
+    t =    45.94s Checking `Expect predicate `enabled == 1` for object "reference.separate" Button`
+    t =    45.94s     Find the "reference.separate" Button
+    t =    45.96s Tap "reference.separate" Button
+    t =    45.96s     Wait for phil.heart-v3 to idle
+    t =    45.97s     Find the "reference.separate" Button
+    t =    45.98s     Check for interrupting elements affecting "reference.separate" Button
+    t =    45.99s         Wait for com.apple.SurfBoard to idle
+    t =    45.99s     Synthesize event
+    t =    46.37s     Wait for phil.heart-v3 to idle
+    t =    47.40s Checking `Expect predicate `BLOCKPREDICATE(0x107fe4d20)` for object "reference.separate" Button`
+    t =    47.40s     Find the "reference.separate" Button
+    t =    47.45s Waiting 15.0s for "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText to exist
+    t =    48.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    48.48s         Checking existence of `"Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    48.51s Waiting 30.0s for "Heart size" Slider to exist
+    t =    49.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Heart size" Slider`
+    t =    49.53s         Checking existence of `"Heart size" Slider`
+    t =    50.59s Checking `Expect predicate `enabled == 1` for object "Heart size" Slider`
+    t =    50.59s     Find the "Heart size" Slider
+    t =    50.61s Find the "Heart size" Slider
+    t =    50.63s Checking existence of `"AXSliderKnob" Other`
+    t =    50.65s Find the "Heart size" Slider
+    t =    50.66s Find the "Heart size" Slider
+    t =    50.68s Set normalized position of "Heart size" Slider to 0.45
+    t =    50.68s     Wait for phil.heart-v3 to idle
+    t =    50.68s     Find the "Heart size" Slider
+    t =    50.70s     Check for interrupting elements affecting "Heart size" Slider
+    t =    50.70s         Wait for com.apple.SurfBoard to idle
+    t =    50.71s     Synthesize event
+    t =    51.42s     Wait for phil.heart-v3 to idle
+    t =    51.43s Find the "Heart size" Slider
+    t =    51.45s Find the "Heart size" Slider
+    t =    51.50s Waiting 30.0s for "reference.separate" Button to exist
+    t =    52.50s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    52.51s         Checking existence of `"reference.separate" Button`
+    t =    53.57s Checking `Expect predicate `enabled == 1` for object "reference.separate" Button`
+    t =    53.57s     Find the "reference.separate" Button
+    t =    53.59s Tap "reference.separate" Button
+    t =    53.59s     Wait for phil.heart-v3 to idle
+    t =    53.59s     Find the "reference.separate" Button
+    t =    53.61s     Check for interrupting elements affecting "reference.separate" Button
+    t =    53.62s         Wait for com.apple.SurfBoard to idle
+    t =    53.62s     Synthesize event
+    t =    54.01s     Wait for phil.heart-v3 to idle
+    t =    54.01s Waiting 30.0s for "reference.restoreModel" Button to exist
+    t =    55.09s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.restoreModel" Button`
+    t =    55.09s         Checking existence of `"reference.restoreModel" Button`
+    t =    56.15s Checking `Expect predicate `enabled == 1` for object "reference.restoreModel" Button`
+    t =    56.15s     Find the "reference.restoreModel" Button
+    t =    56.17s Tap "reference.restoreModel" Button
+    t =    56.17s     Wait for phil.heart-v3 to idle
+    t =    56.17s     Find the "reference.restoreModel" Button
+    t =    56.19s     Check for interrupting elements affecting "reference.restoreModel" Button
+    t =    56.20s         Wait for com.apple.SurfBoard to idle
+    t =    56.20s     Synthesize event
+    t =    56.59s     Wait for phil.heart-v3 to idle
+    t =    56.59s Checking existence of `"Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    56.62s Find the "reference.separate" Button
+    t =    56.65s Find the "Heart size" Slider
+    t =    56.67s Open phil.heart-v3
+    t =    56.67s     Launch phil.heart-v3
+    t =    56.67s         Terminate phil.heart-v3:10287
+2026-10-28 22:18:03.578 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 22:18:03.579 xcodebuild[9187:102624] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    57.95s         Setting up automation session
+    t =    64.01s         Wait for phil.heart-v3 to idle
+    t =    68.60s Waiting 60.0s for "reference.ready" Any to exist
+    t =    69.60s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =    69.60s         Checking existence of `"reference.ready" Any`
+    t =    69.80s Waiting 30.0s for "reference.section" Button to exist
+    t =    70.80s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.section" Button`
+    t =    70.80s         Checking existence of `"reference.section" Button`
+    t =    71.86s Checking `Expect predicate `enabled == 1` for object "reference.section" Button`
+    t =    71.86s     Find the "reference.section" Button
+    t =    71.88s Tap "reference.section" Button
+    t =    71.88s     Wait for phil.heart-v3 to idle
+    t =    71.89s     Find the "reference.section" Button
+    t =    71.91s     Check for interrupting elements affecting "reference.section" Button
+    t =    71.91s         Wait for com.apple.SurfBoard to idle
+    t =    71.92s     Synthesize event
+    t =    72.36s     Wait for phil.heart-v3 to idle
+    t =    72.37s Waiting 30.0s for "Width" Button to exist
+    t =    73.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Width" Button`
+    t =    73.39s         Checking existence of `"Width" Button`
+    t =    74.47s Checking `Expect predicate `enabled == 1` for object "Width" Button`
+    t =    74.47s     Find the "Width" Button
+    t =    74.51s Tap "Width" Button
+    t =    74.51s     Wait for phil.heart-v3 to idle
+    t =    74.52s     Find the "Width" Button
+    t =    74.55s     Check for interrupting elements affecting "Width" Button
+    t =    74.56s         Wait for com.apple.SurfBoard to idle
+    t =    74.57s     Synthesize event
+    t =    75.00s     Wait for phil.heart-v3 to idle
+    t =    75.03s Waiting 30.0s for "Depth" Button to exist
+    t =    76.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Depth" Button`
+    t =    76.11s         Checking existence of `"Depth" Button`
+    t =    77.20s Checking `Expect predicate `enabled == 1` for object "Depth" Button`
+    t =    77.21s     Find the "Depth" Button
+    t =    77.27s Tap "Depth" Button
+    t =    77.27s     Wait for phil.heart-v3 to idle
+    t =    77.28s     Find the "Depth" Button
+    t =    77.32s     Check for interrupting elements affecting "Depth" Button
+    t =    77.33s         Wait for com.apple.SurfBoard to idle
+    t =    77.54s     Synthesize event
+    t =    77.93s     Wait for phil.heart-v3 to idle
+    t =    77.94s Checking existence of `"reference.sectionError" StaticText`
+    t =    78.03s Waiting 15.0s for "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText to exist
+    t =    79.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    79.11s         Checking existence of `"Geometric section: existing surfaces only. Missing walls and tissue layers are not reconstructed." StaticText`
+    t =    79.15s Waiting 30.0s for "reference.separate" Button to exist
+    t =    80.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    80.20s         Checking existence of `"reference.separate" Button`
+    t =    80.22s         Capturing element debug description
+    t =    81.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    81.21s         Checking existence of `"reference.separate" Button`
+    t =    81.25s         Capturing element debug description
+    t =    82.17s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    82.17s         Checking existence of `"reference.separate" Button`
+    t =    82.21s         Capturing element debug description
+    t =    83.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    83.21s         Checking existence of `"reference.separate" Button`
+    t =    83.22s         Capturing element debug description
+    t =    84.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    84.21s         Checking existence of `"reference.separate" Button`
+    t =    84.24s         Capturing element debug description
+    t =    85.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    85.16s         Checking existence of `"reference.separate" Button`
+    t =    85.21s         Capturing element debug description
+    t =    86.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    86.21s         Checking existence of `"reference.separate" Button`
+    t =    86.22s         Capturing element debug description
+    t =    87.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    87.21s         Checking existence of `"reference.separate" Button`
+    t =    87.24s         Capturing element debug description
+    t =    88.17s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    88.17s         Checking existence of `"reference.separate" Button`
+    t =    88.21s         Capturing element debug description
+    t =    89.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    89.21s         Checking existence of `"reference.separate" Button`
+    t =    89.24s         Capturing element debug description
+    t =    90.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    90.16s         Checking existence of `"reference.separate" Button`
+    t =    90.20s         Capturing element debug description
+    t =    91.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    91.21s         Checking existence of `"reference.separate" Button`
+    t =    91.25s         Capturing element debug description
+    t =    92.17s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    92.17s         Checking existence of `"reference.separate" Button`
+    t =    92.21s         Capturing element debug description
+    t =    93.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    93.21s         Checking existence of `"reference.separate" Button`
+    t =    93.22s         Capturing element debug description
+    t =    94.15s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    94.15s         Checking existence of `"reference.separate" Button`
+    t =    94.17s         Capturing element debug description
+    t =    95.19s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    95.19s         Checking existence of `"reference.separate" Button`
+    t =    95.21s         Capturing element debug description
+    t =    96.21s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    96.21s         Checking existence of `"reference.separate" Button`
+    t =    96.22s         Capturing element debug description
+    t =    97.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    97.16s         Checking existence of `"reference.separate" Button`
+    t =    97.18s         Capturing element debug description
+    t =    98.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    98.16s         Checking existence of `"reference.separate" Button`
+    t =    98.19s         Capturing element debug description
+    t =    99.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =    99.16s         Checking existence of `"reference.separate" Button`
+    t =    99.18s         Capturing element debug description
+    t =   100.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   100.20s         Checking existence of `"reference.separate" Button`
+    t =   100.23s         Capturing element debug description
+    t =   101.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   101.16s         Checking existence of `"reference.separate" Button`
+    t =   101.19s         Capturing element debug description
+    t =   102.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   102.20s         Checking existence of `"reference.separate" Button`
+    t =   102.24s         Capturing element debug description
+    t =   103.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   103.16s         Checking existence of `"reference.separate" Button`
+    t =   103.20s         Capturing element debug description
+    t =   104.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   104.20s         Checking existence of `"reference.separate" Button`
+    t =   104.22s         Capturing element debug description
+    t =   105.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   105.20s         Checking existence of `"reference.separate" Button`
+    t =   105.22s         Capturing element debug description
+    t =   106.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   106.16s         Checking existence of `"reference.separate" Button`
+    t =   106.17s         Capturing element debug description
+    t =   107.19s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   107.19s         Checking existence of `"reference.separate" Button`
+    t =   107.23s         Capturing element debug description
+    t =   108.20s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   108.21s         Checking existence of `"reference.separate" Button`
+    t =   108.24s         Capturing element debug description
+    t =   109.16s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.separate" Button`
+    t =   109.16s         Checking existence of `"reference.separate" Button`
+    t =   109.20s         Capturing element debug description
+    t =   109.20s     Checking existence of `"reference.separate" Button`
+    t =   109.22s Collecting debug information to assist test failure triage
+    t =   109.22s     Requesting snapshot of accessibility hierarchy for app with pid 10353
+    t =   109.32s Requesting snapshot of accessibility hierarchy for app with pid 10353
+    t =   109.38s Requesting snapshot of accessibility hierarchy for app with pid 10353
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:15: error: -[HeartV3UITests.HeartV3InteractionTests testSpecimenSectionsAndPartsAcrossModes] : XCTAssertTrue failed - Missing button: reference.separate
+Optional(Attributes: Application, 0x107c8a800, pid: 10353, label: 'HeartV0'
+Element subtree:
+ →Application, 0x107c8a800, pid: 10353, label: 'HeartV0'
+    Other, 0x107c8b200, {{0.0, 0.0}, {1100.0, 780.0}}, identifier: 'phil.heart-v3:SFBSystemService-B9F27FCD-9196-4DE3-BE18-25429A15F3EF'
+      Window, 0x107c89e00, {{0.0, 0.0}, {1500.0, 1312.0}}
+        Other, 0x107c8a940, {{0.0, 0.0}, {1500.0, 1312.0}}
+          Other, 0x107c8a6c0, {{0.0, 0.0}, {1500.0, 1312.0}}
+      Window (Main), 0x107c14b40, {{0.0, 0.0}, {1100.0, 780.0}}
+        Other, 0x107c152c0, {{0.0, 0.0}, {1100.0, 780.0}}
+          Other, 0x107c16300, {{0.0, 0.0}, {1100.0, 780.0}}
+            Other, 0x107c15f40, {{0.0, 0.0}, {1100.0, 780.0}}
+              Other, 0x107c17340, {{0.0, 0.0}, {1100.0, 780.0}}
+                StaticText, 0x107c157c0, {{410.0, 167.5}, {280.0, 32.5}}, label: 'Welcome to HeartV0'
+                StaticText, 0x107c17d40, {{278.2, 208.0}, {543.5, 20.5}}, label: 'Understand how a heart forms—and where development can differ.'
+                Button, 0x107c16440, {{214.0, 260.5}, {320.0, 260.0}}, label: 'Free Exploration'
+                  Image, 0x107c143c0, {{348.5, 299.0}, {51.0, 72.0}}, identifier: 'heart.text.clipboard', label: 'Heart On A Text Clipboard'
+                  StaticText, 0x107c14c80, {{291.8, 378.8}, {164.5, 24.0}}, label: 'Free Exploration'
+                  StaticText, 0x107c16580, {{256.8, 410.8}, {234.5, 63.5}}, label: 'Trace the developing heart and explore where its anatomy can change.'
+                Button, 0x107c17e80, {{566.0, 260.5}, {320.0, 260.0}}, label: 'Guided Learning'
+                  Image, 0x107c17c00, {{697.0, 299.0}, {58.0, 72.0}}, identifier: 'book.closed', label: 'Closed Book'
+                  StaticText, 0x107c15680, {{643.8, 378.8}, {164.5, 24.0}}, label: 'Guided Learning'
+                  StaticText, 0x107c14dc0, {{620.2, 410.8}, {211.5, 63.5}}, label: 'Connect developmental changes to congenital heart defects.'
+                Button, 0x107c148c0, {{500.5, 696.0}, {99.0, 60.0}}, label: 'References'
+      Window, 0x107c16bc0, {{0.0, 0.0}, {1500.0, 1312.0}}
+        Other, 0x107c161c0, {{0.0, 0.0}, {1500.0, 1312.0}}
+          Other, 0x107c16d00, {{0.0, 0.0}, {1500.0, 1312.0}}
+      Other, 0x107c15180, {{0.0, 0.0}, {50.0, 50.0}}
+Path to element:
+ →Application, 0x107c8a800, pid: 10353, label: 'HeartV0'
+Query chain:
+ →Find: Target Application 'phil.heart-v3'
+  Output: {
+    Application, 0x107c17980, pid: 10353, label: 'HeartV0'
+  }
+)
+    t =   109.44s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testSpecimenSectionsAndPartsAcrossModes]' failed (111.259 seconds).
+Test Suite 'HeartV3InteractionTests' failed at 2026-10-28 22:18:57.120.
+	 Executed 2 tests, with 4 failures (0 unexpected) in 180.090 (180.116) seconds
+Test Suite 'HeartV3UITests.xctest' failed at 2026-10-28 22:18:57.126.
+	 Executed 2 tests, with 4 failures (0 unexpected) in 180.090 (180.123) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 22:18:57.127.
+	 Executed 2 tests, with 4 failures (0 unexpected) in 180.090 (180.124) seconds
+2026-10-28 22:19:14.595 xcodebuild[9187:102624] [MT] IDETestOperationsObserverDebug: 435.747 elapsed -- Testing started completed.
+2026-10-28 22:19:14.596 xcodebuild[9187:102624] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 22:19:14.596 xcodebuild[9187:102624] [MT] IDETestOperationsObserverDebug: 435.747 sec, +435.747 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Logs/Test/Test-HeartV3InteractionTests-2026.10.28_22-11-58-+0800.xcresult
+
+Failing tests:
+	HeartV3InteractionTests.testBottomTimelineDrivesLoopingMorph()
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+	HeartV3InteractionTests.testSpecimenSectionsAndPartsAcrossModes()
+
+** TEST EXECUTE FAILED **
+
+Testing started

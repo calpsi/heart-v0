@@ -1,0 +1,9 @@
+/A0324165J_PHILLICIA[[:space:]]LIM[[:space:]]PEI[[:space:]]XIAN[[:space:]]SUBMISSION/A0324165J_PHILLICIA[[:space:]]LIM[[:space:]]PEI[[:space:]]XIAN_DEMO[[:space:]]VIDEO.mp4 filter=lfs diff=lfs merge=lfs -text
+/A0324165J_PHILLICIA[[:space:]]LIM[[:space:]]PEI[[:space:]]XIAN[[:space:]]SUBMISSION/A0324165J_PHILLICIA[[:space:]]LIM[[:space:]]PEI[[:space:]]XIAN_SLIDES.pptx filter=lfs diff=lfs merge=lfs -text
+/HeartAssets/blender/Heart_09_ValvularRefinement.blend filter=lfs diff=lfs merge=lfs -text
+/HeartAssets/refinements/tricuspid-septal-support/Heart_09_ValvularRefinement.blend filter=lfs diff=lfs merge=lfs -text
+/HeartAssets/refinements/tricuspid-septal-support/Heart_09_ValvularRefinement.usdz filter=lfs diff=lfs merge=lfs -text
+/Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/HeartAssets/Heart_09_ValvularRefinement.usdz filter=lfs diff=lfs merge=lfs -text
+/Pitch[[:space:]]Media/HeartV3-demo-backup-1080p.mov filter=lfs diff=lfs merge=lfs -text
+/Pitch[[:space:]]Media/HeartV3-demo-backup.mp4 filter=lfs diff=lfs merge=lfs -text
+/heart[[:space:]]v3/Resources/HeartProject/Tetralogy_of_Fallot.usdz filter=lfs diff=lfs merge=lfs -text

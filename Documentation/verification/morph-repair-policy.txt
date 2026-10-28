@@ -1,0 +1,42 @@
+Tests/SpatialPolicy/main.swift:372:47: warning: 'generate(from:withName:options:)' was deprecated in macOS 15.0: replaced by 'init(image:withName:options:)' [#DeprecatedDeclaration]
+370 | textureContext.setFillColor(CGColor(red: 0.5, green: 0.5, blue: 1, alpha: 1))
+371 | textureContext.fill(CGRect(x: 0, y: 0, width: 2, height: 2))
+372 | let preservationTexture = try TextureResource.generate(from: textureContext.makeImage()!, options: .init(semantic: .color))
+    |                                               |- warning: 'generate(from:withName:options:)' was deprecated in macOS 15.0: replaced by 'init(image:withName:options:)' [#DeprecatedDeclaration]
+    |                                               `- note: use 'init(image:withName:options:)' instead
+373 | var authoredTexture = MaterialParameters.Texture(preservationTexture)
+374 | authoredTexture.uvIndex = 1
+
+Tests/SpatialPolicy/main.swift:386:6: warning: immutable value 'index' was never used; consider replacing with '_' or removing it [#NoUsage]
+384 | let afterMaps = [texturedResult.baseColor.texture, texturedResult.normal.texture, texturedResult.roughness.texture,
+385 |                  texturedResult.metallic.texture, texturedResult.ambientOcclusion.texture]
+386 | for (index, pair) in zip(beforeMaps, afterMaps).enumerated() {
+    |      `- warning: immutable value 'index' was never used; consider replacing with '_' or removing it [#NoUsage]
+387 |     let (before, after) = pair
+388 |     check(before != nil && after != nil && before?.resource == after?.resource && before?.uvIndex == after?.uvIndex,
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+PASS: 20,000 resize samples; finite values, limits, discontinuities, invalid samples
+PASS: repeated pinch reaches 2.5x; restored scales obey limits
+PASS: recognition scoring, misconception feedback, hint/reveal separation, persistence
+PASS: prior study and hinted review remain distinct
+PASS: review due dates, session deduplication, assistance and delayed recall
+Learning pilot content and independent assessment records passed
+PASS: 9,797 transported frames; finite geometry, preserved segment length and continuous centreline
+PASS: continuous timeline mapping, stage bounds and unsupported interval stops
+PASS: timeline arrows preserve transition endpoints
+PASS: 42 closed/cutaway morph surfaces, stable topology, valid normals and noncollapsed triangles
+PASS: fine-step surface continuity, deterministic reverse scrubbing and continuous region-colour reveal; largest step 0.002411713m
+PASS: 41 fusion states and shared straight-tube endpoint
+PASS: morph observation checks have valid distinct answers
+PASS: 82 outflow surfaces, stable topology/materials, finite normals and noncollapsed triangles
+PASS: developmental branch windows, fractional timeline mapping and guided lesson coverage
+PASS: six regional colours remain attached during looping; explicit named-region mapping
+PASS: catalogue aliases keep the palette across lessons and atlas stages without guessing unnamed regions
+PASS: source tint/transparency/culling preserved; shared tissue palette, source immutability and idempotence
+PASS: regional hues and alpha retained with restrained saturation/brightness
+PASS: original colour, normal, roughness, metallic and occlusion textures and UV channels retained
+PASS: explicit anatomical palette keeps normal/roughness maps, layers and source materials
+PASS: paired tubes match the morph wall colour; surface detail, layers and unknown anatomy preserved
+PASS: reference texture grading retains maps/alpha and is idempotent

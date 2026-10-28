@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Normal_Neonatal_Heart",
+    "bytes": 3564407,
+    "sha256": "8ac79d84bb383025b017c886624394b625b547766ff1fa18ec0e5e1d2ab833ed",
+    "creator": "E-learning UMCG",
+    "license": "CC BY-NC-SA 4.0",
+    "changes": "Original downloaded USDZ retained"
+  },
+  {
+    "name": "Atrial_Septal_Defect_ASD",
+    "bytes": 3467714,
+    "sha256": "e1dc3006d2a638dac2ea75342f08531e9ce1ca24a110e21dcc6635fc2f56324e",
+    "creator": "E-learning UMCG",
+    "license": "CC BY-NC-SA 4.0",
+    "changes": "Original downloaded USDZ retained"
+  },
+  {
+    "name": "Ventricular_Septal_Defect",
+    "bytes": 7303274,
+    "sha256": "8faef94d7da6e8e38fc91b60d4bb1a2eb3c4ca4d0238fc5ae8f8ab56875c027a",
+    "creator": "E-learning UMCG",
+    "license": "CC BY-NC-SA 4.0",
+    "changes": "Original downloaded USDZ retained"
+  },
+  {
+    "name": "Transposition_of_the_great_arteries",
+    "bytes": 6735655,
+    "sha256": "022425fd054e0c2c1abfb9f2b885d65c3640a426612dee70dc6b29a57e9eb08c",
+    "creator": "E-learning UMCG",
+    "license": "CC BY-NC-SA 4.0",
+    "changes": "Original downloaded USDZ retained"
+  },
+  {
+    "name": "Atrioventricular_septal_defect_4_chamber_view",
+    "bytes": 3680698,
+    "sha256": "2f84bc25e2022d2ff42f21a383228d33f5c3ffbd91b1561165a9256669559078",
+    "creator": "E-learning UMCG",
+    "license": "CC BY-NC-SA 4.0",
+    "changes": "Original downloaded USDZ retained"
+  }
+]

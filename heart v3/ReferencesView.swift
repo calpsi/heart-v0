@@ -12,13 +12,9 @@ struct ReferencesView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Explore the science").font(.title2.bold())
                         Text("Sources for the developmental and anomaly models.")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(HeartDesign.secondary)
                     }
                 }
-                Text("Stage reconstructions: HDBR Atlas (https://hdbratlas.org). Adapted under CC BY-NC-SA 4.0 for enlarged display, named regions and interaction. Source geometry and region colours are retained; HDBR does not endorse this adaptation.")
-                    .font(.caption).foregroundStyle(.secondary)
-                reference("HDBR source models and attribution", source: "Non-commercial school use · CC BY-NC-SA 4.0",
-                          url: "https://hdbratlas.org/terms.html")
                 reference("The HUDSEN Atlas", source: "Kerwin et al. · Journal of Anatomy, 2010",
                           url: "https://doi.org/10.1111/j.1469-7580.2010.01290.x")
                 reference("Human embryonic and fetal tissue resources", source: "Gerrelli et al. · Development, 2015",
@@ -58,13 +54,15 @@ struct ReferencesView: View {
                 reference("Patent ductus arteriosus", source: "Merck Manual · Professional",
                           url: "https://www.merckmanuals.com/professional/pediatrics/congenital-cardiovascular-anomalies/patent-ductus-arteriosus-pda")
                 Text("Models are enlarged educational illustrations. Developmental timings are approximate post-fertilization ages. Later-anatomy references are labelled separately.")
-                    .font(.caption).foregroundStyle(.secondary)
+                    .font(.subheadline).foregroundStyle(HeartDesign.secondary)
             }.padding(28)
         }
+        .foregroundStyle(HeartDesign.text)
+        .background(HeartDesign.surface)
         .navigationTitle("References")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button("Done") { dismiss() }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Done") { dismiss() }.buttonStyle(HeartSecondaryButtonStyle())
             }
         }
     }
@@ -74,13 +72,13 @@ struct ReferencesView: View {
             HStack(spacing: 16) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(title).font(.headline).foregroundStyle(.primary)
-                    Text(source).font(.subheadline).foregroundStyle(.secondary)
+                    Text(source).font(.subheadline).foregroundStyle(HeartDesign.secondary)
                 }
                 Spacer()
                 Image(systemName: "arrow.up.right").foregroundStyle(Color.accentColor)
             }
             .padding(20).frame(maxWidth: .infinity, alignment: .leading)
-            .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 20))
+            .background(HeartDesign.panel, in: RoundedRectangle(cornerRadius: 20))
         }.buttonStyle(.plain)
     }
 }

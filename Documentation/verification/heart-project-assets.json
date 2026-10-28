@@ -1,0 +1,641 @@
+[
+  {
+    "file": "Normal_Teenage_Heart.usdz",
+    "objects": [
+      {
+        "name": "Object_0",
+        "vertices": 65532,
+        "dimensions": [
+          1.173166036605835,
+          1.5686862468719482,
+          1.2120662927627563
+        ],
+        "materials": [
+          "Material_001"
+        ]
+      },
+      {
+        "name": "Object_1",
+        "vertices": 45452,
+        "dimensions": [
+          1.1692016124725342,
+          1.5958465337753296,
+          1.2099374532699585
+        ],
+        "materials": [
+          "Material_001"
+        ]
+      },
+      {
+        "name": "Object_2",
+        "vertices": 22613,
+        "dimensions": [
+          1.2148890495300293,
+          1.0333316326141357,
+          0.9987132549285889
+        ],
+        "materials": [
+          "Material_002"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Coarctation.usdz",
+    "objects": [
+      {
+        "name": "Object_0",
+        "vertices": 65533,
+        "dimensions": [
+          2.3650424480438232,
+          2.155095100402832,
+          2.709019899368286
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_1",
+        "vertices": 65534,
+        "dimensions": [
+          1.5368446111679077,
+          1.7260822057724,
+          1.2171497344970703
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_10",
+        "vertices": 65534,
+        "dimensions": [
+          2.341224193572998,
+          1.6778565645217896,
+          1.944958209991455
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_11",
+        "vertices": 65532,
+        "dimensions": [
+          1.546443223953247,
+          1.1033141613006592,
+          1.6312193870544434
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_12",
+        "vertices": 65532,
+        "dimensions": [
+          2.1457433700561523,
+          1.6051396131515503,
+          1.775406837463379
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_13",
+        "vertices": 65532,
+        "dimensions": [
+          2.3046891689300537,
+          1.6729762554168701,
+          1.9347349405288696
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_14",
+        "vertices": 1092,
+        "dimensions": [
+          0.550460934638977,
+          0.7875415682792664,
+          0.9776424169540405
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_2",
+        "vertices": 65534,
+        "dimensions": [
+          1.6428182125091553,
+          1.4556788206100464,
+          1.9873650074005127
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_3",
+        "vertices": 65534,
+        "dimensions": [
+          1.6264795064926147,
+          1.3688573837280273,
+          1.9130686521530151
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_4",
+        "vertices": 65534,
+        "dimensions": [
+          1.8758147954940796,
+          1.363020420074463,
+          1.7844516038894653
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_5",
+        "vertices": 65534,
+        "dimensions": [
+          1.6153860092163086,
+          1.4498639106750488,
+          2.077193021774292
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_6",
+        "vertices": 36979,
+        "dimensions": [
+          1.586925745010376,
+          1.1758307218551636,
+          1.3070329427719116
+        ],
+        "materials": [
+          "Default_OBJ_004"
+        ]
+      },
+      {
+        "name": "Object_7",
+        "vertices": 65532,
+        "dimensions": [
+          2.5154337882995605,
+          1.7199772596359253,
+          2.8586771488189697
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_8",
+        "vertices": 65534,
+        "dimensions": [
+          2.525848627090454,
+          1.4659006595611572,
+          2.66389799118042
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      },
+      {
+        "name": "Object_9",
+        "vertices": 65534,
+        "dimensions": [
+          2.525531530380249,
+          1.6795746088027954,
+          2.2319793701171875
+        ],
+        "materials": [
+          "Default_OBJ_006"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Tetralogy_of_Fallot.usdz",
+    "objects": [
+      {
+        "name": "Object_0",
+        "vertices": 65532,
+        "dimensions": [
+          1.9213768243789673,
+          1.968021035194397,
+          2.9997572898864746
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_1",
+        "vertices": 65532,
+        "dimensions": [
+          1.5338248014450073,
+          1.875322937965393,
+          2.1134891510009766
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_10",
+        "vertices": 65532,
+        "dimensions": [
+          1.000156283378601,
+          0.803345263004303,
+          0.8057776093482971
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_11",
+        "vertices": 65532,
+        "dimensions": [
+          0.8719199299812317,
+          0.9618291258811951,
+          0.8697621822357178
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_12",
+        "vertices": 65533,
+        "dimensions": [
+          0.7391254901885986,
+          0.7815836071968079,
+          0.7403809428215027
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_13",
+        "vertices": 65534,
+        "dimensions": [
+          1.0963549613952637,
+          1.1534161567687988,
+          1.1234699487686157
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_14",
+        "vertices": 65534,
+        "dimensions": [
+          0.953608512878418,
+          1.2378133535385132,
+          0.9709433317184448
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_15",
+        "vertices": 65532,
+        "dimensions": [
+          0.9330015182495117,
+          1.3653751611709595,
+          1.128069281578064
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_16",
+        "vertices": 65532,
+        "dimensions": [
+          0.9244648814201355,
+          1.437192440032959,
+          1.2574009895324707
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_17",
+        "vertices": 65532,
+        "dimensions": [
+          1.3829774856567383,
+          1.7549995183944702,
+          1.948288917541504
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_18",
+        "vertices": 65532,
+        "dimensions": [
+          1.3986449241638184,
+          1.7634316682815552,
+          2.0323824882507324
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_19",
+        "vertices": 65532,
+        "dimensions": [
+          1.4351909160614014,
+          1.7980393171310425,
+          2.1112728118896484
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_2",
+        "vertices": 65534,
+        "dimensions": [
+          1.4219719171524048,
+          1.7323176860809326,
+          1.8694149255752563
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_20",
+        "vertices": 65532,
+        "dimensions": [
+          1.4580861330032349,
+          1.82704496383667,
+          2.19751238822937
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_21",
+        "vertices": 65533,
+        "dimensions": [
+          1.485068440437317,
+          1.83371901512146,
+          2.284119129180908
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_22",
+        "vertices": 65532,
+        "dimensions": [
+          1.512214183807373,
+          1.6770167350769043,
+          2.3750603199005127
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_23",
+        "vertices": 65534,
+        "dimensions": [
+          1.558932900428772,
+          1.6840877532958984,
+          2.4598796367645264
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_24",
+        "vertices": 65532,
+        "dimensions": [
+          1.6280230283737183,
+          1.6667927503585815,
+          2.5457682609558105
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_25",
+        "vertices": 65534,
+        "dimensions": [
+          1.6699827909469604,
+          1.5309243202209473,
+          2.6140685081481934
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_26",
+        "vertices": 65534,
+        "dimensions": [
+          1.758493423461914,
+          1.4615510702133179,
+          2.673996686935425
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_27",
+        "vertices": 65532,
+        "dimensions": [
+          1.820635437965393,
+          1.387580156326294,
+          2.5194613933563232
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_28",
+        "vertices": 65532,
+        "dimensions": [
+          1.8111375570297241,
+          1.2102097272872925,
+          1.8101309537887573
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_29",
+        "vertices": 65532,
+        "dimensions": [
+          1.6721220016479492,
+          0.85767662525177,
+          1.3178068399429321
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_3",
+        "vertices": 65534,
+        "dimensions": [
+          1.3941287994384766,
+          1.6972395181655884,
+          1.8181263208389282
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_30",
+        "vertices": 65532,
+        "dimensions": [
+          1.757493257522583,
+          0.8772672414779663,
+          1.458438754081726
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_31",
+        "vertices": 65534,
+        "dimensions": [
+          1.7874767780303955,
+          0.9095421433448792,
+          1.6058967113494873
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_32",
+        "vertices": 65532,
+        "dimensions": [
+          1.5369518995285034,
+          0.8398816585540771,
+          2.0059640407562256
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_33",
+        "vertices": 53547,
+        "dimensions": [
+          0.35016071796417236,
+          0.2587144374847412,
+          1.1107453107833862
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_4",
+        "vertices": 65532,
+        "dimensions": [
+          1.3440262079238892,
+          1.6504236459732056,
+          1.7721278667449951
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_5",
+        "vertices": 65532,
+        "dimensions": [
+          1.2831928730010986,
+          1.6181319952011108,
+          1.6962127685546875
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_6",
+        "vertices": 65532,
+        "dimensions": [
+          1.1875097751617432,
+          1.57945716381073,
+          1.6343029737472534
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_7",
+        "vertices": 65532,
+        "dimensions": [
+          1.0875195264816284,
+          1.5587968826293945,
+          1.5741554498672485
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_8",
+        "vertices": 65532,
+        "dimensions": [
+          1.0290664434432983,
+          1.5345158576965332,
+          1.4768561124801636
+        ],
+        "materials": [
+          "Material"
+        ]
+      },
+      {
+        "name": "Object_9",
+        "vertices": 65532,
+        "dimensions": [
+          1.0743917226791382,
+          1.488252878189087,
+          1.366513967514038
+        ],
+        "materials": [
+          "Material"
+        ]
+      }
+    ]
+  }
+]

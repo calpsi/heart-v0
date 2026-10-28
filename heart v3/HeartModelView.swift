@@ -37,6 +37,19 @@ struct HeartAsset: Decodable, Identifiable {
     }
     let anatomyReview: AnatomyReview?
 
+    struct ReviewStatus: Decodable {
+        let asset: String
+        let reviewPerformed: String?
+        let reviewScope: String?
+        let geometryAnatomicallyValidated: Bool
+    }
+    private static let reviewStatuses: [ReviewStatus] = {
+        guard let url = Bundle.main.url(forResource: "HeartReviewStatus", withExtension: "json"),
+              let data = try? Data(contentsOf: url) else { return [] }
+        return (try? JSONDecoder().decode([ReviewStatus].self, from: data)) ?? []
+    }()
+    var reviewStatus: ReviewStatus? { Self.reviewStatuses.first { $0.asset == id } }
+
     var isAnomaly: Bool { category == "anomaly" }
 
     var artworkName: String { previewImage ?? String(format: "Stage%02d", stageIndex + 1) }
@@ -113,7 +126,7 @@ struct HeartLessonStep: Equatable {
         case "Atrial septation":
             parts = ["SeptumPrimum_Early", "DorsalMesenchymalProtrusion_Early", "SeptumSecundum_Later", "SeptumPrimum_Later"]
         case "Endocardial cushion fusion":
-            parts = ["CushionSuperior_Unfused", "CushionSuperior_Fused", "CushionInferior_Fused"]
+            parts = ["CushionSuperior_Unfused", "", "CushionSuperior_Fused", "CushionInferior_Fused", ""]
         case "Ventricular septation":
             parts = ["MuscularSeptum_Open", "MembranousSeptum_Closed", "SubaorticOutlet_Posterior"]
         case "Outflow tract septation":
@@ -131,7 +144,7 @@ struct HeartLessonStep: Equatable {
         case "Transposition of the Great Arteries (TGA)":
             parts = ["Aorta_Tga", "PulmonaryTrunk_Tga", "AtrialSeptum_Tga", "Aorta_Normal"]
         case "Coarctation of the Aorta":
-            parts = ["AorticIsthmus_Coarctation_Posterior", "AorticIsthmus_Normal_Posterior", "Ligamentum", "LeftSubclavian_Posterior"]
+            parts = ["", "AorticIsthmus_Coarctation_Posterior", "AorticIsthmus_Normal_Posterior", "Ligamentum", ""]
         case "Patent Ductus Arteriosus (PDA)":
             parts = ["Ductus_Patent_Posterior", "PulmonaryTrunk_Patent", "Ligamentum_Closed"]
         default: return []
@@ -139,7 +152,7 @@ struct HeartLessonStep: Equatable {
         let states: [String]
         switch asset.lesson {
         case "Atrial septation": states = ["early", "early", "later", "later"]
-        case "Endocardial cushion fusion": states = ["unfused", "fused", "fused"]
+        case "Endocardial cushion fusion": states = ["unfused", "unfused", "fused", "fused", "fused"]
         case "Ventricular septation": states = ["open", "closed", "closed"]
         case "Outflow tract septation": states = ["ridges", "divided", "divided"]
         case "Valvular refinement": states = ["cushions", "refined", "refined"]
@@ -147,7 +160,7 @@ struct HeartLessonStep: Equatable {
         case "Ventricular Septal Defect (VSD)", "Atrial Septal Defect (ASD)": states = ["defect", "intact", "defect"]
         case "Tetralogy of Fallot": states = ["fallot", "fallot", "fallot", "fallot"]
         case "Transposition of the Great Arteries (TGA)": states = ["tga", "tga", "tga", "normal"]
-        case "Coarctation of the Aorta": states = ["coarctation", "normal", "coarctation", "coarctation"]
+        case "Coarctation of the Aorta": states = ["normal", "coarctation", "normal", "coarctation", "coarctation"]
         case "Patent Ductus Arteriosus (PDA)": states = ["patent", "patent", "closed"]
         default: states = []
         }
@@ -164,17 +177,6 @@ enum HeartModelAction: Equatable {
 struct HeartModelActionRequest: Equatable {
     let id = UUID()
     let action: HeartModelAction
-}
-
-/// Shared by the viewer and regression checks so restoring a step is atomic.
-enum HeartModelZoom {
-    static let range: ClosedRange<Double> = 0.4...4
-    static let overviewMaximum: Double = 1.25
-
-    static func clamped(_ value: Double) -> Double {
-        guard value.isFinite else { return 1 }
-        return min(range.upperBound, max(range.lowerBound, value))
-    }
 }
 
 struct HeartModelControls: Codable, Hashable {
@@ -197,15 +199,14 @@ struct HeartModelControls: Codable, Hashable {
         return simd_quatf(angle: yaw, axis: [0, 1, 0]) * simd_quatf(angle: pitch, axis: [1, 0, 0])
     }
     mutating func rotate(from start: simd_quatf, horizontal: Float, vertical: Float) {
-        let delta = simd_quatf(angle: vertical * 0.005, axis: [1, 0, 0])
-            * simd_quatf(angle: horizontal * 0.005, axis: [0, 1, 0])
-        dragOrientation = simd_normalize(delta * start).vector
+        dragOrientation = HeartManipulationSession.rotated(from: start, horizontal: horizontal, vertical: vertical).vector
     }
+    mutating func setOrientation(_ rotation: simd_quatf) { dragOrientation = simd_normalize(rotation).vector }
     mutating func setOrientation(yaw: Float, pitch: Float) {
         dragOrientation = nil
         self.yaw = yaw; self.pitch = pitch
     }
-    // Optional storage keeps previously saved close-up windows decodable.
+    // Optional storage preserves decoding of earlier viewing-state snapshots.
     private var movablePartsEnabled: Bool?
     private var detachedPartPositions: [String: SIMD3<Float>]?
     var moveParts: Bool {
@@ -283,6 +284,14 @@ struct HeartModelControls: Codable, Hashable {
         }
     }
 
+    /// Recover the current anatomical state without changing lesson progress.
+    mutating func resetModel(asset: HeartAsset) {
+        let state = developmentState
+        restore(asset: asset, step: nil)
+        developmentState = state ?? asset.defaultState
+        selectedPart = ""
+    }
+
     mutating func resetView(asset: HeartAsset) {
         dragOrientation = nil
         yaw = asset.defaultYaw ?? 0
@@ -301,33 +310,39 @@ private struct HeartSeparationRequest: Equatable {
 struct HeartModelView: View {
     let asset: HeartAsset
     var lessonStep: HeartLessonStep? = nil
+    var recognitionMode = false
+    var locksComparison = false
+    var onPartSelected: ((String) -> Void)? = nil
     var detailControlsAtBottom = false
     var obscuredBySheet = false
+    var suspended = false
     var actionRequest: HeartModelActionRequest? = nil
     @PhysicalMetric(from: .meters) private var pointsPerMeter: CGFloat = 1
     @State private var scene = HeartModelScene()
     @State private var controls = HeartModelControls()
     @State private var hasAppliedInitialStep = false
     @State private var showingInfo = false
+    @State private var showingReferences = false
     @State private var showingLocation = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @Environment(\.openWindow) private var openWindow
-    @State private var openedCloseUpDuringPinch = false
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var interactionRevision = 0
     @State private var separationPresentation = HeartSeparationPresentation()
     @State private var lastSeparationState: String?
     @State private var hasPresentedSeparation = false
-    @State private var dragStart: simd_quatf?
     @State private var partDrag: (id: String, start: SIMD3<Float>)?
-    @State private var pinchStart: Double?
+    @State private var manipulationUndo: HeartModelControls?
     @State private var retry = UUID()
     @State private var showingAtlas = false
     @State private var showingParts = false
+    @State private var sectionAxis = -1
+    @State private var preparingSection = false
     @State private var showingAdjustments = false
     @State private var partSearch = ""
     @State private var selectionSuppressedUntil = Date.distantPast
 
     private var selectedLabel: String? {
-        asset.parts.first(where: { $0.id == controls.selectedPart })?.label
+        recognitionMode ? (controls.selectedPart.isEmpty ? nil : "Your selected region") : asset.parts.first(where: { $0.id == controls.selectedPart })?.label
     }
 
     private var separationRequest: HeartSeparationRequest {
@@ -335,28 +350,46 @@ struct HeartModelView: View {
     }
 
     var body: some View {
+        Group {
+            if suspended { Color.clear }
+            else { modelContents }
+        }
+        .onChange(of: lessonStep, initial: true) { _, next in
+            manipulationUndo = nil
+            if !hasAppliedInitialStep {
+                restoreStepOrModel()
+                hasAppliedInitialStep = true
+            } else { controls.transition(to: next, asset: asset) }
+            cancelManipulation()
+        }
+    }
+
+    private var modelContents: some View {
         VStack(spacing: 10) {
             if asset.category != "reference", !asset.isAnomaly, !HeartAsset.referenceModels.isEmpty {
                 HStack {
-                    Text("Regional teaching illustration").font(.caption).foregroundStyle(.secondary)
+                    Text("Regional teaching illustration").font(.subheadline).foregroundStyle(HeartDesign.secondary)
                     Spacer()
                     Button("Stage reconstructions", systemImage: "cube.transparent") { showingAtlas = true }
                 }
             } else if asset.category == "reference" {
                 Text("HDBR Atlas · colour-coded chamber regions and vessel lumens · enlarged")
-                    .font(.caption).foregroundStyle(.secondary)
+                    .font(.subheadline).foregroundStyle(HeartDesign.secondary)
+            } else {
+                Text("Schematic teaching model · simplified anatomy · no flow or pressure simulation")
+                    .font(.subheadline).foregroundStyle(HeartDesign.secondary)
             }
             modelComparison
             HStack(spacing: 16) {
                 modelToolbar
                 modelCanvas
-                if !detailControlsAtBottom {
+                if !detailControlsAtBottom && !recognitionMode {
                     if asset.id == "Heart_10_CirculatoryTransition" {
                         ScrollView {
                             VStack(spacing: 12) {
                                 transitionGuide
                                 VStack(spacing: 8) { modelDetailsButtons }
-                                    .buttonStyle(.bordered).font(.subheadline)
+                                    .buttonStyle(HeartSecondaryButtonStyle()).font(.subheadline)
                             }
                         }.frame(width: 280)
                     } else { modelDetailsToolbar }
@@ -365,17 +398,11 @@ struct HeartModelView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .sheet(isPresented: $showingAtlas) { HeartReferenceBrowser() }
-        .preferredWindowClippingMargins(.front, pointsPerMeter * 0.6)
-        .preferredWindowClippingMargins(.back, pointsPerMeter * 0.2)
-        .task(id: scene.ready) {
-            #if DEBUG
-            guard scene.ready, ProcessInfo.processInfo.arguments.contains("--preview-close-up") else { return }
-            let args = ProcessInfo.processInfo.arguments
-            let index = args.firstIndex(of: "--preview-zoom")
-            let zoom = index.flatMap { $0 + 1 < args.count ? Double(args[$0 + 1]) : nil } ?? 1
-            openCloseUp(zoom: zoom)
-            #endif
+        .sheet(isPresented: $showingReferences) {
+            NavigationStack { ReferencesView() }.frame(width: 700, height: 520)
         }
+        .preferredWindowClippingMargins(.front, pointsPerMeter * 0.6)
+        .preferredWindowClippingMargins(.back, pointsPerMeter * 0.8)
         .task(id: separationRequest) {
             let request = separationRequest
             let animate = hasPresentedSeparation && lastSeparationState == request.state
@@ -384,20 +411,23 @@ struct HeartModelView: View {
             hasPresentedSeparation = true
             await separationPresentation.update(to: request.target, animated: animate)
         }
-        .onChange(of: lessonStep, initial: true) { _, next in
-            if !hasAppliedInitialStep {
-                restoreStepOrModel()
-                hasAppliedInitialStep = true
-            } else { controls.transition(to: next, asset: asset) }
-            dragStart = nil; partDrag = nil; pinchStart = nil
+        .onDisappear {
+            scene.relationshipRoot.isEnabled = false
+            cancelManipulation()
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase != .active { cancelManipulation() }
         }
         .onChange(of: actionRequest) { _, request in
             guard let request else { return }
+            manipulationUndo = controls
+            cancelManipulation()
             controls.perform(request.action, asset: asset, step: lessonStep)
-            dragStart = nil; pinchStart = nil
         }
-        .onAppear {
+        .onChange(of: scene.ready) { _, ready in
             #if DEBUG
+            guard ready else { return }
+            // Apply visual-audit presets after initial lesson restoration/loading.
             let args = ProcessInfo.processInfo.arguments
             if let index = args.firstIndex(of: "--preview-zoom"), index + 1 < args.count,
                let zoom = Double(args[index + 1]) { controls.zoom = min(HeartModelZoom.overviewMaximum, HeartModelZoom.clamped(zoom)) }
@@ -415,17 +445,29 @@ struct HeartModelView: View {
             if args.contains("--preview-layers") { controls.perform(.layers, asset: asset, step: lessonStep) }
             #endif
         }
+        .task(id: sectionAxis) {
+            preparingSection = sectionAxis >= 0
+            do {
+                try await scene.sections.prepare(axis: sectionAxis)
+                try Task.checkCancellation()
+                scene.sectionAxis = sectionAxis; scene.sectionError = nil; preparingSection = false
+            } catch {
+                if !Task.isCancelled { preparingSection = false; scene.sectionError = "Section unavailable for this model." }
+            }
+        }
         .onChange(of: controls.moveParts) { _, moving in
-            partDrag = nil; dragStart = nil
+            cancelManipulation()
             if moving { controls.isolate = false }
         }
         .onChange(of: controls.selectedPart) { _, value in
+            onPartSelected?(value)
             guard partDrag == nil else { return }
             if value.isEmpty { controls.isolate = false }
             if value.hasSuffix("_Anterior") { controls.cutaway = false }
             if value.hasSuffix("_Posterior") { controls.cutaway = true }
             if asset.parts.first(where: { $0.id == value })?.category == "context" { controls.showContext = true }
         }
+        .onChange(of: controls.developmentState) { _, _ in manipulationUndo = nil }
         .onChange(of: controls.cutaway) { _, value in
             if value && controls.selectedPart.hasSuffix("_Anterior") {
                 controls.selectedPart = controls.selectedPart.replacingOccurrences(of: "_Anterior", with: "_Posterior")
@@ -454,10 +496,10 @@ struct HeartModelView: View {
                 transitionKey("Aorta", detail: "Arch carrying blood to the body", id: "Aorta", color: .orange)
             }
             Text("Tap a key to highlight its structure. Pink = heart walls · blue = pulmonary arteries. Colours identify structures, not oxygen levels. Closure is gradual; this is a simplified snapshot.")
-                .font(.caption).foregroundStyle(.secondary)
+                .font(.subheadline).foregroundStyle(HeartDesign.secondary)
         }
         .padding(14).frame(maxWidth: .infinity, alignment: .leading)
-        .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 18))
+        .heartPanel(cornerRadius: 18)
     }
 
     private func transitionKey(_ title: String, detail: String, id: String, color: Color) -> some View {
@@ -471,18 +513,18 @@ struct HeartModelView: View {
                 Label { Text(title).font(.subheadline.bold()) } icon: {
                     Circle().fill(color).frame(width: 10, height: 10)
                 }
-                Text(detail).font(.caption).foregroundStyle(.secondary)
+                Text(detail).font(.subheadline).foregroundStyle(HeartDesign.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .frame(maxWidth: .infinity, minHeight: 52, alignment: .leading)
-            .padding(8).background(.black.opacity(0.22), in: RoundedRectangle(cornerRadius: 12))
+            .padding(8).background(Color(white: 0.96), in: RoundedRectangle(cornerRadius: 12))
             .contentShape(Rectangle())
         }.buttonStyle(.plain).accessibilityIdentifier("transition." + id)
     }
 
     @ViewBuilder
     private var modelComparison: some View {
-        if let states = asset.states, !states.isEmpty {
+        if !recognitionMode && !locksComparison, let states = asset.states, !states.isEmpty {
             SpatialChoicePicker(title: "Compare anatomy", selection: Binding(
                 get: { controls.developmentState ?? asset.defaultState ?? states[0].id },
                 set: { controls.developmentState = $0; controls.selectedPart = ""; controls.isolate = false; controls.reassemble() }
@@ -505,7 +547,7 @@ struct HeartModelView: View {
             }
         }
         .font(.subheadline)
-        .buttonStyle(.bordered)
+        .buttonStyle(HeartSecondaryButtonStyle())
         .controlSize(detailControlsAtBottom ? .regular : .large)
     }
 
@@ -513,59 +555,51 @@ struct HeartModelView: View {
 
     private var modelDetailsButtons: some View {
         Group {
-            Button {
-                openCloseUp(zoom: max(1, controls.zoom))
-            } label: {
-                Label("Close-up", systemImage: "arrow.up.left.and.arrow.down.right").foregroundStyle(.black)
-            }
-            .accessibilityHint("Open an enlarged model in a separate movable 3D window.")
-            .disabled(!scene.ready)
             if let guide = HeartLocationGuide.guide(for: asset) {
                 Button {
                     showingInfo = false
                     showingLocation.toggle()
                 } label: {
-                    Label("Location", systemImage: "map").foregroundStyle(.black)
+                    Label("Location", systemImage: "map").foregroundStyle(HeartDesign.text)
                 }
                 .accessibilityHint(guide.title)
                 .popover(isPresented: $showingLocation, arrowEdge: detailPopupEdge) {
-                    HeartLocationView(asset: asset, guide: guide) { showingLocation = false }
+                    HeartLocationView(asset: asset, guide: guide) { showingLocation = false }.heartPopover()
                 }
             }
             Button {
                 showingLocation = false
                 showingInfo.toggle()
             } label: {
-                Label("Model info", systemImage: "info.circle").foregroundStyle(.black)
+                Label("Model info", systemImage: "info.circle").foregroundStyle(HeartDesign.text)
             }
-            .popover(isPresented: $showingInfo, arrowEdge: detailPopupEdge) { informationPanel }
+            .popover(isPresented: $showingInfo, arrowEdge: detailPopupEdge) { informationPanel.heartPopover() }
         }
     }
 
     private var modelCanvas: some View {
         VStack(spacing: 12) {
-            if controls.showLabels {
-                Text(selectedLabel ?? (controls.moveParts ? "Drag a part to move it" : "Tap a part to inspect it"))
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.85)
-                    .frame(height: 36)
-                    .padding(8)
-                    .frame(maxWidth: .infinity)
-                    .background(.black.opacity(0.75), in: RoundedRectangle(cornerRadius: 14))
-                    .allowsHitTesting(false)
-                    .accessibilityLabel(selectedLabel.map { "Selected part: \($0)" } ?? "No part selected")
-            }
-            if detailControlsAtBottom { modelDetailsToolbar }
+            if detailControlsAtBottom && !recognitionMode { modelDetailsToolbar }
             modelViewport
+            HStack(spacing: 12) {
+                Text(controls.showLabels ? (selectedLabel ?? "Drag to rotate · Pinch to resize · Tap to inspect") : "Drag to rotate · Pinch to resize")
+                    .font(.subheadline.weight(.medium))
+                    .lineLimit(2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .accessibilityIdentifier("model.interactionStatus")
+                Text("\(controls.zoom, format: .number.precision(.fractionLength(1)))×")
+                    .font(.subheadline.monospacedDigit())
+                    .accessibilityLabel("Model size")
+            }
+            .frame(height: 48)
+            .padding(.horizontal, 14)
+            .allowsHitTesting(false)
         }
         .padding(20)
         .background {
             if controls.showBackdrop {
-                RoundedRectangle(cornerRadius: 28).fill(.black.opacity(0.65))
-                    .offset(z: -pointsPerMeter * 0.20)
+                RoundedRectangle(cornerRadius: 28).fill(Color(white: 0.96))
+                    .offset(z: -pointsPerMeter * 0.80)
             }
         }
         .id(retry)
@@ -576,9 +610,11 @@ struct HeartModelView: View {
                     Text(message)
                     Button("Try Again") { scene = HeartModelScene(); retry = UUID() }
                 }
-                .padding(28).glassBackgroundEffect()
+                .padding(28).heartPanel()
+            } else if let sectionError = scene.sectionError {
+                Text(sectionError).accessibilityIdentifier("model.sectionError")
             } else if !scene.ready {
-                ProgressView("Loading model").padding(24).glassBackgroundEffect()
+                ProgressView("Loading model").padding(24).heartPanel()
             }
         }
     }
@@ -589,11 +625,15 @@ struct HeartModelView: View {
         GeometryReader3D { geometry in
             RealityView { content in
                 do {
-                    let model = try await Entity(named: "HeartAssets/\(asset.id)", in: realityKitContentBundle)
+                    if scene.model == nil {
+                        let model = try await Entity(named: "HeartAssets/\(asset.id)", in: realityKitContentBundle)
+                        guard !Task.isCancelled else { return }
+                        try await scene.install(model, asset: asset)
+                    }
                     guard !Task.isCancelled else { return }
-                    try await scene.install(model, asset: asset)
                     content.add(scene.holder)
-                    scene.holder.isEnabled = !obscuredBySheet && !showingInfo && !showingLocation && !showingAtlas && !showingParts
+                    content.add(scene.relationshipRoot)
+                    scene.holder.isEnabled = !obscuredBySheet && !showingInfo && !showingLocation && !showingAtlas && !showingParts && !showingAdjustments && !showingReferences
                     scene.apply(asset: asset, selected: controls.selectedPart, isolate: controls.isolate,
                                 cutaway: controls.cutaway, context: controls.showContext,
                                 separation: Float(separationPresentation.value), state: controls.developmentState, transparent: controls.transparent, partOffsets: controls.partOffsets)
@@ -602,12 +642,14 @@ struct HeartModelView: View {
                           overviewFill: detailControlsAtBottom ? 0.72 : 0.64)
                     scene.ready = true
                     #if DEBUG
-                    if ProcessInfo.processInfo.arguments.contains("--validate-heart-assets") {
+                    if ProcessInfo.processInfo.arguments.contains("--validate-heart-assets") || ProcessInfo.processInfo.arguments.contains("--validate-heart-transitions") {
                         let host = Entity()
                         host.components.set(OpacityComponent(opacity: 0))
                         content.add(host)
                         Task { @MainActor in
-                            await HeartAssetValidation.run(in: host)
+                            if ProcessInfo.processInfo.arguments.contains("--validate-heart-transitions") {
+                                await HeartAssetValidation.runTransitions(in: host)
+                            } else { await HeartAssetValidation.run(in: host) }
                             host.removeFromParent()
                         }
                     }
@@ -620,7 +662,7 @@ struct HeartModelView: View {
             } update: { content in
                 // Spatial geometry can project through detail popovers. Suspend its
                 // rendering while reading; keep all inspection transforms intact.
-                scene.holder.isEnabled = !obscuredBySheet && !showingInfo && !showingLocation && !showingAtlas && !showingParts
+                scene.holder.isEnabled = !obscuredBySheet && !showingInfo && !showingLocation && !showingAtlas && !showingParts && !showingAdjustments && !showingReferences
                 scene.apply(asset: asset, selected: controls.selectedPart, isolate: controls.isolate,
                             cutaway: controls.cutaway, context: controls.showContext, separation: Float(separationPresentation.value), state: controls.developmentState, transparent: controls.transparent, partOffsets: controls.partOffsets)
                 scene.spin.orientation = controls.orientation
@@ -628,112 +670,81 @@ struct HeartModelView: View {
                           overviewFill: detailControlsAtBottom ? 0.72 : 0.64)
             }
             .realityViewLayoutBehavior(.flexible)
-            // Keep the inspection focus above the lower manipulation area.
-            // Move the RealityView itself so its hit targets follow the anatomy.
-            .offset(y: -geometry.size.height * 0.18)
-            // A drag owns its gesture through completion, so releasing it cannot select a tissue.
-            .gesture(DragGesture(minimumDistance: 8).targetedToAnyEntity()
-                .exclusively(before: SpatialTapGesture().targetedToAnyEntity())
-                .onChanged { value in
-                    if case .first(let drag) = value {
-                        guard pinchStart == nil else { dragStart = nil; return }
-                        if controls.moveParts, lessonStep == nil {
-                            if partDrag == nil, let id = scene.partID(for: drag.entity, asset: asset) {
-                                partDrag = (id, controls.partOffsets[id] ?? .zero)
-                                controls.selectedPart = id
-                            }
-                            if let partDrag {
-                                let delta = drag.convert(drag.translation3D, from: .local, to: scene.movementSpace)
-                                controls.partOffsets[partDrag.id] = scene.boundedOffset(partDrag.start + delta)
-                            }
-                            return
-                        }
-                        if dragStart == nil { dragStart = controls.orientation }
-                        guard let start = dragStart else { return }
-                        controls.rotate(from: start, horizontal: Float(drag.translation.width), vertical: Float(drag.translation.height))
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .frame(depth: 0)
+            .clipped()
+            .modifier(HeartModelGestures(
+                orientation: Binding(get: { controls.orientation }, set: { controls.setOrientation($0) }),
+                zoom: $controls.zoom,
+                enabled: scene.ready && !suspended && !obscuredBySheet && !showingInfo && !showingLocation
+                    && !showingAtlas && !showingParts && !showingAdjustments && !showingReferences,
+                resetRevision: interactionRevision,
+                onBegin: { manipulationUndo = controls },
+                onEnd: { partDrag = nil },
+                onTap: { entity in
+                    guard Date() >= selectionSuppressedUntil else { return }
+                    controls.selectedPart = scene.partID(for: entity, asset: asset) ?? ""
+                },
+                movePart: { drag in
+                    guard controls.moveParts, !recognitionMode else { return false }
+                    if partDrag == nil, let id = scene.partID(for: drag.entity, asset: asset) {
+                        partDrag = (id, controls.partOffsets[id] ?? .zero)
+                        controls.selectedPart = id
                     }
-                }
-                .onEnded { value in
-                    switch value {
-                    case .first:
-                        dragStart = nil; partDrag = nil
-                    case .second(let tap):
-                        guard pinchStart == nil, Date() >= selectionSuppressedUntil else { return }
-                        controls.selectedPart = scene.partID(for: tap.entity, asset: asset) ?? ""
+                    if let partDrag {
+                        let delta = drag.convert(drag.translation3D, from: .local, to: scene.movementSpace)
+                        controls.partOffsets[partDrag.id] = scene.boundedOffset(partDrag.start + delta)
                     }
-                })
-            .simultaneousGesture(MagnifyGesture().targetedToAnyEntity()
-                .onChanged { value in
-                    guard partDrag == nil else { return }
-                    selectionSuppressedUntil = Date().addingTimeInterval(0.25)
-                    if pinchStart == nil { pinchStart = controls.zoom }
-                    let zoom = HeartModelZoom.clamped((pinchStart ?? 1) * value.magnification)
-                    controls.zoom = min(HeartModelZoom.overviewMaximum, zoom)
-                    if zoom > HeartModelZoom.overviewMaximum, !openedCloseUpDuringPinch {
-                        openedCloseUpDuringPinch = true
-                        openCloseUp(zoom: zoom)
-                    }
-                }
-                .onEnded { _ in
-                    pinchStart = nil
-                    openedCloseUpDuringPinch = false
-                    selectionSuppressedUntil = Date().addingTimeInterval(0.25)
-                })
+                    return true
+                }))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .heartModelViewport()
+        .opacity(scene.ready ? 1 : 0)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.24), value: scene.ready)
+        .accessibilityElement(children: .contain)
         .accessibilityLabel("\(asset.lesson) three-dimensional model")
+        .accessibilityIdentifier("model.viewport")
     }
 
     private var modelToolbar: some View {
         VStack(spacing: 8) {
             ScrollView {
-                VStack(spacing: 6) {
-                    if selectedLabel != nil {
-                        HStack(spacing: 4) {
-                            Button {
-                                controls.moveParts = false
-                                controls.isolate = true
-                                controls.zoom = 1
-                            } label: {
-                                Text("Focus").foregroundStyle(.black)
-                            }
-                            .buttonStyle(.bordered)
-                            .font(.caption)
-                            .fixedSize(horizontal: true, vertical: false)
-                            .accessibilityHint("Enlarge the selected part and hide other parts. Use Show all to return.")
-                            Button { controls.selectedPart = ""; controls.isolate = false } label: {
-                                Image(systemName: "xmark").frame(width: 44, height: 44)
-                            }.buttonStyle(.plain).accessibilityLabel("Clear selected part")
-                        }
-                    } else {
-                        Image(systemName: "hand.draw")
-                        Text(controls.moveParts ? "Drag a part to move it\nTap to inspect" : "Drag to rotate\nPinch to resize\nTap to inspect")
-                            .font(.caption2).multilineTextAlignment(.center).foregroundStyle(.secondary)
-                    }
-                    Divider().padding(.vertical, 4)
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                     SpatialToolButton(title: "Parts", symbol: "square.3.layers.3d", selected: showingParts) {
                         showingAdjustments = false
                         showingParts.toggle()
                     }
-                    .popover(isPresented: $showingParts, arrowEdge: .trailing) { partsPanel }
-                    if lessonStep == nil {
+                    .popover(isPresented: $showingParts, arrowEdge: .trailing) { partsPanel.heartPopover() }
+                    .disabled(recognitionMode)
+                    if !recognitionMode {
                         SpatialToolButton(title: controls.moveParts ? "Rotate" : "Move parts", symbol: controls.moveParts ? "arrow.triangle.2.circlepath" : "hand.draw", selected: controls.moveParts) {
                             controls.moveParts.toggle()
                             controls.isolate = false
                         }
                         .accessibilityHint("Switch between rotating the whole model and dragging individual parts apart.")
-                        if controls.partOffsets[controls.selectedPart] != nil {
-                            SpatialToolButton(title: "Return part", symbol: "arrow.uturn.backward") {
-                                controls.partOffsets.removeValue(forKey: controls.selectedPart)
-                            }
-                        }
                     }
+                    Menu {
+                        Button("Whole model") { sectionAxis = -1 }
+                        Button("Section · depth") { sectionAxis = 2 }
+                        Button("Section · width") { sectionAxis = 0 }
+                        Button("Section · height") { sectionAxis = 1 }
+                        Text("Existing surfaces only; missing tissue is not reconstructed.")
+                    } label: {
+                        VStack(spacing: 5) {
+                            Image(systemName: "square.split.2x1").font(.title3)
+                            Text(preparingSection ? "Loading" : "Slice").font(.subheadline).lineLimit(1)
+                        }.frame(minWidth: 82, minHeight: 68).contentShape(Rectangle())
+                    }.buttonStyle(HeartChipStyle(selected: sectionAxis >= 0))
+                        .accessibilityLabel("Slice model")
+                        .accessibilityIdentifier("model.section")
                     if asset.hasCutaway {
                         SpatialToolButton(title: "Cutaway", symbol: "circle.lefthalf.filled", selected: controls.cutaway) {
                             controls.cutaway.toggle()
                         }
                     }
                     SpatialToolButton(title: controls.separation > 0 || !controls.partOffsets.isEmpty ? "Reassemble" : "Separate", symbol: "arrow.up.left.and.arrow.down.right", selected: controls.separation > 0 || !controls.partOffsets.isEmpty) {
+                        manipulationUndo = controls
                         controls.toggleSeparation()
                     }
                     SpatialToolButton(title: controls.isolate ? "Show all" : "Isolate", symbol: "scope", selected: controls.isolate) {
@@ -744,9 +755,17 @@ struct HeartModelView: View {
                         showingParts = false
                         showingAdjustments.toggle()
                     }
-                    .popover(isPresented: $showingAdjustments, arrowEdge: .trailing) { adjustmentsPanel }
+                    .popover(isPresented: $showingAdjustments, arrowEdge: .trailing) { adjustmentsPanel.heartPopover() }
+                    .disabled(recognitionMode)
                     if lessonStep != nil {
                         SpatialToolButton(title: "Restore step", symbol: "arrow.uturn.backward") { restoreStepOrModel() }
+                    } else {
+                        SpatialToolButton(title: "Return part", symbol: "arrow.uturn.backward") {
+                            manipulationUndo = controls
+                            cancelManipulation()
+                            controls.partOffsets.removeValue(forKey: controls.selectedPart)
+                        }
+                        .disabled(controls.partOffsets[controls.selectedPart] == nil)
                     }
                 }
                 .frame(maxWidth: .infinity).padding(8)
@@ -755,6 +774,12 @@ struct HeartModelView: View {
             // Keep recovery visible even when a selected tissue or small window
             // makes the remaining tools require scrolling.
             Divider().padding(.horizontal, 12)
+            HStack(spacing: 8) {
+                SpatialToolButton(title: "Reset model", symbol: "arrow.uturn.backward.circle") { resetModel() }
+                    .accessibilityHint("Reassemble and show the current anatomy at its original size and angle. Keep lesson progress.")
+                SpatialToolButton(title: "Undo", symbol: "arrow.uturn.backward") { undoManipulation() }
+                    .disabled(manipulationUndo == nil)
+            }
             HStack(spacing: 0) {
                 SpatialToolButton(title: "Reset view", symbol: "arrow.counterclockwise") { resetView() }
                     .accessibilityHint("Restore the original model size and viewing angle.")
@@ -764,8 +789,9 @@ struct HeartModelView: View {
                 }
             }.padding(.bottom, 8)
         }
-        .frame(width: 148).frame(maxHeight: .infinity)
-        .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 24))
+        .frame(width: 204).frame(maxHeight: .infinity)
+        .background(Color(white: 0.96), in: RoundedRectangle(cornerRadius: 24))
+        .heartPanel(cornerRadius: 24)
         .disabled(!scene.ready)
     }
 
@@ -778,25 +804,30 @@ struct HeartModelView: View {
                     Button("Done") { showingInfo = false }
                 }
                 Text(asset.lesson).font(.headline)
+                Text("School prototype · educational model").font(.subheadline)
+                Button("Sources and attribution", systemImage: "book") {
+                    showingInfo = false
+                    showingReferences = true
+                }
                 if let note = asset.presentationNote { Text(note).font(.body) }
-                Text(asset.category == "reference" ? "Enlarged HDBR regional reconstruction. Regions are not complete tissue walls; omitted structures remain omitted. Colours identify regions. Adapted under CC BY-NC-SA 4.0; see References for attribution." : "Enlarged educational illustration. Anatomy is simplified; the model does not simulate blood flow or pressure.")
-                    .foregroundStyle(.secondary)
+                Text(asset.category == "reference" ? "Enlarged HDBR regional reconstruction. Regions are not complete tissue walls; omitted structures remain omitted. Colours identify regions." : "Enlarged educational illustration. Anatomy is simplified; the model does not simulate blood flow or pressure.")
+                    .foregroundStyle(HeartDesign.secondary)
                 if let review = asset.anatomyReview {
                     Divider()
                     Text(review.scope).font(.headline)
                     Text(review.supports)
                     Text("What this model leaves out").font(.subheadline.bold())
-                    Text(review.limitations).foregroundStyle(.secondary)
+                    Text(review.limitations).foregroundStyle(HeartDesign.secondary)
                 }
                 Divider()
                 Label("Drag the model to rotate", systemImage: "hand.draw")
                 Label("Use two hands to resize, or use View → Model size", systemImage: "arrow.up.left.and.arrow.down.right")
                 Label("Tap a part, or choose it in Parts", systemImage: "square.3.layers.3d")
-                Label("Focus enlarges one part; Show all restores its surroundings", systemImage: "scope")
+                Label("Isolate shows one part; Show all restores its surroundings", systemImage: "scope")
                 Text(asset.category == "reference" ? "Source coordinate frame retained. Anatomical direction labels are withheld until the specimen axes are verified." : asset.usesSchematicView
                      ? "The orientation cue shows cranial (Cr) and the schematic viewing side (V)."
                      : "The rotating orientation cue shows anatomical left (L), cranial (Cr), and anterior (A).")
-                    .font(.subheadline).foregroundStyle(.secondary)
+                    .font(.subheadline).foregroundStyle(HeartDesign.secondary)
             }.padding(24)
         }
         .frame(width: 400, height: 520)
@@ -821,7 +852,7 @@ struct HeartModelView: View {
                     if !partSearch.isEmpty, !asset.parts.contains(where: {
                         asset.includes($0, state: controls.developmentState) && $0.label.localizedCaseInsensitiveContains(partSearch)
                     }) {
-                        Text("No parts match “\(partSearch)”.").font(.subheadline).foregroundStyle(.secondary)
+                        Text("No parts match “\(partSearch)”.").font(.subheadline).foregroundStyle(HeartDesign.secondary)
                             .padding(.vertical, 12)
                         Button("Clear search") { partSearch = "" }
                     }
@@ -849,13 +880,29 @@ struct HeartModelView: View {
     }
 
     private var adjustmentsPanel: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
+        VStack(alignment: .leading, spacing: 18) {
                 HStack {
                     Text("View controls").font(.title2.bold())
                     Spacer()
                     Button("Done") { showingAdjustments = false }
                 }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Model size").font(.headline)
+                        Spacer()
+                        Text("\(controls.zoom, format: .number.precision(.fractionLength(1)))×")
+                    }
+                    HeartSlider(value: $controls.zoom, in: HeartModelZoom.range.lowerBound...HeartModelZoom.overviewMaximum)
+                        .accessibilityLabel("Model size")
+                        .accessibilityValue("\(Int((controls.zoom * 100).rounded())) percent")
+
+                }
+                VStack(alignment: .leading) {
+                    Text("Separation").font(.headline)
+                    HeartSlider(value: Binding(get: { controls.separation }, set: { controls.setSeparation($0) }), in: 0...1).accessibilityLabel("Part separation")
+                }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
                 Toggle("Part label", isOn: $controls.showLabels)
                 if asset.category != "reference" { Toggle("Orientation cue", isOn: $controls.showOrientation) }
                 Toggle("Model backdrop", isOn: $controls.showBackdrop)
@@ -865,25 +912,7 @@ struct HeartModelView: View {
                     Button(asset.category == "reference" ? "Source view" : (asset.usesSchematicView ? "View side" : "Anterior")) { setView(yaw: 0, pitch: 0) }
                     Button(asset.category == "reference" ? "Opposite" : (asset.usesSchematicView ? "Opposite" : "Posterior")) { setView(yaw: .pi, pitch: 0) }
                     Button(asset.category == "reference" ? "Top view" : "Cranial") { setView(yaw: 0, pitch: .pi / 2) }
-                }.buttonStyle(.bordered)
-                VStack(alignment: .leading) {
-                    Text("Separation").font(.headline)
-                    Slider(value: Binding(get: { controls.separation }, set: { controls.setSeparation($0) }), in: 0...1).accessibilityLabel("Part separation")
-                }
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Model size").font(.headline)
-                        Spacer()
-                        Text("\(controls.zoom, format: .number.precision(.fractionLength(1)))×")
-                    }
-                    Slider(value: $controls.zoom, in: HeartModelZoom.range.lowerBound...HeartModelZoom.overviewMaximum)
-                        .accessibilityLabel("Model size")
-                        .accessibilityValue("\(Int((controls.zoom * 100).rounded())) percent")
-                    Button("Open close-up · up to 4×", systemImage: "arrow.up.left.and.arrow.down.right") {
-                        showingAdjustments = false
-                        openCloseUp(zoom: max(1, controls.zoom))
-                    }
-                }
+                }.buttonStyle(HeartSecondaryButtonStyle())
                 Button("Reset view", systemImage: "arrow.counterclockwise") {
                     resetView()
                 }
@@ -892,32 +921,51 @@ struct HeartModelView: View {
                         restoreStepOrModel(); showingAdjustments = false
                     }
                 }
-            }.padding(24)
-        }.frame(width: 380, height: 560)
-            .scrollBounceBehavior(.basedOnSize)
+                Text("Isolate shows only the selected part. Show all restores the current cutaway and tissue visibility. Reassemble returns displaced parts. Reset view changes size and angle; Reset model also restores the anatomy.")
+                    .font(.subheadline).fixedSize(horizontal: false, vertical: true)
+                }
+            }.scrollBounceBehavior(.basedOnSize)
+        }.padding(24).frame(width: 400, height: 600)
     }
 
 
-    private func openCloseUp(zoom: Double) {
-        var snapshot = controls
-        snapshot.zoom = HeartModelZoom.clamped(zoom)
-        openWindow(id: "heart-close-up", value: HeartCloseUpRequest(assetID: asset.id, controls: snapshot))
+    private func resetModel() {
+        manipulationUndo = controls
+        cancelManipulation()
+        sectionAxis = -1
+        controls.resetModel(asset: asset)
+    }
+
+    private func undoManipulation() {
+        guard let previous = manipulationUndo else { return }
+        cancelManipulation()
+        controls = previous
+        manipulationUndo = nil
+    }
+
+    private func cancelManipulation() {
+        interactionRevision += 1
+        partDrag = nil
+        selectionSuppressedUntil = Date().addingTimeInterval(0.25)
     }
 
     private func resetView() {
+        manipulationUndo = controls
+        cancelManipulation()
         controls.resetView(asset: asset)
-        dragStart = nil; pinchStart = nil
         selectionSuppressedUntil = Date().addingTimeInterval(0.25)
     }
 
     private func setView(yaw: Float, pitch: Float) {
+        manipulationUndo = controls
+        cancelManipulation()
         controls.setOrientation(yaw: yaw, pitch: pitch)
-        dragStart = nil; pinchStart = nil
     }
 
     private func restoreStepOrModel() {
+        sectionAxis = -1
+        cancelManipulation()
         controls.restore(asset: asset, step: lessonStep)
-        dragStart = nil; pinchStart = nil
     }
 }
 
@@ -929,15 +977,22 @@ final class HeartModelScene {
     let holder = Entity()
     let spin = Entity()
     let annotations = Entity()
+    let relationshipRoot = Entity()
+    private let originDot = ModelEntity(mesh: .generateSphere(radius: 0.003), materials: [UnlitMaterial(color: .darkGray)])
+    private let originLine = ModelEntity(mesh: .generateCylinder(height: 1, radius: 0.0005), materials: [UnlitMaterial(color: .darkGray)])
+    @ObservationIgnored private var displayedOffsets: [String: SIMD3<Float>] = [:]
+
     @ObservationIgnored private var currentLabel: Entity?
     private let annotationDot = ModelEntity(mesh: .generateSphere(radius: 0.0025),
                                            materials: [UnlitMaterial(color: .systemYellow)])
     private let annotationLine = ModelEntity(mesh: .generateCylinder(height: 1, radius: 0.0006),
                                             materials: [UnlitMaterial(color: .systemYellow)])
-    @ObservationIgnored private var model: Entity?
+    @ObservationIgnored private(set) var model: Entity?
     @ObservationIgnored private var assembledModelPosition = SIMD3<Float>.zero
     @ObservationIgnored private var isolatedPartID: String?
     @ObservationIgnored private var manualOffsets: [String: SIMD3<Float>] = [:]
+    @ObservationIgnored private(set) var framingCenter = SIMD3<Float>.zero
+    @ObservationIgnored private(set) var framingDiameter: Float = 0
     var movementSpace: Entity { model ?? spin }
 
     func boundedOffset(_ value: SIMD3<Float>) -> SIMD3<Float> {
@@ -956,30 +1011,19 @@ final class HeartModelScene {
     }
     @ObservationIgnored private var appearances: [TissueAppearance] = []
     @ObservationIgnored private var lastAppearance: String?
+    @ObservationIgnored var usesMatchedComparison = false
     var ready = false
     var errorMessage: String?
-
-    private static let tissueEnvironment = Task {
-        try await EnvironmentResource(named: "HeartTissueStudio", in: .main)
-    }
+    var sectionError: String?
+    var sectionAxis = -1
+    @ObservationIgnored let sections = HeartSectionCache()
 
     func install(_ model: Entity, asset: HeartAsset) async throws {
-        let environment = try await Self.tissueEnvironment.value
-        var lighting = ImageBasedLightComponent(source: .single(environment), intensityExponent: 0)
-        lighting.inheritsRotation = true
-        holder.components.set(lighting)
-        model.components.set(ImageBasedLightReceiverComponent(imageBasedLight: holder))
-        // A real key light lets neighbouring tissues cast shadows on one another;
-        // environment reflections alone leave stacked anatomy looking painted flat.
-        let keyLight = DirectionalLight()
-        keyLight.name = "TissueKeyLight"
-        keyLight.light.intensity = 1100
-        keyLight.shadow = .init(shadowProjection: .automatic(maximumDistance: 3), depthBias: 1)
-        holder.addChild(keyLight)
-        keyLight.look(at: .zero, from: [-0.4, 0.6, 0.8], relativeTo: holder)
-        // Directional lights need orientation only. An offset light must not
-        // expand SwiftUI's scene layout bounds away from the anatomy.
-        keyLight.position = .zero
+        relationshipRoot.addChild(originDot)
+        relationshipRoot.addChild(originLine)
+        relationshipRoot.isEnabled = false
+        try await HeartModelLighting.install(on: holder, receiving: model)
+        usesMatchedComparison = (asset.states?.count ?? 0) > 1
         self.model = model
         holder.addChild(spin)
         spin.addChild(model)
@@ -999,24 +1043,25 @@ final class HeartModelScene {
             node.components.set(HoverEffectComponent())
             cacheAppearance(of: node, partID: part.id, tint: asset.id == "Heart_10_CirculatoryTransition" ? transitionTint(part.id) : nil)
         }
+        sections.capture(model)
     }
 
-    func fit(in available: BoundingBox, zoom: Float, selected: String = "", volumetric: Bool = false, overviewFill: Float = 0.60) {
+    func fit(in available: BoundingBox, zoom: Float, selected: String = "", overviewFill: Float = 0.60) {
         guard let model else { return }
-        // Measure enabled anatomy after rotation and separation, rather than the original asset.
+        // Fit in the model's unrotated space. Camera-facing bounds change as
+        // asymmetric anatomy turns and must not drive its size or depth position.
+        try? sections.apply(axis: -1)
         spin.position = .zero
         holder.scale = .one
-        // Frame the assembled anatomy, so moving one tissue never shrinks or recentres the whole model.
         var movedPositions: [String: SIMD3<Float>] = [:]
         for (id, offset) in manualOffsets where isolatedPartID == nil {
             guard let node = nodes[id] else { continue }
             movedPositions[id] = node.position(relativeTo: model)
             node.setPosition(node.position(relativeTo: model) - offset, relativeTo: model)
         }
-        var bounds = model.visualBounds(relativeTo: holder, excludeInactive: true)
+        let excludeInactive = !usesMatchedComparison || isolatedPartID != nil
+        var bounds = model.visualBounds(relativeTo: spin, excludeInactive: excludeInactive)
         if let id = isolatedPartID, let node = nodes[id] {
-            // A rotation-invariant envelope keeps an asymmetric isolated tissue
-            // from drifting or changing size as its camera-facing bounds change.
             let localBounds = node.visualBounds(relativeTo: spin, excludeInactive: true)
             let radius = max(0.0005, simd_length(localBounds.extents) / 2)
             bounds = BoundingBox(min: .init(repeating: -radius), max: .init(repeating: radius))
@@ -1024,36 +1069,48 @@ final class HeartModelScene {
         for (id, position) in movedPositions { nodes[id]?.setPosition(position, relativeTo: model) }
         guard bounds.extents.x > 0, bounds.extents.y > 0,
               bounds.center.x.isFinite, bounds.center.y.isFinite, bounds.center.z.isFinite else { return }
+        framingCenter = bounds.center
+        spin.position = -spin.orientation.act(framingCenter)
         let width = max(0.001, bounds.extents.x)
         let height = max(0.001, bounds.extents.y)
         let depth = max(0.001, bounds.extents.z)
         let fitScale = min(available.extents.x / width, available.extents.y / height,
                            min(available.extents.x, available.extents.y) / depth)
-        // The default view fits the anatomy. Close-up zoom deliberately permits
-        // larger geometry rather than silently restoring the old fit-to-window cap.
-        // The viewer requests an expanded front clipping margin. Allow readable
-        // depth here rather than shrinking the entire organ into a six-centimetre slab.
-        let overviewScale = volumetric ? fitScale * 0.60
-            : min(fitScale * overviewFill, 0.30 / (depth * Float(HeartModelZoom.overviewMaximum)))
-        holder.scale = .init(repeating: max(0.001, overviewScale * Float(HeartModelZoom.clamped(Double(zoom)))))
-        var center = bounds.center
-        let closeUp = Float(HeartModelZoom.clamped(Double(zoom)))
-        if isolatedPartID == nil, manualOffsets.isEmpty, closeUp > 1.25, let node = nodes[selected], node.isEnabled {
-            let focus = node.visualBounds(relativeTo: holder, excludeInactive: true)
-            if focus.extents.x > 0, focus.extents.y > 0, focus.center.x.isFinite, focus.center.y.isFinite {
-                let weight = min(1, (closeUp - 1.25) / (Float(HeartModelZoom.range.upperBound) - 1.25))
-                center.x += (focus.center.x - center.x) * weight
-                center.y += (focus.center.y - center.y) * weight
-                if volumetric { center.z += (focus.center.z - center.z) * weight }
-            }
-        }
-        spin.position = -center
-        // Keep overview anatomy on the window plane to avoid perspective drift over
-        // adjacent controls. Its backdrop is 20 cm behind this plane.
-        // A flexible RealityView keeps a stable origin at the view centre.
-        // fit() centres the visible anatomy itself; automatic content centering
-        // would add a second offset based on the initial lesson state.
-        holder.position = volumetric ? [0, 0, available.center.z] : .zero
+        let overviewScale = max(0.001, min(fitScale * overviewFill, 0.30 / (depth * 1.25)))
+        // Include detached tissues without moving the assembled pivot. A sphere
+        // bounds every viewing angle, so rotation cannot change the safety fit.
+        let visible = model.visualBounds(relativeTo: spin, excludeInactive: excludeInactive)
+        let extent = simd_max(simd_abs(visible.min - framingCenter), simd_abs(visible.max - framingCenter))
+        let radius = max(0.0005, simd_length(extent))
+        framingDiameter = radius * 2
+        let half = SIMD3<Float>(max(0.001, min(0.50, available.extents.x * 0.45)),
+                                max(0.001, min(0.40, available.extents.y * 0.45)), 0.15)
+        let safeScale = min(half.x, half.y, half.z) / radius
+        let requested = min(overviewScale, safeScale) * Float(HeartModelZoom.clamped(Double(zoom)))
+        holder.scale = .init(repeating: HeartViewportDepth.scale(requested, depth: framingDiameter))
+        holder.position = [0, 0, HeartViewportDepth.offset(minimumZ: -radius, scale: holder.scale.z)]
+
+        updateRelationship(selected: selected)
+        do { try sections.apply(axis: sectionAxis) }
+        catch { if sectionError == nil { sectionError = "Section unavailable for this model." } }
+    }
+
+    private func updateRelationship(selected: String) {
+        relationshipRoot.isEnabled = false
+        guard holder.isEnabled, isolatedPartID == nil,
+              let offset = displayedOffsets[selected], simd_length(offset) > 0.0001,
+              let node = nodes[selected], node.isEnabled else { return }
+        let bounds = node.visualBounds(relativeTo: holder, excludeInactive: true)
+        let end = bounds.center * holder.scale + holder.position
+        let start = end - spin.orientation.act(offset) * holder.scale
+        let delta = end - start
+        let length = simd_length(delta)
+        guard length.isFinite, length > 0.0001 else { return }
+        originDot.position = start
+        originLine.position = (start + end) / 2
+        originLine.scale = [1, length, 1]
+        originLine.orientation = simd_quatf(from: [0, 1, 0], to: delta / length)
+        relationshipRoot.isEnabled = true
     }
 
     func selectedAnchor(for selected: String) -> SIMD3<Float>? {
@@ -1107,15 +1164,15 @@ final class HeartModelScene {
     private func cacheAppearance(of entity: Entity, partID: String, tint: UIColor? = nil) {
         if let component = entity.components[ModelComponent.self] {
             let opaque: [any RealityKit.Material] = component.materials.map { material in
-                if var tissue = material as? PhysicallyBasedMaterial {
+                if var tissue = HeartModelStyle.harmonized(material, toneRegions: true) as? PhysicallyBasedMaterial {
+                    tissue = HeartModelStyle.identifiedRegion(tissue, partID: partID)
                     tissue.blending = .opaque
                     if let tint { tissue.baseColor = .init(tint: tint) }
                     return tissue
                 }
                 if let tint {
-                    var tissue = PhysicallyBasedMaterial()
+                    var tissue = HeartModelStyle.tissue()
                     tissue.baseColor = .init(tint: tint)
-                    tissue.roughness = .init(floatLiteral: 0.65)
                     return tissue
                 }
                 return material
@@ -1145,6 +1202,7 @@ final class HeartModelScene {
     func apply(asset: HeartAsset, selected: String, isolate: Bool, cutaway: Bool,
                context: Bool, separation: Float, state: String? = nil, transparent: Bool = false, partOffsets: [String: SIMD3<Float>] = [:]) {
         guard let model else { return }
+        try? sections.apply(axis: -1)
         // Restore before measuring a new pivot; never accumulate recentering.
         model.position = assembledModelPosition
         isolatedPartID = nil
@@ -1156,7 +1214,9 @@ final class HeartModelScene {
                 && (isolate && part.id == selected || !cutaway || !part.id.hasSuffix("_Anterior"))
             let dimSurroundings = transparent || (asset.id == "Heart_10_CirculatoryTransition" && !selected.isEmpty)
             node.components.set(OpacityComponent(opacity: dimSurroundings && selected != part.id && !isolate ? (transparent ? 0.35 : 0.6) : 1))
-            node.setPosition(original + offset(for: part) * separation + (manualOffsets[part.id] ?? .zero), relativeTo: model)
+            let displacement = offset(for: part) * separation + (manualOffsets[part.id] ?? .zero)
+            displayedOffsets[part.id] = displacement
+            node.setPosition(original + displacement, relativeTo: model)
         }
         if isolate, !selected.isEmpty, let node = nodes[selected], node.isEnabled {
             let bounds = node.visualBounds(relativeTo: spin, excludeInactive: true)
@@ -1200,7 +1260,7 @@ struct HeartModelUnavailableView: View {
                 .accessibilityHidden(true)
             Text("Model coming soon").font(.title2.bold())
             Text("The 3D model for \(title) is being prepared.")
-                .font(.body).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                .font(.body).foregroundStyle(HeartDesign.secondary).multilineTextAlignment(.center)
         }
         .padding(28)
         .frame(maxWidth: .infinity, minHeight: 260)
@@ -1228,12 +1288,8 @@ struct HeartReferenceBrowser: View {
                 HeartModelView(asset: asset).id(asset.id)
             }
             Text("These are reconstructed anatomical regions, not complete tissue layers. Source surface detail and omitted structures are retained; colours identify regions.")
-                .font(.caption).foregroundStyle(.secondary)
-            HStack {
-                Link("HDBR Atlas", destination: URL(string: "https://hdbratlas.org/interactive/heart.html")!)
-                Text("· adapted for enlarged, separable display ·")
-                Link("CC BY-NC-SA 4.0", destination: URL(string: "https://creativecommons.org/licenses/by-nc-sa/4.0/")!)
-            }.font(.caption)
+                .font(.subheadline).foregroundStyle(HeartDesign.secondary)
+
         }.padding(24).frame(width: 1080, height: 800)
     }
 }

@@ -16,8 +16,8 @@ struct ContentView: View {
     private var learningButtons: some View {
         DButton(
             title: "Free Exploration",
-            description: "Explore, rotate and separate the developing heart at your own pace.",
-            icon: Image("ExploreHeart"),
+            description: "Trace the developing heart and explore where its anatomy can change.",
+            icon: Image(systemName: "heart.text.clipboard"),
             action: {
                 showingFreeExploration = true
             }
@@ -25,8 +25,8 @@ struct ContentView: View {
 
         DButton(
             title: "Guided Learning",
-            description: "Follow each stage with clear explanations and narrated lessons.",
-            icon: Image("GuidedHeart"),
+            description: "Connect developmental changes to congenital heart defects.",
+            icon: Image(systemName: "book.closed"),
             action: {
                 showingGuidedLearning = true
             }
@@ -44,13 +44,15 @@ struct ContentView: View {
             }
         }
         .tint(Color.accentColor)
+        .frame(minWidth: 1100, minHeight: 780)
+        .modifier(HeartWorkspaceBackground())
         .sheet(isPresented: $showingReferences) {
             NavigationStack { ReferencesView() }.frame(width: 700, height: 520)
         }
         .task {
             #if DEBUG
             let arguments = ProcessInfo.processInfo.arguments
-            if arguments.contains("--validate-heart-assets") && !arguments.contains("--preview-guided") && !arguments.contains("--preview-exploration") {
+            if (arguments.contains("--validate-heart-assets") || arguments.contains("--validate-heart-transitions")) && !arguments.contains("--preview-guided") && !arguments.contains("--preview-exploration") {
                 showingFreeExploration = true
             }
             if arguments.contains("--preview-exploration") { showingFreeExploration = true }
@@ -65,16 +67,15 @@ struct ContentView: View {
                 Spacer(minLength: 0)
 
                 VStack(spacing: 8) {
-                    Image("HeartHero")
-                        .resizable().scaledToFit().frame(width: 140, height: 140)
-                        .accessibilityHidden(true)
-                    Text("Welcome to HeartV3").font(.largeTitle.bold())
-                    Text("Discover how a heart takes shape.")
-                        .font(.title3).foregroundStyle(.secondary)
+                    Text("Welcome to HeartV0").font(.largeTitle.bold())
+                    Text("Understand how a heart forms—and where development can differ.")
+                        .font(.title3).foregroundStyle(HeartDesign.secondary)
+                        .multilineTextAlignment(.center)
+
                 }
                 
                 ViewThatFits(in: .horizontal) {
-                    HStack(spacing: 40) {
+                    HStack(spacing: 32) {
                         learningButtons
                     }
 
@@ -86,16 +87,13 @@ struct ContentView: View {
                 Spacer(minLength: 0)
 
                 HStack {
-                    Spacer()
-
                     Button("References") {
                         showingReferences = true
                     }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(HeartSecondaryButtonStyle())
                 }
             }
-            .padding()
-            .glassBackgroundEffect()
+            .padding(24)
 
         }
     }

@@ -18,16 +18,455 @@ private final class HeartObservationProbe: @unchecked Sendable {
 @MainActor enum HeartAssetValidation {
     private static var hasRun = false
 
+    static func runTransitions(in host: Entity) async {
+        var report: [String: Any] = [:]
+        do {
+            var motionSamples: [Double] = []
+            await HeartMorphTiming.animate(duration: 0.08) { motionSamples.append($0) }
+            try require(motionSamples.count >= 2 && motionSamples.last == 1 &&
+                        zip(motionSamples, motionSamples.dropFirst()).allSatisfy { $0 <= $1 },
+                        "Elapsed-time specimen animation did not finish monotonically")
+            var cancelledSamples = 0
+            let cancelledMotion = Task { @MainActor in
+                await HeartMorphTiming.animate(duration: 1) { _ in cancelledSamples += 1 }
+            }
+            try await Task.sleep(for: .milliseconds(40))
+            cancelledMotion.cancel(); await cancelledMotion.value
+            let stoppedCount = cancelledSamples
+            try await Task.sleep(for: .milliseconds(40))
+            try require(stoppedCount > 0 && cancelledSamples == stoppedCount,
+                        "Cancelled specimen animation continued writing frames")
+            let normal = HeartProjectModel.all.first { $0.id == "Normal_Teenage_Heart" }!
+            let neonatal = HeartProjectModel.all.first { $0.id == "Normal_Neonatal_Heart" }!
+            let vsd = HeartProjectModel.all.first { $0.id == "Ventricular_Septal_Defect" }!
+            let presentation = HeartSpecimenPresentation { scene, model in
+                if model.id == neonatal.id { try? await Task.sleep(for: .milliseconds(150)) }
+                guard !Task.isCancelled else { return }
+                await scene.load(model.id, uniformTissue: model.usesUniformTissueColor)
+            }
+            host.addChild(presentation.root)
+            defer { presentation.cancel(); presentation.root.removeFromParent() }
+            let inspectionRotation = HeartManipulationSession.rotated(
+                from: simd_quatf(angle: 0.4, axis: [0, 1, 0]), horizontal: 70, vertical: 320)
+            presentation.fit(BoundingBox(min: [-0.3, -0.3, 0], max: [0.3, 0.3, 0]), zoom: 1.3, yaw: 0.4, pitch: 0.2,
+                             inspectionRotation: inspectionRotation)
+            await presentation.present(normal, reducedMotion: true)
+            try require(presentation.displayedID == normal.id && presentation.root.children.count == 1, "Initial specimen did not install exactly once")
+            try require(simd_length(presentation.scene.spin.orientation.vector - inspectionRotation.vector) < 0.00001,
+                        "Initial specimen ignored its shared inspection rotation")
+            let original = presentation.scene
+            try await validateSpecimenRecovery(original)
+            let stale = Task { @MainActor in await presentation.present(neonatal, reducedMotion: false) }
+            try? await Task.sleep(for: .milliseconds(25))
+            try require(presentation.loading && presentation.scene === original && original.root.parent === presentation.root,
+                        "Loading replacement removed displayed anatomy")
+            // Deliberately leave this load running: the request token, rather
+            // than cooperative task cancellation, must reject its result.
+            await presentation.present(vsd, reducedMotion: false)
+            await stale.value
+            try require(presentation.displayedID == vsd.id && !presentation.loading && !presentation.failed,
+                        "Stale load replaced the latest specimen")
+            try require(presentation.root.children.count == 1 && original.root.parent == nil,
+                        "Specimen transition left duplicate or orphaned anatomy")
+            try require(presentation.scene.spin.components[OpacityComponent.self]?.opacity == 1, "Transition left a partially transparent model")
+            try require(simd_length(presentation.scene.spin.orientation.vector - inspectionRotation.vector) < 0.00001,
+                        "Specimen replacement lost its inspection rotation")
+            try await validateSpecimenRecovery(presentation.scene)
+            let missing = HeartProjectModel(id: "Missing_Validation_Specimen", title: "Missing", note: "", url: "", license: "")
+            let retained = presentation.scene
+            await presentation.present(missing, reducedMotion: true)
+            try require(presentation.failed && presentation.scene === retained && presentation.displayedID == vsd.id,
+                        "Failed replacement discarded the displayed specimen")
+            await presentation.present(normal, reducedMotion: true)
+            try require(!presentation.failed && presentation.displayedID == normal.id && presentation.root.children.count == 1,
+                        "Model selection did not recover after a loading failure")
+            let abandoned = Task { @MainActor in await presentation.present(neonatal, reducedMotion: false) }
+            try? await Task.sleep(for: .milliseconds(25))
+            presentation.cancel(); abandoned.cancel(); await abandoned.value
+            try require(!presentation.loading && presentation.displayedID == normal.id && presentation.root.children.count == 1,
+                        "Navigation cancellation installed stale geometry")
+            let cache = HeartMorphMeshCache()
+            var samples = 0
+            for outflow in [false, true] {
+                for cutaway in [false, true] {
+                    for progress in (outflow ? [0, 0.5, 1, 0.5] : [-1, -0.5, 0, 0.5, 1, 0.5, -0.5]) {
+                        _ = try cache.resource(progress: progress, cutaway: cutaway, outflow: outflow)
+                        let positions = outflow ? HeartOutflowGeometry.surface(progress: progress, cutaway: cutaway).positions
+                            : progress < 0 ? HeartTubeFusionGeometry.surface(progress: progress + 1).positions
+                            : HeartLoopingGeometry.surface(progress: progress, cutaway: cutaway).positions
+                        let bounds = cache.surfaceBounds
+                        for point in positions {
+                            try require(point.x >= bounds.min.x - 0.00001 && point.x <= bounds.max.x + 0.00001 &&
+                                        point.y >= bounds.min.y - 0.00001 && point.y <= bounds.max.y + 0.00001 &&
+                                        point.z >= bounds.min.z - 0.00001 && point.z <= bounds.max.z + 0.00001,
+                                        "Cached morph envelope lost a surface point")
+                        }
+                        for zoom in [0.4, 1, 2.5] {
+                            for rotation in [(0.0, 0.0), (1.4, -1.3), (-2.0, 1.3)] {
+                                let placement = cache.placement(in: BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]),
+                                    zoom: zoom, yaw: rotation.0, pitch: rotation.1, outflow: outflow,
+                                    inspectionRotation: HeartManipulationSession.rotated(from: inspectionRotation,
+                                        horizontal: Float(rotation.0 * 200), vertical: Float(rotation.1 * 200)))
+                                for point in positions {
+                                    let placed = placement.matrix * SIMD4(point, 1)
+                                    try require(placed.z > 0 && placed.z <= 0.501, "Morph escaped the visible workspace depth")
+                                }
+                            }
+                        }
+                        samples += 1
+                    }
+                }
+            }
+            var wallFrames = 0
+            for outflow in [false, true] {
+                let partial = try cache.resource(progress: 0.4, opening: 0.5, outflow: outflow)
+                for opening in [0.1, 0.6, 0.99, 0.99995, Double(Float(1).nextDown), Double(1).nextDown, 1.0, 0.7, 0.2, 0.0, 0.5] {
+                    let resource = try cache.resource(progress: 0.4, opening: opening, outflow: outflow)
+                    let effectiveOpening = outflow ? HeartOutflowGeometry.inspectionOpening(opening) : Float(opening)
+                    if effectiveOpening > 0 && effectiveOpening < 1 { try require(resource === partial, "Partial wall cut rebuilt its GPU resource") }
+                    let expected = outflow ? HeartOutflowGeometry.surface(progress: 0.4, opening: opening).positions
+                        : HeartLoopingGeometry.surface(progress: 0.4, opening: opening).positions
+                    var matches = true
+                    resource.lowLevelMesh?.withUnsafeBytes(bufferIndex: 0) { bytes in
+                        let vertices = bytes.bindMemory(to: SIMD3<Float>.self)
+                        matches = vertices.count >= expected.count && expected.indices.allSatisfy { simd_distance(vertices[$0], expected[$0]) < 0.000001 }
+                    }
+                    try require(resource.lowLevelMesh != nil && matches, "Wall reversal lost the expected surface")
+                    let placement = cache.placement(in: BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]), zoom: 2.5, yaw: 1.4, pitch: -1.3, outflow: outflow)
+                    try require(expected.allSatisfy { (placement.matrix * SIMD4($0, 1)).z > 0 && (placement.matrix * SIMD4($0, 1)).z <= 0.501 }, "Partial wall escaped visible workspace depth")
+                    wallFrames += 1
+                }
+            }
+            // The same cancellable fraction driver is used by the wall view.
+            let wall = HeartSeparationPresentation()
+            let opening = Task { @MainActor in await wall.update(to: 1, animated: true) }
+            try? await Task.sleep(for: .milliseconds(90))
+            opening.cancel(); await opening.value
+            let interrupted = wall.value
+            try require(interrupted > 0 && interrupted < 1, "Wall animation did not expose an intermediate state")
+            var previous = interrupted
+            var reversedContinuously = true
+            await wall.update(to: 0, animated: true) { value in
+                if value > previous + 0.000001 { reversedContinuously = false }
+                previous = value
+            }
+            try require(reversedContinuously && wall.value == 0, "Reversing the wall jumped or stopped short")
+            await wall.update(to: 1, animated: false)
+            try require(wall.value == 1, "Reduced-motion wall did not reach its endpoint")
+            var layerFrames = 0
+            var isolatedLayerFrames = 0
+            let layerMoves: [Int: SIMD3<Float>] = [0: [1, 0, 0], 1: [0, -1, 0], 2: [0, 0, 1]]
+            for progress in [-0.8, -0.01, 0.0, 0.4, 1, 0.4, -0.8] {
+                for separation in [0.0, 0.5, 1] {
+                    let resource = try cache.resource(progress: progress, opening: 1, outflow: false, layers: true, separation: separation, offsets: layerMoves)
+                    let expected = HeartTubeLayerGeometry.surface(progress: progress, opening: 1, separation: separation, offsets: layerMoves)
+                    guard let mesh = resource.lowLevelMesh else { throw CocoaError(.coderReadCorrupt) }
+                    var matches = true
+                    mesh.withUnsafeBytes(bufferIndex: 0) { bytes in
+                        let vertices = bytes.bindMemory(to: SIMD3<Float>.self)
+                        matches = vertices.count >= expected.positions.count && expected.positions.indices.allSatisfy {
+                            simd_distance(vertices[$0], expected.positions[$0]) < 0.000001
+                        }
+                    }
+                    try require(matches, "Layer GPU buffers did not follow development/separation")
+                    try require(expected.positions.allSatisfy { simd_reduce_max(simd_abs($0)) < 0.30 }, "Moved layer escaped its drawing bounds")
+                    try require(mesh.parts.allSatisfy { $0.materialIndex < 18 }, "Layer GPU material mapping escaped its palette")
+                    let fit = cache.placement(in: BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]), zoom: 2.5, yaw: 1.1, pitch: 0.6, outflow: false)
+                    try require(expected.positions.allSatisfy { (fit.matrix * SIMD4($0, 1)).z > 0 && (fit.matrix * SIMD4($0, 1)).z <= 0.501 }, "Separated tissue escaped visible workspace depth")
+                    let deformations = cache.layerDeformationBuildCount
+                    for layer in HeartTubeLayer.allCases {
+                        let isolated = try cache.resource(progress: progress, opening: 1, outflow: false, layers: true,
+                            separation: separation, offsets: layerMoves, visibleLayer: layer)
+                        try require(isolated === resource, "Isolating a layer rebuilt its GPU mesh")
+                        try require(!mesh.parts.isEmpty && mesh.parts.allSatisfy {
+                            $0.materialIndex / HeartAnatomyRegion.allCases.count == layer.rawValue
+                        }, "Layer isolation retained hidden draw parts")
+                        let isolatedFit = cache.placement(in: BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]),
+                            zoom: 2.5, yaw: 1.1, pitch: 0.6, outflow: false)
+                        try require(isolatedFit == fit, "Layer isolation changed viewing placement")
+                        isolatedLayerFrames += 1
+                    }
+                    let returned = try cache.resource(progress: progress, opening: 1, outflow: false, layers: true, separation: 0)
+                    try require(returned === resource, "Reassembling layers rebuilt the GPU mesh")
+                    try require(Set(mesh.parts.map { $0.materialIndex / HeartAnatomyRegion.allCases.count }) == Set(0...2),
+                                "Showing all layers left a layer hidden")
+                    try require(cache.layerDeformationBuildCount == deformations, "Translation-only layer inspection rebuilt developmental geometry")
+                    layerFrames += 1
+                }
+            }
+            let layerMotion = HeartLayerMovePresentation()
+            let moving = Task { @MainActor in await layerMotion.update(to: layerMoves, animated: true) }
+            try? await Task.sleep(for: .milliseconds(60))
+            moving.cancel(); await moving.value
+            try require((layerMotion.offsets[0]?.x ?? 0) > 0 && (layerMotion.offsets[0]?.x ?? 1) < 0.04, "Layer move skipped its intermediate positions")
+            await layerMotion.update(to: [:], animated: false)
+            try? await Task.sleep(for: .milliseconds(40))
+            try require(layerMotion.offsets.isEmpty, "Cancelled layer move overrode reset")
+            let appearance = HeartMorphAppearance()
+            let styled = ModelEntity(mesh: try cache.resource(progress: 0.4, opening: 0, outflow: false, layers: true), materials: [])
+            var paletteChecks = 0
+            for progress in [-0.8, 0, 0.09, 0.18, 0.7, 1, 0.09, -0.2] {
+                appearance.apply(to: styled, progress: progress, outflow: false)
+                let revision = appearance.revision
+                appearance.apply(to: styled, progress: progress, outflow: false)
+                try require(appearance.revision == revision, "Unchanged morph appearance rebuilt its materials")
+                guard let materials = styled.model?.materials, materials.count == 18 else {
+                    throw CocoaError(.coderReadCorrupt)
+                }
+                for layer in HeartTubeLayer.allCases { for region in HeartAnatomyRegion.allCases {
+                    guard let actual = materials[layer.rawValue * 6 + region.rawValue] as? PhysicallyBasedMaterial else {
+                        throw CocoaError(.coderReadCorrupt)
+                    }
+                    let expected = HeartModelStyle.morphRegion(region, progress: progress, lightening: layer.lightening)
+                    try require(actual.baseColor.tint.isEqual(expected.baseColor.tint) &&
+                                actual.roughness.scale == expected.roughness.scale && actual.metallic.scale == expected.metallic.scale,
+                                "Cached morph material changed the shared tissue style")
+                    try require(actual.baseColor.texture != nil && actual.roughness.texture != nil,
+                                "Morph surface finish missing from installed app")
+                    paletteChecks += 1
+                } }
+            }
+            appearance.apply(to: styled, progress: 0.18, outflow: false)
+            let replacement = ModelEntity(mesh: styled.model!.mesh, materials: [])
+            appearance.apply(to: replacement, progress: 0.4, outflow: false)
+            try require(replacement.model?.materials.count == 18, "Recreated morph lost its cached tissue materials")
+            replacement.model?.materials = []
+            appearance.apply(to: replacement, progress: 0.4, outflow: false)
+            try require(replacement.model?.materials.count == 18, "Reinstalled morph component stayed unstyled")
+            appearance.apply(to: styled, progress: 0.4, outflow: false)
+            let establishedPalette = appearance.revision
+            for progress in [0.4, 0.8, 1, 0.3] { appearance.apply(to: styled, progress: progress, outflow: false) }
+            try require(appearance.revision == establishedPalette, "Established regional palette rebuilt on every morph frame")
+            appearance.apply(to: styled, progress: 0, outflow: true)
+            let outflowPalette = appearance.revision
+            for progress in [0.5, 1, 0.4] { appearance.apply(to: styled, progress: progress, outflow: true) }
+            try require(appearance.revision == outflowPalette && styled.model?.materials.count == 2,
+                        "Outflow palette rebuilt or retained tube-layer materials")
+            var outflowInspectionFrames = 0
+            for progress in [0.0, 0.4, 1] { for opening in [0.0, 0.5, 1] {
+                let resource = try cache.resource(progress: progress, opening: opening, outflow: true, separation: 1)
+                let expected = HeartOutflowGeometry.surface(progress: progress, opening: opening, separation: 1)
+                var matches = false
+                resource.lowLevelMesh?.withUnsafeBytes(bufferIndex: 0) { bytes in
+                    let vertices = bytes.bindMemory(to: SIMD3<Float>.self)
+                    matches = vertices.count >= expected.positions.count && expected.positions.indices.allSatisfy {
+                        simd_distance(vertices[$0], expected.positions[$0]) < 0.000001
+                    }
+                }
+                try require(matches, "Separated outflow GPU positions lost their authored shape")
+                let fit = cache.placement(in: BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]),
+                    zoom: 2.5, yaw: 1.1, pitch: 0.6, outflow: true)
+                try require(expected.positions.allSatisfy { (fit.matrix * SIMD4($0, 1)).z > 0 && (fit.matrix * SIMD4($0, 1)).z <= 0.501 },
+                            "Separated outflow escaped visible workspace depth")
+                let builds = cache.outflowDeformationBuildCount
+                let restored = try cache.resource(progress: progress, opening: opening, outflow: true, separation: 0)
+                try require(restored === resource && cache.outflowDeformationBuildCount == builds,
+                            "Outflow reassembly rebuilt its developmental surface")
+                outflowInspectionFrames += 1
+            } }
+            let ductal = HeartSpecimenPresentation()
+            host.addChild(ductal.root)
+            defer { ductal.cancel(); ductal.root.removeFromParent() }
+            ductal.fit(BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0]), zoom: 1.3, yaw: -0.65, pitch: 0)
+            for id in ["PDA_Patent", "PDA_Closed"] {
+                let model = HeartProjectModel.all.first { $0.id == id }!
+                await ductal.present(model, reducedMotion: true)
+                try require(!ductal.failed && ductal.displayedID == id && ductal.scene.parts.count == 3, "Authored ductal model missing its three parts")
+                for axis in [0, 1, 2] {
+                    try await ductal.scene.prepareSection(axis)
+                    try require(ductal.scene.sectionError == nil, "Authored ductal section failed")
+                }
+                try await validateSpecimenRecovery(ductal.scene)
+            }
+            try await ductal.scene.prepareSection(2)
+            await ductal.present(HeartProjectModel.all.first { $0.id == "PDA_Patent" }!, reducedMotion: false)
+            try require(ductal.scene.sectionAxis == 2, "Matched ductal comparison lost its cut plane")
+            report = ["passed": true, "elapsedSpecimenAnimation": true, "cancelledSpecimenClock": true, "authoredDuctalModels": 2, "ductalSectionAxes": 3, "matchedDuctalSectionRetained": true, "retainedWhileLoading": true, "latestRequestWins": true, "singleInstalledRoot": true,
+                      "failedLoadPreservesSource": true, "cancellation": true, "reducedMotion": true,
+                      "specimenQuaternionRetained": true, "unrestrictedMorphInspectionPoses": samples * 9,
+                      "morphEnvelopeFrames": samples, "morphVisibleDepthPoses": samples * 9,
+                      "wallFrames": wallFrames, "wallReversal": reversedContinuously, "wallReducedMotion": true,
+                      "independentSpecimenRecovery": true, "specimensRecoveryTested": 2,
+                      "layerMorphFrames": layerFrames, "isolatedLayerFrames": isolatedLayerFrames,
+                      "morphPaletteChecks": paletteChecks, "morphMaterialsReused": true, "recreatedMorphMaterialsRestored": true,
+                      "outflowInspectionFrames": outflowInspectionFrames,
+                      "boundedLayerMoves": true, "cancelledLayerMoveReset": true]
+        } catch { report = ["passed": false, "error": String(describing: error)] }
+        if let data = try? JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]) {
+            try? data.write(to: URL.documentsDirectory.appending(path: "heart-transition-validation.json"), options: .atomic)
+        }
+    }
+
+    private static func validateSpecimenRecovery(_ scene: HeartProjectScene) async throws {
+        let parts = scene.parts
+        let rest = parts.map { scene.spin.findEntity(named: $0.id)!.position(relativeTo: scene.spin) }
+        try await scene.prepareSection(0)
+        scene.separate(reduceMotion: true)
+        let spread = parts.map { scene.spin.findEntity(named: $0.id)!.position(relativeTo: scene.spin) }
+        for (index, part) in parts.enumerated() {
+            scene.selectedPart = part.id
+            scene.movePart([0.04, 0, 0], reduceMotion: true)
+            scene.returnPart(reduceMotion: true)
+            for (other, candidate) in parts.enumerated() {
+                let expected = other <= index ? rest[other] : spread[other]
+                try require(simd_distance(scene.spin.findEntity(named: candidate.id)!.position(relativeTo: scene.spin), expected) < 0.00001,
+                            "Return part changed another component or failed to restore its own assembled position")
+            }
+            try require(scene.sectionAxis == 0, "Return part discarded the inspection section")
+        }
+        try require(!scene.separated && !scene.moved, "Returning every part left stale separation state")
+        scene.separate(reduceMotion: true)
+        try require(scene.separated, "Separate could not restart after individual returns")
+        scene.returnPart(reduceMotion: false)
+        try? await Task.sleep(for: .milliseconds(40))
+        scene.separate(reduceMotion: true)
+        try require(scene.sectionAxis == 0 && !scene.separated, "Reassemble changed the section")
+        let frame = BoundingBox(min: [-0.3, -0.2, 0], max: [0.3, 0.2, 0])
+        scene.fit(frame, zoom: 1.7, yaw: 0.8, pitch: -0.2)
+        for zoom in [0.4, 1, 2.5] {
+            for rotation in [(0.0, 0.0), (1.4, -1.3), (-2.0, 1.3)] {
+                scene.fit(frame, zoom: zoom, yaw: rotation.0, pitch: rotation.1)
+                let bounds = scene.root.visualBounds(relativeTo: scene.root.parent)
+                try require(bounds.min.z > 0 && bounds.max.z <= 0.501,
+                            "Specimen escaped visible workspace depth during rotation/resize")
+            }
+        }
+        let scale = scene.root.scale, rotation = scene.spin.orientation
+        scene.restore(reduceMotion: true)
+        try? await Task.sleep(for: .milliseconds(50))
+        try require(scene.sectionAxis == -1 && !scene.separated && !scene.moved, "Restore model retained inspection state")
+        try require(scene.root.scale == scale && scene.spin.orientation == rotation, "Restore model changed viewing pose")
+        for (index, part) in parts.enumerated() {
+            try require(simd_distance(scene.spin.findEntity(named: part.id)!.position(relativeTo: scene.spin), rest[index]) < 0.00001,
+                        "Cancelled return animation overrode model restoration")
+        }
+        try require(scene.sections.entries.allSatisfy { $0.entity.components[ModelComponent.self]?.mesh === $0.original.mesh },
+                    "Restore model did not recover the original surfaces")
+    }
+
     static func run(in host: Entity) async {
         guard !hasRun else { return }
         hasRun = true
         for _ in 0..<20 where !host.isActive {
             try? await Task.sleep(for: .milliseconds(100))
         }
+        var morphReport: [String: Any]
+        do {
+            let cache = HeartMorphMeshCache()
+            var verified = 0
+            for outflow in [false, true] {
+                for cutaway in [false, true] {
+                    let initial = try cache.resource(progress: 0, cutaway: cutaway, outflow: outflow)
+                    for progress in [0.4, 1.0, 0.6, 0.0] {
+                        let resource = try cache.resource(progress: progress, cutaway: cutaway, outflow: outflow)
+                        try require(resource === initial, "Morph rebuilt its mesh during progression")
+                        guard let storage = resource.lowLevelMesh else {
+                            try require(false, "Missing mutable morph mesh"); continue
+                        }
+                        let expected = outflow ? HeartOutflowGeometry.surface(progress: progress, cutaway: cutaway).positions
+                            : HeartLoopingGeometry.surface(progress: progress, cutaway: cutaway).positions
+                        var matches = true
+                        storage.withUnsafeBytes(bufferIndex: 0) { bytes in
+                            let vertices = bytes.bindMemory(to: SIMD3<Float>.self)
+                            for i in expected.indices {
+                                if simd_distance(vertices[i], expected[i]) > 0.000001 { matches = false }
+                            }
+                        }
+                        try require(matches, "Morph vertex buffer did not follow forward/reverse progress")
+                        try require(storage.parts.reduce(0) { $0 + $1.indexCount } == storage.indexCapacity,
+                                    "Morph material grouping lost faces")
+                        verified += 1
+                    }
+                }
+            }
+            let joining = try cache.resource(progress: -0.8, cutaway: false, outflow: false)
+            _ = try cache.resource(progress: 0.4, cutaway: false, outflow: false)
+            let returned = try cache.resource(progress: -0.1, cutaway: false, outflow: false)
+            try require(joining === returned, "Returning to joining rebuilt its cached topology")
+            morphReport = ["passed": true, "mutableMeshFramesTested": verified, "joiningTopologyReused": true]
+        } catch {
+            morphReport = ["passed": false, "error": String(describing: error)]
+        }
+        var specimenInteractionReports: [[String: Any]] = []
+        for source in HeartProjectModel.all {
+            writeProgress("specimen", asset: source.id)
+            let scene = HeartProjectScene()
+            host.addChild(scene.root)
+            do {
+                await scene.load(source.id, uniformTissue: source.usesUniformTissueColor)
+                try require(scene.ready && !scene.failed, "Specimen failed to load")
+                try require(!scene.parts.isEmpty && scene.sections.meshCount > 0, "Missing specimen parts or surfaces")
+                let positions = scene.parts.map { scene.spin.findEntity(named: $0.id)!.position(relativeTo: scene.spin) }
+                scene.setSection(2)
+                try? await Task.sleep(for: .milliseconds(20))
+                scene.restore(reduceMotion: true)
+                try? await Task.sleep(for: .milliseconds(80))
+                try require(scene.sectionAxis == -1 && !scene.preparingSection, "Cancelled section overrode Reset")
+                for axis in [2, 0, 1, -1] {
+                    try await scene.prepareSection(axis)
+                    try require(scene.sectionError == nil, "Specimen section failed")
+                    let visible = scene.sections.entries.filter { $0.entity.components[ModelComponent.self] != nil }
+                    try require(!visible.isEmpty, "Section removed the entire specimen")
+                    if axis == -1 {
+                        try require(scene.sections.entries.allSatisfy { $0.entity.components[ModelComponent.self]?.mesh === $0.original.mesh }, "Section failed to restore source mesh identity")
+                    }
+                }
+                scene.separate(reduceMotion: true)
+                if scene.parts.count > 1 {
+                    for (index, part) in scene.parts.enumerated() {
+                        let delta = scene.spin.findEntity(named: part.id)!.position(relativeTo: scene.spin) - positions[index]
+                        let expected = HeartSpecimenPart.separationDirection(model: source.id, part: part.id, index: index, count: scene.parts.count) * scene.diameter * 0.15
+                        try require(simd_distance(delta, expected) < scene.diameter * 0.0001, "Source scale changed the visible separation distance")
+                    }
+                }
+                scene.restore(reduceMotion: true)
+                scene.movePart([10, -10, 10], reduceMotion: true)
+                scene.fit(BoundingBox(min: [-0.3, -0.3, -0.3], max: [0.3, 0.3, 0.3]), zoom: 2.5, yaw: 1.2, pitch: 0.4)
+                let movedBounds = scene.root.visualBounds(relativeTo: host)
+                try require(movedBounds.min.z > 0 && movedBounds.max.z <= 0.501, "Moved specimen escaped visible workspace depth")
+                scene.separate(reduceMotion: false)
+                try? await Task.sleep(for: .milliseconds(45))
+                scene.restore(reduceMotion: true)
+                for (index, part) in scene.parts.enumerated() {
+                    try require(simd_distance(scene.spin.findEntity(named: part.id)!.position(relativeTo: scene.spin), positions[index]) < 0.00001, "Interrupted specimen motion did not reassemble")
+                }
+                specimenInteractionReports.append(["asset": source.id, "passed": true, "sourceGroups": scene.parts.count, "sectionAxesTested": 3, "restoredOriginalMeshes": true, "movementAndReassembly": true, "cancelledSectionCannotOverrideReset": true])
+            } catch {
+                specimenInteractionReports.append(["asset": source.id, "passed": false, "error": String(describing: error)])
+            }
+            scene.stop(); scene.root.removeFromParent()
+        }
+        var guidedSpecimenReport: [String: Any]
+        do {
+            let lessons = HeartAsset.all.map(\.lesson)
+            var mapped = 0
+            for lesson in lessons {
+                guard let study = HeartGuidedAnatomy.lesson(lesson) else { continue }
+                for id in [study.normalID, study.alteredID].compactMap({ $0 }) {
+                    try require(HeartProjectModel.all.contains { $0.id == id }, "Unknown guided specimen: \(id)")
+                    try require(Bundle.main.url(forResource: id, withExtension: "usdz") != nil
+                                || Bundle.main.url(forResource: id, withExtension: "usdz", subdirectory: "HeartProject") != nil,
+                                "Missing bundled guided specimen: \(id)")
+                }
+                mapped += 1
+            }
+            try require(mapped == lessons.count, "A guided lesson is missing its bundled anatomy study")
+            guidedSpecimenReport = ["passed": true, "lessonsWithBundledSpecimens": mapped]
+        } catch {
+            guidedSpecimenReport = ["passed": false, "error": String(describing: error)]
+        }
         var lessonProgressReport: [String: Any]
         do {
             var progress = HeartLessonProgress()
             try require(progress.resumeStep(for: "Tubes", stepCount: 3) == 0, "New lesson did not start at its first step")
+            var migrated = HeartLessonProgress()
+            migrated.record(step: 1, for: HeartLearningPilot.cushionLesson, stepCount: 3)
+            migrated.record(step: 0, for: HeartLearningPilot.coarctationLesson, stepCount: 4)
+            migrated.finish("Unchanged")
+            migrated.migrateLearningPilots()
+            try require(migrated.resumeStep(for: HeartLearningPilot.cushionLesson, stepCount: 5) == 2
+                        && migrated.resumeStep(for: HeartLearningPilot.coarctationLesson, stepCount: 5) == 1
+                        && migrated.lessons["Unchanged"]?.completed == true, "Pilot migration lost saved progress")
             progress.record(step: 2, for: "Tubes", stepCount: 3)
             progress.record(step: 1, for: "Valves", stepCount: 4)
             let saved = try JSONEncoder().encode(progress)
@@ -83,6 +522,7 @@ private final class HeartObservationProbe: @unchecked Sendable {
         }
         var reports: [[String: Any]] = []
         for asset in HeartAsset.all {
+            writeProgress("lesson", asset: asset.id)
             do {
                 let model = try await Entity(named: "HeartAssets/\(asset.id)", in: realityKitContentBundle)
                 // Catch USD exports that look detailed in Blender but lose their maps in RealityKit.
@@ -122,6 +562,29 @@ private final class HeartObservationProbe: @unchecked Sendable {
                 scene.apply(asset: asset, selected: "", isolate: false, cutaway: false,
                             context: true, separation: 0, state: asset.defaultState)
                 scene.fit(in: workspace, zoom: 1)
+                let styledMeshes = try validateRegionalPalette(model, asset: asset)
+                if let states = asset.states, states.count > 1 {
+                    var comparisonScale: SIMD3<Float>?
+                    var comparisonCenter: SIMD3<Float>?
+                    var comparisonDepth: SIMD3<Float>?
+                    for state in states {
+                        scene.apply(asset: asset, selected: "", isolate: false, cutaway: false,
+                                    context: true, separation: 0, state: state.id)
+                        scene.fit(in: workspace, zoom: 1.8)
+                        if let scale = comparisonScale, let center = comparisonCenter, let depth = comparisonDepth {
+                            try require(simd_distance(scale, scene.holder.scale) < 0.00001
+                                        && simd_distance(center, scene.spin.position) < 0.00001
+                                        && simd_distance(depth, scene.holder.position) < 0.00001,
+                                        "Comparison changed model scale, centre or depth")
+                        }
+                        comparisonScale = scene.holder.scale
+                        comparisonCenter = scene.spin.position
+                        comparisonDepth = scene.holder.position
+                    }
+                    scene.apply(asset: asset, selected: "", isolate: false, cutaway: false,
+                                context: true, separation: 0, state: asset.defaultState)
+                    scene.fit(in: workspace, zoom: 1)
+                }
                 let probe = HeartObservationProbe()
                 withObservationTracking {
                     scene.apply(asset: asset, selected: movedID, isolate: true, cutaway: false,
@@ -156,7 +619,7 @@ private final class HeartObservationProbe: @unchecked Sendable {
                 let encoded = try JSONEncoder().encode(rotationControls)
                 let decoded = try JSONDecoder().decode(HeartModelControls.self, from: encoded)
                 try require(abs(simd_dot(decoded.orientation.vector, rotationControls.orientation.vector)) > 0.99999,
-                            "Close-up lost the dragged orientation")
+                            "Snapshot lost the dragged orientation")
                 rotationControls.resetView(asset: asset)
                 let reset = simd_quatf(angle: asset.defaultYaw ?? 0, axis: [0, 1, 0]) * simd_quatf(angle: asset.defaultPitch ?? 0, axis: [1, 0, 0])
                 try require(abs(simd_dot(rotationControls.orientation.vector, reset.vector)) > 0.99999,
@@ -176,17 +639,27 @@ private final class HeartObservationProbe: @unchecked Sendable {
                     try require(simd_distance(model.findEntity(named: part.id)!.position(relativeTo: model), expected) < 0.00001,
                                 "Independent tissue movement affected another part")
                 }
+                var recovery = rotationControls
+                recovery.isolate = true; recovery.separation = 1; recovery.partOffsets[movedID] = displacement
+                recovery.zoom = 1.5; recovery.selectedPart = movedID
+                let retainedState = recovery.developmentState ?? asset.defaultState
+                recovery.resetModel(asset: asset)
+                let recovered = recovery
+                recovery.resetModel(asset: asset)
+                try require(recovery == recovered && recovery.partOffsets.isEmpty && !recovery.isolate
+                            && recovery.separation == 0 && recovery.selectedPart.isEmpty && recovery.zoom == 1
+                            && recovery.developmentState == retainedState, "Full reset is not canonical / idempotent")
                 var detached = HeartModelControls()
                 detached.partOffsets[movedID] = displacement
                 detached.moveParts = true
                 let restored = try JSONDecoder().decode(HeartModelControls.self, from: JSONEncoder().encode(detached))
-                try require(restored == detached, "Close-up transfer lost detached tissue positions")
+                try require(restored == detached, "Snapshot lost detached tissue positions")
                 var legacy = try JSONSerialization.jsonObject(with: JSONEncoder().encode(detached)) as! [String: Any]
                 legacy.removeValue(forKey: "movablePartsEnabled")
                 legacy.removeValue(forKey: "detachedPartPositions")
                 let legacyControls = try JSONDecoder().decode(HeartModelControls.self, from: JSONSerialization.data(withJSONObject: legacy))
                 try require(!legacyControls.moveParts && legacyControls.partOffsets.isEmpty,
-                            "Previously saved close-up windows cannot reopen")
+                            "Legacy viewing state failed to decode")
                 detached.reassemble()
                 try require(detached.partOffsets.isEmpty && detached.separation == 0, "Reassemble left detached tissues")
                 let firstStep = HeartLessonStep.steps(for: asset).first
@@ -225,28 +698,30 @@ private final class HeartObservationProbe: @unchecked Sendable {
                     for separation: Float in [0, 0.25, 0.5, 0.75, 1] {
                         scene.apply(asset: asset, selected: selected, isolate: false, cutaway: true,
                                     context: true, separation: separation, state: state)
-                        scene.fit(in: available, zoom: 1.25)
+                        scene.fit(in: available, zoom: 1)
                         try requireFits(scene, model: model, available: available)
                     }
                     scene.fit(in: available, zoom: 1)
-                    let overviewScale = scene.holder.scale.x
-                    for zoom: Float in [2, 3, 4] {
+                    let baselineZoomScale = scene.holder.scale.x
+                    for zoom: Float in [0.4, 1, 1.25, 1.5, 2.5, 4, 8, .infinity, .nan] {
                         scene.fit(in: available, zoom: zoom)
-                        try require(abs(scene.holder.scale.x / overviewScale - zoom) < 0.0001,
-                                    "Close-up zoom was silently capped")
-                        let enlarged = model.visualBounds(relativeTo: scene.holder, excludeInactive: true)
-                        try require(enlarged.extents.x > 0 && enlarged.extents.y > 0 && enlarged.max.z.isFinite,
-                                    "Close-up measured empty geometry")
-                        try require(simd_length(enlarged.center) < 0.00001, "Close-up lost its center")
-                        try require(enlarged.min.z * scene.holder.scale.z + scene.holder.position.z > -0.60,
-                                    "Close-up went behind the backdrop")
+                        let zoomBounds = model.visualBounds(relativeTo: scene.holder, excludeInactive: !scene.usesMatchedComparison)
+                        let expected = HeartViewportDepth.scale(baselineZoomScale * Float(HeartModelZoom.clamped(Double(zoom))), depth: scene.framingDiameter)
+                        try require(abs(scene.holder.scale.x - expected) < 0.00001,
+                                    "Renderer cancelled requested magnification")
+                        try require(scene.holder.scale.x.isFinite, "Invalid rendered zoom")
+                        try require(zoomBounds.min.z * scene.holder.scale.z + scene.holder.position.z > 0 &&
+                                    zoomBounds.max.z * scene.holder.scale.z + scene.holder.position.z <= 0.501,
+                                    "Zoomed anatomy escaped visible workspace depth")
                     }
-                    scene.fit(in: available, zoom: 8)
-                    try require(abs(scene.holder.scale.x / overviewScale - Float(HeartModelZoom.range.upperBound)) < 0.0001,
-                                "Renderer did not respect the shared maximum")
+                    scene.fit(in: available, zoom: 1)
+                    try requireFits(scene, model: model, available: available)
                     for part in asset.parts {
                         let node = model.findEntity(named: part.id)!
-                        try require(node.components[OpacityComponent.self]?.opacity == 1, "Default selection faded surrounding tissue")
+                        // The birth-transition reading key intentionally dims other regions.
+                        let expectedOpacity: Float = asset.id == "Heart_10_CirculatoryTransition" && part.id != selected ? 0.6 : 1
+                        try require(node.components[OpacityComponent.self]?.opacity == expectedOpacity,
+                                    "Selection opacity disagrees with the transition reading key")
                     }
                     scene.apply(asset: asset, selected: selected, isolate: false, cutaway: false,
                                 context: true, separation: 0, state: state, transparent: true)
@@ -317,33 +792,31 @@ private final class HeartObservationProbe: @unchecked Sendable {
                     scene.apply(asset: asset, selected: controls.selectedPart, isolate: controls.isolate,
                                 cutaway: controls.cutaway, context: controls.showContext,
                                 separation: Float(controls.separation), state: controls.developmentState)
+                    if step.focus.isEmpty {
+                        try require(controls.selectedPart.isEmpty && !controls.isolate,
+                                    "Blind lesson step exposed a selected target")
+                        try require(scene.selectedAnchor(for: "") == nil, "Blind step exposed a label anchor")
+                        let pose = controls.orientation
+                        let zoom = controls.zoom
+                        controls.transition(to: step, asset: asset)
+                        try require(controls.orientation == pose && controls.zoom == zoom,
+                                    "Blind step lost the viewing context")
+                        continue // Annotation assertions below require a deliberately named focus.
+                    }
                     try require(model.findEntity(named: step.focus)?.isEnabled == true, "Step focus is absent or hidden: \(step.focus)")
                     for part in asset.parts {
                         let node = model.findEntity(named: part.id)!
                         try require(simd_distance(node.position(relativeTo: model), baseline[part.id]!) < 0.00001, "Step restore must reassemble all parts")
                     }
-                    // Close-ups centre the selected tissue while retaining its surroundings.
-                    let closeUpArea = BoundingBox(min: [-0.16, -0.1, 0], max: [0.16, 0.1, 0])
-                    scene.fit(in: closeUpArea, zoom: Float(HeartModelZoom.range.upperBound), selected: step.focus)
-                    guard let closeUpAnchor = scene.selectedAnchor(for: step.focus) else {
+                    // In-place magnification retains a valid selected-tissue anchor.
+                    let zoomArea = BoundingBox(min: [-0.16, -0.1, 0], max: [0.16, 0.1, 0])
+                    scene.fit(in: zoomArea, zoom: Float(HeartModelZoom.range.upperBound), selected: step.focus)
+                    guard let zoomAnchor = scene.selectedAnchor(for: step.focus) else {
                         throw NSError(domain: "HeartAssetValidation", code: 1,
-                                      userInfo: [NSLocalizedDescriptionKey: "Close-up lost its selected tissue"])
+                                      userInfo: [NSLocalizedDescriptionKey: "Magnification lost its selected tissue"])
                     }
-                    try require(abs(closeUpAnchor.x) < 0.00001 && abs(closeUpAnchor.y) < 0.00001,
-                                "Close-up did not centre the selected tissue")
-                    let volume = BoundingBox(min: [-0.55, -0.425, -0.45], max: [0.55, 0.425, 0.45])
-                    scene.fit(in: volume, zoom: 4, selected: step.focus, volumetric: true)
-                    let focusedBounds = model.findEntity(named: step.focus)!.visualBounds(relativeTo: scene.holder, excludeInactive: true)
-                    try require(simd_length(focusedBounds.center) < 0.00001,
-                                "Volume did not centre its selected tissue in all three dimensions")
-                    try require(scene.holder.position == .zero, "Volume retained the flat-window depth lift")
-                    scene.fit(in: volume, zoom: 1, selected: step.focus, volumetric: true)
-                    let restoredVolumeBounds = model.visualBounds(relativeTo: scene.holder, excludeInactive: true)
-                    try require(simd_length(restoredVolumeBounds.center) < 0.00001,
-                                "Reset-size volume did not return to the whole-model centre")
-                    let request = HeartCloseUpRequest(assetID: asset.id, controls: controls)
-                    let decoded = try JSONDecoder().decode(HeartCloseUpRequest.self, from: JSONEncoder().encode(request))
-                    try require(decoded == request, "Opening close-up lost inspection settings")
+                    try require(zoomAnchor.x.isFinite && zoomAnchor.y.isFinite,
+                                "Magnification lost its selected anchor")
                     // Lesson actions recover the current step even after unrelated exploration.
                     controls.perform(.focus, asset: asset, step: step)
                     try require(controls.selectedPart == step.focus && controls.isolate && controls.developmentState == step.state,
@@ -410,16 +883,18 @@ private final class HeartObservationProbe: @unchecked Sendable {
                 try require(scene.holder.scale.x.isFinite && scene.holder.scale.x > 0, "Fit scale")
                 let centeredScale = scene.holder.scale
                 scene.fit(in: BoundingBox(min: [0.25,-0.5,0.04], max: [0.45,-0.3,0.04]), zoom: 1)
-                try require(simd_length(scene.holder.position) < 0.00001,
+                try require(simd_length(SIMD2<Float>(scene.holder.position.x, scene.holder.position.y)) < 0.00001,
                             "Viewport offset was applied to the centered anatomy twice")
                 try require(simd_distance(centeredScale, scene.holder.scale) < 0.00001 * max(1, simd_length(centeredScale)), "View position must not change model size")
-                reports.append(["asset":asset.id, "passed":true, "parts":asset.parts.count, "texturedMeshes":texturedMeshes, "sceneObservationFeedbackTested":true, "screenAxisDragTested":true, "rotationPersistenceTested":true, "tissuePBRMapsTested":true, "studioLightingTested":true, "independentPartMovementTested":true, "isolatedPartPivotsTested":asset.parts.count, "phaseViewpointTested":true, "statesTested":states.count, "guidedStepsTested":steps.count, "lessonActionsTested":steps.count, "labelTargetsTested":steps.count, "separationFramesTested": states.count * 5, "closeUpZoomsTested": states.count * 3, "volumetricContextsTested": steps.count])
+                try await validateSections(scene, asset: asset)
+                reports.append(["sectionAxesTested": 3, "asset":asset.id, "passed":true, "parts":asset.parts.count, "texturedMeshes":texturedMeshes, "regionalPaletteMeshesTested":styledMeshes, "sceneObservationFeedbackTested":true, "screenAxisDragTested":true, "rotationPersistenceTested":true, "tissuePBRMapsTested":true, "studioLightingTested":true, "independentPartMovementTested":true, "isolatedPartPivotsTested":asset.parts.count, "phaseViewpointTested":true, "statesTested":states.count, "guidedStepsTested":steps.count, "lessonActionsTested":steps.count, "labelTargetsTested":steps.count, "separationFramesTested": states.count * 5, "inPlaceZoomSamplesTested": states.count * 9])
             } catch {
                 reports.append(["asset":asset.id, "passed":false, "error":String(describing:error)])
             }
         }
         var referenceReports: [[String: Any]] = []
         for asset in HeartAsset.referenceModels {
+            writeProgress("atlas", asset: asset.id)
             do {
                 let model = try await Entity(named: "HeartAssets/\(asset.id)", in: realityKitContentBundle)
                 let scene = HeartModelScene()
@@ -461,20 +936,6 @@ private final class HeartObservationProbe: @unchecked Sendable {
                         throw NSError(domain: "Atlas", code: 1, userInfo: [NSLocalizedDescriptionKey: "Missing region \(part.id)"])
                     }
                     baseline[part.id] = node.position(relativeTo: model)
-                    if part.id == "CS11_N662_left_ventricle" {
-                        var foundSourceRed = false
-                        func checkColour(_ entity: Entity) {
-                            if let component = entity.components[ModelComponent.self] {
-                                for case let material as PhysicallyBasedMaterial in component.materials {
-                                    var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-                                    if material.baseColor.tint.getRed(&r, green: &g, blue: &b, alpha: &a), r > 0.4 && g < 0.1 && b < 0.1 { foundSourceRed = true }
-                                }
-                            }
-                            for child in entity.children { checkColour(child) }
-                        }
-                        checkColour(node)
-                        try require(foundSourceRed, "CS11 source red lost during material conversion")
-                    }
                     try require(scene.partID(for: node, asset: asset) == part.id, "Atlas selection mapping")
                 }
                 scene.apply(asset: asset, selected: "", isolate: false, cutaway: false, context: true, separation: 1)
@@ -500,16 +961,77 @@ private final class HeartObservationProbe: @unchecked Sendable {
                     let node = model.findEntity(named: part.id)!
                     try require(node.isEnabled && simd_distance(node.position(relativeTo: model), baseline[part.id]!) < 0.00001, "Atlas reassembly drift")
                 }
-                referenceReports.append(["asset": asset.id, "passed": true, "parts": asset.parts.count, "isolatedPartPivotsTested": asset.parts.count, "selectionSeparationReassemblyTested": true])
+                let styledMeshes = try validateRegionalPalette(model, asset: asset)
+                try await validateSections(scene, asset: asset)
+                referenceReports.append(["sectionAxesTested": 3, "asset": asset.id, "passed": true, "regionalPaletteMeshesTested": styledMeshes, "parts": asset.parts.count, "isolatedPartPivotsTested": asset.parts.count, "selectionSeparationReassemblyTested": true])
             } catch {
                 referenceReports.append(["asset": asset.id, "passed": false, "error": String(describing: error)])
             }
         }
-        let payload: [String:Any] = ["validationScene":"live RealityView", "lessonProgress": lessonProgressReport, "separationTransition": transitionReport, "assets":reports, "referenceAssets":referenceReports, "passed":referenceReports.count == 7 && referenceReports.allSatisfy { $0["passed"] as? Bool == true } && !reports.isEmpty && reports.allSatisfy { $0["passed"] as? Bool == true } && transitionReport["passed"] as? Bool == true && lessonProgressReport["passed"] as? Bool == true]
+        let payload: [String:Any] = ["validationScene":"live RealityView", "specimenInteractions": specimenInteractionReports, "morphMeshes": morphReport, "guidedSpecimens": guidedSpecimenReport, "lessonProgress": lessonProgressReport, "separationTransition": transitionReport, "assets":reports, "referenceAssets":referenceReports, "passed":specimenInteractionReports.count == HeartProjectModel.all.count && specimenInteractionReports.allSatisfy { $0["passed"] as? Bool == true } && guidedSpecimenReport["passed"] as? Bool == true && morphReport["passed"] as? Bool == true && referenceReports.count == 7 && referenceReports.allSatisfy { $0["passed"] as? Bool == true } && !reports.isEmpty && reports.allSatisfy { $0["passed"] as? Bool == true } && transitionReport["passed"] as? Bool == true && lessonProgressReport["passed"] as? Bool == true]
+        writeProgress("complete", asset: "all")
         let url = URL.documentsDirectory.appending(path:"heart-asset-validation.json")
         do {
             try JSONSerialization.data(withJSONObject:payload, options:[.prettyPrinted,.sortedKeys]).write(to:url, options:.atomic)
         } catch { print("Could not write validation report: \(error)") }
+    }
+
+    private static func writeProgress(_ stage: String, asset: String) {
+        let report = ["stage": stage, "asset": asset, "updated": ISO8601DateFormatter().string(from: Date())]
+        if let data = try? JSONSerialization.data(withJSONObject: report, options: .sortedKeys) {
+            try? data.write(to: URL.documentsDirectory.appending(path: "heart-section-progress.json"), options: .atomic)
+        }
+    }
+
+    private static func validateSections(_ scene: HeartModelScene, asset: HeartAsset) async throws {
+        scene.apply(asset: asset, selected: "", isolate: false, cutaway: false, context: true, separation: 0)
+        let available = BoundingBox(min: [-0.2, -0.2, 0], max: [0.2, 0.2, 0])
+        scene.sectionAxis = -1; scene.fit(in: available, zoom: 1)
+        let originalScale = scene.holder.scale, originalPosition = scene.holder.position
+        for axis in [2, 0, 1, -1] {
+            try await scene.sections.prepare(axis: axis)
+            scene.sectionAxis = axis
+            scene.apply(asset: asset, selected: "", isolate: false, cutaway: false, context: true, separation: 0)
+            scene.fit(in: available, zoom: 1)
+            try require(scene.sectionError == nil, "Lesson section failed")
+            try require(simd_distance(originalScale, scene.holder.scale) < 0.00001 && simd_distance(originalPosition, scene.holder.position) < 0.00001, "Section changed fitted viewpoint")
+            try require(scene.sections.entries.contains { $0.entity.components[ModelComponent.self] != nil }, "Lesson section removed every surface")
+        }
+        try require(scene.sections.entries.allSatisfy { $0.entity.components[ModelComponent.self]?.mesh === $0.original.mesh }, "Lesson section changed source mesh on restoration")
+    }
+
+    /// Check the installed scene materials, not just the source USDZ or style helper.
+    /// The named anatomy lookup is independently covered by catalogue policy tests.
+    private static func validateRegionalPalette(_ model: Entity, asset: HeartAsset) throws -> Int {
+        var checked = 0
+        for part in asset.parts {
+            let region = HeartAnatomyRegion.identifiedPart(part.id)
+            guard region != nil || HeartAnatomyRegion.isUnsegmentedTubeWall(part.id) else { continue }
+            guard let node = model.findEntity(named: part.id) else {
+                try require(false, "Missing styled region: \(part.id)")
+                continue
+            }
+            let base = (region ?? .ventricular).rgb
+            let lightening = part.id.hasPrefix("CardiacJelly_") ? 0.22 : part.id.hasPrefix("Endocardium_") ? 0.12 : 0.0
+            let expected = base + (SIMD3<Double>(repeating: 1) - base) * lightening
+            let countBefore = checked
+            func inspect(_ entity: Entity) throws {
+                if let component = entity.components[ModelComponent.self] {
+                    for case let material as PhysicallyBasedMaterial in component.materials {
+                        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+                        try require(material.baseColor.tint.getRed(&r, green: &g, blue: &b, alpha: &a)
+                                    && simd_distance(SIMD3<Double>(Double(r), Double(g), Double(b)), expected) < 0.001
+                                    && material.baseColor.texture == nil,
+                                    "Installed regional palette mismatch: \(part.id)")
+                        checked += 1
+                    }
+                }
+                for child in entity.children { try inspect(child) }
+            }
+            try inspect(node)
+            try require(checked > countBefore, "No styled material in mapped region: \(part.id)")
+        }
+        return checked
     }
 
     private static func requireFits(_ scene: HeartModelScene, model: Entity, available: BoundingBox) throws {
@@ -519,11 +1041,13 @@ private final class HeartObservationProbe: @unchecked Sendable {
         let size = bounds.extents * scene.holder.scale
         try require(size.x <= available.extents.x + 0.00001 && size.y <= available.extents.y + 0.00001,
                     "Visible rotated/separated anatomy exceeded the model area")
-        try require(simd_length(bounds.center) < 0.00001, "Visible anatomy was not centered")
+        try require(simd_length(scene.spin.position + scene.spin.orientation.act(scene.framingCenter)) < 0.00001,
+                    "Anatomical pivot left the model centre")
         try require(abs(scene.holder.position.x) < 0.00001 && abs(scene.holder.position.y) < 0.00001,
                     "Viewport offset was applied to the centered anatomy twice")
-        try require(bounds.min.z * scene.holder.scale.z + scene.holder.position.z > -0.20,
-                    "Backdrop could occlude visible anatomy")
+        try require(bounds.min.z * scene.holder.scale.z + scene.holder.position.z > 0 &&
+                    bounds.max.z * scene.holder.scale.z + scene.holder.position.z <= 0.501,
+                    "Anatomy escaped visible workspace depth")
     }
 
     private static func requireOpaqueMaterials(in entity: Entity) throws {

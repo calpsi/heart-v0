@@ -1,0 +1,148 @@
+[
+  {
+    "file": "day 20.blend",
+    "objects": [
+      {
+        "name": "Cylinder.001",
+        "vertices": 836,
+        "faces": 832,
+        "dimensions": [
+          0.6239864826202393,
+          2.822227716445923,
+          5.590768337249756
+        ],
+        "shapeKeys": [],
+        "modifiers": [
+          [
+            "Subdivision",
+            "SUBSURF"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "day 21.blend",
+    "objects": [
+      {
+        "name": "pre 2",
+        "vertices": 4006,
+        "faces": 8004,
+        "dimensions": [
+          0.8421423435211182,
+          2.6469995975494385,
+          5.624896049499512
+        ],
+        "shapeKeys": [],
+        "modifiers": [
+          [
+            "Subdivision",
+            "SUBSURF"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "day 24.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 4230,
+        "faces": 8456,
+        "dimensions": [
+          1.657462477684021,
+          4.6425628662109375,
+          7.463885307312012
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "file": "looping 1.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 4417,
+        "faces": 8830,
+        "dimensions": [
+          2.6901893615722656,
+          4.857133865356445,
+          7.601119041442871
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "file": "looping 2.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 4893,
+        "faces": 9782,
+        "dimensions": [
+          3.495696544647217,
+          4.854811191558838,
+          7.596513271331787
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "file": "looping 3.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 4795,
+        "faces": 9586,
+        "dimensions": [
+          3.9728143215179443,
+          5.500102996826172,
+          9.009132385253906
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "file": "looping 5.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 5412,
+        "faces": 10820,
+        "dimensions": [
+          3.965985059738159,
+          5.3779706954956055,
+          8.739126205444336
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "file": "looping 6.blend",
+    "objects": [
+      {
+        "name": "pre 3",
+        "vertices": 11927,
+        "faces": 23850,
+        "dimensions": [
+          3.692460060119629,
+          7.896503448486328,
+          8.844852447509766
+        ],
+        "shapeKeys": [],
+        "modifiers": []
+      }
+    ]
+  }
+]

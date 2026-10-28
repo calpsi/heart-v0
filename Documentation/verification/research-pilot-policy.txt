@@ -1,0 +1,6 @@
+PASS: 20,000 resize samples; finite values, limits, discontinuities, invalid samples
+PASS: repeated pinch reaches 2.5x; restored scales obey limits
+PASS: recognition scoring, misconception feedback, hint/reveal separation, persistence
+PASS: prior study and hinted review remain distinct
+PASS: review due dates, session deduplication, assistance and delayed recall
+Learning pilot content and independent assessment records passed

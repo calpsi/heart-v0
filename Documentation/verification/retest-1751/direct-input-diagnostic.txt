@@ -1,0 +1,191 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "heart v3.xcodeproj" -scheme HeartV3InteractionTests -destination "platform=visionOS Simulator,id=87B2FF46-44A0-4183-85CD-E913A347A8E0" -derivedDataPath .audit-build CODE_SIGNING_ALLOWED=NO test-without-building "-only-testing:HeartV3UITests/HeartV3InteractionTests/testDirectRotationAcrossViewerFamilies"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RealityKitContent: /Users/phillicia/Desktop/School/Spatial/heart v3/Packages/RealityKitContent
+
+objc[3971]: Class AXMRUIAccessibilityAssertionService is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities (0x1f011a060) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MuseAccessibilityUI.framework/MuseAccessibilityUI (0x102f7c118). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-28 21:50:14.022392+0800 HeartV3UITests-Runner[3971:52769] [AXCommon] Failed to load auxiliary bundle file:///private/var/run/com.apple.security.cryptexd/mnt/com.apple.XROS.SimulatorRuntime-v24.13.362.0.eSOjkL/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS%2027.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/MuseUIKit: (null)
+2026-10-28 21:50:14.041806+0800 HeartV3UITests-Runner[3971:52769] [Default] Running tests...
+2026-10-28 21:50:14.070955+0800 HeartV3UITests-Runner[3971:52769] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-28 21:50:14.886292+0800 HeartV3UITests-Runner[3971:53581] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x106f3eac0> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-10-28 21:50:15.089283+0800 HeartV3UITests-Runner[3971:53574] [connection] nw_socket_copy_info [C1:2] getsockopt TCP_INFO failed [102: Operation not supported on socket]
+2026-10-28 21:50:15.089341+0800 HeartV3UITests-Runner[3971:53574] [] nw_socket_copy_info getsockopt TCP_INFO failed [102: Operation not supported on socket]
+    t =      nans Interface orientation changed to Unknown
+Test Suite 'Selected tests' started at 2026-10-28 21:50:15.553.
+Test Suite 'HeartV3UITests.xctest' started at 2026-10-28 21:50:15.553.
+Test Suite 'HeartV3InteractionTests' started at 2026-10-28 21:50:15.553.
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies]' started.
+    t =     0.01s Start Test at 2026-10-28 21:50:15.562
+    t =     0.29s Set Up
+    t =     0.30s Open phil.heart-v3
+    t =     0.30s     Launch phil.heart-v3
+2026-10-28 21:50:16.204 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 21:50:16.204 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.40s         Setting up automation session
+    t =     7.28s         Wait for phil.heart-v3 to idle
+    t =    11.71s Waiting 60.0s for "model.viewport" Any to exist
+    t =    12.77s     Checking `Expect predicate `existsNoRetry == 1` for object "model.viewport" Any`
+    t =    12.77s         Checking existence of `"model.viewport" Any`
+    t =    13.03s Waiting 10.0s for "interaction.state" StaticText to exist
+    t =    14.06s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" StaticText`
+    t =    14.06s         Checking existence of `"interaction.state" StaticText`
+    t =    14.12s Find the "interaction.state" StaticText
+Gesture baseline ["--preview-exploration", "--preview-stage", "0"]: 0.087904,-0.207616,0.018736,0.974073;1.000000;enabled=true;phase=active
+    t =    14.16s Press "model.viewport" Any[0.50, 0.50] for 0.2 seconds, then drag to "model.viewport" Any[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    14.16s     Wait for phil.heart-v3 to idle
+    t =    14.16s     Find the "model.viewport" Any
+    t =    14.19s     Check for interrupting elements affecting "model.viewport" Other
+    t =    14.21s         Wait for com.apple.SurfBoard to idle
+    t =    14.30s     Synthesize event
+    t =    14.30s         Find the "model.viewport" Other
+    t =    14.33s         Find the "model.viewport" Other
+    t =    14.36s         Find the "model.viewport" Other
+    t =    14.40s         Find the "model.viewport" Other
+    t =    14.43s         Find the "model.viewport" Other
+    t =    15.26s     Wait for phil.heart-v3 to idle
+    t =    16.29s Find the "interaction.state" StaticText
+    t =    17.28s Find the "interaction.state" StaticText
+    t =    18.28s Find the "interaction.state" StaticText
+    t =    19.28s Find the "interaction.state" StaticText
+    t =    20.27s Find the "interaction.state" StaticText
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:67: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-exploration", "--preview-stage", "0"]
+    t =    20.59s Waiting 30.0s for "tool.Reset view" Button to exist
+    t =    21.62s     Checking `Expect predicate `existsNoRetry == 1` for object "tool.Reset view" Button`
+    t =    21.62s         Checking existence of `"tool.Reset view" Button`
+    t =    22.70s Checking `Expect predicate `enabled == 1` for object "tool.Reset view" Button`
+    t =    22.70s     Find the "tool.Reset view" Button
+    t =    22.80s Tap "tool.Reset view" Button
+    t =    22.80s     Wait for phil.heart-v3 to idle
+    t =    22.81s     Find the "tool.Reset view" Button
+    t =    22.85s     Check for interrupting elements affecting "tool.Reset view" Button
+    t =    22.86s         Wait for com.apple.SurfBoard to idle
+    t =    22.88s     Synthesize event
+    t =    23.26s     Wait for phil.heart-v3 to idle
+    t =    23.27s Find the "interaction.state" StaticText
+    t =    23.32s Open phil.heart-v3
+    t =    23.32s     Launch phil.heart-v3
+    t =    23.32s         Terminate phil.heart-v3:4025
+2026-10-28 21:50:39.886 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 21:50:39.886 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    24.55s         Setting up automation session
+    t =    29.79s         Wait for phil.heart-v3 to idle
+    t =    33.92s Waiting 60.0s for "morph.viewport" Any to exist
+    t =    34.97s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.viewport" Any`
+    t =    34.97s         Checking existence of `"morph.viewport" Any`
+    t =    35.09s Waiting 10.0s for "interaction.state" StaticText to exist
+    t =    36.12s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" StaticText`
+    t =    36.12s         Checking existence of `"interaction.state" StaticText`
+    t =    36.16s Find the "interaction.state" StaticText
+Gesture baseline ["--preview-guided", "--preview-lesson", "3", "--preview-step", "0"]: 0.000000,0.000000,0.000000,1.000000;1.000000;enabled=true;phase=active
+    t =    36.20s Press "morph.viewport" Any[0.50, 0.50] for 0.2 seconds, then drag to "morph.viewport" Any[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    36.20s     Wait for phil.heart-v3 to idle
+    t =    36.20s     Find the "morph.viewport" Any
+    t =    36.26s     Check for interrupting elements affecting "morph.viewport" Other
+    t =    36.26s         Wait for com.apple.SurfBoard to idle
+    t =    36.29s     Synthesize event
+    t =    36.29s         Find the "morph.viewport" Other
+    t =    36.34s         Find the "morph.viewport" Other
+    t =    36.39s         Find the "morph.viewport" Other
+    t =    36.43s         Find the "morph.viewport" Other
+    t =    36.48s         Find the "morph.viewport" Other
+    t =    42.19s     Wait for phil.heart-v3 to idle
+    t =    43.22s Find the "interaction.state" StaticText
+    t =    44.28s Find the "interaction.state" StaticText
+    t =    45.23s Find the "interaction.state" StaticText
+    t =    46.27s Find the "interaction.state" StaticText
+    t =    47.20s Find the "interaction.state" StaticText
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:67: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-guided", "--preview-lesson", "3", "--preview-step", "0"]
+    t =    47.24s Waiting 30.0s for "morph.resetView" Button to exist
+    t =    48.27s     Checking `Expect predicate `existsNoRetry == 1` for object "morph.resetView" Button`
+    t =    48.27s         Checking existence of `"morph.resetView" Button`
+    t =    49.35s Checking `Expect predicate `enabled == 1` for object "morph.resetView" Button`
+    t =    49.35s     Find the "morph.resetView" Button
+    t =    49.38s Tap "morph.resetView" Button
+    t =    49.38s     Wait for phil.heart-v3 to idle
+    t =    49.38s     Find the "morph.resetView" Button
+    t =    49.40s     Check for interrupting elements affecting "morph.resetView" Button
+    t =    49.41s         Wait for com.apple.SurfBoard to idle
+    t =    49.42s     Synthesize event
+    t =    49.83s     Wait for phil.heart-v3 to idle
+    t =    49.83s Find the "interaction.state" StaticText
+    t =    49.85s Open phil.heart-v3
+    t =    49.85s     Launch phil.heart-v3
+    t =    49.85s         Terminate phil.heart-v3:4117
+2026-10-28 21:51:06.436 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-28 21:51:06.436 xcodebuild[3726:49778] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    51.09s         Setting up automation session
+    t =    55.81s         Wait for phil.heart-v3 to idle
+    t =    59.30s Waiting 60.0s for "reference.ready" Any to exist
+    t =    60.34s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =    60.35s         Checking existence of `"reference.ready" Any`
+    t =    60.45s Waiting 60.0s for "reference.ready" Any to exist
+    t =    61.47s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.ready" Any`
+    t =    61.47s         Checking existence of `"reference.ready" Any`
+    t =    61.51s Waiting 10.0s for "interaction.state" StaticText to exist
+    t =    62.54s     Checking `Expect predicate `existsNoRetry == 1` for object "interaction.state" StaticText`
+    t =    62.54s         Checking existence of `"interaction.state" StaticText`
+    t =    62.58s Find the "interaction.state" StaticText
+Gesture baseline ["--preview-exploration", "--preview-whole-heart"]: 0.000000,0.000000,0.000000,1.000000;1.000000;enabled=true;phase=active
+    t =    62.60s Press "reference.ready" Any[0.50, 0.50] for 0.2 seconds, then drag to "reference.ready" Any[0.50, 0.50] -> (60.0, 30.0) with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    62.60s     Wait for phil.heart-v3 to idle
+    t =    62.60s     Find the "reference.ready" Any
+    t =    62.62s     Check for interrupting elements affecting "reference.ready" Other
+    t =    62.63s         Wait for com.apple.SurfBoard to idle
+    t =    62.64s     Synthesize event
+    t =    62.64s         Find the "reference.ready" Other
+    t =    62.77s         Find the "reference.ready" Other
+    t =    62.80s         Find the "reference.ready" Other
+    t =    62.83s         Find the "reference.ready" Other
+    t =    62.86s         Find the "reference.ready" Other
+    t =    63.53s     Wait for phil.heart-v3 to idle
+    t =    64.56s Find the "interaction.state" StaticText
+    t =    65.58s Find the "interaction.state" StaticText
+    t =    66.58s Find the "interaction.state" StaticText
+    t =    67.55s Find the "interaction.state" StaticText
+    t =    68.54s Find the "interaction.state" StaticText
+/Users/phillicia/Desktop/School/Spatial/heart v3/HeartV3UITests/HeartV3InteractionTests.swift:67: error: -[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies] : XCTAssertEqual failed: ("XCTWaiterResult(rawValue: 2)") is not equal to ("XCTWaiterResult(rawValue: 1)") - Direct model drag did not change orientation: ["--preview-exploration", "--preview-whole-heart"]
+    t =    68.58s Waiting 30.0s for "reference.reset" Button to exist
+    t =    69.60s     Checking `Expect predicate `existsNoRetry == 1` for object "reference.reset" Button`
+    t =    69.60s         Checking existence of `"reference.reset" Button`
+    t =    70.67s Checking `Expect predicate `enabled == 1` for object "reference.reset" Button`
+    t =    70.67s     Find the "reference.reset" Button
+    t =    70.70s Tap "reference.reset" Button
+    t =    70.71s     Wait for phil.heart-v3 to idle
+    t =    70.71s     Find the "reference.reset" Button
+    t =    70.73s     Check for interrupting elements affecting "reference.reset" Button
+    t =    70.73s         Wait for com.apple.SurfBoard to idle
+    t =    70.74s     Synthesize event
+    t =    71.14s     Wait for phil.heart-v3 to idle
+    t =    71.14s Find the "interaction.state" StaticText
+    t =    71.17s Tear Down
+Test Case '-[HeartV3UITests.HeartV3InteractionTests testDirectRotationAcrossViewerFamilies]' failed (72.512 seconds).
+Test Suite 'HeartV3InteractionTests' failed at 2026-10-28 21:51:28.074.
+	 Executed 1 test, with 3 failures (0 unexpected) in 72.512 (72.521) seconds
+Test Suite 'HeartV3UITests.xctest' failed at 2026-10-28 21:51:28.074.
+	 Executed 1 test, with 3 failures (0 unexpected) in 72.512 (72.521) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 21:51:28.075.
+	 Executed 1 test, with 3 failures (0 unexpected) in 72.512 (72.522) seconds
+2026-10-28 22:01:28.446 xcodebuild[3726:52764]  IDETestOperationsObserverDebug: Failure collecting diagnostics from simulator: Timed out after 600.0 seconds while waiting for a response from the invoked process
+2026-10-28 22:01:28.493 xcodebuild[3726:49778] [MT] IDETestOperationsObserverDebug: 736.910 elapsed -- Testing started completed.
+2026-10-28 22:01:28.493 xcodebuild[3726:49778] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 22:01:28.493 xcodebuild[3726:49778] [MT] IDETestOperationsObserverDebug: 736.910 sec, +736.910 sec -- end
+2026-10-28 22:01:28.586 xcodebuild[3726:49778] [MT] IDETesting: Result bundle saving failed with error: Error Domain=IDEFoundationErrorDomain Code=12 "The result bundle could not be saved due to multiple errors: failed to import activity log, underlying error: fileSystemFailure(reason: "mkstemp: No such file or directory"), The operation couldn’t be completed. (XCResultKit_CASDB.FileBackedCASDatabase.Error error 0.)" UserInfo={NSUnderlyingError=0xc180dedc0 {Error Domain=IDEFoundation.ResultBundleError Code=2 "failed to import activity log, underlying error: fileSystemFailure(reason: "mkstemp: No such file or directory")"}, NSLocalizedDescription=The result bundle could not be saved due to multiple errors: failed to import activity log, underlying error: fileSystemFailure(reason: "mkstemp: No such file or directory"), The operation couldn’t be completed. (XCResultKit_CASDB.FileBackedCASDatabase.Error error 0.)}.
+
+Test session results, code coverage, and logs:
+	/Users/phillicia/Desktop/School/Spatial/heart v3/.audit-build/Logs/Test/Test-HeartV3InteractionTests-2026.10.28_21-49-11-+0800.xcresult
+
+Failing tests:
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+	HeartV3InteractionTests.testDirectRotationAcrossViewerFamilies()
+
+** TEST EXECUTE FAILED **
+
+Testing started

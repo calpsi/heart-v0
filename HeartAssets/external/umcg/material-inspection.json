@@ -1,0 +1,191 @@
+[
+  {
+    "model": "Atrial_Septal_Defect_ASD",
+    "materials": [
+      {
+        "name": "Default6",
+        "principled": [
+          {
+            "color": [
+              0.9039999842643738,
+              0.9039999842643738,
+              0.9039999842643738,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      },
+      {
+        "name": "Extract1",
+        "principled": [
+          {
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      }
+    ]
+  },
+  {
+    "model": "Ventricular_Septal_Defect",
+    "materials": [
+      {
+        "name": "Default",
+        "principled": [
+          {
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      },
+      {
+        "name": "Default1",
+        "principled": [
+          {
+            "color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": [
+          "Default1_diffuse_scale0_rgba.png"
+        ]
+      },
+      {
+        "name": "Default15",
+        "principled": [
+          {
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      },
+      {
+        "name": "Default_copy1",
+        "principled": [
+          {
+            "color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": [
+          "Default_copy1_diffuse.jpg"
+        ]
+      },
+      {
+        "name": "Default_copy2",
+        "principled": [
+          {
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      }
+    ]
+  },
+  {
+    "model": "Transposition_of_the_great_arteries",
+    "materials": [
+      {
+        "name": "POGING_14",
+        "principled": [
+          {
+            "color": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      },
+      {
+        "name": "POGING_19",
+        "principled": [
+          {
+            "color": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      },
+      {
+        "name": "POGING_4",
+        "principled": [
+          {
+            "color": [
+              0.6748725771903992,
+              0.57938551902771,
+              0.5070541501045227,
+              1.0
+            ],
+            "roughness": 0.5
+          }
+        ],
+        "textures": []
+      }
+    ]
+  },
+  {
+    "model": "Atrioventricular_septal_defect_4_chamber_view",
+    "materials": [
+      {
+        "name": "avsd_4_kamer334",
+        "principled": [
+          {
+            "color": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "roughness": 1.0
+          }
+        ],
+        "textures": []
+      }
+    ]
+  }
+]

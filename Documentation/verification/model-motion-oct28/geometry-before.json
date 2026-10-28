@@ -1,0 +1,83 @@
+[
+  {
+    "frames" : 21,
+    "geometryMS" : 171.69433200000003,
+    "kind" : "joining",
+    "msIncludingHash" : 560.02929200000005,
+    "opening" : 0,
+    "sha256" : "96feee2dae74f3d3adb27bf44452b8fe7cc4c1124091b4416c329216db83a571",
+    "vertices" : 1246140
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 167.18029300000001,
+    "kind" : "joining",
+    "msIncludingHash" : 556.56504199999995,
+    "opening" : 0.5,
+    "sha256" : "96feee2dae74f3d3adb27bf44452b8fe7cc4c1124091b4416c329216db83a571",
+    "vertices" : 1246140
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 165.773956,
+    "kind" : "joining",
+    "msIncludingHash" : 551.07058400000005,
+    "opening" : 1,
+    "sha256" : "96feee2dae74f3d3adb27bf44452b8fe7cc4c1124091b4416c329216db83a571",
+    "vertices" : 1246140
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 82.380541999999991,
+    "kind" : "looping",
+    "msIncludingHash" : 273.04570799999999,
+    "opening" : 0,
+    "sha256" : "c42c7a8056c735f30349e28a3cac7b28ea5ef560153d486bdc1c2774b30fd562",
+    "vertices" : 623070
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 83.737251000000015,
+    "kind" : "looping",
+    "msIncludingHash" : 288.93650000000002,
+    "opening" : 0.5,
+    "sha256" : "9a9f9dd2bb26a4bfe8b6675cad80fb346932d48e6fdf111542124428a81dce73",
+    "vertices" : 671454
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 94.063040999999998,
+    "kind" : "looping",
+    "msIncludingHash" : 327.66924999999998,
+    "opening" : 1,
+    "sha256" : "e3dcdfbaa28bedf9d0fe1925a036f4c3ebe4b71b882ab0496c63d2254c94a4d2",
+    "vertices" : 671454
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 25.530874999999998,
+    "kind" : "outflow",
+    "msIncludingHash" : 202.35566600000001,
+    "opening" : 0,
+    "sha256" : "1c7113ad7d089c6ac764062a51bb587be3a479d7a01ee4b242e7b0af7aecf4fe",
+    "vertices" : 192864
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 12.223081000000001,
+    "kind" : "outflow",
+    "msIncludingHash" : 73.743540999999993,
+    "opening" : 0.5,
+    "sha256" : "791e7915f6d6b0943d9090378c70a4be6fefa207e75ebf2f0f63f03fe7f30e03",
+    "vertices" : 192864
+  },
+  {
+    "frames" : 21,
+    "geometryMS" : 7.3709569999999989,
+    "kind" : "outflow",
+    "msIncludingHash" : 46.490290999999999,
+    "opening" : 1,
+    "sha256" : "c36e6c25278856dffc8a1c08d3dc9401e76db0fed2af22addc9f8ca3d0ee7cf8",
+    "vertices" : 122178
+  }
+]

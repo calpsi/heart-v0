@@ -22,7 +22,7 @@ struct SpatialChoicePicker: View {
             }
         }
         .padding(4)
-        .background(.black.opacity(0.75), in: RoundedRectangle(cornerRadius: 26))
+        .background(HeartDesign.panel, in: RoundedRectangle(cornerRadius: 20))
         .accessibilityElement(children: .contain)
         .accessibilityLabel(title)
     }
@@ -34,16 +34,16 @@ struct SpatialChoicePicker: View {
         } label: {
             Text(choice.title)
                 .font(.subheadline.weight(.semibold))
-                .foregroundStyle(selected ? Color.black : Color.white)
+                .foregroundStyle(HeartDesign.text)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: horizontal, vertical: true)
                 .padding(.horizontal, 12)
-                .frame(maxWidth: .infinity, minHeight: 48)
-                .background(selected ? Color.accentColor : .clear, in: RoundedRectangle(cornerRadius: 22))
+                .frame(maxWidth: .infinity, minHeight: 60)
+
                 .contentShape(RoundedRectangle(cornerRadius: 22))
         }
         .buttonStyle(.plain)
-        .hoverEffect(.highlight)
+        .heartSegment(selected: selected)
         .accessibilityAddTraits(selected ? .isSelected : [])
     }
 }
@@ -58,16 +58,18 @@ struct SpatialToolButton: View {
     var body: some View {
         Button(action: action) {
             VStack(spacing: 5) {
-                Image(systemName: symbol).font(.system(size: 20, weight: .medium))
-                Text(title).font(.caption2.weight(.medium))
+                HStack(spacing: 4) {
+                    Image(systemName: symbol).font(.system(size: 20, weight: .medium))
+                    if selected { Image(systemName: "checkmark").font(.subheadline.bold()) }
+                }
+                Text(title).font(.subheadline.weight(.semibold)).lineLimit(1).minimumScaleFactor(0.9)
             }
-            .frame(minWidth: 58, minHeight: 52)
+            .frame(minWidth: 82, minHeight: 68)
             .padding(.horizontal, 4)
-            .background(selected ? Color.accentColor.opacity(0.24) : .clear, in: RoundedRectangle(cornerRadius: 16))
+
             .contentShape(RoundedRectangle(cornerRadius: 16))
         }
-        .buttonStyle(.plain)
-        .hoverEffect(.highlight)
+        .buttonStyle(HeartChipStyle(selected: selected))
         .accessibilityLabel(title)
         .accessibilityIdentifier("tool." + title)
         .accessibilityValue(selected ? "On" : "Off")
@@ -82,11 +84,9 @@ struct SpatialBackButton: View {
             Label(title, systemImage: "chevron.left")
                 .font(.headline)
                 .padding(.horizontal, 20)
-                .frame(height: 52)
+                .frame(minHeight: 60)
         }
-        .buttonStyle(.plain)
-        .glassBackgroundEffect(in: Capsule())
-        .hoverEffect(.highlight)
+        .buttonStyle(HeartSecondaryButtonStyle())
     }
 }
 
@@ -105,7 +105,8 @@ struct HeartOrientationCue: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 2) {
+            Text("Orientation").font(.footnote)
             ZStack {
                 ForEach(axes.indices, id: \.self) { index in
                     let axis = projected(axes[index].1)
@@ -114,19 +115,55 @@ struct HeartOrientationCue: View {
                     Path { path in
                         path.move(to: CGPoint(x: 32, y: 32))
                         path.addLine(to: CGPoint(x: 32 + x, y: 32 + y))
-                    }.stroke(.white.opacity(axis.z < 0 ? 0.4 : 0.9), lineWidth: 2)
-                    Text(axes[index].0).font(.caption2.bold())
-                        .foregroundStyle(.white.opacity(axis.z < 0 ? 0.55 : 1))
+                    }.stroke(Color.primary.opacity(axis.z < 0 ? 0.4 : 0.9), lineWidth: 2)
+                    Text(axes[index].0).font(.footnote.bold())
+                        .foregroundStyle(Color.primary.opacity(axis.z < 0 ? 0.55 : 1))
                         .offset(x: abs(x) + abs(y) < 8 ? 20 : x * 1.25,
                                 y: abs(x) + abs(y) < 8 ? 20 : y * 1.25)
                 }
-                Circle().fill(.white).frame(width: 4, height: 4)
+                Circle().fill(Color.primary).frame(width: 4, height: 4)
             }.frame(width: 64, height: 64)
         }
         .padding(4)
-        .background(.black.opacity(0.6), in: RoundedRectangle(cornerRadius: 12))
+        .help(schematic ? "Cr: cranial · V: viewing side" : "L: anatomical left · Cr: cranial · A: anterior")
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(schematic ? "Orientation: Cr is cranial; V is the schematic viewing side."
                             : "Orientation: L is anatomical left; Cr is cranial; A is anterior.")
     }
+}
+
+/// The visible value and label identify the former unlabeled pink slider.
+struct HeartSizeControl: View {
+    @Binding var value: Double
+    let label: String
+    var body: some View {
+        HStack(spacing: 12) {
+            Text("Size").font(.subheadline)
+            HeartSlider(value: $value, in: HeartModelZoom.range)
+                .tint(HeartDesign.accent).frame(minWidth: 100, minHeight: 60)
+                .accessibilityLabel(label)
+                .accessibilityHint("Change viewing size without changing the anatomy.")
+            Text("\(value, format: .number.precision(.fractionLength(1)))×")
+                .font(.subheadline.monospacedDigit()).frame(minWidth: 50)
+        }
+    }
+}
+
+/// Persistent selection uses a white inset segment and an accent underline;
+/// gaze highlighting does not change this selected state.
+private struct HeartSegment: ViewModifier {
+    let selected: Bool
+    func body(content: Content) -> some View {
+        content
+            .foregroundStyle(selected ? HeartDesign.text : HeartDesign.secondary)
+            .background(selected ? HeartDesign.surface : .clear, in: RoundedRectangle(cornerRadius: 16))
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(selected ? HeartDesign.border : .clear, lineWidth: 1))
+            .overlay(alignment: .bottom) {
+                if selected { Capsule().fill(HeartDesign.accent).frame(width: 28, height: 3).padding(.bottom, 4) }
+            }
+            .hoverEffect(.highlight)
+    }
+}
+extension View {
+    func heartSegment(selected: Bool) -> some View { modifier(HeartSegment(selected: selected)) }
 }
